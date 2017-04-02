@@ -1,0 +1,194 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">HTML DOM - Changing HTML</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_elements.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_css.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<p class="intro">The HTML DOM allows JavaScript to change the content of HTML elements.</p>
+<hr>
+
+<h2>Changing the HTML Output Stream</h2>
+
+<p>JavaScript can create dynamic HTML content:</p>
+<p><b>Date: 
+<script>
+document.write(Date());
+</script>
+</b></p>
+
+<p>In JavaScript, document.write() can be used to write directly to the HTML 
+output stream:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;script&gt;<br>
+document.write(Date());<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_date" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;
+&lt;body&gt;
+
+&lt;script&gt;
+document.write(Date());
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Never use document.write() after the document is loaded. It will 
+overwrite the document.</p>
+</div>
+
+<hr>
+<h2>Changing HTML Content</h2>
+<p>The easiest way to modify the content of an HTML element is by using the <b>innerHTML</b> property.</p>
+
+<p>To change the content of an HTML element, use this syntax:</p>
+<div class="w3-code w3-border notranslate"><div>
+document.getElementById(<i>id</i>).innerHTML =<i> new HTML</i>
+</div>
+</div>
+
+<p>This example changes the content of a &lt;p&gt; element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+&lt;p id=&quot;p1&quot;&gt;Hello World!&lt;/p&gt;<br><br>
+&lt;script&gt;<br>
+document.getElementById(&quot;p1&quot;).innerHTML = &quot;New text!&quot;;<br>
+&lt;/script&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_change_innerhtml"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;document.getElementById(id).innerHTML = new HTML&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This example changes the content of an &lt;h1&gt; element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1 id=&quot;header&quot;&gt;Old Header&lt;/h1&gt;<br>
+<br>
+&lt;script&gt;<br>
+var element = document.getElementById(&quot;header&quot;);<br>element.innerHTML = &quot;New Header&quot;;<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_innerhtml" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;
+&lt;p id=&quot;p1&quot;&gt;Hello World!&lt;/p&gt;
+&lt;script&gt;
+document.getElementById(&quot;p1&quot;).innerHTML = &quot;New text!&quot;;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Example explained:</p>
+<ul>
+  <li>The HTML document above contains an &lt;h1&gt; element with id=&quot;header&quot;</li>
+  <li>We use the HTML DOM to get the element with id=&quot;header&quot;</li>
+  <li>A JavaScript changes the content (innerHTML) of that element</li>
+</ul>
+<hr>
+
+<h2>Changing the Value of an Attribute</h2>
+
+<p>To change the value of an HTML attribute, use this syntax: </p>
+<div class="w3-code w3-border notranslate htmlHigh"><div>
+document.getElementById(<i>id</i>).<i>attribute = new value</i>
+</div>
+</div>
+<p>This example changes the value of the src attribute of an &lt;img&gt; element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;img id=&quot;myImage&quot; src=&quot;smiley.gif&quot;&gt;<br>
+<br>
+&lt;script&gt;<br>
+document.getElementById(&quot;myImage&quot;).src = &quot;landscape.jpg&quot;;<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_image" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1 id=&quot;header&quot;&gt;Old Header&lt;/h1&gt;
+
+&lt;script&gt;
+var element = document.getElementById(&quot;header&quot;);element.innerHTML = &quot;New Header&quot;;
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Example explained:</p>
+<ul>
+  <li>The HTML document above contains an &lt;img&gt; element with id=&quot;myImage&quot;</li>
+  <li>We use the HTML DOM to get the element with id=&quot;myImage&quot;</li>
+  <li>A JavaScript changes the src attribute of that element from &quot;smiley.gif&quot; to &quot;landscape.jpg&quot;</li>
+</ul>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_dom_change1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dom_change2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dom_change3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dom_change4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dom_change5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_elements.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_css.asp">Next &#x276F;</a>
+</div>

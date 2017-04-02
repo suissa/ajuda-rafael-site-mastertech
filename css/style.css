@@ -1,0 +1,183 @@
+@font-face {
+	font-family: 'Lato';
+	src: url("../font/Lato/Lato-Black.ttf");
+	font-size: 1em;
+}
+
+body{
+	/*font-size: 30px;*/
+}
+
+
+h1  {
+	color: red;
+	text-align: center;
+    }
+
+
+
+
+.header{
+	width: 100%;
+	height: 120px;
+	background-color: #fff;
+	display: inline-block;
+	position: fixed;
+	z-index: 1;
+
+}
+
+section{
+	width: 100%;
+	display: inline-block;
+	position: relative;
+	margin-top: 125px;
+}
+
+footer{
+	width: 100%;
+	height: 100px;
+	background-color: #161616;
+	clear: both;
+	display: inline-block;
+
+}
+
+
+/* ---------------------------------------------------------- NAV BAR ----- */
+
+
+header #header_logo{
+	height: 50px;
+	margin-top: 20px;
+	margin-left: 20px;
+
+}
+
+header .navBar{
+	background-color: #F4F4F4;
+	font-family: "Lato";
+}
+
+.input-group{
+	width: 15%;
+	float:right;
+	margin: 5px 10px;
+}
+
+form-control{
+	padding: 3px;
+}
+
+/* Colocar fonte navBar em preto */
+
+.nav a{
+	color: black;
+}
+
+#lista_cursos a {
+	background-color: black;
+}
+
+/* ---------------------------------------------------------- BARRA LATERAL ----- */
+
+/* Recolher sub-itens dos cursos */
+
+.main-menu ul{
+	display: none;
+}
+
+section .barraLateral{
+	background-color: #F4F4F4;
+	width: 210px; 
+	height: 990px;
+	border-radius: 12px;
+	border-color: gray;
+	margin-top: 0px;
+	margin-left: 10px;
+	float: left;
+	display: inline-block;
+	position: fixed;
+	
+
+}
+
+section .barraLateral .barraLateral_modulos{
+	width: 180px;
+	margin: 10px 10px 0px 10px;
+
+}
+
+section .barraLateral .barraLateral_modulos ul li{
+	list-style-type: none;
+	padding-left: 0px;
+}
+
+
+section .barraLateral .barraLateral_modulos ul{
+	padding-left: 10px;
+}
+
+.barraLateral_modulos a{
+	color: black;
+}
+
+.barraLateral_modulos{
+	box-shadow:12px 12px -8px 5px gray;
+
+}
+
+.tituloModulo{
+	font-weight: bold;
+	font-size: 21px;
+}
+
+.tituloCurso > a{
+	font-weight: bold;
+	font-size: 15px;
+}
+
+
+/* ---------------------------------------------------------- CONTEÚDO DO CURSO ----- */
+
+section .areaCurso{
+	width: 80%; 
+	height: 990px;
+	margin-top: 1px;
+	margin-left: 230px;
+	
+	display: inline-block;
+}
+
+.curso{
+	width: 100%; 
+	height: 1200px;
+
+
+}
+
+section .conteudoCursoTitulo{
+	padding-top: 10px;
+	font-weight: bold;
+	font-size: 1.5em;
+}
+
+.conteudoCursoConteudo{
+	margin-left: -33px;
+	margin-top: -12px;
+}
+
+footer{
+	margin-top: 10px;
+}
+
+body .nav-pills>li.active>a, .nav-pills>li.active>a:focus, .nav-pills>li.active>a:hover {
+	color: #F00;
+	font-size: 1.5rem;
+	background-color: #000;
+}
+
+.text-white {
+	color: #fff;
+}
+

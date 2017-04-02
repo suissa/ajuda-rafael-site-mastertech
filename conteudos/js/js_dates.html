@@ -1,0 +1,288 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Dates</span></h1>
+<div class="w3-clear nextprev">
+ <a class="w3-left w3-btn" href="js_random.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_date_formats.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The Date object lets you work with dates (years, months,  
+days, hours, minutes, seconds, and milliseconds)</p>
+<hr>
+<h2>JavaScript Date Formats</h2>
+<p>A JavaScript date can be written as a string:</p>
+<p><strong><script>document.write(Date())</script></strong></p>
+<p>or as a number:</p>
+<p><strong><script>document.write(new Date().getTime())</script></strong></p>
+<p>Dates written as numbers, specifies the number of milliseconds since January 
+1, 1970, 00:00:00.</p>
+<hr>
+<h2>Displaying Dates</h2>
+<p>In this tutorial we use a script to display dates inside a &lt;p&gt; element 
+with id=&quot;demo&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>
+document.getElementById(&quot;demo&quot;).innerHTML = Date();<br>
+&lt;/script&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_current"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+document.getElementById(&quot;demo&quot;).innerHTML = Date();
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The script above says: assign the value of Date() to the content (innerHTML) of the 
+element with id=&quot;demo&quot;.&#xA0;</p>
+
+<div class="w3-panel w3-note">
+<p>You will learn how to display a date, in a more readable format, at the bottom of this page.</p>
+</div>
+
+<hr>
+<h2>Creating Date Objects</h2>
+<p>The Date object lets us work with dates.</p>
+<p>A date consists of a year, a month, a day, an hour, a minute, a second, and  
+milliseconds.</p>
+<p>Date objects are created with the 
+<strong>new Date()</strong> constructor.</p>
+<p>There are <strong>4 ways</strong> of initiating a date:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+new Date()<br>new Date(milliseconds)<br>new Date(dateString)<br>
+new Date(year, month, day, hours, minutes, seconds, milliseconds)
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;new Date()new Date(milliseconds)new Date(dateString)
+new Date(year, month, day, hours, minutes, seconds, milliseconds)&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>Using new Date(), creates a new date object with 
+the <strong>current 
+date and time</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_new" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>Using new Date(<strong>date string</strong>), creates a new date object from 
+the <strong>specified 
+date and time</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date(&quot;October 13, 2014 11:13:00&quot;);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_new_string" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date(&quot;October 13, 2014 11:13:00&quot;);document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<div class="w3-panel w3-note">
+<p>Valid date strings (date formats) are described in the next chapter.</p>
+</div>
+  
+<p>Using new Date(<strong>number</strong>), creates a new date object as<strong> 
+zero time plus the number</strong>.</p>
+<p>Zero time is 01 January 1970 00:00:00 UTC. The number is specified in 
+milliseconds:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date(86400000);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_new_millisec" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date(86400000);document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>JavaScript dates are calculated in milliseconds from 01 January, 1970 
+00:00:00 Universal Time (UTC). One day contains 86,400,000 millisecond.</p>
+</div>
+  
+<p>Using new Date(<strong>7 numbers</strong>), creates a new date object with 
+the <strong>specified 
+date and time</strong>:</p>
+  
+<p>The 7 numbers specify the year, month, day, hour, minute, second, and 
+millisecond, in that order:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date(99, 5, 24, 11, 33, 30, 0);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_new_all" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date(99, 5, 24, 11, 33, 30, 0);document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Variants of the example above let us omit any of the last 4 parameters:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+var d = new Date(99, 5, 24);<br>
+document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_new_numbers" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+var d = new Date(99, 5, 24);
+document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>JavaScript counts months from 0 to 11. January is 0. December is 11.</p>
+</div>
+
+<hr>
+<h2>Date Methods</h2> 
+<p>When a Date object is created, a number of <strong>methods</strong> allow you to operate on 
+it.</p>
+<p>Date methods allow you to get and set the year, month, day, hour, 
+minute, second, and millisecond of objects, using either local time or UTC 
+(universal, or GMT) time.</p>
+
+<div class="w3-panel w3-note">
+<p>Date methods are covered in a later chapter.</p>
+</div>
+
+<hr>
+<h2>Displaying Dates</h2>
+<p>When you display a date object in HTML, it is automatically converted to a 
+string, with the <strong>toString()</strong> method.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>d = new Date();<br>
+document.getElementById(&quot;demo&quot;).innerHTML = d;<br>
+&lt;/script&gt;
+</div>
+<p>Is the same as:</p>
+<div class="w3-code notranslate htmlHigh">
+&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>d = new Date();<br>
+document.getElementById(&quot;demo&quot;).innerHTML = d.toString();<br>
+&lt;/script&gt;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_tostring"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;script&gt;d = new Date();
+document.getElementById(&quot;demo&quot;).innerHTML = d;
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The <strong>toUTCString()</strong> method converts a date to a UTC string (a date display 
+standard).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = d.toUTCString();<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_toutcstring" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+&lt;script&gt;d = new Date();
+document.getElementById(&quot;demo&quot;).innerHTML = d.toString();
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The <strong>toDateString()</strong> method converts a date to a more readable 
+format:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = d.toDateString();<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_todatestring" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();
+ document.getElementById(&quot;demo&quot;).innerHTML = d.toUTCString();&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Date objects are static. The computer time is ticking, but date objects, once created, are not.</p>
+</div>
+
+<hr>
+<h2>Time Zones</h2>
+<p>When setting a date, without specifying the time zone, JavaScript will use 
+the browser&apos;s time zone.</p>
+
+<p>When getting a date, without specifying the time zone, the result is 
+converted to the browser&apos;s time zone.</p>
+<p>In other words: If a date/time is created in GMT (Greenwich Mean Time), the 
+date/time will be converted to CDT (Central US Daylight Time) if a user browses 
+from central US.</p>
+
+<div class="w3-panel w3-note">
+<p>Read more about time zones in the next chapters.</p>
+</div>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_dates1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dates2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dates3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+ <a class="w3-left w3-btn" href="js_random.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_date_formats.asp">Next &#x276F;</a>
+</div>

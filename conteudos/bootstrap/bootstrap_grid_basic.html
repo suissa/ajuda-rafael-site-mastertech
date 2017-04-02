@@ -1,0 +1,133 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Grids</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_get_started.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_typography.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Bootstrap Grid System</h2>
+<p>Bootstrap&apos;s grid system allows up to 12 columns across the page.</p>
+<p>If you do not want to use all 12 columns individually, you can group the 
+columns together to create wider columns:</p>
+<div class="table-responsive">
+<table class="table grid">
+<tr>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+  <td>span 1</td>
+  <td>span 1</td>  
+  <td>span 1</td>
+</tr>
+<tr>
+  <td colspan="4">&#xA0;span 4</td>
+  <td colspan="4">&#xA0;span 4</td>  
+  <td colspan="4">&#xA0;span 4</td>
+</tr>
+<tr>
+  <td colspan="4">span 4</td>
+  <td colspan="8">span 8</td>  
+</tr>
+<tr>
+  <td colspan="6">span 6</td>
+  <td colspan="6">span 6</td>  
+</tr>
+<tr>
+  <td colspan="12">span 12</td>
+</tr>
+</table>
+</div>
+<p>Bootstrap&apos;s grid system is responsive, and the columns will re-arrange automatically depending on the screen size.</p>
+<hr>
+
+<h2>Grid Classes</h2>
+<p>The Bootstrap grid system has four classes:</p>
+<ul>
+  <li>xs (for phones)</li>
+  <li>sm (for tablets)</li>
+  <li>md (for desktops)</li>
+  <li>lg (for larger desktops)</li>
+</ul>
+<p>The classes above can be combined to create more dynamic and flexible layouts.</p>
+<hr>
+
+<h2>Basic Structure of a Bootstrap Grid</h2>
+<p>The following is a basic structure of a Bootstrap grid:</p>
+<div class="w3-example htmlHigh">
+ <div class="w3-code notranslate">
+  &lt;div class=&quot;row&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;row&quot;&gt;<br>&#xA0; ...<br>&lt;/div&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt; &lt;div class=&quot;col-*-*&quot;&gt;&lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;row&quot;&gt; ...&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>First; create a row (<code class="w3-codespan">&lt;div 
+class=&quot;row&quot;&gt;</code>). Then, add the desired number of columns (tags with appropriate 
+<code class="w3-codespan">.col-*-*</code> classes). Note that numbers in <code class="w3-codespan">.col-*-*</code> should always add up to 12 for each row.</p>
+<p>Below we have collected some examples of basic Bootstrap grid layouts.</p>
+<hr>
+
+<h2>Three Equal Columns</h2>
+<div class="container-fluid" style="margin:8px 0 15px 0;">
+<div class="row test">
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-4">.col-sm-4</div>
+</div>
+</div>
+<p>The following example shows how to get a three equal-width columns starting at tablets and scaling to large desktops. 
+On mobile phones, the columns will automatically stack:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_grid_ex1&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Two Unequal Columns</h2>
+<div class="container-fluid" style="margin:8px 0 15px 0;">
+<div class="row test">
+  <div class="col-sm-4">.col-sm-4</div>
+  <div class="col-sm-8">.col-sm-8</div>
+</div>
+</div>
+<p>The following example shows how to get two various-width columns starting at 
+tablets and scaling to large desktops:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-8&quot;&gt;.col-sm-8&lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_grid_ex3&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-4&quot;&gt;.col-sm-4&lt;/div&gt; &lt;div class=&quot;col-sm-8&quot;&gt;.col-sm-8&lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p><strong>Tip:</strong> You will learn more about Bootstrap grids later in this tutorial.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_get_started.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_typography.asp">Next &#x276F;</a>
+</div>

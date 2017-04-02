@@ -1,0 +1,199 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">JS Scrollspy</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_popover.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_tab.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JS Scrollspy (scrollspy.js)</h2>
+<p>The Scrollspy plugin is used to automatically update links in a navigation 
+list based on scroll position.</p>
+<p>For a tutorial about Scrollspy, read our <a href="bootstrap_scrollspy.asp">Bootstrap Scrollspy Tutorial</a>.</p>
+<p><strong>Tip:</strong> The Scrollspy plugin is often used together with the
+<a href="bootstrap_ref_js_affix.asp">Affix</a> plugin.</p>
+<hr>
+
+<h2>Via data-* Attributes</h2>
+
+<p>Add <code class="w3-codespan">data-spy=&quot;scroll&quot;</code> to the element that should be used as the scrollable 
+area (often this is the <code class="w3-codespan">&lt;body&gt;</code> element).</p>
+<p>Then add the <code class="w3-codespan">data-target</code> attribute with a value of the id or the class name 
+of the navigation bar (<code class="w3-codespan">.navbar</code>). This is to make sure that the navbar 
+is connected with the scrollable area.</p>
+<p>Note that scrollable elements must match the ID of the links inside the navbar&apos;s 
+list items 
+(<code class="w3-codespan">&lt;div id=&quot;section1&quot;&gt;</code> matches <code class="w3-codespan">&lt;a href=&quot;#section1&quot;&gt;</code>).</p>
+<p>The optional <code class="w3-codespan">data-offset</code> attribute specifies the number of pixels to offset 
+from top when calculating the position of scroll. This is useful when you feel 
+that the links inside the navbar changes the active state too soon or too early 
+when jumping to the scrollable elements. Default is 10 pixels.</p>
+
+<div class="w3-panel w3-note">
+  <p><strong>Requires relative positioning: </strong>The element with 
+data-spy=&quot;scroll&quot; 
+requires the CSS <strong>position</strong> property, with a value of &quot;relative&quot; 
+to work properly.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!-- The scrollable area --&gt;<br>&lt;body data-spy=&quot;scroll&quot; 
+data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;<br><br>&lt;!-- The navbar - The 
+&lt;a&gt; elements are used to jump to a section in the scrollable area --&gt;<br>&lt;nav 
+class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;<br>...<br>&#xA0; &lt;ul class=&quot;nav 
+navbar-nav&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#section1&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0; 
+...<br>&lt;/nav&gt;<br><br>&lt;!-- Section 1 
+--&gt;<br>&lt;div id=&quot;section1&quot;&gt;<br>&#xA0;&#xA0;&lt;h1&gt;Section 1&lt;/h1&gt;<br>&#xA0;&#xA0;&lt;p&gt;Try to scroll this page and look at 
+the navigation bar while scrolling!&lt;/p&gt;<br>&lt;/div&gt;<br>...<br><br>
+&lt;/body&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_scrollspy&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;!-- The scrollable area --&gt;&lt;body data-spy=&quot;scroll&quot; 
+data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;&lt;!-- The navbar - The 
+&lt;a&gt; elements are used to jump to a section in the scrollable area --&gt;&lt;nav 
+class=&quot;navbar navbar-inverse navbar-fixed-top&quot;&gt;... &lt;ul class=&quot;nav 
+navbar-nav&quot;&gt; &lt;li&gt;&lt;a href=&quot;#section1&quot;&gt;Section 1&lt;/a&gt;&lt;/li&gt; 
+...&lt;/nav&gt;&lt;!-- Section 1 
+--&gt;&lt;div id=&quot;section1&quot;&gt;&lt;h1&gt;Section 1&lt;/h1&gt;&lt;p&gt;Try to scroll this page and look at 
+the navigation bar while scrolling!&lt;/p&gt;&lt;/div&gt;...
+&lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Via JavaScript</h2>
+<p>Enable manually with:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+$(&apos;body&apos;).scrollspy({target: &quot;.navbar&quot;})
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_scrollspy_js&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;$(&apos;body&apos;).scrollspy({target: &quot;.navbar&quot;})&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Scrollspy Options</h2>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, 
+append the option name to data-, as in data-offset=&quot;&quot;.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:15%;">Name</th>
+    <th style="width:15%;">Type</th>
+    <th style="width:10%;">Default</th>
+    <th style="width:45%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>offset</td>
+    <td>number</td>
+    <td>10</td>
+    <td>
+ Specifies the number of pixels to offset from top when calculating the position of scroll</td>
+  <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_scrollspy_offset&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+
+<h2>Scrollspy Methods</h2>
+<p>The following table lists all available scrollspy methods.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Method</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>.scrollspy(&quot;refresh&quot;)</td>
+    <td>When adding and removing elements from the scrollspy, this method can be used to refresh the document</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_scrollspy_refresh&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+</div>
+
+<h2>Scrollspy Events</h2>
+<p>The following table lists all available scrollspy events.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>activate.bs.scrollspy</td>
+    <td>Occurs when a new item becomes activated by the scrollspy</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_scrollspy_activate&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>More Examples</h2>
+
+<h3>Scrollspy with animated scroll</h3>
+<p>How to add a smooth page scroll to an anchor on the same page:</p>
+<div class="w3-example">
+<h3>Smooth scrolling</h3>
+<div class="w3-code notranslate jsHigh">
+ // Add scrollspy to &lt;body&gt;<br>$(&apos;body&apos;).scrollspy({target: &quot;.navbar&quot;, offset: 50});<br><br>// Add smooth scrolling on all links inside the navbar<br>
+ $(&quot;#myNavbar a&quot;).on(&apos;click&apos;, function(event) {<br><br>&#xA0; // Make sure this.hash has a value before overriding default behavior<br>&#xA0; if (this.hash !== &quot;&quot;) {<br><br>&#xA0;&#xA0;&#xA0; // Prevent default anchor click behavior<br>&#xA0;&#xA0;&#xA0; event.preventDefault();<br><br>&#xA0;&#xA0;&#xA0; // Store hash<br>&#xA0;&#xA0;&#xA0; var hash = this.hash;<br><br>&#xA0;&#xA0;&#xA0; // Using jQuery&apos;s animate() method to add smooth page scroll<br>&#xA0;&#xA0;&#xA0; // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area<br>&#xA0;&#xA0;&#xA0; $(&apos;html, body&apos;).animate({<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; scrollTop: $(hash).offset().top<br>&#xA0;&#xA0;&#xA0; }, 800, function(){<br>
+ <br>&#xA0;&#xA0;&#xA0; // Add hash (#) to URL when done scrolling (default click behavior)<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; window.location.hash = hash;<br>&#xA0;&#xA0;&#xA0; });<br><br>&#xA0; } // End if<br><br>});</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_scrollspy_animate&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;// Add scrollspy to &lt;body&gt;$(&apos;body&apos;).scrollspy({target: &quot;.navbar&quot;, offset: 50});// Add smooth scrolling on all links inside the navbar
+ $(&quot;#myNavbar a&quot;).on(&apos;click&apos;, function(event) { // Make sure this.hash has a value before overriding default behavior if (this.hash !== &quot;&quot;) { // Prevent default anchor click behavior event.preventDefault(); // Store hash var hash = this.hash; // Using jQuery&apos;s animate() method to add smooth page scroll // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area $(&apos;html, body&apos;).animate({ scrollTop: $(hash).offset().top }, 800, function(){
+  // Add hash (#) to URL when done scrolling (default click behavior) window.location.hash = hash; }); } // End if});&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Scrollspy &amp; Affix</h3>
+<p>Using the <a href="bootstrap_affix.asp">Affix</a> plugin together with the Scrollspy plugin:</p>
+<div class="w3-example">
+<h3>Horizontal Menu (Navbar)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;<br><br>&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;<br>
+ ...<br>&lt;/nav&gt;<br><br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;
+ ...&lt;/nav&gt;&lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Vertical Menu (Sidenav)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;<br><br>
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt;<br>&#xA0; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;<br>&#xA0; ...<br>&lt;/nav&gt;<br>
+ <br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt; ...&lt;/nav&gt;
+ &lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_popover.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_tab.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,159 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.40:504699,0.50:504701,0.80:504704,0.60:504702,0.70:504703,1.60:504712,3.50:504724,4.00:504725,0.15:504694,1.20:504708,1.50:504711,2.80:504721,3.00:504722,0.05:504692,5.00:504727,0.20:504695,0.25:504696,0.35:504698,0.45:504700,1.00:504706,1.10:504707,0.10:504693,0.90:504705,1.30:504709,1.80:504714,1.90:504715,2.00:504716,0.30:504697,1.70:504713,2.20:504718,2.40:504719,2.60:504720,1.40:504710,4.50:504726,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Performance</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_mistakes.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_reserved.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">How to speed up your JavaScript code.</p>
+<hr>
+
+<h2>Reduce Activity in Loops</h2>
+<p>Loops are often used in programming.</p>
+<p>Each statement in a loop, including the for statement, is executed for each iteration of the 
+loop.</p>
+<p>Statements or assignments that can be placed outside the loop will make the 
+loop run faster. </p>
+
+<div class="w3-example">
+<h3>Bad:</h3>
+<div class="w3-code notranslate jsHigh">
+ var i;<br>for (i = 0; i &lt; arr.length; i++) {<br>
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var i;for (i = 0; i &lt; arr.length; i++) {&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Better Code:</h3>
+<div class="w3-code notranslate jsHigh">
+ var i;<br>var
+l = arr.length;<br>for (i = 0; i &lt; l; i++) {</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var i;var
+l = arr.length;for (i = 0; i &lt; l; i++) {&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The bad code accesses the length property of an array each time the loop is 
+iterated.</p>
+<p>The better code accesses the length property outside the loop and makes the 
+loop run faster.</p>
+
+<hr>
+
+<h2>Reduce DOM Access</h2>
+<p>Accessing the HTML DOM is very slow, compared to other JavaScript statements.</p>
+<p>If you expect to access a DOM element several times, access it once, and use 
+it as a local variable:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var obj;<br>obj = document.getElementById(&quot;demo&quot;);<br>obj.innerHTML = &quot;Hello&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_element_reference" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj;obj = document.getElementById(&quot;demo&quot;);obj.innerHTML = &quot;Hello&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Reduce DOM Size</h2>
+<p>Keep the number of elements in the HTML DOM small.</p>
+<p>This will always 
+improve page loading, and speed up rendering (page display), especially on smaller devices.</p>
+<p>Every attempt to search the DOM (like getElementsByTagName) will benefit 
+from a smaller DOM.</p>
+<hr>
+
+<h2>Avoid Unnecessary Variables</h2>
+<p>Don&apos;t create new variables if you don&apos;t plan to save values.</p>
+<p>Often you can replace code like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var fullName = firstName + &quot; &quot; + lastName;<br>
+document.getElementById(&quot;demo&quot;).innerHTML = fullName;
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fullName = firstName + &quot; &quot; + lastName;
+document.getElementById(&quot;demo&quot;).innerHTML = fullName;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>With this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+document.getElementById(&quot;demo&quot;).innerHTML = firstName + &quot; &quot; + lastName
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;document.getElementById(&quot;demo&quot;).innerHTML = firstName + &quot; &quot; + lastName&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Delay JavaScript Loading</h2>
+<p>Putting your scripts at the bottom of the page body lets the browser load the 
+page first.</p>
+<p>While a script is downloading, the browser will not start any other 
+downloads. In addition all parsing and rendering activity might be blocked.</p>
+
+<div class="w3-panel w3-note">
+<p>The HTTP specification defines that browsers should not download more than 
+two components in parallel.</p>
+</div>
+
+<p>An alternative is to use <strong>defer=&quot;true&quot;</strong> in the script tag. The 
+defer attribute specifies that the script should be executed after the page has 
+finished parsing, but it only works for external scripts.</p>
+<p>If possible, you can add your script to the page by code, after the page has loaded:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>window.onload = downScripts;<br><br>function downScripts() {<br>&#xA0;&#xA0;&#xA0; 
+var element = document.createElement(&quot;script&quot;);<br>&#xA0;&#xA0;&#xA0; 
+element.src = &quot;myScript.js&quot;;<br>&#xA0;&#xA0;&#xA0; 
+document.body.appendChild(element);<br>}<br>&lt;/script&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;window.onload = downScripts;function downScripts() { 
+var element = document.createElement(&quot;script&quot;); 
+element.src = &quot;myScript.js&quot;; 
+document.body.appendChild(element);}&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Avoid Using with</h2>
+<p>Avoid using the <strong>with keyword</strong>. It has a negative effect on 
+speed. It also clutters up JavaScript scopes.</p>
+<p>The with keyword is <strong>not allowed</strong> in strict mode.</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_mistakes.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_reserved.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,321 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Date Formats</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_dates.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_date_methods.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>JavaScript Date Input</h2>
+<p>There are generally 4 types of JavaScript date input formats:</p>
+<table class="w3-table-all">
+ <tr>
+  <th>Type</th>
+  <th>Example</th>
+ </tr>
+ <tr>
+  <td>ISO Date</td>
+  <td>&quot;2015-03-25&quot;  (The International Standard)</td>
+ </tr>
+ <tr>
+  <td>Short Date</td>
+  <td>&quot;03/25/2015&quot;</td>
+ </tr>
+ <tr>
+  <td>Long Date</td>
+  <td>&quot;Mar 25 2015&quot; or &quot;25 Mar 2015&quot;</td>
+ </tr>
+ <tr>
+  <td>Full Date</td>
+  <td>&quot;Wednesday March 25 2015&quot;</td>
+ </tr>
+</table>
+<div class="w3-container w3-note">
+<p>The ISO format follows a strict standard in JavaScript.</p>
+ <p>The other formats are not 
+ so well defined and might be browser specific.</p>
+</div>
+<hr>
+
+<h2>JavaScript Date Output</h2>
+<p>Independent of input format, JavaScript will (by default) output dates in full 
+text string format:</p>
+<div class="w3-example">
+<div class="w3-code notranslate">
+<script>document.write(new Date("2015-03-25"))
+</script>
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<hr>
+<h2>JavaScript ISO Dates</h2>
+
+<p>ISO 8601 is the international standard for the representation of dates and 
+times.</p>
+<p>The ISO 8601 syntax (YYYY-MM-DD) is also the preferred JavaScript date format:</p>
+<div class="w3-example">
+<h3>Example (Complete date)</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015-03-25&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_iso1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015-03-25&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The computed date will be relative to your time zone.<br>Depending on your time zone, the result above 
+will vary between March 24 and March 25.</p>
+</div>
+
+<hr>
+<h2>ISO Dates (Year and Month)</h2>
+
+<p>ISO dates can be written without specifying the day (YYYY-MM):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015-03&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_iso2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015-03&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Time zones will vary the result above between February 28 and March 01.</p>
+</div>
+
+<hr>
+<h2>ISO Dates (Only Year)</h2>
+
+<p>ISO dates can be written without month and day (YYYY):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_iso3" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Time zones will vary the result above between December 31 2014 and January 01 2015.</p>
+</div>
+
+<hr>
+<h2>ISO Dates (Date-Time)</h2>
+
+<p>ISO dates can be written with added hours, minutes, and seconds 
+(YYYY-MM-DDTHH:MM:SSZ):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015-03-25T12:00:00Z&quot;);
+</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_iso4" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015-03-25T12:00:00Z&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>Date and time is separated with a capital T.</p>
+<p>UTC time is defined with a capital letter Z.</p>
+<p>If you want to modify the time relative to UTC, remove the Z and add +HH:MM or -HH:MM 
+instead: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015-03-25T12:00:00-06:30&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_iso5" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015-03-25T12:00:00-06:30&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p>UTC (Universal Time Coordinated)  is the same as GMT (Greenwich Mean Time).</p>
+</div>
+
+<div class="w3-panel w3-warning">
+<p>Omitting T or Z in a date-time string can give different result in different browser.</p>
+</div>
+
+<hr>
+<h2>Time Zones</h2>
+<p>When setting a date, without specifying the time zone, JavaScript will use 
+the browser&apos;s time zone.</p>
+<p>When getting a date, without specifying the time zone, the result is 
+converted to the browser&apos;s time zone.</p>
+<p>In other words: If a date/time is created in GMT (Greenwich Mean Time), the 
+date/time will be converted to CDT (Central US Daylight Time) if a user browses 
+from central US.</p>
+  
+<hr>
+<h2>JavaScript Short Dates.</h2>
+<p>Short dates are written with an &quot;MM/DD/YYYY&quot; syntax like this:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;03/25/2015&quot;);</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_7" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;03/25/2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<hr>
+<h2>WARNINGS !</h2>
+
+<div class="w3-example">
+
+<p>In some browsers, months or days with no leading zeroes may produce an error: </p>
+<div class="w3-code notranslate jsHigh">
+ var d = new Date(&quot;2015-3-25&quot;);
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015-3-25&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<div class="w3-example">
+  
+<p>The behavior of &quot;YYYY/MM/DD&quot; is undefined.<br>Some browsers will 
+try to guess the format. Some will return NaN.</p>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;2015/03/25&quot;);</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;2015/03/25&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+    
+<div class="w3-example">
+  
+<p>The behavior of&#xA0; &quot;DD-MM-YYYY&quot; is also undefined.<br>Some browsers will 
+try to guess the format. Some will return NaN.</p>
+<div class="w3-code notranslate jsHigh">
+  var d = new Date(&quot;25-03-2015&quot;);
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;25-03-2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+    
+<hr>
+<h2>JavaScript Long Dates.</h2>
+<p>Long dates are most often written with a &quot;MMM DD YYYY&quot; syntax like this: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;Mar 25 2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;Mar 25 2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Month and day can be in any order:</p>
+  
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;25 Mar 2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;25 Mar 2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>And, month can be written in full (January), or abbreviated (Jan):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;January 25 2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_4" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;January 25 2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;Jan 25 2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_5" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;Jan 25 2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>Commas are ignored. Names are case insensitive:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;JANUARY, 25, 2015&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_6" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;JANUARY, 25, 2015&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<hr>
+<h2>JavaScript Full Date</h2>
+  
+<p>JavaScript will accept date strings in &quot;full JavaScript format&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;Wed Mar 25 2015 09:56:24 GMT+0100
+(W. Europe Standard Time)&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_10" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;Wed Mar 25 2015 09:56:24 GMT+0100
+(W. Europe Standard Time)&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+  
+<p>JavaScript will ignore errors both in the day name and in the time 
+parentheses:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var d = new Date(&quot;Fri Mar 25 2015 09:56:24 GMT+0100
+(Tokyo Time)&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_string_11" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var d = new Date(&quot;Fri Mar 25 2015 09:56:24 GMT+0100
+(Tokyo Time)&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_dates.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_date_methods.asp">Next &#x276F;</a>
+</div>

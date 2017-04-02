@@ -1,0 +1,486 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">String Methods</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_strings.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_numbers.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">String methods help you to work with strings.</p>
+
+<hr>
+<h2>String Methods and Properties</h2>
+<p>Primitive values, like &quot;John Doe&quot;, cannot have properties 
+or methods (because they are not objects). </p>
+<p>But with JavaScript, methods and properties are also available to 
+primitive values, because JavaScript treats primitive values 
+as objects when executing methods and properties.</p>
+
+<hr>
+
+<h2>String Length</h2>
+<p>The <strong>length</strong> property returns the length of a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;<br>var sln = txt.length;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_length"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var txt = &quot;ABCDEFGHIJKLMNOPQRSTUVWXYZ&quot;;var sln = txt.length;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Finding a String in a String</h2>
+<p>The <strong>indexOf()</strong> method returns the index of (the position of) 
+the <strong>first</strong> occurrence of a specified text in a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;<br>
+var pos = str.indexOf(&quot;locate&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_indexof" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;
+var pos = str.indexOf(&quot;locate&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The <strong>lastIndexOf()</strong> method returns the index of the <strong>last</strong> 
+occurrence of a specified text in a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;<br>
+var pos = str.lastIndexOf(&quot;locate&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_lastindexof" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;
+var pos = str.lastIndexOf(&quot;locate&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Both the indexOf(), and the lastIndexOf() methods return -1 if the text is not found.</p>
+
+<div class="w3-panel w3-note">
+<p>JavaScript counts positions from zero.<br>0 is the first position in a 
+string, 1 is the second, 2 is the third ...</p>
+</div>
+
+<p>Both methods accept a second parameter as the starting position for the 
+search.</p>
+<hr>
+
+<h2>Searching for a String in a String</h2>
+<p>The <strong>search()</strong> method searches a string for a specified value 
+and returns the position of the match:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;<br>
+var pos = str.search(&quot;locate&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_search_locate" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Please locate where &apos;locate&apos; occurs!&quot;;
+var pos = str.search(&quot;locate&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Did You Notice?</h2>
+<p>The two methods, indexOf() and search(), are equal.</p>
+<p>They accept the same arguments (parameters), and they return the same value.</p>
+<p>The two methods are equal, but the search() method can take much more 
+powerful search values.</p>
+<p>You will learn more about powerful search values in the chapter about 
+regular expressions.</p>
+<hr>
+<h2>Extracting String Parts</h2>
+<p>There are 3 methods for extracting a part of a string:</p>
+<ul>
+  <li>slice(start, end)</li>
+  <li>substring(start, end)</li>
+  <li>substr(start, length)</li>
+</ul>
+<hr>
+<h2>The slice() Method</h2>
+<p><strong>slice()</strong> extracts a part of a string and returns the 
+extracted part in a new string.</p>
+<p>The method takes 2 parameters: the starting index (position), and the ending 
+index (position).</p>
+<p>This example slices out a portion of a string from position 7 to position 13: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Apple, Banana, Kiwi&quot;;<br>
+var res = str.slice(7, 13);
+</div>
+<p>The result of res will be:</p>
+<div class="w3-code notranslate">
+Banana</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_string_slice" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Apple, Banana, Kiwi&quot;;
+var res = str.slice(7, 13);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If a parameter is negative, the position is counted from the 
+end of the string.</p>
+<p>This example slices out a portion of a string from position -12 to position 
+-6: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Apple, Banana, Kiwi&quot;;<br>
+var res = str.slice(-12, -6);
+</div>
+<p>The result of res will be:</p>
+<div class="w3-code notranslate">
+Banana</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_slice_negative" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you omit the second parameter, the method will slice out the rest of the string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var res = str.slice(7);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_slice_rest" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Apple, Banana, Kiwi&quot;;
+var res = str.slice(-12, -6);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>or, counting from the end:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var res = str.slice(-12);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_slice_rest_negative" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Negative positions do not work in Internet Explorer 8 and earlier.</p>
+</div>
+
+<hr>
+<h2>The substring() Method</h2>
+
+<p><strong>substring()</strong> is similar to slice().</p>
+<p>The difference is that substring() cannot accept negative indexes.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Apple, Banana, Kiwi&quot;;<br>
+var res = str.substring(7, 13);
+</div>
+<p>The result of <em>res</em> will be:</p>
+<div class="w3-code notranslate">
+Banana</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_string_substring" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var res = str.slice(7);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you omit the second parameter, substring() will slice out the rest of the 
+string.</p>
+
+<hr>
+<h2>The substr() Method</h2>
+<p><strong>substr()</strong> is similar to slice().</p>
+<p>The difference is 
+that the second parameter specifies the <strong>length</strong> 
+of the extracted part.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Apple, Banana, Kiwi&quot;;<br>
+var res = str.substr(7, 6);
+</div>
+<p>The result of res will be:</p>
+<div class="w3-code notranslate">
+Banana</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_string_substr" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var res = str.slice(-12);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If the first parameter is negative, the position counts from the end of the 
+string.</p>
+<p>The second parameter can not be negative, because it defines the length.</p>
+<p>If you omit the second parameter, substr() will slice out the rest of the 
+string.</p>
+<hr>
+
+<h2>Replacing String Content</h2>
+<p>The <strong>replace()</strong> method replaces a specified value with another 
+value in a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+str = &quot;Please visit Microsoft!&quot;;<br>
+var n = str.replace(&quot;Microsoft&quot;, &quot;W3Schools&quot;);<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_replace" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Apple, Banana, Kiwi&quot;;
+var res = str.substring(7, 13);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The replace() method can also take a regular expression as the search value.</p>
+<p>By default, the replace() function replaces only the first match. To replace 
+all matches, use a regular expression with a g flag (for global match):<br>
+</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+str = &quot;Please visit Microsoft!&quot;;<br>
+var n = str.replace(/Microsoft/g, &quot;W3Schools&quot;);<br>
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_replace_global" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The replace() method does not change the string it is called on. It returns a new string.</p>
+</div>
+
+<hr>
+<h2>Converting to Upper and Lower Case</h2>
+<p>A string is converted to upper case with <strong>toUpperCase()</strong>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var text1 = &quot;Hello World!&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // String<br>
+var text2 = text1.toUpperCase();&#xA0;&#xA0;// text2 is text1 converted to upper</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_toupper" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Apple, Banana, Kiwi&quot;;
+var res = str.substr(7, 6);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>A string is converted to lower case with <strong> toLowerCase()</strong>:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var text1 = &quot;Hello World!&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // String<br>
+var text2 = text1.toLowerCase();&#xA0;&#xA0;// text2 is text1 
+converted to lower
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_tolower" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The concat() Method</h2>
+<p><strong>concat()</strong> joins two or more strings:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var text1 = &quot;Hello&quot;;<br>
+var text2 = &quot;World&quot;;<br>
+text3 = text1.concat(&quot; &quot;, text2);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_concat" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;str = &quot;Please visit Microsoft!&quot;;
+var n = str.replace(&quot;Microsoft&quot;, &quot;W3Schools&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The <strong>concat()</strong> method can be used instead of the plus operator. 
+These two lines do the same:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var text = &quot;Hello&quot; + &quot; &quot; + &quot;World!&quot;;<br>
+var text = &quot;Hello&quot;.concat(&quot; &quot;, &quot;World!&quot;);</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;str = &quot;Please visit Microsoft!&quot;;
+var n = str.replace(/Microsoft/g, &quot;W3Schools&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>All string methods return a new string. They don&apos;t modify the original string.<br>
+Formally said: Strings are immutable: Strings cannot be changed, only replaced.
+</p>
+</div>
+
+<hr>
+<h2>Extracting String Characters</h2>
+<p>There are 2 <strong>safe</strong> methods for extracting string characters:</p>
+<ul>
+  <li>charAt(position)</li>
+  <li>charCodeAt(position)</li>
+</ul>
+<hr>
+
+<h2>The charAt() Method</h2>
+<p>The <strong>charAt()</strong> method returns the character at a specified 
+index (position) in a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;HELLO WORLD&quot;;<br>
+str.charAt(0);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // returns H
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_charat" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var text1 = &quot;Hello World!&quot;; // String
+var text2 = text1.toUpperCase();// text2 is text1 converted to upper&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The charCodeAt() Method</h2>
+<p>The <strong>charCodeAt()</strong> method returns the unicode of the character 
+at a specified index in a string:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;HELLO WORLD&quot;;<br><br>
+str.charCodeAt(0);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // returns 72
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_charcodeat" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var text1 = &quot;Hello World!&quot;; // String
+var text2 = text1.toLowerCase();// text2 is text1 
+converted to lower&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<h2>Accessing a String as an Array is Unsafe</h2>
+<p>You might have seen code like this, accessing a string as an array:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var str = &quot;HELLO WORLD&quot;;<br><br>
+str[0];&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // returns H
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var text1 = &quot;Hello&quot;;
+var text2 = &quot;World&quot;;
+text3 = text1.concat(&quot; &quot;, text2);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This is <strong>unsafe</strong> and <strong>unpredictable:</strong> </p>
+<ul>
+  <li>It does not work in all browsers (not in IE5, IE6, IE7)</li>
+  <li>It makes strings look like arrays (but they are not)</li>
+  <li>str[0] = &quot;H&quot; does not give an error (but does not work) </li>
+</ul>
+
+<p>If you want to read a string as an array, convert it to an array first.</p>
+<hr>
+
+<h2>Converting a String to an Array</h2>
+<p>A string can be converted to an array with the <strong>split()</strong> method:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var txt = &quot;a,b,c,d,e&quot;;&#xA0;&#xA0;&#xA0;// String<br>
+txt.split(&quot;,&quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;// Split on commas<br>
+txt.split(&quot; &quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Split on spaces<br>
+txt.split(&quot;|&quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Split on pipe
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_split" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var text = &quot;Hello&quot; + &quot; &quot; + &quot;World!&quot;;
+var text = &quot;Hello&quot;.concat(&quot; &quot;, &quot;World!&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>If the separator is omitted, the returned array will contain the whole string 
+in index [0].</p>
+<p>If the separator is &quot;&quot;, the returned array will be an array of single 
+characters:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var txt = &quot;Hello&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// String<br>
+txt.split(&quot;&quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Split in characters
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_split_char" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;HELLO WORLD&quot;;
+str.charAt(0); // returns H&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<h2>Complete String Reference</h2>
+<p>For a complete reference, go to our <a href="/jsref/jsref_obj_string.asp">Complete 
+JavaScript String Reference</a>.</p>
+<p>The reference contains descriptions and examples of all string properties and methods.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet5" target="_blank">Exercise 5 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_stringsmet6" target="_blank">Exercise 6 &#xBB;</a>
+</p>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_strings.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_numbers.asp">Next &#x276F;</a>
+</div>

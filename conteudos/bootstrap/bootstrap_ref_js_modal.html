@@ -1,0 +1,255 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">JS Modal</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_dropdown.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_popover.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JS Modal (modal.js)</h2>
+<p>The Modal plugin is a dialog box/popup window that is displayed on top of the 
+current page.</p>
+<p>For a tutorial about Modals, read our <a href="bootstrap_modal.asp">Bootstrap 
+Modal Tutorial</a>.</p>
+<!--
+<div class="w3-example">
+<h3>Example</h3>
+<div class="xexample_code notranslate htmlHigh">
+<button style="margin:7px 15px 2px 0;" type="button" class="btn btn-success btn-lg" data-toggle="modal" data-target="#myModal">Click To Open Modal</button>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-lg">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+          <h4 class="modal-title" id="myModalLabel">Modal Header</h4>
+        </div>
+        <div class="modal-body">
+          <p>Some text in the modal.</p>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        </div>
+      </div>
+    </div>
+</div>
+</div>
+ <br>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;!-- Trigger the modal with a button --&gt;<br>&lt;button type=&quot;button&quot; class=&quot;btn btn-info btn-lg&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Open Modal&lt;/button&gt;<br><br>&lt;!-- Modal --&gt;<br>&lt;div id=&quot;myModal&quot; class=&quot;modal fade&quot; role=&quot;dialog&quot;&gt;<br>&nbsp; &lt;div class=&quot;modal-dialog&quot;&gt;<br><br>&nbsp;&nbsp;&nbsp; &lt;!-- Modal content--&gt;<br>&nbsp;&nbsp;&nbsp; &lt;div class=&quot;modal-content&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;!-- Modal Header --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;modal-header&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;<br>
+ &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;h4 class=&quot;modal-title&quot;&gt;Modal Header&lt;/h4&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;!-- Modal Body --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;modal-body&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;p&gt;Some text in the modal.&lt;/p&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;  &lt;!-- Modal Footer --&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;div class=&quot;modal-footer&quot;&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;button type=&quot;button&quot; class=&quot;btn btn-default&quot; data-dismiss=&quot;modal&quot;&gt;Close&lt;/button&gt;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br>&nbsp;&nbsp;&nbsp; &lt;/div&gt;<br><br>&nbsp; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_modal&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+-->
+
+<hr>
+<h2>The Modal Plugin Classes</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:25%;">Class</th>
+    <th style="width:75%;">Description</th>
+  </tr>
+  <tr>
+    <td>.modal</td>
+    <td>Creates a modal</td>
+  </tr>
+  <tr>
+    <td>.modal-content</td>
+    <td>Styles the modal properly with border, background-color, etc. Use this class to add the modal&apos;s header, body, and footer.</td>
+  </tr>
+  <tr>
+    <td>.modal-header</td>
+    <td>Defines the style for the header of the modal</td>
+  </tr>
+  <tr>
+    <td>.modal-body</td>
+    <td>Defines the style for the body of the modal</td>
+  </tr>
+  <tr>
+    <td>.modal-footer</td>
+    <td>Defines the style for the footer in the modal. <strong>Note:</strong> This area is right-aligned by default. To change this, overwrite CSS with text-align:left|center</td>
+  </tr>
+  <tr>
+    <td>.modal-sm</td>
+    <td>Specifies a small modal</td>
+  </tr>
+  <tr>
+    <td>.modal-lg</td>
+    <td>Specifies a large modal</td>
+  </tr>
+  <tr>
+    <td>.fade</td>
+    <td>Adds an animation/transition effect which fades the modal in and out</td>
+  </tr>
+</table>
+<hr>
+
+<h2>Trigger the Modal Via data-* Attributes</h2>
+<p>Add <code class="w3-codespan">data-toggle=&quot;modal&quot;</code> and <code class="w3-codespan">data-target=&quot;#modalID&quot;</code> to 
+any element.</p>
+<p><strong>Note:</strong> For <code class="w3-codespan">&lt;a&gt;</code> elements, omit <code class="w3-codespan">data-target</code>, and use 
+<code class="w3-codespan">href=&quot;#modalID&quot;</code> instead:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!-- Buttons --&gt;<br>&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Open Modal&lt;/button&gt;<br><br>&lt;!-- Links --&gt;<br>&lt;a data-toggle=&quot;modal&quot; href=&quot;#myModal&quot;&gt;Open Modal&lt;/a&gt;<br><br>&lt;!-- Other elements --&gt;<br>&lt;p data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Open Modal&lt;/p&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_modal&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;!-- Buttons --&gt;&lt;button type=&quot;button&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Open Modal&lt;/button&gt;&lt;!-- Links --&gt;&lt;a data-toggle=&quot;modal&quot; href=&quot;#myModal&quot;&gt;Open Modal&lt;/a&gt;&lt;!-- Other elements --&gt;&lt;p data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Open Modal&lt;/p&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Trigger Via JavaScript</h2>
+<p>Enable manually with:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ $(&quot;#myModal&quot;).modal()
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_modal_js&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;$(&quot;#myModal&quot;).modal()&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Modal Options</h2>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, 
+append the option name to data-, as in data-backdrop=&quot;&quot;.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:14%;">Name</th>
+    <th style="width:16%;">Type</th>
+    <th style="width:10%;">Default</th>
+    <th style="width:52%;">Description</th>
+    <th style="padding-left:47px;">Try it</th>
+  </tr>
+  <tr>
+    <td>backdrop</td>
+    <td>boolean or the string &quot;static&quot;</td>
+    <td>true</td>
+    <td>
+ Specifies whether the modal should have a dark overlay:<br><br>
+ <ul>
+  <li>true - dark overlay</li> 
+  <li>false - no overlay (transparent)</li>
+ </ul>
+ <p>If you specify the value &quot;static&quot;, it is not possible to close the modal when clicking outside of it</p>
+  </td>
+    <td><a style="margin-bottom:5px;" target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_backdrop&amp;stacked=h">Using JS</a>
+    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_backdrop_data&amp;stacked=h">Using data</a></td>
+  </tr>
+  <tr>
+    <td>keyboard</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Specifies whether the modal can be closed with the escape key (Esc):<br><br>
+    <ul>
+  <li>true - the modal can be closed with Esc</li> 
+  <li>false - the modal cannot be closed with Esc</li>
+ </ul>
+  </td>
+    <td><a style="margin-bottom:5px;" target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_keyboard&amp;stacked=h">Using JS</a>
+    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_keyboard_data&amp;stacked=h">Using data</a></td>
+  </tr>
+  <tr>
+    <td>show</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>Specifies whether to show the modal when initialized</td>
+    <td><a style="margin-bottom:5px;" target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_show&amp;stacked=h">Using JS</a>
+    <a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_show_data&amp;stacked=h">Using data</a></td>
+  </tr>
+</table>
+
+<h2>Modal Methods</h2>
+<p>The following table lists all available modal methods.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Method</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>.modal(<em>options</em>)</td>
+    <td>Activates the content as a modal. See options above for valid values</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_backdrop&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.modal(&quot;toggle&quot;)</td>
+    <td>Toggles the modal</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_toggle&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.modal(&quot;show&quot;)</td>
+    <td>Opens the modal</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_show_hide&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.modal(&quot;hide&quot;)</td>
+    <td>Hides the modal</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_show_hide&amp;stacked=h">Try it</a></td>
+    </tr>
+</table>
+
+<h2>Modal Events</h2>
+<p>The following table lists all available modal events.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>show.bs.modal</td>
+    <td>Occurs when the modal is about to be shown</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_event_show&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>shown.bs.modal</td>
+    <td>Occurs when the modal is fully shown (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_event_shown&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hide.bs.modal</td>
+    <td>Occurs when the modal is about to be hidden</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_event_hide&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hidden.bs.modal</td>
+    <td>Occurs when the modal is fully hidden (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_modal_event_hidden&amp;stacked=h">Try it</a></td>
+    </tr>
+</table>
+<hr>
+
+<h2>More Examples</h2>
+<h3>Login Modal</h3>
+<p>The following example creates a modal for login:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container&quot;&gt;<br>&#xA0; &lt;h2&gt;Modal Login Example&lt;/h2&gt;<br>&#xA0; &lt;!-- Trigger the modal with a button --&gt;<br>&#xA0; &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; id=&quot;myBtn&quot;&gt;Login&lt;/button&gt;<br><br>&#xA0; &lt;!-- Modal --&gt;<br>&#xA0; &lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-dialog&quot;&gt;<br><br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;!-- Modal content--&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-content&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-header&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h4 style=&quot;color:red;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/span&gt; Login&lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-body&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;form role=&quot;form&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;label for=&quot;usrname&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Username&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usrname&quot; placeholder=&quot;Enter email&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;label for=&quot;psw&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/span&gt; Password&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;psw&quot; placeholder=&quot;Enter password&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot; checked&gt;Remember me&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-success btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-off&quot;&gt;&lt;/span&gt; Login&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/form&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-footer&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-default pull-left&quot; data-dismiss=&quot;modal&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/span&gt; Cancel&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Not a member? &lt;a href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Forgot &lt;a href=&quot;#&quot;&gt;Password?&lt;/a&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt; <br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_modal2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container&quot;&gt; &lt;h2&gt;Modal Login Example&lt;/h2&gt; &lt;!-- Trigger the modal with a button --&gt; &lt;button type=&quot;button&quot; class=&quot;btn btn-default btn-lg&quot; id=&quot;myBtn&quot;&gt;Login&lt;/button&gt; &lt;!-- Modal --&gt; &lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt; &lt;div class=&quot;modal-dialog&quot;&gt; &lt;!-- Modal content--&gt; &lt;div class=&quot;modal-content&quot;&gt; &lt;div class=&quot;modal-header&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt; &lt;h4 style=&quot;color:red;&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/span&gt; Login&lt;/h4&gt; &lt;/div&gt; &lt;div class=&quot;modal-body&quot;&gt; &lt;form role=&quot;form&quot;&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;usrname&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Username&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usrname&quot; placeholder=&quot;Enter email&quot;&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;psw&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-eye-open&quot;&gt;&lt;/span&gt; Password&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;psw&quot; placeholder=&quot;Enter password&quot;&gt; &lt;/div&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot; checked&gt;Remember me&lt;/label&gt; &lt;/div&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-success btn-block&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-off&quot;&gt;&lt;/span&gt; Login&lt;/button&gt; &lt;/form&gt; &lt;/div&gt; &lt;div class=&quot;modal-footer&quot;&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default btn-default pull-left&quot; data-dismiss=&quot;modal&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/span&gt; Cancel&lt;/button&gt; &lt;p&gt;Not a member? &lt;a href=&quot;#&quot;&gt;Sign Up&lt;/a&gt;&lt;/p&gt; &lt;p&gt;Forgot &lt;a href=&quot;#&quot;&gt;Password?&lt;/a&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_dropdown.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_popover.asp">Next &#x276F;</a>
+</div>

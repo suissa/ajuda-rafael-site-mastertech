@@ -1,0 +1,273 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Object Prototypes</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_object_methods.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_function_definition.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<p class="intro">Every JavaScript object has a prototype. The prototype is also 
+an object.</p>
+<p class="intro">All JavaScript objects inherit their properties and methods 
+from their prototype.</p>
+
+<hr>
+<h2>JavaScript Prototypes</h2>
+<p>All JavaScript objects inherit the properties and methods from their 
+prototype.</p>
+<p>Objects created using an object literal, or with new Object(), inherit from 
+a prototype called Object.prototype.</p>
+<p>Objects created with new Date() inherit the Date.prototype.</p>
+<p>The Object.prototype is on the top of the prototype chain.</p>
+<p>All JavaScript objects (Date, Array, RegExp, Function, ....) inherit from 
+the Object.prototype. </p>
+
+<hr>
+<h2>Creating a Prototype</h2>
+<p>The standard way to create an object prototype is to use an object constructor 
+function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function Person(first, last, age, eyecolor) {<br>
+&#xA0;&#xA0;&#xA0;
+this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0;
+this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0;
+this.age = age;<br>
+&#xA0;&#xA0;&#xA0;
+this.eyeColor = eyecolor;<br>
+}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function Person(first, last, age, eyecolor) {
+
+this.firstName = first;
+
+this.lastName = last;
+
+this.age = age;
+
+this.eyeColor = eyecolor;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>With a constructor function, you can use the <strong>new</strong> 
+keyword to create new objects from the same prototype:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var myFather = new Person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);<br>
+var myMother = new Person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myFather = new Person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);
+var myMother = new Person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The constructor function is the prototype for Person objects.<br>
+It is considered good practice to name constructor function with an upper-case first letter.</p>
+</div>
+
+<hr>
+<h2>Adding Properties and Methods to Objects</h2>
+<p>Sometimes you want to add new properties (or methods) to an existing object.</p>
+<p>Sometimes you want to add new properties (or methods) to all existing objects of a given type.</p>
+
+<p>Sometimes you want to add new properties (or methods) to an object prototype.</p>
+
+<hr>
+<h2>Adding a Property to an Object</h2>
+<p>Adding a new property to an existing object is easy: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+myFather.nationality = &quot;English&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;myFather.nationality = &quot;English&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The property will be added to myFather. Not to myMother. Not to any other 
+person objects.</p>
+
+<hr>
+<h2>Adding a Method to an Object</h2>
+<p>Adding a new method to an existing object is also easy: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+myFather.name = function () {<br>&#xA0;&#xA0;&#xA0; return this.firstName + &quot; &quot; + this.lastName;<br>};
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype8" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;myFather.name = function () { return this.firstName + &quot; &quot; + this.lastName;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The method will be added to myFather. Not to myMother.</p>
+
+<hr>
+<h2>Adding Properties to a Prototype</h2>
+
+<p>You cannot add a new property to a prototype the same way as you add a new 
+property to an existing object, because the prototype is not an existing 
+object.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ Person.nationality = &quot;English&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype3" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Person.nationality = &quot;English&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+
+<p>To add a new property to a prototype, you must add it to the 
+constructor function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function Person(first, last, age, eyecolor) {<br>
+&#xA0;&#xA0;&#xA0;
+this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0;
+this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0;
+this.age = age;<br>
+&#xA0;&#xA0;&#xA0;
+this.eyeColor = eyecolor;<br>&#xA0;&#xA0;&#xA0; this.nationality = &quot;English&quot;;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype4" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function Person(first, last, age, eyecolor) {
+
+this.firstName = first;
+
+this.lastName = last;
+
+this.age = age;
+
+this.eyeColor = eyecolor; this.nationality = &quot;English&quot;;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Prototype properties can have prototype values (default values).</p>
+</div>
+
+<hr>
+<h2>Adding Methods to a Prototype</h2>
+
+<p>Your constructor function can also define methods:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function Person(first, last, age, eyecolor) {<br>
+&#xA0;&#xA0;&#xA0;
+this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0;
+this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0;
+this.age = age;<br>
+&#xA0;&#xA0;&#xA0;
+this.eyeColor = eyecolor;<br>&#xA0;&#xA0;&#xA0; this.name = function() {return this.firstName + &quot; &quot; + this.lastName;};<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype7" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function Person(first, last, age, eyecolor) {
+
+this.firstName = first;
+
+this.lastName = last;
+
+this.age = age;
+
+this.eyeColor = eyecolor; this.name = function() {return this.firstName + &quot; &quot; + this.lastName;};
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Using the <strong>prototype</strong> Property</h2>
+<p>The JavaScript prototype property allows you to add new properties to an 
+existing prototype:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function Person(first, last, age, eyecolor) {<br>
+&#xA0;&#xA0;&#xA0; this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0; this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0; this.age = age;<br>
+&#xA0;&#xA0;&#xA0; this.eyeColor = eyecolor;<br>
+}<br>
+ Person.prototype.nationality = &quot;English&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype5" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function Person(first, last, age, eyecolor) {
+ this.firstName = first;
+ this.lastName = last;
+ this.age = age;
+ this.eyeColor = eyecolor;
+}
+ Person.prototype.nationality = &quot;English&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The JavaScript prototype property also allows you to add new methods to an 
+existing prototype:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function Person(first, last, age, eyecolor) {<br>
+&#xA0;&#xA0;&#xA0; this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0; this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0; this.age = age;<br>
+&#xA0;&#xA0;&#xA0; this.eyeColor = eyecolor;<br>
+}<br>
+ Person.prototype.name = function() {<br>
+&#xA0;&#xA0;&#xA0; return this.firstName + &quot; &quot; + this.lastName;<br>
+};
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_prototype6" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function Person(first, last, age, eyecolor) {
+ this.firstName = first;
+ this.lastName = last;
+ this.age = age;
+ this.eyeColor = eyecolor;
+}
+ Person.prototype.name = function() {
+ return this.firstName + &quot; &quot; + this.lastName;
+};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<p>Only modify your <strong>own</strong> prototypes. Never modify the prototypes of  
+standard JavaScript objects.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_object_methods.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_function_definition.asp">Next &#x276F;</a>
+</div>

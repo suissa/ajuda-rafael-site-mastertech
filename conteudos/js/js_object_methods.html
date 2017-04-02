@@ -1,0 +1,171 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_3']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Object Methods</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_properties.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_object_prototypes.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<h2>JavaScript Methods</h2>
+<p>JavaScript methods are the actions that can be performed on objects.</p>
+<p>A JavaScript <strong>method</strong> is a property containing a <strong>function 
+definition</strong>.</p>
+
+<table class="w3-table-all">
+ <tr>
+  <th style="width:20%">Property</th>
+  <th>Value</th>
+ </tr>
+ <tr>
+  <td>firstName</td>
+  <td>John</td>
+ </tr>
+ <tr>
+  <td>lastName</td>
+  <td>Doe</td>
+ </tr>
+ <tr>
+  <td>age</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>eyeColor</td>
+  <td>blue</td>
+ </tr>
+ <tr>
+  <td>fullName</td>
+  <td>function() {return this.firstName + &quot; &quot; + this.lastName;}</td>
+ </tr>
+</table>
+
+<div class="w3-panel w3-note">
+<p>Methods are functions stored as object properties.</p>
+</div>
+
+<hr>
+<h2>Accessing Object Methods</h2>
+<p>You create an object method with the following syntax:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+<i>methodName : function() { code lines }</i>
+</div></div>
+
+<p>You access an object method with the following syntax:</p>
+
+<div class="w3-code w3-border notranslate"><div>
+<i>objectName.methodName()</i></div></div>
+
+<p>You will typically describe fullName() as a method of the person object, and 
+fullName as a property. </p>
+<p>The fullName property will execute (as a function) when it is invoked with ().</p>
+
+<p>This example accesses the fullName() <strong>method</strong> of a person object:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate">
+name = person.fullName();</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_method" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;methodName : function() { code lines }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you access the fullName <strong>property</strong>, without (), it 
+will return the <strong>function definition</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate">
+name = person.fullName;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_function" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;objectName.methodName()&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Using Built-In Methods</h2>
+
+<p>This example uses the toUpperCase() method of the String object, to convert a text 
+to uppercase:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+var message = &quot;Hello world!&quot;;<br>
+var x = message.toUpperCase();</div></div>
+<p>The value of x, after execution of the code above will be:</p>
+<div class="w3-code w3-border notranslate"><div>
+HELLO WORLD!</div></div>
+<hr>
+
+<h2>Adding New Methods</h2>
+
+<p>Adding methods to an object is done inside the 
+constructor function:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function person(firstName, lastName, age, eyeColor) {<br>
+&#xA0;&#xA0;&#xA0;
+this.firstName = firstName;&#xA0; <br>
+&#xA0;&#xA0;&#xA0;
+this.lastName = lastName;<br>
+&#xA0;&#xA0;&#xA0;
+this.age = age;<br>
+&#xA0;&#xA0;&#xA0;
+this.eyeColor = eyeColor;<br>
+&#xA0;&#xA0;&#xA0;
+this.changeName = function (name) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+this.lastName = name;<br>
+&#xA0;&#xA0;&#xA0;
+};<br>
+}</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;name = person.fullName();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The changeName() function assigns the value of name to the person&apos;s 
+lastName property.</p>
+<div class="w3-example">
+<h3>Now You Can Try:</h3>
+<div class="w3-code notranslate jsHigh">
+myMother.changeName(&quot;Doe&quot;);</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_create_object3"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;name = person.fullName;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>JavaScript knows which person you are 
+talking about by &quot;substituting&quot; <b>this</b> with <b>myMother</b>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_properties.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_object_prototypes.asp">Next &#x276F;</a>
+</div>

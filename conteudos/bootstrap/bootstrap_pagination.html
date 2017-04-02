@@ -1,0 +1,154 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Pagination</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_progressbars.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pager.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>Basic Pagination</h2>
+<p>If you have a web site with lots of pages, you may wish to add some sort of pagination to each page.</p>
+<p>A basic pagination in Bootstrap looks like this:</p>
+<ul class="pagination">
+  <li><a href="javascript:void(0);">1</a></li>
+  <li><a href="javascript:void(0);">2</a></li>
+  <li><a href="javascript:void(0);">3</a></li>
+  <li><a href="javascript:void(0);">4</a></li>
+  <li><a href="javascript:void(0);">5</a></li>
+</ul>
+<p>To create a basic pagination, add the <code class="w3-codespan">.pagination</code> class to an <code class="w3-codespan">&lt;ul&gt;</code> element:</p>                  
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;pagination&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_pagination&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;pagination&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Active State</h2>
+<p>The active state shows what is the current page:</p>
+<ul class="pagination">
+  <li><a href="javascript:void(0);">1</a></li>
+  <li class="active"><a href="javascript:void(0);">2</a></li>
+  <li><a href="javascript:void(0);">3</a></li>
+  <li><a href="javascript:void(0);">4</a></li>
+  <li><a href="javascript:void(0);">5</a></li>
+</ul>
+<p>Add class <code class="w3-codespan">.active</code> to let the user know which page he/she is on:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;pagination&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_pagination_active&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;pagination&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Disabled State</h2>
+<p>A disabled link cannot be clicked:</p>
+<ul class="pagination">
+  <li><a href="javascript:void(0);">1</a></li>
+  <li><a href="javascript:void(0);">2</a></li>
+  <li><a href="javascript:void(0);">3</a></li>
+  <li class="disabled"><a href="javascript:void(0);">4</a></li>
+  <li><a href="javascript:void(0);">5</a></li>
+</ul>
+<p>Add class <code class="w3-codespan">.disabled</code> if a link for some reason is disabled:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;pagination&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_pagination_disabled&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;pagination&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Pagination Sizing</h2>
+<p>Pagination blocks can also be sized to a larger size or a smaller size:</p>
+<ul class="pagination pagination-lg">
+  <li><a href="javascript:void(0);">1</a></li>
+  <li><a href="javascript:void(0);">2</a></li>
+  <li><a href="javascript:void(0);">3</a></li>
+  <li><a href="javascript:void(0);">4</a></li>
+  <li><a href="javascript:void(0);">5</a></li>
+</ul>
+<ul class="pagination pagination-sm">
+  <li><a href="javascript:void(0);">1</a></li>
+  <li><a href="javascript:void(0);">2</a></li>
+  <li><a href="javascript:void(0);">3</a></li>
+  <li><a href="javascript:void(0);">4</a></li>
+  <li><a href="javascript:void(0);">5</a></li>
+</ul>
+
+<p>Add class <code class="w3-codespan">.pagination-lg</code> for larger blocks or <code class="w3-codespan">.pagination-sm</code> for smaller blocks:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;pagination pagination-lg&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br>
+ <br>&lt;ul class=&quot;pagination pagination-sm&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_pagination_sizing&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;pagination pagination-lg&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;
+ &lt;ul class=&quot;pagination pagination-sm&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;1&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;2&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;3&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;4&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;5&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Breadcrumbs</h2>
+<p>Another form for pagination, is breadcrumbs:</p>
+<ol class="breadcrumb">
+  <li><a href="#">Home</a></li>
+  <li><a href="#">Private</a></li>
+  <li><a href="#">Pictures</a></li>
+  <li class="active">Vacation</li>        
+</ol>
+  
+<p>The <code class="w3-codespan">.breadcrumb</code> class indicates the current page&apos;s location within a 
+navigational hierarchy:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;breadcrumb&quot;&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Private&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;active&quot;&gt;Vacation&lt;/li&gt; <br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_breadcrumbs&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;breadcrumb&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Home&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Private&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Pictures&lt;/a&gt;&lt;/li&gt; &lt;li class=&quot;active&quot;&gt;Vacation&lt;/li&gt; &lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_pagination1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pagination2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pagination3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pagination4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pagination5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+<hr>
+
+<h2>Complete Bootstrap Navigation Reference</h2>
+<p>For a complete reference of all navigation classes, go to our complete
+<a href="bootstrap_ref_comp_navs.asp">Bootstrap Navigation Reference</a>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_progressbars.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pager.asp">Next &#x276F;</a>
+</div>

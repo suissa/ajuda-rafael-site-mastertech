@@ -1,0 +1,405 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_3']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.70);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Bitwise Operations</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_type_conversion.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_regexp.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JavaScript Bitwise Operators</h2>
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:12%">Operator</th>
+<th style="width:25%">Description</th>
+<th>Example</th>
+<th>Same as</th>
+<th style="width:15%">Result</th>
+<th>Same as</th>
+</tr>
+<tr>
+<td>&amp;</td>
+<td>AND</td>
+<td>5 &amp; 1</td>
+<td>0101 &amp; 0001</td>
+<td>&#xA0;1</td>
+<td>0001</td>
+</tr>
+<tr>
+<td>|</td>
+<td>OR</td>
+<td>5 | 1</td>
+<td>0101 | 0001</td>
+<td>&#xA0;5</td>
+<td>0101</td>
+</tr>
+<tr>
+<td>~</td>
+<td>NOT</td>
+<td>~ 5</td>
+<td>&#xA0;~0101</td>
+<td>&#xA0;10</td>
+<td>1010</td>
+</tr>
+<tr>
+<td>^</td>
+<td>XOR</td>
+<td>5 ^ 1</td>
+<td>0101 ^ 0001</td>
+<td>&#xA0;4</td>
+<td>0100</td>
+</tr>
+<tr>
+<td>&lt;&lt;</td>
+<td>Zero fill left shift</td>
+<td>5 &lt;&lt; 1</td>
+<td>0101 &lt;&lt; 1</td>
+<td>&#xA0;10</td>
+<td>1010</td>
+</tr>
+<tr>
+<td>&gt;&gt;</td>
+<td>Signed right shift</td>
+<td>5 &gt;&gt; 1</td>
+<td>0101 &gt;&gt; 1</td>
+<td>&#xA0; 2</td>
+<td>0010</td>
+</tr>
+<tr>
+<td>&gt;&gt;&gt;</td>
+<td>Zero fill right shift</td>
+<td>5 &gt;&gt;&gt; 1</td>
+<td>0101 &gt;&gt;&gt; 1</td>
+<td>&#xA0; 2</td>
+<td>0010</td>
+</tr>
+</table>
+</div>
+
+<div class="w3-container w3-note">
+<p>The examples above uses 4 bits unsigned examples. But JavaScript uses 32-bit signed numbers.<br><br>
+Because of this, in JavaScript, ~ 5 will not return 10. It will return -6.<br><br>
+~00000000000000000000000000000101 will return 11111111111111111111111111111010</p>
+</div>
+<hr>
+
+<h2>Bitwise AND</h2>
+<p>When a bitwise AND is performed on a pair of bits, it returns 1 if both bits are 1.</p>
+<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-half">
+One bit example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>0 &amp; 0</td><td>0</td></tr>
+  <tr><td>0 &amp; 1</td><td>0</td></tr>
+  <tr><td>1 &amp; 0</td><td>0</td></tr>
+  <tr><td>1 &amp; 1</td><td>1</td></tr>
+</table>
+</div>
+<div class="w3-half">
+4 bits example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>1111 &amp; 0000</td><td>0000</td></tr>
+  <tr><td>1111 &amp; 0001</td><td>0001</td></tr>
+  <tr><td>1111 &amp; 0010</td><td>0010</td></tr>
+  <tr><td>1111 &amp; 0100</td><td>0100</td></tr>
+</table>
+</div>
+</div>
+<hr>
+
+<h2>Bitwise OR</h2>
+<p>When a bitwise OR is performed on a pair of bits, it returns 1 if one of the bits are 1:</p>
+<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-half">
+One bit example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>0 | 0</td><td>0</td></tr>
+  <tr><td>0 | 1</td><td>1&#xA0;</td></tr>
+  <tr><td>1 | 0</td><td>1</td></tr>
+  <tr><td>1 | 1</td><td>1</td></tr>
+</table>
+</div>
+<div class="w3-half">
+4 bits example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>1111 | 0000</td><td>1111</td></tr>
+  <tr><td>1111 | 0001</td><td>1111</td></tr>
+  <tr><td>1111 | 0010</td><td>1111</td></tr>
+  <tr><td>1111 | 0100</td><td>1111</td></tr>
+</table>
+</div>
+</div>
+<hr>
+
+<h2>Bitwise XOR</h2>
+<p>When a bitwise XOR is performed on a pair of bits, it returns 1 if the bits are different:</p>
+<div class="w3-row-padding" style="margin:0 -16px">
+<div class="w3-half">
+One bit example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>0 ^ 0</td><td>0</td></tr>
+  <tr><td>0 ^ 1</td><td>1&#xA0;</td></tr>
+  <tr><td>1 ^ 0</td><td>1</td></tr>
+  <tr><td>1 ^ 1</td><td>0&#xA0;</td></tr>
+</table>
+</div>
+<div class="w3-half">
+4 bits example:
+<table class="w3-table-all">
+  <tr><th>Operation</th><th>Result</th></tr>
+  <tr><td>1111 ^ 0000</td><td>1111</td></tr>
+  <tr><td>1111 ^ 0001</td><td>1110</td></tr>
+  <tr><td>1111 ^ 0010</td><td>1101</td></tr>
+  <tr><td>1111 ^ 0100</td><td>1011</td></tr>
+</table>
+</div>
+</div>
+<hr>
+
+
+<h2>JavaScript Bitwise Operations</h2>
+<p>JavaScript bitwise operations works on 32 bits signed integers.</p>
+<p>Any number in a bitwise operation is converted into a 32 bit signed integer.</p> 
+<p>The result of a bitwise operation is converted back into a JavaScript number.</p>
+<hr>
+
+<h2>JavaScript Bitwise AND (&amp;)</h2>
+<p>Bitwise AND returns 1 only if both bits are 1:</p>
+
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>1</td><td>00000000000000000000000000000001</td></tr>
+<tr><td>5 &amp; 1</td><td>00000000000000000000000000000001 (1)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 &amp; 1;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_and" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 &amp; 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript Bitwise OR (|)</h2>
+<p>Bitwise or returns 1 if one of the bits are 1:</p>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>1</td><td>00000000000000000000000000000001</td></tr>
+<tr><td>5 | 1</td><td>00000000000000000000000000000101 (5)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 | 1;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_or" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 | 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript Bitwise XOR (^)</h2>
+<p>Bitwise XOR returns 1 if the bits are different:</p>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>1</td><td>00000000000000000000000000000001</td></tr>
+<tr><td>5 ^ 1</td><td>00000000000000000000000000000100 (4)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 ^ 1;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_xor" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 ^ 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript Bitwise NOT (~)</h2>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>~5</td><td>11111111111111111111111111111010 (-6)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = ~5;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_not" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = ~5;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript (Zero Fill) Bitwise Left Shift (&lt;&lt;)</h2>
+<p>This is a zero fill left shift. One or more zero bits are pushed in from the right,
+and the leftmost bits fall off:</p>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>5 &lt;&lt; 1</td><td>00000000000000000000000000001010 (10)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 &lt;&lt; 1;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_left" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 &lt;&lt; 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript (Sign Preserving) Bitwise Right Shift (&gt;&gt;)</h2>
+<p>This is a sign preserving right shift. Copies of the leftmost bit are pushed 
+in from the left, and the rightmost bits fall off:</p>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>-5</td><td>11111111111111111111111111111011</td></tr>
+<tr><td>-5 &gt;&gt; 1</td><td>11111111111111111111111111111101 (-3)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = -5 &gt;&gt; 1;
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_right_sign" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = -5 &gt;&gt; 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>JavaScript (Zero Fill) Right Shift (&gt;&gt;&gt;)</h2>
+<p>This is a zero fill right shift. One or more zero bits are pushed in from the left,
+and the rightmost bits fall off:</p>
+<table class="w3-table-all">
+<tr><th>Decimal</th><th>Binary</th></tr>
+<tr><td>5</td><td>00000000000000000000000000000101</td></tr>
+<tr><td>5 &gt;&gt;&gt; 1</td><td>00000000000000000000000000000010 (2)</td></tr>
+</table>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 &gt;&gt;&gt; 1;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_right" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 &gt;&gt;&gt; 1;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>32-bit Signed Integers</h2>
+<p>32 bits integers with only one bit set is easy to understand:</p>
+<table class="w3-table-all">
+<tr><th>Binary Representation</th><th>Decimal value</th></tr>
+<tr><td>00000000000000000000000000000001</td><td>1</td></tr>
+<tr><td>00000000000000000000000000000010</td><td>2</td></tr>
+<tr><td>00000000000000000000000000000100</td><td>4</td></tr>
+<tr><td>00000000000000000000000000001000</td><td>8</td></tr>
+<tr><td>00000000000000000000000000010000</td><td>16</td></tr>
+<tr><td>00000000000000000000000000100000</td><td>32</td></tr>
+<tr><td>00000000000000000000000001000000</td><td>64</td></tr>
+</table>
+<p>Setting a few more bits reveals the binary pattern:</p>
+<table class="w3-table-all">
+<tr><th>Binary Representation</th><th>Decimal value</th></tr>
+<tr><td>00000000000000000000000000000101</td><td>5 (4 + 1)</td></tr>
+<tr><td>00000000000000000000000000101000</td><td>40 (32 + 8)</td></tr>
+<tr><td>00000000000000000000000000101101</td><td>45 (32 + 8 + 4 + 1)</td></tr>
+</table>
+<p>Negative numbers are stored in two&apos;s complement format.
+This means that a negative number is the bitwise NOT of the number plus 1.</p>
+<table class="w3-table-all">
+<tr><th>Binary Representation</th><th>Decimal value</th></tr>
+<tr><td>00000000000000000000000000000101</td><td>5</td></tr>
+<tr><td>11111111111111111111111111111011</td><td>-5</td></tr>
+<tr><td>00000000000000000000000000101000</td><td>40</td></tr>
+<tr><td>11111111111111111111111111011000</td><td>-40</td></tr>
+</table>
+<hr>
+
+<h2>Converting Decimal to Binary</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function dec2bin(dec){<br>
+&#xA0;&#xA0;&#xA0; return (dec &gt;&gt;&gt; 0).toString(2);<br>
+}
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_convert" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function dec2bin(dec){
+ return (dec &gt;&gt;&gt; 0).toString(2);
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Converting Binary to Decimal</h2>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function bin2dec(bin){<br>
+&#xA0;&#xA0;&#xA0; return parseInt(bin, 2).toString(10);<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_bitwise_convert_binary" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function bin2dec(bin){
+ return parseInt(bin, 2).toString(10);
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_type_conversion.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_regexp.asp">Next &#x276F;</a>
+</div>

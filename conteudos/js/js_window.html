@@ -1,0 +1,118 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.30:504697,0.40:504699,1.80:504714,2.60:504720,2.80:504721,2.00:504716,0.10:504693,0.45:504700,0.70:504703,0.80:504704,0.90:504705,0.20:504695,1.90:504715,3.50:504724,5.00:504727,0.05:504692,1.00:504706,1.40:504710,1.70:504713,2.20:504718,2.40:504719,4.00:504725,4.50:504726,0.15:504694,0.35:504698,0.50:504701,1.10:504707,1.30:504709,0.60:504702,1.20:504708,0.25:504696,1.50:504711,1.60:504712,3.00:504722,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 9.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Window - The Browser Object Model</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_nodelist.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_window_screen.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The Browser Object Model (BOM) allows JavaScript to &quot;talk to&quot; 
+the browser.</p>
+<hr>
+
+<h2>The Browser Object Model (BOM)</h2>
+<p>There are no official standards for the <strong>B</strong>rowser <strong>O</strong>bject
+<strong>M</strong>odel (BOM).</p>
+<p>Since modern browsers have implemented (almost) the same methods and 
+properties for JavaScript interactivity, it is often referred to, as methods and 
+properties of the BOM.</p>
+<hr>
+
+<h2>The Window Object</h2>
+<p>The <strong>window</strong> object is supported by all browsers. It represents 
+the browser&apos;s window.</p>
+<p>All global JavaScript objects, functions, and variables automatically become 
+members of the window object.</p>
+<p>Global variables are properties of the window object.</p>
+<p>Global functions are methods of the window object.</p>
+<p>Even the document object (of the HTML DOM) is a property of the window 
+object: </p>
+<div class="w3-code w3-border notranslate">
+<div>
+ window.document.getElementById(&quot;header&quot;);
+</div></div>
+
+<p>is the same as:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+ document.getElementById(&quot;header&quot;);
+</div></div>
+<hr>
+
+<h2>Window Size</h2>
+<p>Two properties can be used to determine the size of the browser 
+window.</p>
+
+<p>Both properties return the sizes in 
+pixels:</p>
+<ul>
+  <li>window.innerHeight - the inner height of the browser window (in pixels)</li>
+  <li>window.innerWidth - the inner width of the browser window (in pixels)</li>
+</ul>
+
+<div class="w3-panel w3-note">
+<p>The browser window (the browser viewport) is NOT including toolbars and scrollbars.</p>
+</div>
+
+<p>For Internet Explorer 8, 7, 6, 5:</p>
+<ul>
+  <li>document.documentElement.clientHeight</li>
+  <li>document.documentElement.clientWidth</li>
+  <li>or</li>
+  <li>document.body.clientHeight</li>
+  <li>document.body.clientWidth</li>
+</ul>
+<p>A practical JavaScript solution (covering all browsers): </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var w = window.innerWidth<br>|| document.documentElement.clientWidth<br>|| document.body.clientWidth;<br><br>var h = window.innerHeight<br>|| document.documentElement.clientHeight<br>|| document.body.clientHeight; </div>
+<a target="_blank" href="tryit.asp?filename=tryjs_win_inner" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;window.document.getElementById(&quot;header&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>
+The example displays the browser window&apos;s height and width: (NOT including 
+toolbars/scrollbars)</p>
+<hr>
+
+<h2>Other Window Methods</h2>
+<p>Some other methods:</p>
+<ul>
+  <li>window.open() - open a new window</li>
+  <li>window.close() - close the current window</li>
+  <li>window.moveTo() -move the current window</li>
+  <li>window.resizeTo() -resize the current window</li>
+</ul>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_nodelist.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_window_screen.asp">Next &#x276F;</a>
+</div>

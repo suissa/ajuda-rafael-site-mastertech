@@ -1,0 +1,130 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>HTML <span class="color_h1">File Paths</span></h1>
+<div class="w3-clear nextprev">
+  <a class="w3-left w3-btn" href="html_scripts.asp">&#x276E; Previous</a>
+  <a class="w3-right w3-btn" href="html_head.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+
+<table class="w3-table-all">
+<tr><th>Path</th><th>Description</th></tr>
+<tr>
+<td>&lt;img src=&quot;picture.jpg&quot;&gt;</td>
+<td>picture.jpg is located in the same folder as the current page</td>
+</tr>
+<tr>
+<td>&lt;img src=&quot;images/picture.jpg&quot;&gt;</td>
+<td>picture.jpg is located in the images folder located in the current folder</td>
+</tr>
+<tr>
+<td>&lt;img src=&quot;/images/picture.jpg&quot;&gt;</td>
+<td>picture.jpg is located in the images folder located in the current web</td>
+</tr>
+<tr>
+<td>&lt;img src=&quot;../picture.jpg&quot;&gt;</td>
+<td>picture.jpg is located in the folder one level up from the current folder</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>HTML File Paths</h2>
+<p>A file path describes the location of a file in a web site&apos;s folder structure.</p>
+
+<p>File paths are used when linking to external files like:</p>
+<ul>
+  <li>Web pages</li>
+  <li>Images</li>
+  <li>Style sheets</li>
+  <li>JavaScripts</li>
+</ul>
+<hr>
+
+<h2>Absolute Paths</h2>
+<p>An absolute path is the full URL to an internet file:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;http://www.w3schools.com/images/picture.jpg&quot; 
+  alt=&quot;Mountain&quot;&gt;
+</div>
+<p><a class="w3-btn" href="tryit.asp?filename=tryhtml_files_absoulute" target="_blank"></a></p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;img src=&quot;http://www.w3schools.com/images/picture.jpg&quot; 
+  alt=&quot;Mountain&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Relative Paths</h2>
+<p>A relative path points to a file relative to the current page.</p>
+<p>In this example the path points to a file in the images folder of the current web:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;/images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;
+</div>
+<p><a class="w3-btn" href="tryit.asp?filename=tryhtml_files_relative" target="_blank"></a></p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;img src=&quot;/images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>In this example the path points to a file in the images folder located in the 
+current folder:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryhtml_files_relative_1" target="_blank"></a></p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;img src=&quot;images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>In this example the path points to a file in the images folder located in the 
+folder one level above the current folder:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;img src=&quot;../images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryhtml_files_relative_2" target="_blank"></a></p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;img src=&quot;../images/picture.jpg&quot; 
+alt=&quot;Mountain&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Best Practice</h2>
+<p>It is a best practice to use relative paths (if possible).</p>
+<p>When using relative paths, your web pages will not be bound to your current 
+base URL. All links will work on your own computer (localhost) as well as on 
+your current public domain and your future public domains.&#xA0; </p>
+
+<br>
+<div class="w3-clear nextprev">
+  <a class="w3-left w3-btn" href="html_scripts.asp">&#x276E; Previous</a>
+  <a class="w3-right w3-btn" href="html_head.asp">Next &#x276F;</a>
+</div>

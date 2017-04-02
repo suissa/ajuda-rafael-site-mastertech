@@ -1,0 +1,121 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Affix Plugin (Advanced)</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_scrollspy.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_system.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>The Affix Plugin</h2>
+<p>The Affix plugin allows an element to become affixed (locked) to an area on 
+the page. This is often used with navigation menus or 
+social icon buttons, to make them &quot;stick&quot; at a specific area while scrolling 
+up and down the page.</p>
+<p>The plugin <strong>toggles</strong> this behavior on and off (changes the value of 
+<code class="w3-codespan">CSS position</code> from <code class="w3-codespan">static</code> to <code class="w3-codespan">fixed</code>), depending on 
+scroll position.</p>
+<p><strong>Example 1)</strong> An affixed navbar:</p>
+
+<iframe src="trybs_affix_navbar.htm" style="width:100%;height:280px;margin-bottom:15px;border:1px solid #ccc" scrolling="yes" frameborder="0"></iframe>
+
+<p><strong>Example 2)</strong> An affixed sidebar:</p>
+
+<iframe src="trybs_affix_vertical_nav.htm" style="width:100%;height:280px;margin-bottom:45px;border:1px solid #ccc" scrolling="yes" frameborder="0"></iframe>
+
+<p>With Affix, when we scroll up and down the page, the menu is always visible and locked in its position.</p>
+<hr>
+
+<h2>How To Create an Affixed Navigation Menu</h2>
+<p>The following example shows how to create a horizontal affixed navigation menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_affix&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The following example shows how to create a vertical affixed navigation menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_affix2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Example Explained</h3>
+
+<p>Add <code class="w3-codespan">data-spy=&quot;affix&quot;</code> to the element you want affixed.</p>
+<p>Optionally, add the <code class="w3-codespan">data-offset-top|bottom</code> attribute to 
+calculate the position of the scroll.</p>
+<h3>How it works</h3>
+<p>The affix plugin toggles between three classes: <code class="w3-codespan">.affix</code>, <code class="w3-codespan">.affix-top</code>, and 
+<code class="w3-codespan">.affix-bottom</code>. Each class represents a particular state. You must add CSS 
+properties to handle the actual positions, with the exception of <code class="w3-codespan">position:fixed</code> 
+on the <code class="w3-codespan">.affix</code> class.</p>
+<ul>
+  <li>The plugin adds the <code class="w3-codespan">.affix-top</code> or <code class="w3-codespan">.affix-bottom</code> class to indicate the element is in its top-most or bottom-most position. Positioning with CSS is not required at this point.</li><br>
+  <li>Scrolling past the affixed element triggers the actual affixing - This is where the plugin replaces the <code class="w3-codespan">.affix-top</code> or <code class="w3-codespan">.affix-bottom</code> class with the <code class="w3-codespan">.affix</code> class (sets <code class="w3-codespan">position:fixed</code>). At this point, you must add the CSS <code class="w3-codespan">top</code> or <code class="w3-codespan">bottom</code> property to position the affixed element in the page.</li><br>
+  <li>If a bottom offset is defined, scrolling past it replaces the <code class="w3-codespan">.affix</code> class with <code class="w3-codespan">.affix-bottom</code>. Since offsets are optional, setting one requires you to set the appropriate CSS. In this case, add <code class="w3-codespan">position:absolute</code> when necessary.</li>
+</ul>
+
+<p>In the first example above, the Affix plugin adds the <code class="w3-codespan">.affix</code> class (position:fixed) 
+to the &lt;nav&gt; element when we have scrolled 197 pixels from the top. If you open 
+the example, you will also see that we added the CSS <code class="w3-codespan">top</code> property with a value of 0 
+to the <code class="w3-codespan">.affix</code> class. This is to make sure that the navbar stays at the top of the page at 
+all time, when we have scrolled 197 pixels from the top.</p>
+<hr>
+
+<h2>Scrollspy &amp; Affix</h2>
+<p>Using the Affix plugin together with the <a href="bootstrap_scrollspy.asp">Scrollspy</a> 
+plugin:</p>
+<div class="w3-example">
+<h3>Horizontal Menu (Navbar)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;<br><br>&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;<br>
+ ...<br>&lt;/nav&gt;<br><br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;
+ ...&lt;/nav&gt;&lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Vertical Menu (Sidenav)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;<br><br>
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt;<br>&#xA0; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;<br>&#xA0; ...<br>&lt;/nav&gt;<br>
+ <br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt; ...&lt;/nav&gt;
+ &lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Complete Bootstrap Affix Reference</h2>
+<p>For a complete reference of all affix methods and events, go to our
+<a href="bootstrap_ref_js_affix.asp">Bootstrap JS Affix Reference</a>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_scrollspy.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_system.asp">Next &#x276F;</a>
+</div>

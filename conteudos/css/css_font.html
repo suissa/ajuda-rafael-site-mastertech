@@ -1,0 +1,318 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_2']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.70);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Fonts</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_text.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_icons.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The CSS font properties define the font family, boldness, size, and the style of a text.</p>
+<hr>
+
+<h2>Difference Between Serif and Sans-serif Fonts</h2>
+<img alt="Serif vs. Sans-serif" src="serif.gif" width="398" height="142" style="max-width:100%;height:auto">
+<hr>
+
+<h2>CSS Font Families</h2>
+<p>In CSS, there are two types of font family names:</p>
+<ul>
+<li><b>generic family</b> - a group of font families with a 
+similar look (like &quot;Serif&quot; or &quot;Monospace&quot;)</li>
+<li><b>font family</b> - a specific font family (like &quot;Times New Roman&quot; 
+or &quot;Arial&quot;)</li>
+</ul>
+<table class="w3-table-all notranslate">
+<tr>
+<th style="width:20%">Generic family</th>
+<th style="width:30%">Font family</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>Serif</td>
+<td><span style="font-size:150%;font-family:Times New Roman">Times New Roman</span><br>
+<span style="font-size:150%;font-family:Georgia">Georgia</span></td>
+<td>Serif fonts have small lines at the ends on some characters</td>
+</tr>
+<tr>
+<td>Sans-serif</td>
+<td><span style="font-size:150%;font-family:Arial">Arial</span><br>
+<span style="font-size:150%;font-family:Verdana">Verdana</span></td>
+<td>&quot;Sans&quot; means without - these fonts do not have the 
+lines at the ends of characters</td>
+</tr>
+<tr>
+<td>Monospace</td>
+<td><span style="font-size:150%;font-family:Courier New">Courier New</span><br>
+<span style="font-size:150%;font-family:Lucida Console">Lucida Console</span></td>
+<td>All monospace characters have the same width</td>
+</tr>
+</table>
+<div class="w3-panel w3-note">
+ <p><strong>Note:</strong> On computer screens, sans-serif fonts are considered easier to read than serif fonts.</p>
+</div>
+<hr>
+
+<h2>Font Family</h2>
+<p>The font family of a text is set with the <code class="w3-codespan">font-family</code> property.</p>
+<p>The <code class="w3-codespan">font-family</code> property should hold several font names as a &quot;fallback&quot; system. 
+If the browser does not support the first font, it tries the next font, and so 
+on.</p>
+<p>Start with the font you want, and end with a generic family, to let the 
+browser pick a similar font in the generic family, if no other fonts are 
+available. </p>
+<p><b>Note</b>: If the name of a font family is more than one word, it must be in 
+quotation marks, like: &quot;Times New Roman&quot;.</p>
+<p>More than one font family is specified in a comma-separated list:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {<br>&#xA0;&#xA0;&#xA0; font-family: &quot;Times New Roman&quot;, Times, serif;<br>}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-family" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p { font-family: &quot;Times New Roman&quot;, Times, serif;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>For commonly used font combinations, look at our <a href="/cssref/css_websafe_fonts.asp">Web Safe Font Combinations</a>.</p>
+<hr>
+
+<h2>Font Style</h2>
+<p>The <code class="w3-codespan">font-style</code> property is mostly used to specify italic text.</p>
+<p>This property has three values:</p>
+<ul>
+<li>normal - The text is shown normally</li>
+<li>italic - The text is shown in italics</li>
+<li>oblique - The text is &quot;leaning&quot;
+(oblique is very similar to italic, but less supported)</li>
+</ul>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p.normal {<br>&#xA0;&#xA0;&#xA0; font-style: normal;<br>}<br>
+<br>p.italic {<br>&#xA0;&#xA0;&#xA0; font-style: italic;<br>}<br>
+<br>p.oblique {<br>&#xA0;&#xA0;&#xA0; font-style: oblique;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-style" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p.normal { font-style: normal;}
+p.italic { font-style: italic;}
+p.oblique { font-style: oblique;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Font Size</h2>
+<p>The <code class="w3-codespan">font-size</code> property sets the size of the text.</p>
+<p>Being able to manage the text size is important in web design. However, you 
+should not use font size adjustments to make paragraphs look like headings, or 
+headings look like paragraphs.</p>
+<p>Always use the proper HTML tags, like &lt;h1&gt; - &lt;h6&gt; for headings and &lt;p&gt; for 
+paragraphs.</p>
+<p>The font-size value can be  
+an absolute, or relative size.</p>
+<p>Absolute size:</p>
+<ul>
+<li>Sets the text to a specified size</li>
+<li>Does not allow a user to change the text size in all browsers (bad for accessibility reasons)</li>
+<li>Absolute size is useful when the physical size of the output is known</li>
+</ul>
+<p>Relative size:</p>
+<ul>
+<li>Sets the size relative to surrounding elements</li>
+<li>Allows a user to change the text size in browsers</li>
+</ul>
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px=1em).</p>
+</div>
+<hr>
+
+<h2>Set Font Size With Pixels</h2>
+<p>Setting the text size with pixels gives you full control over the text size:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+h1 {<br>&#xA0;&#xA0;&#xA0; font-size: 40px;<br>}<br>
+<br>h2 {<br>&#xA0;&#xA0;&#xA0; font-size: 30px;<br>}<br>
+<br>p {<br>&#xA0;&#xA0;&#xA0; font-size: 14px;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-size_px" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1 { font-size: 40px;}
+h2 { font-size: 30px;}
+p { font-size: 14px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p><strong>Tip:</strong> If you use pixels, you can still use the zoom tool to resize the entire page.</p>
+<hr>
+
+<h2>Set Font Size With Em</h2>
+<p>To allow users to resize the text (in the browser menu), many 
+developers use em instead of pixels.</p>
+<p>The em size unit is recommended by the W3C.</p>
+<p>1em is equal to the current font size. The default text size in browsers is 
+16px. So, the default size of 1em is 16px.</p>
+<p>The size can be calculated from pixels to em using this formula: <i>pixels</i>/16=<i>em</i></p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+h1 {<br>&#xA0;&#xA0;&#xA0; font-size: 2.5em; /* 40px/16=2.5em */<br>}<br>
+<br>h2 {<br>&#xA0;&#xA0;&#xA0; font-size: 1.875em; /* 30px/16=1.875em */<br>
+}<br>
+<br>p {<br>&#xA0;&#xA0;&#xA0; font-size: 0.875em; /* 14px/16=0.875em */<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-size_em" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1 { font-size: 2.5em; /* 40px/16=2.5em */}
+h2 { font-size: 1.875em; /* 30px/16=1.875em */
+}
+p { font-size: 0.875em; /* 14px/16=0.875em */}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>In the example above, the text size in em is the same as the previous example 
+in pixels. However, with the em size, it is possible to adjust the text size 
+in all browsers.</p><p>Unfortunately, there is still a problem with older versions 
+of IE. 
+The text becomes larger than it should 
+when made larger, and smaller than it should when made smaller.</p>
+<hr>
+
+<h2>Use a Combination of Percent and Em</h2>
+<p>The solution that works in all browsers, is to set a default font-size in 
+percent for the &lt;body&gt; element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; font-size: 100%;<br>}<br>
+<br>h1 {<br>&#xA0;&#xA0;&#xA0; font-size: 2.5em;<br>}<br>
+<br>h2 {<br>&#xA0;&#xA0;&#xA0; font-size: 1.875em;<br>}<br>
+<br>p {<br>&#xA0;&#xA0;&#xA0; font-size: 0.875em;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-size_percent_em" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { font-size: 100%;}
+h1 { font-size: 2.5em;}
+h2 { font-size: 1.875em;}
+p { font-size: 0.875em;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Our code now works great! It shows the same text size in 
+all browsers, and allows all browsers to zoom or resize the text!</p>
+<hr>
+
+<h2>Font Weight</h2>
+<p>The <code class="w3-codespan">font-weight</code> property specifies the weight of a font:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p.normal {<br>&#xA0;&#xA0;&#xA0; font-weight: normal;<br>}<br>
+<br>p.thick {<br>&#xA0;&#xA0;&#xA0; font-weight: bold;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-weight" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p.normal { font-weight: normal;}
+p.thick { font-weight: bold;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Font Variant</h2>
+<p>The <code class="w3-codespan">font-variant</code> property specifies whether or not a text should 
+be displayed in a small-caps font.</p>
+<p>In a small-caps font, all lowercase letters are converted to uppercase 
+letters. However, the converted uppercase letters appears in a smaller font size 
+than the original uppercase letters in the text.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p.normal {<br>&#xA0;&#xA0;&#xA0; font-variant: normal;<br>}<br>
+<br>p.small {<br>&#xA0;&#xA0;&#xA0; font-variant: small-caps;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_font-variant" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p.normal { font-variant: normal;}
+p.small { font-variant: small-caps;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>More Examples</h2>
+<p><a target="_blank" href="tryit.asp?filename=trycss_font">All the font properties in one
+declaration</a><br>
+This example demonstrates how to use the shorthand property for setting all of
+the font properties in one declaration.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_font1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_font2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_font3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_font4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_font5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+<hr>
+
+<h2>All CSS Font Properties</h2>
+
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:25%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_font.asp">font</a></td>
+    <td>Sets all the font properties in one declaration</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_font-family.asp">font-family</a></td>
+    <td>Specifies the font family for text</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_font-size.asp">font-size</a></td>
+    <td>Specifies the font size of text</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_font-style.asp">font-style</a></td>
+    <td>Specifies the font style for text</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_font-variant.asp">font-variant</a></td>
+    <td>Specifies whether or not a text should be displayed in a small-caps font</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_font_weight.asp">font-weight</a></td>
+    <td>Specifies the weight of a font</td>
+  </tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_text.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_icons.asp">Next &#x276F;</a>
+</div>

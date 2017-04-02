@@ -1,0 +1,383 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {1.00:504706,1.20:504708,1.90:504715,4.00:504725,0.15:504694,0.50:504701,0.70:504703,1.70:504713,2.40:504719,5.00:504727,0.90:504705,1.40:504710,1.50:504711,2.80:504721,4.50:504726,0.30:504697,0.40:504699,0.60:504702,2.00:504716,1.30:504709,3.00:504722,3.50:504724,0.05:504692,0.20:504695,0.25:504696,0.35:504698,1.60:504712,2.60:504720,0.10:504693,0.45:504700,0.80:504704,1.10:504707,1.80:504714,2.20:504718,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Use Strict</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_hoisting.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_conventions.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">&#xA0;<span class="w3-codespan">&quot;use strict&quot;;</span> Defines that 
+JavaScript code should be executed in 
+&quot;strict mode&quot;.</p>
+<hr>
+
+<h2>The &quot;use strict&quot; Directive</h2>
+<p>The &quot;use strict&quot; directive is new in JavaScript 1.8.5 (ECMAScript version 5).</p>
+<p>It is not a statement, but a literal expression, ignored by earlier versions 
+of JavaScript.</p>
+<p>The purpose of &quot;use strict&quot; is to indicate that the code should be executed in &quot;strict mode&quot;.</p>
+<p>With strict mode, you can not, for example, use undeclared variables.</p>
+
+<div class="w3-panel w3-note">
+<p>Strict mode is supported in:<br>IE from version 10. Firefox from version 4.<br>
+Chrome from version 13. Safari from version 5.1.<br>Opera from version 12.</p>
+</div>
+
+<hr>
+<h2>Declaring Strict Mode</h2>
+<p>Strict mode is declared by adding <span class="w3-codespan">&quot;use strict&quot;;</span> to the beginning of a 
+script or a function.</p>
+<p>Declared at the beginning of a script, it has global scope (all code 
+in the script will execute in strict mode):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>x = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error 
+ because x is not declared<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_strict_variable" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;x = 3.14; // This will cause an error 
+ because x is not declared&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>myFunction();<br><br>
+function myFunction() {<br>
+ &#xA0;&#xA0;&#xA0; y = 3.14;&#xA0;&#xA0; // This will also cause an error 
+ because y is not declared<br>}</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_strict_global" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;myFunction();
+function myFunction() {
+  y = 3.14; // This will also cause an error 
+ because y is not declared}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Declared inside a function, it has local scope (only the code inside the function is 
+in strict mode):</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+x = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will not cause an error.
+ <br>myFunction();<br><br>function 
+ myFunction() {<br>
+&#xA0;&#xA0;&#xA0;&quot;use strict&quot;;<br>
+ &#xA0;&#xA0;&#xA0; y = 3.14;&#xA0;&#xA0; // This will cause an error<br>}<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_strict_local" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;x = 3.14; // This will not cause an error.
+ myFunction();function 
+ myFunction() {
+&quot;use strict&quot;;
+  y = 3.14; // This will cause an error}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The &quot;use strict&quot;; Syntax</h2>
+<p>The syntax, for declaring strict mode, was designed to be compatible with 
+older versions of JavaScript.</p>
+<p>Compiling a numeric literal (4 + 5;) or a string literal (&quot;John Doe&quot;;) in a 
+JavaScript program has no side effects. It simply compiles to a non existing 
+variable and dies.</p>
+<p>So &quot;use strict&quot;; only matters to new compilers that &quot;understand&quot; the meaning 
+of it.</p>
+<hr>
+
+<h2>Why Strict Mode?</h2>
+<p>Strict mode makes it easier to write &quot;secure&quot; JavaScript.</p>
+<p>Strict mode changes previously accepted &quot;bad syntax&quot; into real errors.</p>
+<p>As an example, in normal JavaScript, mistyping a variable name creates a new 
+global variable. In strict mode, this will throw an error, making it impossible 
+to accidentally create a global variable.</p>
+<p>In normal JavaScript, a developer will not receive any error feedback 
+assigning values to non-writable properties. </p>
+<p>In strict mode, any assignment to a non-writable property, a getter-only 
+property, a non-existing property, a non-existing variable, or a non-existing 
+object, will throw an error.</p>
+<hr>
+
+<h2>Not Allowed in Strict Mode</h2>
+<p>Using a variable, without declaring it, is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>
+ x = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_variable" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;
+ x = 3.14; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Objects are variables too.</p>
+</div>
+
+<p>Using an object, without declaring it, is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>
+ x = {p1:10, p2:20};&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_object" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;
+ x = {p1:10, p2:20}; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Deleting a variable (or object) is not allowed.</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var x = 3.14;<br>
+delete x;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This 
+will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_delete" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var x = 3.14;
+delete x;  // This 
+will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Deleting a function is not allowed.</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>function x(p1, p2) {}; <br>delete x;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ // This will cause an error&#xA0;
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_delete_function" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;function x(p1, p2) {}; delete x; 
+ // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Duplicating a parameter name is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>function x(p1, p1) {};&#xA0;&#xA0; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_duplicate" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;function x(p1, p1) {}; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Octal numeric literals are not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var x = 010;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This 
+will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_octal" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var x = 010; // This 
+will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Escape characters are not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>
+var x = \010;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_escape" target="_blank"></a>
+</p>
+
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;
+var x = \010; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Writing to a read-only property is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var obj = {};<br>
+Object.defineProperty(obj, &quot;x&quot;, {value:0, writable:false});<br><br>
+obj.x = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &#xA0;&#xA0; // This 
+will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_readonly" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var obj = {};
+Object.defineProperty(obj, &quot;x&quot;, {value:0, writable:false});
+obj.x = 3.14;  // This 
+will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Writing to a get-only property is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var obj = {get x() 
+{return 0} };<br><br>obj.x = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This 
+will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_getonly" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var obj = {get x() 
+{return 0} };obj.x = 3.14; // This 
+will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Deleting an undeletable property is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>delete Object.prototype; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_deleteprop" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;delete Object.prototype; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The string &quot;eval&quot; cannot be used as a variable:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var eval = 3.14;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_eval" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var eval = 3.14; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The string &quot;arguments&quot; cannot be used as a variable:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var arguments = 3.14;&#xA0;&#xA0;&#xA0; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_arguments" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var arguments = 3.14; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The with statement is not allowed:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>with (Math){x = cos(2)}; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_width" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;with (Math){x = cos(2)}; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>For security reasons, eval() is not allowed to create  
+variables in the scope from which it was called:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>eval (&quot;var x = 2&quot;);<br>
+alert (x);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This 
+will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_eval2" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;eval (&quot;var x = 2&quot;);
+alert (x); // This 
+will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>In function calls like f(), the this value was the global object. In strict mode, it is now undefined.</p>
+<hr>
+<h2>Future Proof!</h2>
+<p>
+Future reserved keywords are not allowed in strict mode. These are:</p>
+<ul>
+  <li>implements</li>
+  <li>interface</li>
+  <li>let</li>
+    <li>package</li>
+  <li>private</li>
+  <li>protected</li>
+  <li>public</li>
+  <li>static</li>
+  <li>yield</li>
+</ul>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+&quot;use strict&quot;;<br>var public = 1500;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will cause an error
+</div>
+<p>
+<a class="w3-btn" href="tryit.asp?filename=tryjs_strict_names" target="_blank"></a>
+</p>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;use strict&quot;;var public = 1500; // This will cause an error&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<h2>Watch Out!</h2>
+<p>The &quot;use strict&quot; directive is only recognized at the <strong>beginning</strong> of a script 
+or a function.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_hoisting.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_conventions.asp">Next &#x276F;</a>
+</div>

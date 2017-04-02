@@ -1,0 +1,95 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Tooltip Plugin</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_modal.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_popover.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>The Tooltip Plugin</h2>
+<p>The Tooltip plugin is small pop-up box that appears when the user moves the 
+mouse pointer over an element:</p>
+
+<div>
+  <button style="margin:7px 15px 17px 0;" type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover over me</button>
+  <a href="javascript:void(0);" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover over me</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+<div class="w3-panel w3-note">
+  <p><strong>Tip: </strong>
+Plugins can be included individually (using Bootstrap&apos;s individual &quot;tooltip.js&quot; file), or all at once (using 
+&quot;bootstrap.js&quot; or &quot;bootstrap.min.js&quot;).</p>
+</div>
+<hr>
+
+<h2>How To Create a Tooltip</h2>
+<p>To create a tooltip, add the <code class="w3-codespan">data-toggle=&quot;tooltip&quot;</code> 
+attribute to an element. </p>
+<p>Use the <code class="w3-codespan">title</code> attribute to specify the text that should be 
+displayed inside the tooltip:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Hooray!&quot;&gt;Hover over me&lt;/a&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Hooray!&quot;&gt;Hover over me&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Note:</strong> Tooltips must be initialized with jQuery: select the 
+specified element and call the <code class="w3-codespan">tooltip()</code> method.</p>
+<p>The following code will enable all tooltips in the document:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;script&gt;<br>$(document).ready(function(){<br>&#xA0;&#xA0;&#xA0; $(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); <br>});<br>&lt;/script&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_tooltip&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;script&gt;$(document).ready(function(){ $(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); });&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Positioning Tooltips</h2>
+<p>By default, the tooltip will appear on top of the element.</p>
+<p>Use the <code class="w3-codespan">data-placement</code> attribute to set the position of the 
+tooltip on top, bottom, left or the right side of the element:</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;<br>&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;<br>&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;<br>&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_tooltip_pos&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;top&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;bottom&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;left&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; data-placement=&quot;right&quot; title=&quot;Hooray!&quot;&gt;Hover&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><strong>Tip: </strong>You can also use the <code class="w3-codespan">data-placement</code> attribute with a 
+value of &quot;auto&quot;, which will let the browser decide the position of the 
+tooltip. For example, if the value is &quot;auto left&quot;, the tooltip will display on 
+the left side when possible, otherwise on the right.</p>
+</div>
+<hr>
+
+<h2>Complete Bootstrap Tooltip Reference</h2>
+<p>For a complete reference of all tooltip options, methods and events, go to our
+<a href="bootstrap_ref_js_tooltip.asp">Bootstrap JS Tooltip Reference</a>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_modal.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_popover.asp">Next &#x276F;</a>
+</div>

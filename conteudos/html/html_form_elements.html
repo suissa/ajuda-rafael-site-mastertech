@@ -1,0 +1,298 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>HTML <span class="color_h1">Form Elements</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_forms.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_form_input_types.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<p class="intro">This chapter describes all HTML form elements. </p>
+<hr>
+
+<h2>The &lt;input&gt; Element</h2>
+<p>The most important form element is the <strong>&lt;input&gt;</strong> element. </p>
+<p>The &lt;input&gt; element can be displayed in several ways, depending on the <strong>type</strong> 
+attribute.</p>
+<div class="w3-panel w3-note">
+<p>All
+the different input types are covered in the next chapter.
+</p>
+</div>
+
+<hr>
+
+<h2>The &lt;select&gt; Element</h2>
+<p>The <strong>&lt;select&gt;</strong> element defines a <strong>drop-down list</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;select name=&quot;cars&quot;&gt;<br>&#xA0; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;<br>
+ &#xA0;
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt;<br>&#xA0; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;<br>
+ &#xA0;
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;<br>&lt;/select&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_select" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;select name=&quot;cars&quot;&gt; &lt;option value=&quot;volvo&quot;&gt;Volvo&lt;/option&gt;
+ 
+ &lt;option value=&quot;saab&quot;&gt;Saab&lt;/option&gt; &lt;option value=&quot;fiat&quot;&gt;Fiat&lt;/option&gt;
+ 
+ &lt;option value=&quot;audi&quot;&gt;Audi&lt;/option&gt;&lt;/select&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The <strong>&lt;option&gt;</strong> elements defines an option that can be 
+selected.</p>
+<p>By default, the first item in the drop-down list is selected.</p>
+<p>To define a pre-selected option, add the <strong>selected</strong> attribute 
+to the option: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_select_pre" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;option value=&quot;fiat&quot; selected&gt;Fiat&lt;/option&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The &lt;textarea&gt; Element</h2>
+<p>The <strong>&lt;textarea&gt;</strong> element defines a multi-line input field (<strong>a text area</strong>):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;<br>The cat was playing in the garden.<br>&lt;/textarea&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_textarea" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;textarea name=&quot;message&quot; rows=&quot;10&quot; cols=&quot;30&quot;&gt;The cat was playing in the garden.&lt;/textarea&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The <strong>rows</strong> attribute specifies the visible number of lines in 
+a text area.</p>
+<p>The <strong>cols</strong> attribute specifies the visible width of a text 
+area.</p>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<textarea rows="10" cols="30">
+The cat was playing in the garden.
+</textarea>
+<br>
+<hr>
+
+<h2>The &lt;button&gt; Element</h2>
+<p>The <strong>&lt;button&gt;</strong> element defines a clickable <strong>button</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button type=&quot;button&quot; 
+ onclick=&quot;alert(&apos;Hello World!&apos;)&quot;&gt;Click Me!&lt;/button&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_button" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;button type=&quot;button&quot; 
+ onclick=&quot;alert(&apos;Hello World!&apos;)&quot;&gt;Click Me!&lt;/button&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<button type="button" onclick="alert(&apos;Hello World!&apos;)">Click Me!</button>
+<br>
+
+<hr>
+
+<h2>HTML5 Form Elements</h2>
+<p>HTML5 added the following form elements:</p>
+<ul>
+  <li>&lt;datalist&gt;</li>
+  <li>&lt;keygen&gt;</li>
+  <li>&lt;output&gt;</li>
+</ul>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Browsers do not display unknown elements. New elements 
+that are not supported in older browsers will not &quot;destroy&quot; your web page.</p>
+</div>
+
+<hr>
+
+<h2>HTML5 &lt;datalist&gt; Element</h2>
+<p>The <strong>&lt;datalist&gt;</strong> element specifies a list of pre-defined options for an &lt;input&gt; element.</p>
+<p>Users will see a drop-down list of the pre-defined options as they input data.</p>
+<p>The <strong>list</strong> attribute of the &lt;input&gt; element, must refer to the
+<strong>id</strong> attribute of the &lt;datalist&gt; element.</p>
+<div class="w3-example">
+<img style="float:right;" src="/images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="/images/incompatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="/images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="/images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="/images/compatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  
+    &lt;form action=&quot;action_page.php&quot;&gt;<br>&#xA0; &lt;input list=&quot;browsers&quot;&gt;<br>
+ &#xA0;
+ &lt;datalist id=&quot;browsers&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;option value=&quot;Internet Explorer&quot;&gt;<br>
+&#xA0;
+&#xA0; &lt;option value=&quot;Firefox&quot;&gt;<br>
+&#xA0;&#xA0;&#xA0; &lt;option value=&quot;Chrome&quot;&gt;<br>
+&#xA0;
+&#xA0; &lt;option value=&quot;Opera&quot;&gt;<br>
+&#xA0;&#xA0;&#xA0; &lt;option value=&quot;Safari&quot;&gt;<br>
+ &#xA0;
+ &lt;/datalist&gt; <br>&lt;/form&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_datalist" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt; &lt;input list=&quot;browsers&quot;&gt;
+ 
+ &lt;datalist id=&quot;browsers&quot;&gt;
+  &lt;option value=&quot;Internet Explorer&quot;&gt;
+
+ &lt;option value=&quot;Firefox&quot;&gt;
+ &lt;option value=&quot;Chrome&quot;&gt;
+
+ &lt;option value=&quot;Opera&quot;&gt;
+ &lt;option value=&quot;Safari&quot;&gt;
+ 
+ &lt;/datalist&gt; &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr><h2>HTML5 &lt;keygen&gt; Element</h2>
+<p>The purpose of the <strong>&lt;keygen&gt;</strong> element is to provide a secure way to authenticate users.</p>
+<p>The &lt;keygen&gt; element specifies a key-pair generator field in a form.</p>
+<p>When the form is submitted, two keys are generated, one private and one public.</p>
+<p>The private key is stored locally, and the public key is sent to the server.</p>
+<p>The public key could be used to generate a client certificate to authenticate the user in the future.</p>
+<div class="w3-example">
+<img style="float:right;" src="/images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="/images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="/images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="/images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="/images/incompatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h3>Example</h3>
+<p>A form with a keygen field:</p>
+<div class="w3-code notranslate htmlHigh">
+    &lt;form action=&quot;action_page.php&quot;&gt;<br>
+ &#xA0;
+ Username: &lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;<br>
+ &#xA0;
+ Encryption: &lt;keygen name=&quot;security&quot;&gt;<br>
+ &#xA0;
+ &lt;input type=&quot;submit&quot;&gt;<br>
+ &lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_keygen" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt;
+ 
+ Username: &lt;input type=&quot;text&quot; name=&quot;user&quot;&gt;
+ 
+ Encryption: &lt;keygen name=&quot;security&quot;&gt;
+ 
+ &lt;input type=&quot;submit&quot;&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr><h2>HTML5 &lt;output&gt; Element</h2>
+<p>The &lt;output&gt; element represents the result of a calculation (like one 
+performed by a script).</p>
+<div class="w3-example">
+<img style="float:right;" src="/images/compatible_opera2020.gif" title="Opera" alt="Opera" width="20" height="20"><img style="float:right;" src="/images/compatible_safari2020.gif" title="Safari" alt="Safari" width="20" height="20"><img style="float:right;" src="/images/compatible_chrome2020.gif" title="Chrome" alt="Chrome" width="20" height="20"><img style="float:right;" src="/images/compatible_firefox2020.gif" title="Firefox" alt="Firefox" width="20" height="20"><img style="float:right;" src="/images/incompatible_edge2020.gif" title="Internet Explorer" alt="Internet Explorer" width="20" height="20"><h3>Example</h3>
+<p>Perform a calculation and show the result in an &lt;output&gt; element:</p>
+<div class="w3-code notranslate htmlHigh">
+    &lt;form action=&quot;action_page.php&quot;<br>&#xA0; oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt;<br>&#xA0; 0<br>
+    &#xA0;
+    &lt;input type=&quot;range&quot;&#xA0; id=&quot;a&quot; name=&quot;a&quot; value=&quot;50&quot;&gt;<br>&#xA0; 100 +<br>
+    &#xA0;
+    &lt;input type=&quot;number&quot; id=&quot;b&quot; name=&quot;b&quot; value=&quot;50&quot;&gt;<br>&#xA0; =<br>
+    &#xA0;
+    &lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt;<br>&#xA0; &lt;br&gt;&lt;br&gt;<br>&#xA0; &lt;input type=&quot;submit&quot;&gt;<br>
+ &lt;/form&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_elem_output" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot; oninput=&quot;x.value=parseInt(a.value)+parseInt(b.value)&quot;&gt; 0
+    
+    &lt;input type=&quot;range&quot; id=&quot;a&quot; name=&quot;a&quot; value=&quot;50&quot;&gt; 100 +
+    
+    &lt;input type=&quot;number&quot; id=&quot;b&quot; name=&quot;b&quot; value=&quot;50&quot;&gt; =
+    
+    &lt;output name=&quot;x&quot; for=&quot;a b&quot;&gt;&lt;/output&gt; &lt;br&gt;&lt;br&gt; &lt;input type=&quot;submit&quot;&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_form_elements1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_form_elements2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_form_elements3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+<hr>
+
+<h2>HTML Form Elements</h2>
+<p class="html5badge" style="background-position:left;padding-left:20px;height:18px;">= 
+new in HTML5.</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Tag</th>
+<th>Description</th>
+</tr>
+<tr>
+<td><a href="/tags/tag_form.asp">&lt;form&gt;</a></td>
+<td> Defines an HTML form for user input</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_input.asp">&lt;input&gt;</a></td>
+<td>Defines an input control</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_textarea.asp">&lt;textarea&gt;</a></td>
+<td>Defines a multiline input control (text area)</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_label.asp">&lt;label&gt;</a></td>
+<td>Defines a label for an &lt;input&gt; element</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_fieldset.asp">&lt;fieldset&gt;</a></td>
+<td>Groups related elements in a form</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_legend.asp">&lt;legend&gt;</a></td>
+<td>Defines a caption for a &lt;fieldset&gt; element</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_select.asp">&lt;select&gt;</a></td>
+<td>Defines a drop-down list</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_optgroup.asp">&lt;optgroup&gt;</a></td>
+<td>Defines a group of related options in a drop-down list</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_option.asp">&lt;option&gt;</a></td>
+<td>Defines an option in a drop-down list</td>
+</tr>
+<tr>
+<td><a href="/tags/tag_button.asp">&lt;button&gt;</a></td>
+<td>Defines a clickable button</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="/tags/tag_datalist.asp">&lt;datalist&gt;</a></td>
+<td>Specifies a list of pre-defined options for input controls</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="/tags/tag_keygen.asp">&lt;keygen&gt;</a></td>
+<td>Defines a key-pair generator field (for forms)</td>
+</tr>
+<tr>
+<td class="html5badge"><a href="/tags/tag_output.asp">&lt;output&gt;</a></td>
+<td>Defines the result of a calculation</td>
+</tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_forms.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_form_input_types.asp">Next &#x276F;</a>
+</div>

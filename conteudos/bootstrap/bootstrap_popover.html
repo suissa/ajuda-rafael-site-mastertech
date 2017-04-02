@@ -1,0 +1,123 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Popover Plugin</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_tooltip.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_scrollspy.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>The Popover Plugin</h2>
+<p>The Popover plugin is similar to tooltips; it is a pop-up box that appears when the user 
+clicks on an element. The difference is that the popover can contain much more content.</p>
+
+<div>
+  <button style="margin:7px 15px 17px 0;" type="button" data-placement="bottom" class="btn btn-md btn-success" data-toggle="popover" title="Popover Header" data-content="Some content inside the popover">Click To Toggle Popover</button>
+  <a href="javascript:void(0);" data-toggle="popover" data-placement="right" title="Popover Header" data-content="Some content inside the popover">Click To Toggle Popover</a>
+</div>
+
+<script>
+$(document).ready(function(){
+    $('[data-toggle="popover"]').popover();   
+});
+</script>
+<div class="w3-panel w3-note">
+  <p><strong>Tip: </strong>
+Plugins can be included individually (using Bootstrap&apos;s individual 
+&quot;popover.js&quot; file), or all at once (using 
+&quot;bootstrap.js&quot; or &quot;bootstrap.min.js&quot;).</p>
+</div>
+<hr>
+
+<h2>How To Create a Popover</h2>
+<p>To create a popover, add the <code class="w3-codespan">data-toggle=&quot;popover&quot;</code> 
+attribute to an element.</p>
+<p>Use the <code class="w3-codespan">title</code> attribute to specify the header text of the popover, and use the <code class="w3-codespan">data-content</code> attribute to specify the 
+text that should be displayed inside the popover&apos;s body:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; data-toggle=&quot;popover&quot; title=&quot;Popover Header&quot; data-content=&quot;Some content inside the popover&quot;&gt;Toggle popover&lt;/a&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; data-toggle=&quot;popover&quot; title=&quot;Popover Header&quot; data-content=&quot;Some content inside the popover&quot;&gt;Toggle popover&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Note:</strong> Popovers must be initialized with jQuery: select the 
+specified element and call the popover() method.</p>
+<p>The following code will enable all popovers in the document:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;script&gt;<br>$(document).ready(function(){<br>&#xA0;&#xA0;&#xA0; $(&apos;[data-toggle=&quot;popover&quot;]&apos;).popover(); <br>});<br>&lt;/script&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_popover&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;script&gt;$(document).ready(function(){ $(&apos;[data-toggle=&quot;popover&quot;]&apos;).popover(); });&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Positioning Popovers</h2>
+<p>By default, the popover will appear on the right side of the element.</p>
+<p>Use the <code class="w3-codespan">data-placement</code> attribute to set the position of the 
+popover on top, bottom, left or the right side of the element:</p>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;<br>&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;<br>&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;<br>&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_popover_pos&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;top&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;bottom&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;left&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-placement=&quot;right&quot; data-content=&quot;Content&quot;&gt;Click&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><strong>Tip: </strong>You can also use the data-placement attribute with a 
+value of &quot;auto&quot;, which will let the browser decide the position of the 
+popover. For example, if the value is &quot;auto left&quot;, the popover will display on 
+the left side when possible, otherwise on the right.</p>
+</div>
+<hr>
+
+<h2>Closing Popovers</h2>
+<p>By default, the popover is closed when you click on the element 
+again. However, you can use the <code class="w3-codespan">data-trigger=&quot;focus&quot;</code> attribute which will close 
+the popover when clicking outside the element:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; title=&quot;Dismissible popover&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; data-content=&quot;Click anywhere in the document to close this popover&quot;&gt;Click me&lt;/a&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_popover_focus&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; title=&quot;Dismissible popover&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;focus&quot; data-content=&quot;Click anywhere in the document to close this popover&quot;&gt;Click me&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Tip:</strong> If you want the popover to be displayed when you move 
+the mouse pointer over the element, use the <code class="w3-codespan">data-trigger</code> attribute with a value of 
+&quot;hover&quot;:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;hover&quot; data-content=&quot;Some content&quot;&gt;Hover over me&lt;/a&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_popover_hover&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; title=&quot;Header&quot; data-toggle=&quot;popover&quot; data-trigger=&quot;hover&quot; data-content=&quot;Some content&quot;&gt;Hover over me&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Complete Bootstrap Popover Reference</h2>
+<p>For a complete reference of all popover options, methods and events, go to our
+<a href="bootstrap_ref_js_popover.asp">Bootstrap JS Popover Reference</a>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_tooltip.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_scrollspy.asp">Next &#x276F;</a>
+</div>

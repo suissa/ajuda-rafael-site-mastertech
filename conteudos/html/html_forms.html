@@ -1,0 +1,364 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>HTML <span class="color_h1">Forms</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_xhtml.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_form_elements.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<div class="w3-example">
+<h3>HTML Form Example</h3>
+<div class="w3-white w3-padding notranslate">
+<form action="action_page.php" target="_blank">
+  First name:<br>
+  <input type="text" name="firstname" value="Mickey"><br>
+  Last name:<br>
+  <input type="text" name="lastname" value="Mouse">
+  <br><br>
+  <input type="submit" value="Submit">
+</form> 
+</div>
+<a class="w3-btn w3-margin-top w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_submit" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form&gt;
+ .
+form elements
+ .
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The &lt;form&gt; Element</h2>
+<p>The HTML <strong>&lt;form&gt;</strong> element defines a form that is used to 
+collect user input:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>
+ .<br>
+<i>form elements</i><br>
+ .<br>
+ &lt;/form&gt;<br>
+</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form&gt;
+ 
+ First name:&lt;br&gt; &lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br&gt;
+ 
+ Last name:&lt;br&gt; &lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>An HTML form contains <strong>form elements</strong>.</p>
+<p>Form elements are different types of input elements, like text fields, checkboxes, radio 
+buttons, submit buttons, and more.</p>
+<hr>
+
+<h2>The &lt;input&gt; Element</h2>
+<p>The <strong>&lt;input&gt;</strong> element is the most important form element. </p>
+<p>The &lt;input&gt; element can be displayed in several ways, depending on the <strong>type</strong> 
+attribute.</p>
+<p>Here are some examples:</p>
+<table class="w3-table-all">
+ <tr>
+  <th>Type</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;text&quot;&gt;</td>
+  <td>Defines a one-line text input field</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;radio&quot;&gt;</td>
+  <td>Defines a radio button (for selecting one of many choices)</td>
+ </tr>
+ <tr>
+  <td>&lt;input type=&quot;submit&quot;&gt;</td>
+  <td>Defines a submit button (for submitting the form)</td>
+ </tr>
+</table>
+<div class="w3-panel w3-note">
+<p>You will learn a lot more about input types later in this tutorial.</p>
+</div>
+<hr>
+
+<h2>Text Input</h2>
+<p><strong>&lt;input type=&quot;text&quot;&gt;</strong> defines a one-line input field for 
+<strong>text input</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>
+ &#xA0;
+ First name:&lt;br&gt;<br>&#xA0; &lt;input type=&quot;text&quot; name=&quot;firstname&quot;&gt;&lt;br&gt;<br>
+ &#xA0;
+ Last name:&lt;br&gt;<br>&#xA0; &lt;input type=&quot;text&quot; name=&quot;lastname&quot;&gt;<br>
+ &lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_text" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form&gt; &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot; checked&gt; Male&lt;br&gt;
+ 
+ &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Female&lt;br&gt;
+ &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt; Other&lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This is how it will look like in a browser:</p>
+First name:<br> <input type="text"><br>
+Last name:<br> <input type="text">
+<div class="w3-panel w3-note">
+<p><b>Note:</b> The form itself is not visible. Also note that the default width 
+of a text field is 20 characters.</p>
+</div>
+<hr>
+
+<h2>Radio Button Input</h2>
+<p><strong>&lt;input type=&quot;radio&quot;&gt;</strong> defines a <strong>radio button</strong>.</p>
+<p>Radio buttons let a user select ONE of a limited number of choices:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>&#xA0; &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;male&quot; checked&gt; Male&lt;br&gt;<br>
+ &#xA0;
+ &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;female&quot;&gt; Female&lt;br&gt;<br>&#xA0;
+ &lt;input type=&quot;radio&quot; name=&quot;gender&quot; value=&quot;other&quot;&gt; Other<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_radio" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt; First name:&lt;br&gt; &lt;input type=&quot;text&quot; 
+ name=&quot;firstname&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt; Last name:&lt;br&gt; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt; &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;&lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<input type="radio" name="gender" checked> Male<br>
+<input type="radio" name="gender"> Female<br>
+<input type="radio" name="gender"> Other
+<hr>
+
+<h2>The Submit Button</h2>
+<p><strong>&lt;input type=&quot;submit&quot;&gt;</strong> defines a button for <strong>
+submitting</strong> the form data to a <strong>form-handler</strong>.</p>
+<p>The form-handler is typically a server page with a script for processing 
+input data.</p>
+<p>The form-handler is specified in the form&apos;s <strong>action</strong> 
+attribute:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action=&quot;action_page.php&quot;&gt;<br>&#xA0; First name:&lt;br&gt;<br>&#xA0; &lt;input type=&quot;text&quot; 
+ name=&quot;firstname&quot; value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&#xA0; Last name:&lt;br&gt;<br>&#xA0; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&#xA0; &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_submit" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="action_page.php" target="_blank">
+ First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+ Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</form> 
+<hr>
+
+<h2>The Action Attribute</h2>
+<p>The <strong>action</strong> attribute defines the action to be performed when the form is submitted.</p>
+<p>Normally, the form data is sent to a web page on the server when the user clicks on the submit button.</p>
+<p>In the example above, the form data is sent to a page on the server called &quot;action_page.php&quot;. 
+This page contains a server-side script that handles the form data:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;form <strong>action=&quot;action_page.php</strong>&quot;&gt;<br>
+</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot; method=&quot;get&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>If the action attribute is omitted, the action is set to the current page.</p>
+<hr>
+
+<h2>The Method Attribute</h2>
+<p>The <strong>method</strong> attribute specifies the HTTP method (<strong>GET </strong>or <strong>
+POST</strong>) to be used when submitting the form data:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;form action=&quot;action_page.php&quot; <strong>method=&quot;get&quot;</strong>&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot; method=&quot;post&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>or:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;form action=&quot;action_page.php&quot; <strong>method=&quot;post&quot;</strong>&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;action_page.php?firstname=Mickey&amp;lastname=Mouse&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>When to Use GET?</h2>
+<p>The default method when submitting form data is GET.</p>
+<p>However, when GET is used, the submitted form data will be <strong>visible in the page address 
+field</strong>:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+action_page.php?firstname=Mickey&amp;lastname=Mouse</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt; First name:&lt;br&gt; &lt;input type=&quot;text&quot; 
+ value=&quot;Mickey&quot;&gt;&lt;br&gt; Last name:&lt;br&gt; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt; &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;&lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> GET must NOT be used when sending sensitive 
+information! GET is best suited for short, non-sensitive, amounts of data, 
+because it has size limitations too.</p>
+</div>
+<hr>
+
+<h2>When to Use POST?</h2>
+<p>Always use POST if the form data contains sensitive or personal information. 
+The POST method does not display the submitted form data in the page address field.</p>
+<p>POST has no size limitations, and can be used to send large amounts of data.</p>
+<hr>
+
+<h2>The Name Attribute</h2>
+<p>Each input field must have a <strong>name</strong> attribute to be submitted.</p>
+<p>If the name attribute is omitted, the data of that input field will not be sent at all.</p>
+<p>This example will only submit the &quot;Last name&quot; input field:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action=&quot;action_page.php&quot;&gt;<br>&#xA0; First name:&lt;br&gt;<br>&#xA0; &lt;input type=&quot;text&quot; 
+ value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&#xA0; Last name:&lt;br&gt;<br>&#xA0; &lt;input 
+ type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>&#xA0; &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_submit_id" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form action=&quot;action_page.php&quot;&gt; &lt;fieldset&gt; &lt;legend&gt;Personal 
+ information:&lt;/legend&gt; First name:&lt;br&gt; &lt;input type=&quot;text&quot; name=&quot;firstname&quot; 
+ value=&quot;Mickey&quot;&gt;&lt;br&gt; Last name:&lt;br&gt;
+ 
+ &lt;input type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;
+ 
+ &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt; &lt;/fieldset&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Grouping Form Data with &lt;fieldset&gt;</h2>
+<p>The <strong>&lt;fieldset&gt;</strong> element is used to group related data in a form.</p>
+<p>The <strong>&lt;legend&gt;</strong> element defines a caption for the &lt;fieldset&gt; 
+element.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form action=&quot;action_page.php&quot;&gt;<br>&#xA0; &lt;fieldset&gt;<br>&#xA0;&#xA0;&#xA0; &lt;legend&gt;Personal 
+ information:&lt;/legend&gt;<br>&#xA0;&#xA0;&#xA0; First name:&lt;br&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;text&quot; name=&quot;firstname&quot; 
+ value=&quot;Mickey&quot;&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0; Last name:&lt;br&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;input type=&quot;text&quot; name=&quot;lastname&quot; value=&quot;Mouse&quot;&gt;&lt;br&gt;&lt;br&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;input type=&quot;submit&quot; value=&quot;Submit&quot;&gt;<br>&#xA0; &lt;/fieldset&gt;<br>
+ &lt;/form&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryhtml_form_legend" target="_blank"></a>
+</div>
+<p>This is how the HTML code above will be displayed in a browser:</p>
+<form action="action_page.php" target="_blank">
+<fieldset>
+<legend>Personal information:</legend>
+First name:<br>
+<input type="text" name="firstname" value="Mickey">
+<br>
+Last name:<br>
+<input type="text" name="lastname" value="Mouse">
+<br><br>
+<input type="submit" value="Submit">
+</fieldset>
+</form> 
+<hr>
+
+<h2>More Examples</h2>
+<p><a target="_blank" href="tryit.asp?filename=tryhtml_form_mail">Send e-mail from a form</a><br>
+How to send e-mail from a form.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_forms1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_forms2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_forms3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_forms4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+<hr>
+
+<p>Here is the list of &lt;form&gt; attributes:</p>
+
+<table class="w3-table-all">
+ <tr>
+  <th>Attribute</th>
+  <th>Description</th>
+ </tr>
+ <tr>
+  <td>accept-charset</td>
+  <td>Specifies the charset used in the submitted form (default: the page 
+  charset).</td>
+ </tr>
+ <tr>
+  <td>action</td>
+  <td>Specifies an address (url) where to submit the form (default: the 
+  submitting page).</td>
+ </tr>
+ <tr>
+  <td>autocomplete</td>
+  <td>Specifies if the browser should autocomplete the form (default: on).</td>
+ </tr>
+ <tr>
+  <td>enctype</td>
+  <td>Specifies the encoding of the submitted data (default: is url-encoded).</td>
+ </tr>
+ <tr>
+  <td>method</td>
+  <td>Specifies the HTTP method used when submitting the form (default: GET).</td>
+ </tr>
+ <tr>
+  <td>name</td>
+  <td>Specifies a name used to identify the form (for DOM usage: 
+  document.forms.name).</td>
+ </tr>
+ <tr>
+  <td>novalidate</td>
+  <td>Specifies that the browser should not validate the form.</td>
+ </tr>
+ <tr>
+  <td>target</td>
+  <td>Specifies the target of the address in the action attribute (default: 
+  _self).</td>
+ </tr>
+</table>
+<div class="w3-panel w3-note">
+<p>You will learn more about the form attributes in the next chapters.
+</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_xhtml.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_form_elements.asp">Next &#x276F;</a>
+</div>

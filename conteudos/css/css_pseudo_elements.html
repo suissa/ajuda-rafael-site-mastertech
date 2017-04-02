@@ -1,0 +1,473 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Pseudo-elements</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_pseudo_classes.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_image_transparency.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>What are Pseudo-Elements?</h2>
+<p>A CSS pseudo-element is used to style specified parts of an element.</p>
+<p>For example, it can be used to:</p>
+<ul>
+<li>Style the first letter, or line, of an element</li>
+<li>Insert content before, or after, the content of an element </li>
+</ul>
+<hr>
+<h2>Syntax</h2>
+<p>The syntax of pseudo-elements:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+selector::pseudo-element {<br>&#xA0;&#xA0;&#xA0; property:value;<br>}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;selector::pseudo-element { property:value;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><strong>Notice the double colon notation - </strong> <code class="w3-codespan">::first-line</code> versus
+<code class="w3-codespan">:first-line</code><br><br>The double colon replaced the single-colon 
+notation for pseudo-elements in CSS3. This was an attempt from W3C to 
+distinguish between <strong>pseudo-classes</strong> 
+and <strong>pseudo-elements</strong>.<br><br>The single-colon syntax was used 
+for both pseudo-classes and pseudo-elements in CSS2 and CSS1.<br><br>For 
+backward compatibility, the single-colon syntax is acceptable for CSS2 and CSS1 
+pseudo-elements.</p>
+</div>
+<hr>
+
+<h2>The ::first-line Pseudo-element</h2>
+<p>The <code class="w3-codespan">::first-line</code> pseudo-element is used to add a special style 
+to the first line of a text.</p>
+<p>The following example formats the first line of the text in all &lt;p&gt; 
+elements:</p>
+
+<div class="w3-example">
+<h3>Example&#xA0;</h3>
+<div class="w3-code notranslate cssHigh">
+p::first-line 
+{<br>
+&#xA0;&#xA0;&#xA0;
+color: #ff0000;<br>
+&#xA0;&#xA0;&#xA0;
+font-variant: small-caps;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_firstline" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p::first-line 
+{
+
+color: #ff0000;
+
+font-variant: small-caps;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p><strong>Note:</strong> The <code class="w3-codespan">::first-line</code> pseudo-element can only be applied to block-level 
+elements.</p>
+<p>The following properties apply to the <code class="w3-codespan">::first-line</code> 
+pseudo-element:</p>
+<ul>
+  <li>font properties</li>
+  <li>color properties</li>
+  <li>background properties</li>
+  <li>word-spacing</li>
+  <li>letter-spacing</li>
+  <li>text-decoration</li>
+  <li>vertical-align</li>
+  <li>text-transform</li>
+  <li>line-height</li>
+  <li>clear</li>
+</ul>
+<hr>
+
+<h2>The ::first-letter Pseudo-element</h2>
+<p>The <code class="w3-codespan">::first-letter</code> pseudo-element is used to add a special style to the first 
+letter of a text.</p>
+<p>The following example formats the first letter of the text in all &lt;p&gt; 
+elements:&#xA0;</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p::first-letter 
+{<br>
+&#xA0;&#xA0;&#xA0;
+color: #ff0000;<br>
+&#xA0;&#xA0;&#xA0;
+font-size: xx-large;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_firstletter" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p::first-letter 
+{
+
+color: #ff0000;
+
+font-size: xx-large;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p><strong>Note:</strong> The <code class="w3-codespan">::first-letter</code> pseudo-element can only be applied to block-level 
+elements.</p>
+<p>The following properties apply to the ::first-letter pseudo- element:&#xA0;</p>
+<ul>
+  <li> font properties</li>
+  <li> color properties&#xA0;</li>
+  <li> background properties</li>
+  <li>margin properties</li>
+  <li>padding properties</li>
+  <li>border properties</li>
+  <li>text-decoration</li>
+  <li>vertical-align (only if &quot;float&quot; is &quot;none&quot;)</li>
+  <li>text-transform</li>
+  <li>line-height</li>
+  <li>float</li>
+  <li>clear</li>
+</ul>
+<hr>
+
+<h2>Pseudo-elements and CSS Classes</h2>
+<p>Pseudo-elements can be combined with CSS classes:&#xA0;</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p.intro::first-letter {<br>&#xA0;&#xA0;&#xA0; color: #ff0000;<br>&#xA0;&#xA0;&#xA0; 
+font-size:200%;<br>} </div>
+<a target="_blank" href="tryit.asp?filename=trycss_pseudo-element" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p.intro::first-letter { color: #ff0000; 
+font-size:200%;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The example above will display the first letter of paragraphs with class=&quot;intro&quot;, in 
+red and in a larger size.</p>
+<hr>
+
+<h2>Multiple Pseudo-elements</h2>
+<p>Several pseudo-elements can also be combined.</p>
+<p>In the following example, the first letter of a paragraph will be red, in 
+an xx-large font size. The rest of the first line will be blue, and in 
+small-caps. The rest of the paragraph will be the default font size and color:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p::first-letter
+{<br>
+&#xA0;&#xA0;&#xA0;
+color: #ff0000;<br>
+&#xA0;&#xA0;&#xA0;
+font-size: xx-large;<br>
+}<br><br>
+p::first-line 
+{<br>
+&#xA0;&#xA0;&#xA0;
+color: #0000ff;<br>
+&#xA0;&#xA0;&#xA0;
+font-variant: small-caps;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_firstline_letter" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p::first-letter
+{
+
+color: #ff0000;
+
+font-size: xx-large;
+}
+p::first-line 
+{
+
+color: #0000ff;
+
+font-variant: small-caps;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>CSS - The ::before Pseudo-element</h2>
+<p>The <code class="w3-codespan">::before</code> pseudo-element can be used to insert some content before the content of an element.</p>
+<p>The following example inserts an image before the content of each &lt;h1&gt; element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+h1::before 
+{<br>
+&#xA0;&#xA0;&#xA0;
+content: url(smiley.gif);<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_before" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1::before 
+{
+
+content: url(smiley.gif);
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>CSS - The ::after Pseudo-element</h2>
+<p>The <code class="w3-codespan">::after</code> pseudo-element can be used to insert some content after the content of an element.</p>
+<p>The following example inserts an image after the content of each &lt;h1&gt; element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+h1::after
+{<br>
+&#xA0;&#xA0;&#xA0;
+content: url(smiley.gif);<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_after" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1::after
+{
+
+content: url(smiley.gif);
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>CSS - The ::selection Pseudo-element</h2>
+<p>The <code class="w3-codespan">::selection</code> pseudo-element matches the portion of an element that is 
+selected by a user.</p>
+<p>The following CSS properties can be applied to <code class="w3-codespan">::selection</code>: 
+<code class="w3-codespan">color</code>, 
+<code class="w3-codespan">background</code>, <code class="w3-codespan">cursor</code>, and <code class="w3-codespan">outline</code>.</p>
+<p>The following example makes the selected text red on a yellow background:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+::selection {<br>&#xA0;&#xA0;&#xA0; color: red; <br>&#xA0;&#xA0;&#xA0; 
+background: yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss3_selection" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;::selection { color: red;  
+background: yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_pseudo_elements1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pseudo_elements2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_pseudo_elements3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+<hr>
+
+<h2>All CSS Pseudo Elements</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Selector</th>
+    <th style="width:20%">Example</th>
+    <th>Example description</th>
+  </tr>
+<tr>
+    <td><a href="/cssref/sel_after.asp">::after</a></td>
+    <td class="notranslate">p::after</td>
+    <td>Insert something after the content of each &lt;p&gt; element</td>
+    </tr>
+<tr>
+    <td><a href="/cssref/sel_before.asp">::before</a></td>
+    <td class="notranslate">p::before</td>
+    <td>Insert something before the content of each &lt;p&gt; element</td>
+    </tr>
+<tr>
+    <td><a href="/cssref/sel_firstletter.asp">::first-letter</a></td>
+    <td class="notranslate">p::first-letter</td>
+    <td>Selects the first letter of each &lt;p&gt; element</td>
+  </tr>
+<tr>
+    <td><a href="/cssref/sel_firstline.asp">::first-line</a></td>
+    <td class="notranslate">p::first-line</td>
+    <td>Selects the first line of each &lt;p&gt; element</td>
+  </tr>
+<tr>
+    <td><a href="/cssref/sel_selection.asp">::selection</a></td>
+    <td class="notranslate">p::selection</td>
+    <td>Selects the portion of an element that is selected by a user</td>
+  </tr>
+</table>
+
+<h2>All CSS Pseudo Classes</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Selector</th>
+    <th style="width:20%">Example</th>
+    <th>Example description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_active.asp">:active</a></td>
+    <td class="notranslate">a:active</td>
+    <td>Selects the active link</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_checked.asp">:checked</a></td>
+    <td class="notranslate">input:checked</td>
+    <td>Selects every checked &lt;input&gt; element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_disabled.asp">:disabled</a></td>
+    <td class="notranslate">input:disabled</td>
+    <td>Selects every disabled &lt;input&gt; element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_empty.asp">:empty</a></td>
+    <td class="notranslate">p:empty</td>
+    <td>Selects every &lt;p&gt; element that has no children</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_enabled.asp">:enabled</a></td>
+    <td class="notranslate">input:enabled</td>
+    <td>Selects every enabled &lt;input&gt; element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_firstchild.asp">:first-child</a></td>
+    <td class="notranslate">p:first-child</td>
+    <td>Selects every &lt;p&gt; elements that is the first child of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_first-of-type.asp">:first-of-type</a></td>
+    <td class="notranslate">p:first-of-type</td>
+    <td>Selects every &lt;p&gt; element that is the first &lt;p&gt; element of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_focus.asp">:focus</a></td>
+    <td class="notranslate">input:focus</td>
+    <td>Selects the &lt;input&gt; element that has focus</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_hover.asp">:hover</a></td>
+    <td class="notranslate">a:hover</td>
+    <td>Selects links on mouse over</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_in-range.asp">:in-range</a></td>
+    <td class="notranslate">input:in-range</td>
+    <td>Selects &lt;input&gt; elements with a value within a specified range</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_invalid.asp">:invalid</a></td>
+    <td class="notranslate">input:invalid</td>
+    <td>Selects all &lt;input&gt; elements with an invalid value</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_lang.asp">:lang(<i>language</i>)</a></td>
+    <td class="notranslate">p:lang(it)</td>
+    <td>Selects every &lt;p&gt; element with a lang attribute value starting with &quot;it&quot;</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_last-child.asp">:last-child</a></td>
+    <td class="notranslate">p:last-child</td>
+    <td>Selects every &lt;p&gt; elements that is the last child of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_last-of-type.asp">:last-of-type</a></td>
+    <td class="notranslate">p:last-of-type</td>
+    <td>Selects every &lt;p&gt; element that is the last &lt;p&gt; element of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_link.asp">:link</a></td>
+    <td class="notranslate">a:link</td>
+    <td>Selects all unvisited links</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_not.asp">:not(selector)</a></td>
+    <td class="notranslate">:not(p)</td>
+    <td>Selects every element that is not a &lt;p&gt; element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_nth-child.asp">:nth-child(n)</a></td>
+    <td class="notranslate">p:nth-child(2)</td>
+    <td>Selects every &lt;p&gt; element that is the second child of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_nth-last-child.asp">:nth-last-child(n)</a></td>
+    <td class="notranslate">p:nth-last-child(2)</td>
+    <td>Selects every &lt;p&gt; element that is the second child of its parent, counting from the last child</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_nth-last-of-type.asp">:nth-last-of-type(n)</a></td>
+    <td class="notranslate">p:nth-last-of-type(2)</td>
+    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent, counting from the last child</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_nth-of-type.asp">:nth-of-type(n)</a></td>
+    <td class="notranslate">p:nth-of-type(2)</td>
+    <td>Selects every &lt;p&gt; element that is the second &lt;p&gt; element of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_only-of-type.asp">:only-of-type</a></td>
+    <td class="notranslate">p:only-of-type</td>
+    <td>Selects every &lt;p&gt; element that is the only &lt;p&gt; element of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_only-child.asp">:only-child</a></td>
+    <td class="notranslate">p:only-child</td>
+    <td>Selects every &lt;p&gt; element that is the only child of its parent</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_optional.asp">:optional</a></td>
+    <td class="notranslate">input:optional</td>
+    <td>Selects &lt;input&gt; elements with no &quot;required&quot; attribute</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_out-of-range.asp">:out-of-range</a></td>
+    <td class="notranslate">input:out-of-range</td>
+    <td>Selects &lt;input&gt; elements with a value outside a specified range</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_read-only.asp">:read-only</a></td>
+    <td class="notranslate">input:read-only</td>
+    <td>Selects &lt;input&gt; elements with a &quot;readonly&quot; attribute specified</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_read-write.asp">:read-write</a></td>
+    <td class="notranslate">input:read-write</td>
+    <td>Selects &lt;input&gt; elements with no &quot;readonly&quot; attribute</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_required.asp">:required</a></td>
+    <td class="notranslate">input:required</td>
+    <td>Selects &lt;input&gt; elements with a &quot;required&quot; attribute specified</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_root.asp">:root</a></td>
+    <td class="notranslate">root</td>
+    <td>Selects the document&apos;s root element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_target.asp">:target</a></td>
+    <td class="notranslate">#news:target</td>
+    <td>Selects the current active #news element (clicked on a URL containing that anchor name)</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_valid.asp">:valid</a></td>
+    <td class="notranslate">input:valid</td>
+    <td>Selects all &lt;input&gt; elements with a valid value</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/sel_visited.asp">:visited</a></td>
+    <td class="notranslate">a:visited</td>
+    <td>Selects all visited links</td>
+  </tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_pseudo_classes.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_image_transparency.asp">Next &#x276F;</a>
+</div>

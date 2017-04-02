@@ -1,0 +1,172 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Layout - float and clear</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_overflow.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_inline-block.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The <code class="w3-codespan">float</code> property specifies whether or not an element should float.</p>
+<p class="intro">The <code class="w3-codespan">clear</code> property is used to control the behavior of floating elements.</p>
+
+<div style="background-color:#2196F3;padding:20px;float:left;width:30%;opacity:0.85;text-align:center;">
+<span class="floatl"></span>
+</div>
+<div style="background-color:#F44336;padding:20px;float:right;width:30%;opacity:0.85;text-align:center;">
+<span class="floatr"></span>
+</div>
+<br><br><br>
+<hr style="clear:both;margin-bottom:15px;">
+
+<h2>The float Property</h2>
+<p>In its simplest use, the <code class="w3-codespan">float</code> property can be used to wrap text around images.</p>
+<p>The following example specifies that an image should float to the right in a 
+text:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+img {<br>&#xA0;&#xA0;&#xA0; float: right;<br>&#xA0;&#xA0;&#xA0; margin: 0 0 
+10px 10px;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_layout_float" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;img { float: right; margin: 0 0 
+10px 10px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The clear Property</h2>
+<p>The <code class="w3-codespan">clear</code> property is used to control the behavior of floating 
+elements.</p>
+<p>Elements after a floating element will flow around it. To avoid this, use the
+<code class="w3-codespan">clear</code> property.</p>
+<p>The <code class="w3-codespan">clear</code> property specifies on which sides of an element 
+floating elements are not allowed to float:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div {<br>&#xA0;&#xA0;&#xA0; clear: left;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_layout_clear" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div { clear: left;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The clearfix Hack</h2>
+<p>If an element is taller than the element containing it, and it is floated, it 
+will overflow outside of its container.</p>
+<p>Then we can add <code class="w3-codespan">overflow: auto;</code> to the containing element to fix 
+this problem:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.clearfix {<br>&#xA0;&#xA0;&#xA0; overflow: auto;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_layout_clearfix" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.clearfix { overflow: auto;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The overflow:auto clearfix works well as long as you are able to keep control of your margins and padding (else you 
+might see scrollbars). The 
+<strong>new, modern clearfix hack</strong> however, is safer to use, and the following code is used for most webpages:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.clearfix::after {<br>&#xA0;&#xA0;&#xA0; content: &quot;&quot;;<br>&#xA0;&#xA0;&#xA0; 
+  clear: both;<br>&#xA0;&#xA0;&#xA0; display: table;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_layout_clearfix2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.clearfix::after { content: &quot;&quot;; 
+  clear: both; display: table;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-note w3-panel">
+<p>You will learn more about the <code class="w3-codespan">::after</code> pseduo-element in a later chapter.</p>
+</div>
+<hr>
+
+<h2>Web Layout Example</h2>
+<p>It is common to do entire web layouts using the <code class="w3-codespan">float</code> property:</p>
+<iframe src="trycss_layout_cols.htm" class="w3-hide-small" style="width:100%;border:1px solid #f1f1f1;height:420px;padding:5px;overflow:auto"></iframe>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+  .header, .footer {<br>&#xA0;&#xA0;&#xA0; background-color: grey;<br>&#xA0;&#xA0;&#xA0; 
+  color: white;<br>&#xA0;&#xA0;&#xA0; padding: 15px;<br>}<br><br>.column {<br>&#xA0;&#xA0;&#xA0; float: left;<br>&#xA0;&#xA0;&#xA0; 
+  padding: 15px;<br>}<br><br>.clearfix::after {<br>&#xA0;&#xA0;&#xA0; content: 
+  &quot;&quot;;<br>&#xA0;&#xA0;&#xA0; clear: both;<br>&#xA0;&#xA0;&#xA0; display: table;<br>
+  }<br><br>.menu {<br>&#xA0;&#xA0;&#xA0; 
+  width: 25%;<br>}<br><br>.content {<br>&#xA0;&#xA0;&#xA0; width: 75%;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_layout_cols" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.header, .footer { background-color: grey; 
+  color: white; padding: 15px;}.column { float: left; 
+  padding: 15px;}.clearfix::after { content: 
+  &quot;&quot;; clear: both; display: table;
+  }.menu { 
+  width: 25%;}.content { width: 75%;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>More Examples</h2>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_float2">An image with border and margins that floats to the right in a paragraph</a><br>
+Let an image float to the right in a paragraph. Add border and margins to the image.</p>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_float3">An image with a caption that floats to the right</a><br>
+Let an image with a caption float to the right.</p>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_float4">Let the first letter of a paragraph float to the left</a><br>
+Let the first letter of a paragraph float to the left and style the letter.</p>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_float5">Creating a horizontal menu</a><br>
+Use float with a list of hyperlinks to create a horizontal menu.</p>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_layout_webpage">Creating a homepage without tables</a><br>
+Use float to create a homepage with a navbar, header, footer, left content and main content.</p>
+<hr>
+
+<h2>All CSS Float Properties</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_class_clear.asp">clear</a></td>
+    <td>Specifies on which sides of an element where floating elements are not allowed to float</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_class_float.asp">float</a></td>
+    <td>Specifies whether or not an element should float</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_pos_overflow.asp">overflow</a></td>
+    <td>Specifies what happens if content overflows an element&apos;s box</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_overflow-x.asp">overflow-x</a></td>
+    <td>Specifies what to do with the left/right edges of the content if it overflows the element&apos;s content area</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_overflow-y.asp">overflow-y</a></td>
+    <td>Specifies what to do with the top/bottom edges of the content if it overflows the element&apos;s content area</td>
+  </tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_overflow.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_inline-block.asp">Next &#x276F;</a>
+</div>

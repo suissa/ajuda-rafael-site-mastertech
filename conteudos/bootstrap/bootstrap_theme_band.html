@@ -1,0 +1,928 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap Theme<span class="color_h1"> &quot;The Band&quot;</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_theme_company.asp">&#x276E; Previous</a>
+ <a class="w3-right w3-btn" href="bootstrap_examples.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Create a Theme: &quot;The Band&quot;</h2>
+<p>This page will show you how to build a Bootstrap theme from scratch.</p>
+<p>We will start with a simple HTML page, and then add more and more components, 
+until we have a fully functional, personal and responsive website.</p>
+<p>The result will look like this, and you are free to modify, save, share, use or do whatever you want with it:</p>
+<div class="w3-example">
+<iframe src="trybs_theme_band_full.htm" style="margin:25px 0 50px 0;height:750px;border:none;width:100%;"></iframe>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;title&gt;Bootstrap Theme The Band&lt;/title&gt; &lt;meta charset=&quot;utf-8&quot;&gt;&lt;/head&gt;&lt;body&gt;
+ &lt;div&gt; &lt;h3&gt;THE BAND&lt;/h3&gt; &lt;p&gt;We love music!&lt;/p&gt; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="btncon">
+<a href="trybs_theme_band_full.htm" target="_blank" class="btn btn-default">Full Page Demo <i class="fa fa-file-text"></i></a>
+<a href="tryit.asp?filename=trybs_theme_band_complete&amp;stacked=h" target="_blank" class="btn btn-default">Full Source Code <i class="fa fa-file-text-o"></i></a>
+</div>
+<hr>
+<h2>HTML Start Page</h2>
+<p>We will start with the following HTML page:</p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;head&gt;<br>&#xA0; &lt;title&gt;Bootstrap Theme The Band&lt;/title&gt;<br>&#xA0; &lt;meta charset=&quot;utf-8&quot;&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>
+ &lt;div&gt;<br>&#xA0; &lt;h3&gt;THE BAND&lt;/h3&gt;<br>&#xA0; &lt;p&gt;We love music!&lt;/p&gt;<br>&#xA0; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html lang=&quot;en&quot;&gt;&lt;head&gt; &lt;title&gt;Bootstrap Theme The Band&lt;/title&gt; &lt;meta charset=&quot;utf-8&quot;&gt; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt; &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt; &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt; &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;
+ &lt;/head&gt;&lt;body&gt;&lt;div class=&quot;container&quot;&gt; &lt;h3&gt;THE BAND&lt;/h3&gt; &lt;p&gt;We love music!&lt;/p&gt; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;&lt;/div&gt;&lt;/body&gt;&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Bootstrap CDN and Add a Container</h2>
+<p>Add Bootstrap CDN and a link to jQuery and put HTML elements inside a 
+container 
+(<code class="w3-codespan">.container</code>):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html lang=&quot;en&quot;&gt;<br>&lt;head&gt;<br>&#xA0; &lt;title&gt;Bootstrap Theme The Band&lt;/title&gt;<br>&#xA0; &lt;meta charset=&quot;utf-8&quot;&gt;<br>&#xA0; &lt;meta name=&quot;viewport&quot; content=&quot;width=device-width, initial-scale=1&quot;&gt;<br>&#xA0; &lt;link rel=&quot;stylesheet&quot; href=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css&quot;&gt;<br>&#xA0; &lt;script src=&quot;https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js&quot;&gt;&lt;/script&gt;<br>&#xA0; &lt;script src=&quot;https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js&quot;&gt;&lt;/script&gt;<br>
+ &lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;div class=&quot;container&quot;&gt;<br>&#xA0; &lt;h3&gt;THE BAND&lt;/h3&gt;<br>&#xA0; &lt;p&gt;We love music!&lt;/p&gt;<br>&#xA0; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;<br>&lt;/div&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;</div>
+<p>Result:</p>
+<div class="w3-padding w3-white">
+  <h3>THE BAND</h3>
+  <p>We love music!</p>
+  <p>We have created a fictional band website. Lorem ipsum..</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_container&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container text-center&quot;&gt; &lt;h3&gt;THE BAND&lt;/h3&gt; &lt;p&gt;&lt;em&gt;We love music!&lt;/em&gt;&lt;/p&gt; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Center Text</h2>
+<p>Add the <code class="w3-codespan">.text-center</code> class to center the text inside the 
+container, and use the <code class="w3-codespan">&lt;em&gt;</code> element to make the &quot;We love music&quot; text italic:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container text-center&quot;&gt;<br>&#xA0; &lt;h3&gt;THE BAND&lt;/h3&gt;<br>&#xA0; &lt;p&gt;&lt;em&gt;We love music!&lt;/em&gt;&lt;/p&gt;<br>&#xA0; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div class="w3-padding w3-white text-center">
+  <h3>THE BAND</h3>
+  <p><em>We love music!</em></p>
+  <p>We have created a fictional band website. Lorem ipsum..</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_container_center&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;.container { padding: 80px 120px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Padding</h2>
+<p>Use CSS to make the container look good with padding:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ .container {<br>&#xA0;&#xA0;&#xA0; padding: 80px 120px;<br>}</div>
+<p>Result:</p>
+<div class="w3-padding-64 w3-white text-center">
+  <h3>THE BAND</h3>
+  <p><em>We love music!</em></p>
+  <p>We have created a fictional band website. Lorem ipsum..</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_container_padding&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container text-center&quot;&gt; &lt;h3&gt;THE BAND&lt;/h3&gt; &lt;p&gt;&lt;em&gt;We love music!&lt;/em&gt;&lt;/p&gt; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt; &lt;br&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add a Grid</h2>
+<p>Create three columns of equal width (<code class="w3-codespan">.col-sm-4</code>), add text and 
+images, and put them inside the container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container text-center&quot;&gt;<br>&#xA0; &lt;h3&gt;THE BAND&lt;/h3&gt;<br>&#xA0; &lt;p&gt;&lt;em&gt;We love music!&lt;/em&gt;&lt;/p&gt;<br>&#xA0; &lt;p&gt;We have created a fictional band website. Lorem ipsum..&lt;/p&gt;<br>&#xA0; &lt;br&gt;<br>&#xA0; &lt;div class=&quot;row&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div class="w3-padding w3-white text-center">
+<h3>THE BAND</h3>
+<p><em>We love music!</em></p>
+<p>We have created a fictional band website. Lorem ipsum..</p>
+<br>
+<div class="row" style="padding-bottom:25px;">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" alt="Random Name" width="160" height="160">
+    </div>
+    <div class="col-sm-4">
+      <p class="txext-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" alt="Random Name" width="160" height="160">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" alt="Random Name" width="160" height="160">
+    </div>
+</div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_container_grid&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;.person { border: 10px solid transparent;
+ 
+ margin-bottom: 25px; width: 80%; height: 80%; opacity: 0.7;}
+ .person:hover { border-color: #f1f1f1;}&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Circle Image</h2>
+<p>Shape the image to a circle with the <code class="w3-codespan">.img-circle</code> class.</p>
+<p>We have also added some CSS to make the images look good:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ .person {<br>&#xA0;&#xA0;&#xA0; border: 10px solid transparent;<br>
+ &#xA0;&#xA0;&#xA0;
+ margin-bottom: 25px;<br>&#xA0;&#xA0;&#xA0; width: 80%;<br>&#xA0;&#xA0;&#xA0; height: 80%;<br>&#xA0;&#xA0;&#xA0; opacity: 0.7;<br>}<br>
+ .person:hover {<br>&#xA0;&#xA0;&#xA0; border-color: #f1f1f1;<br>}<br><br>&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br>&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br>&lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br></div>
+<p>Result:</p>
+<div class="w3-padding w3-white text-center">
+<div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" class="img-circle person" alt="Random Name">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" class="img-circle person" alt="Random Name">
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <img src="bandmember.jpg" class="img-circle person" alt="Random Name">
+    </div>
+</div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_img_css&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt; &lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt; &lt;/a&gt; &lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt; &lt;p&gt;Guitarist and Lead Vocalist&lt;/p&gt; &lt;p&gt;Loves long walks on the beach&lt;/p&gt; &lt;p&gt;Member since 1988&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
+ 
+ &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;
+ 
+ &lt;a href=&quot;#demo2&quot; data-toggle=&quot;collapse&quot;&gt; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt; &lt;/a&gt; &lt;div id=&quot;demo2&quot; class=&quot;collapse&quot;&gt; &lt;p&gt;Drummer&lt;/p&gt; &lt;p&gt;Loves drummin&apos;&lt;/p&gt; &lt;p&gt;Member since 1988&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt; &lt;a href=&quot;#demo3&quot; data-toggle=&quot;collapse&quot;&gt; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt; &lt;/a&gt; &lt;div id=&quot;demo3&quot; class=&quot;collapse&quot;&gt; &lt;p&gt;Bass player&lt;/p&gt; &lt;p&gt;Loves math&lt;/p&gt; &lt;p&gt;Member since 2005&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Collapsibles</h2>
+<p>Make the images collapsible; show extra content when you click on each image:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0; &lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/a&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Guitarist and Lead Vocalist&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Loves long walks on the beach&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Member since 1988&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>
+ &#xA0;
+ &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;a href=&quot;#demo2&quot; data-toggle=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/a&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;demo2&quot; class=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Drummer&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Loves drummin&apos;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Member since 1988&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;text-center&quot;&gt;&lt;strong&gt;Name&lt;/strong&gt;&lt;/p&gt;&lt;br&gt;<br>&#xA0;&#xA0;&#xA0; &lt;a href=&quot;#demo3&quot; data-toggle=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;bandmember.jpg&quot; class=&quot;img-circle person&quot; alt=&quot;Random Name&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/a&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;demo3&quot; class=&quot;collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Bass player&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Loves math&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Member since 2005&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result (click on the images to see the effect):</p>
+<div class="w3-padding w3-white text-center">
+  <div class="row">
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo" data-toggle="collapse"></a>
+      <div id="demo" class="collapse">
+        <p>Guitarist and Lead Vocalist</p>
+        <p>Loves long walks on the beach</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo2" data-toggle="collapse"></a>
+      <div id="demo2" class="collapse">
+        <p>Drummer</p>
+        <p>Loves drummin&apos;</p>
+        <p>Member since 1988</p>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <p class="text-center"><strong>Name</strong></p><br>
+      <a href="#demo3" data-toggle="collapse"></a>
+      <div id="demo3" class="collapse">
+        <p>Bass player</p>
+        <p>Loves math</p>
+        <p>Member since 2005</p>
+      </div>
+    </div>
+  </div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_collapsible&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt; &lt;!-- Indicators --&gt; &lt;ol class=&quot;carousel-indicators&quot;&gt; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt; &lt;/ol&gt;
+  &lt;!-- Wrapper for slides --&gt; &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt; &lt;div class=&quot;item active&quot;&gt; &lt;img src=&quot;ny.jpg&quot; alt=&quot;New York&quot;&gt; &lt;div class=&quot;carousel-caption&quot;&gt; &lt;h3&gt;New York&lt;/h3&gt; &lt;p&gt;The atmosphere in New York is lorem ipsum.&lt;/p&gt; &lt;/div&gt;  &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img src=&quot;chicago.jpg&quot; alt=&quot;Chicago&quot;&gt; &lt;div class=&quot;carousel-caption&quot;&gt; &lt;h3&gt;Chicago&lt;/h3&gt; &lt;p&gt;Thank you, Chicago - A night we won&apos;t forget.&lt;/p&gt; &lt;/div&gt;  &lt;/div&gt; &lt;div class=&quot;item&quot;&gt; &lt;img src=&quot;la.jpg&quot; alt=&quot;Los Angeles&quot;&gt; &lt;div class=&quot;carousel-caption&quot;&gt; &lt;h3&gt;LA&lt;/h3&gt; &lt;p&gt;Even though the traffic was a mess, we had the best time.&lt;/p&gt; &lt;/div&gt;  &lt;/div&gt; &lt;/div&gt; &lt;!-- Left and right controls --&gt; &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt; &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt; &lt;/a&gt; &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt; &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt; &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt; &lt;/a&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add a Carousel</h2>
+<p>Create a carousel and add it before the container:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div id=&quot;myCarousel&quot; class=&quot;carousel slide&quot; data-ride=&quot;carousel&quot;&gt;<br>&#xA0; &lt;!-- Indicators --&gt;<br>&#xA0; &lt;ol class=&quot;carousel-indicators&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;0&quot; class=&quot;active&quot;&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;1&quot;&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0; &lt;li data-target=&quot;#myCarousel&quot; data-slide-to=&quot;2&quot;&gt;&lt;/li&gt;<br>&#xA0; &lt;/ol&gt;<br>
+ <br>&#xA0; &lt;!-- Wrapper for slides --&gt;<br>&#xA0; &lt;div class=&quot;carousel-inner&quot; role=&quot;listbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;item active&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;ny.jpg&quot; alt=&quot;New York&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;carousel-caption&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h3&gt;New York&lt;/h3&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;The atmosphere in New York is lorem ipsum.&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br><br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;item&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;chicago.jpg&quot; alt=&quot;Chicago&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;carousel-caption&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h3&gt;Chicago&lt;/h3&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Thank you, Chicago - A night we won&apos;t forget.&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br><br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;item&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;la.jpg&quot; alt=&quot;Los Angeles&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;carousel-caption&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h3&gt;LA&lt;/h3&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Even though the traffic was a mess, we had the best time.&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br><br>&#xA0; &lt;!-- Left and right controls --&gt;<br>&#xA0; &lt;a class=&quot;left carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;prev&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;glyphicon glyphicon-chevron-left&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;sr-only&quot;&gt;Previous&lt;/span&gt;<br>&#xA0; &lt;/a&gt;<br>&#xA0; &lt;a class=&quot;right carousel-control&quot; href=&quot;#myCarousel&quot; role=&quot;button&quot; data-slide=&quot;next&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;glyphicon glyphicon-chevron-right&quot; aria-hidden=&quot;true&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;sr-only&quot;&gt;Next&lt;/span&gt;<br>&#xA0; &lt;/a&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div id="myCarousel" class="carousel slide" data-ride="carousel" data-interval="500000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel" data-slide-to="1"></li>
+      <li data-target="#myCarousel" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner" role="listbox">
+      <div class="item active">
+        <img src="ny.jpg" alt="New York">
+        <div class="carousel-caption">
+          <h3 style="color:white;">New York</h3>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago">
+        <div class="carousel-caption">
+          <h3 style="color:white;">Chicago</h3>
+          <p>Thank you, Chicago - A night we won&apos;t forget.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="la.jpg" alt="Los Angeles">
+        <div class="carousel-caption">
+          <h3 style="color:white;">LA</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel" role="button" data-slide="prev"></a>
+    <a class="right carousel-control" href="#myCarousel" role="button" data-slide="next"></a>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_carousel&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;.carousel-inner img { -webkit-filter: grayscale(90%); filter: grayscale(90%); /* make all photos black and white */  width: 100%; /* Set width to 100% */ margin: auto;}
+ .carousel-caption h3 { color: #fff !important;
+ }@media (max-width: 600px) { .carousel-caption { display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */ }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Style The Carousel</h2>
+<p>Use CSS to style the carousel:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ .carousel-inner img {<br>&#xA0;&#xA0;&#xA0; -webkit-filter: grayscale(90%);<br>&#xA0;&#xA0;&#xA0; filter: grayscale(90%); /* make all photos black and white */ <br>&#xA0;&#xA0;&#xA0; width: 100%; /* Set width to 100% */<br>&#xA0;&#xA0;&#xA0; margin: auto;<br>}<br>
+ <br>.carousel-caption h3 {<br>&#xA0;&#xA0;&#xA0; color: #fff !important;<br>
+ }<br><br>@media (max-width: 600px) {<br>&#xA0;&#xA0;&#xA0; .carousel-caption {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; display: none; /* Hide the carousel text when the screen is less than 600 pixels wide */<br>&#xA0;&#xA0;&#xA0; }<br>}</div>
+<p>Result:</p>
+<div id="myCarousel2" class="carousel slide" data-ride="carousel" data-interval="500000">
+    <!-- Indicators -->
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel2" data-slide-to="0" class="active"></li>
+      <li data-target="#myCarousel2" data-slide-to="1"></li>
+      <li data-target="#myCarousel2" data-slide-to="2"></li>
+    </ol>
+
+    <!-- Wrapper for slides -->
+    <div class="carousel-inner test" role="listbox">
+      <div class="item active">
+        <img src="ny.jpg" alt="New York">
+        <div class="carousel-caption">
+          <h3 style="color:white;">New York</h3>
+          <p>The atmosphere in New York is lorem ipsum.</p>
+        </div>      
+      </div>
+
+      <div class="item">
+        <img src="chicago.jpg" alt="Chicago">
+        <div class="carousel-caption">
+          <h3 style="color:white;">Chicago</h3>
+          <p>Thank you, Chicago - A night we won&apos;t forget.</p>
+        </div>      
+      </div>
+    
+      <div class="item">
+        <img src="la.jpg" alt="Los Angeles">
+        <div class="carousel-caption">
+          <h3 style="color:white;">LA</h3>
+          <p>Even though the traffic was a mess, we had the best time playing at Venice Beach!</p>
+        </div>      
+      </div>
+    </div>
+
+    <!-- Left and right controls -->
+    <a class="left carousel-control" href="#myCarousel2" role="button" data-slide="prev"></a>
+    <a class="right carousel-control" href="#myCarousel2" role="button" data-slide="next"></a>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_carousel_css&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;style&gt;.bg-1 { background: #2d2d30; color: #bdbdbd;}.bg-1 h3 {color: #fff;}.bg-1 p {font-style: italic;}&lt;/style&gt;&lt;div class=&quot;bg-1&quot;&gt; &lt;div class=&quot;container&quot;&gt; &lt;h3 class=&quot;text-center&quot;&gt;TOUR DATES&lt;/h3&gt; &lt;p class=&quot;text-center&quot;&gt;Lorem ipsum we&apos;ll play you some music.&lt;br&gt; Remember to book your tickets!&lt;/p&gt; &lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item&quot;&gt;September Sold Out!&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;October Sold Out!&lt;/li&gt;  &lt;li class=&quot;list-group-item&quot;&gt;November 3&lt;/li&gt;  &lt;/ul&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Tour Container</h2>
+<p>Add a new container and add a list (<code class="w3-codespan">.list-group</code> and <code class="w3-codespan">.list-group-item</code>) inside 
+of it.</p>
+<p>Add a custom class (<code class="w3-codespan">.bg-1</code>) to the container (black background color) and some 
+styles to 
+its children:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>.bg-1 {<br>&#xA0;&#xA0;&#xA0; background: #2d2d30;<br>&#xA0;&#xA0;&#xA0; color: #bdbdbd;<br>}<br>.bg-1 h3 {color: #fff;}<br>.bg-1 p {font-style: italic;}<br>&lt;/style&gt;<br><br>&lt;div class=&quot;bg-1&quot;&gt;<br>&#xA0; &lt;div class=&quot;container&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h3 class=&quot;text-center&quot;&gt;TOUR DATES&lt;/h3&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;text-center&quot;&gt;Lorem ipsum we&apos;ll play you some music.&lt;br&gt; Remember to book your tickets!&lt;/p&gt;<br><br>&#xA0;&#xA0;&#xA0; &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;September Sold Out!&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;October Sold Out!&lt;/li&gt; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;November 3&lt;/li&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/ul&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br></div>
+<p>Result:</p>
+<div style="background-color:#2d2d30;color:#bdbdbd;padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+    <h3 class="text-center" style="color:#fff">TOUR DATES</h3>
+    <p class="text-center" style="font-style:italic;">Lorem ipsum we&apos;ll play you some music.<br> Remember to book your tickets!</p>
+    <ul class="list-group">
+      <li class="list-group-item">September Sold Out!</li>
+      <li class="list-group-item">October Sold Out!</li> 
+      <li class="list-group-item">November 3</li> 
+    </ul>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_list&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item&quot;&gt;September &lt;span class=&quot;label label-danger&quot;&gt;Sold Out!&lt;/span&gt;&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;October &lt;span class=&quot;label label-danger&quot;&gt;Sold Out!&lt;/span&gt;&lt;/li&gt;  &lt;li class=&quot;list-group-item&quot;&gt;November &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Labels &amp; Badges</h2>
+<p>Add a label (<code class="w3-codespan">.label</code>) and a badge (<code class="w3-codespan">.badge</code>) to highlight available tickets/sold out:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;September &lt;span class=&quot;label label-danger&quot;&gt;Sold Out!&lt;/span&gt;&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;October &lt;span class=&quot;label label-danger&quot;&gt;Sold Out!&lt;/span&gt;&lt;/li&gt; <br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;November &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/li&gt; <br>&lt;/ul&gt;</div>
+<p>Result:</p>
+<div style="background-color:#2d2d30;color:#bdbdbd;padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+    <h3 class="text-center" style="color:#fff">TOUR DATES</h3>
+    <p class="text-center" style="font-style:italic;">Lorem ipsum we&apos;ll play you some music.<br> Remember to book your tickets!</p>
+    <ul class="list-group">
+      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item">November <span class="badge">3</span></li> 
+    </ul>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_label&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;row text-center&quot;&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;div class=&quot;thumbnail&quot;&gt; &lt;img src=&quot;paris.jpg&quot; alt=&quot;Paris&quot;&gt;
+ 
+ &lt;p&gt;&lt;strong&gt;Paris&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Fri. 27 November 2015&lt;/p&gt; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt;
+ 
+ &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;div class=&quot;thumbnail&quot;&gt; &lt;img src=&quot;newyork.jpg&quot; alt=&quot;New York&quot;&gt; &lt;p&gt;&lt;strong&gt;New York&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Sat. 28 November 2015&lt;/p&gt; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt; &lt;/div&gt;
+ 
+ &lt;/div&gt; &lt;div class=&quot;col-sm-4&quot;&gt; &lt;div class=&quot;thumbnail&quot;&gt; &lt;img src=&quot;sanfran.jpg&quot; alt=&quot;San Francisco&quot;&gt; &lt;p&gt;&lt;strong&gt;San Francisco&lt;/strong&gt;&lt;/p&gt; &lt;p&gt;Sun. 29 November 2015&lt;/p&gt; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt; &lt;/div&gt; &lt;/div&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Thumbnail Images</h2>
+<p>Inside the Tour container, add three columns of equal width (<code class="w3-codespan">.col-sm-4</code>):</p>
+<p>Inside each column, add an image.</p>
+<p>Then, use the <code class="w3-codespan">.img-thumbnail</code> class to shape the image to a thumbnail.</p>
+<p>Normally, you would add the <code class="w3-codespan">.img-thumbnail</code> class directly to the 
+<code class="w3-codespan">&lt;img&gt;</code> element. In this example, we have placed a thumbnail container around the image, so that we can specify an image text as well.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;row text-center&quot;&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;thumbnail&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;paris.jpg&quot; alt=&quot;Paris&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;p&gt;&lt;strong&gt;Paris&lt;/strong&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Fri. 27 November 2015&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;thumbnail&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;newyork.jpg&quot; alt=&quot;New York&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;strong&gt;New York&lt;/strong&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Sat. 28 November 2015&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>
+ &#xA0;
+ &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;col-sm-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;thumbnail&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;img src=&quot;sanfran.jpg&quot; alt=&quot;San Francisco&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;strong&gt;San Francisco&lt;/strong&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Sun. 29 November 2015&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>
+ &lt;/div&gt;</div>
+<p>Result:</p>
+<div style="background-color:#2d2d30;color:#bdbdbd;padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+   <div class="row text-center">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>Paris</strong></p>
+        <p>Fri. 27 November 2015</p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>New York</strong></p>
+        <p>Sat. 28 November 2015</p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>San Francisco</strong></p>
+        <p>Sun. 29 November 2015</p>
+        <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+      </div>
+    </div>
+</div></div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_thumbnails&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;/* Remove rounded borders from list */.list-group-item:first-child { border-top-right-radius: 0; border-top-left-radius: 0;
+ }.list-group-item:last-child { border-bottom-right-radius: 0; border-bottom-left-radius: 0;}/* Remove border and add padding to thumbnails */.thumbnail { padding: 0 0 15px 0; border: none; border-radius: 0;
+ }.thumbnail p { margin-top: 15px; color: #555;}
+ /* Black buttons with extra padding and without rounded borders */.btn {
+ 
+ padding: 10px 20px; background-color: #333; color: #f1f1f1;
+ 
+ border-radius: 0; transition: .2s;}/* On hover, the color of .btn will transition to white with black text */.btn:hover, .btn:focus {
+ 
+ border: 1px solid #333; background-color: #fff; color: #000;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+
+<h2>Style Lists, Thumbnails &amp; Buttons</h2>
+<p>Use CSS to style the list and the thumbnail images. In our example, we have 
+removed the rounded borders from the list and we have tried to make the 
+thumbnail images like cards, by removing their border, and set a 100% width on each image.</p>
+<p>We have also modified the default styles of Bootstrap&apos;s <code class="w3-codespan">.btn</code> class, to a black button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ /* Remove rounded borders from list */<br>.list-group-item:first-child {<br>&#xA0;&#xA0;&#xA0; border-top-right-radius: 0;<br>&#xA0;&#xA0;&#xA0; border-top-left-radius: 0;<br>
+ }<br><br>.list-group-item:last-child {<br>&#xA0;&#xA0;&#xA0; border-bottom-right-radius: 0;<br>&#xA0;&#xA0;&#xA0; border-bottom-left-radius: 0;<br>}<br><br>/* Remove border and add padding to thumbnails */<br>.thumbnail {<br>&#xA0;&#xA0;&#xA0; padding: 0 0 15px 0;<br>&#xA0;&#xA0;&#xA0; border: none;<br>&#xA0;&#xA0;&#xA0; border-radius: 0;<br>
+ }<br><br>.thumbnail p {<br>&#xA0;&#xA0;&#xA0; margin-top: 15px;<br>&#xA0;&#xA0;&#xA0; color: #555;<br>}<br>
+ <br>/* Black buttons with extra padding and without rounded borders */<br>.btn {<br>
+ &#xA0;&#xA0;&#xA0;
+ padding: 10px 20px;<br>&#xA0;&#xA0;&#xA0; background-color: #333;<br>&#xA0;&#xA0;&#xA0; color: #f1f1f1;<br>
+ &#xA0;&#xA0;&#xA0;
+ border-radius: 0;<br>&#xA0;&#xA0;&#xA0; transition: .2s;<br>}<br><br>/* On hover, the color of .btn will transition to white with black text */<br>.btn:hover, .btn:focus {<br>
+ &#xA0;&#xA0;&#xA0;
+ border: 1px solid #333;<br>&#xA0;&#xA0;&#xA0; background-color: #fff;<br>&#xA0;&#xA0;&#xA0; color: #000;<br>}</div>
+<p>Result:</p>
+<div style="background-color:#2d2d30;color:#bdbdbd;padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+    <ul class="list-group test">
+      <li class="list-group-item">September <span class="label label-danger">Sold Out!</span></li>
+      <li class="list-group-item">October <span class="label label-danger">Sold Out!</span></li> 
+      <li class="list-group-item">November <span class="badge">3</span></li> 
+    </ul>   
+    <div class="row text-center test">
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="paris.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>Paris</strong></p>
+        <p>Fri. 27 November 2015</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="newyork.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>New York</strong></p>
+        <p>Sat. 28 November 2015</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+    </div>
+    <div class="col-sm-4">
+      <div class="thumbnail">
+        <img src="sanfran.jpg" alt="Moustiers Sainte Marie" style="width:100%;height:100%;margin-bottom:10px;">
+        <p><strong>San Francisco</strong></p>
+        <p>Sun. 29 November 2015</p>
+        <button class="btn">Buy Tickets</button>
+      </div>
+    </div>
+</div></div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_thumbnails_css&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;style&gt;/* Add a dark gray background color to the modal header and center text */
+ .modal-header, h4, .close { background-color: #333; color: #fff !important; text-align: center; font-size: 30px;}.modal-header, .modal-body { padding: 40px 50px;}&lt;/style&gt;&lt;!-- Used to open the Modal --&gt;&lt;button class=&quot;btn&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Buy Tickets&lt;/button&gt;&lt;!-- Modal --&gt;&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt; &lt;div class=&quot;modal-dialog&quot;&gt; &lt;!-- Modal content--&gt;
+ 
+ &lt;div class=&quot;modal-content&quot;&gt; &lt;div class=&quot;modal-header&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt; &lt;h4&gt;&lt;span class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/span&gt; Tickets&lt;/h4&gt; &lt;/div&gt; &lt;div class=&quot;modal-body&quot;&gt; &lt;form role=&quot;form&quot;&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;psw&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-shopping-cart&quot;&gt;&lt;/span&gt; Tickets, $23 per person&lt;/label&gt; &lt;input type=&quot;number&quot; class=&quot;form-control&quot; id=&quot;psw&quot; placeholder=&quot;How many?&quot;&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt;
+ 
+ &lt;label for=&quot;usrname&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Send To&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usrname&quot; placeholder=&quot;Enter email&quot;&gt; &lt;/div&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-block&quot;&gt;Pay  &lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt; &lt;/button&gt; &lt;/form&gt; &lt;/div&gt;
+ 
+ &lt;div class=&quot;modal-footer&quot;&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger btn-default pull-left&quot; data-dismiss=&quot;modal&quot;&gt; &lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/span&gt; Cancel &lt;/button&gt; &lt;p&gt;Need &lt;a href=&quot;#&quot;&gt;help?&lt;/a&gt;&lt;/p&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add a Modal</h2>
+<p>First, change all buttons inside the thumbnail from <code class="w3-codespan">&lt;button class=&quot;btn&quot;&gt;Buy Tickets&lt;/button&gt;</code> 
+to <code class="w3-codespan">&lt;button class=&quot;btn&quot; data-toggle=&quot;modal&quot; 
+data-target=&quot;#myModal&quot; &gt;Buy Tickets&lt;/button&gt;</code>. These 
+buttons are used to open the actual modal.</p>
+<p>To create the modal, look at the following code:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>/* Add a dark gray background color to the modal header and center text */<br><span lang="no-bok">
+ .modal-header, h4, .close {<br>&#xA0;&#xA0;&#xA0; background-color: #333;<br>&#xA0;&#xA0;&#xA0; color: #fff !important;<br>&#xA0;&#xA0;&#xA0; text-align: center;<br>&#xA0;&#xA0;&#xA0; font-size: 30px;<br>}<br><br>.modal-header, .modal-body {<br>&#xA0;&#xA0;&#xA0; padding: 40px 50px;<br>}<br>&lt;/style&gt;</span><br><br>&lt;!-- Used to open the Modal --&gt;<br>&lt;button class=&quot;btn&quot; data-toggle=&quot;modal&quot; data-target=&quot;#myModal&quot;&gt;Buy Tickets&lt;/button&gt;<br><br>&lt;!-- Modal --&gt;<br>&lt;div class=&quot;modal fade&quot; id=&quot;myModal&quot; role=&quot;dialog&quot;&gt;<br>&#xA0; &lt;div class=&quot;modal-dialog&quot;&gt;<br><br>&#xA0;&#xA0;&#xA0; &lt;!-- Modal content--&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;div class=&quot;modal-content&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-header&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;button&quot; class=&quot;close&quot; data-dismiss=&quot;modal&quot;&gt;&amp;times;&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h4&gt;&lt;span class=&quot;glyphicon glyphicon-lock&quot;&gt;&lt;/span&gt; Tickets&lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;modal-body&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;form role=&quot;form&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;label for=&quot;psw&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-shopping-cart&quot;&gt;&lt;/span&gt; Tickets, $23 per person&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;number&quot; class=&quot;form-control&quot; id=&quot;psw&quot; placeholder=&quot;How many?&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;label for=&quot;usrname&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-user&quot;&gt;&lt;/span&gt; Send To&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usrname&quot; placeholder=&quot;Enter email&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-block&quot;&gt;Pay <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;span class=&quot;glyphicon glyphicon-ok&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/form&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;div class=&quot;modal-footer&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-danger btn-default pull-left&quot; data-dismiss=&quot;modal&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;span class=&quot;glyphicon glyphicon-remove&quot;&gt;&lt;/span&gt; Cancel<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Need &lt;a href=&quot;#&quot;&gt;help?&lt;/a&gt;&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result (click on the &quot;Buy Tickets&quot; button to see the effect):</p>
+<div class="test w3-white w3-padding">
+  <button class="btn" data-toggle="modal" data-target="#myModal">Buy Tickets</button>
+  <!-- Modal -->
+  <div class="modal fade" id="myModal" role="dialog" style="padding-top:100px">
+    <div class="modal-dialog">
+    
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header" style="padding:35px 50px;">
+          <button type="button" class="close" data-dismiss="modal">&#xD7;</button>
+          <h4><span class="glyphicon glyphicon-lock"></span> Tickets</h4>
+        </div>
+        <div class="modal-body" style="padding:40px 50px;">
+          <form role="form">
+            <div class="form-group">
+              <label for="psw" style="color:#bdbdbd;"><span class="glyphicon glyphicon-shopping-cart"></span> Tickets, $23 per person</label>
+              <input type="number" class="form-control" id="psw" placeholder="How many?">
+            </div>
+            <div class="form-group">
+              <label for="usrname" style="color:#bdbdbd;"><span class="glyphicon glyphicon-user"></span> Send To</label>
+              <input type="text" class="form-control" id="usrname" placeholder="Enter email">
+            </div>
+              <button type="button" data-dismiss="modal" class="btn btn-block">Pay <span class="glyphicon glyphicon-ok"></span></button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="submit" class="btn btn-danger btn-default pull-left" data-dismiss="modal"><span class="glyphicon glyphicon-remove"></span> Cancel</button>
+          <p style="font-style:italic">Need <a href="#" style="color:#337ab7;text-decoration:none;"></a></p>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_modal&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container&quot;&gt; &lt;h3 class=&quot;text-center&quot;&gt;Contact&lt;/h3&gt;
+  &lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;We love our fans!&lt;/em&gt;&lt;/p&gt;
+ 
+ &lt;div class=&quot;row test&quot;&gt; &lt;div class=&quot;col-md-4&quot;&gt; &lt;p&gt;Fan? Drop a note.&lt;/p&gt; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-map-marker&quot;&gt;&lt;/span&gt;Chicago, US&lt;/p&gt; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-phone&quot;&gt;&lt;/span&gt;Phone: +00 1515151515&lt;/p&gt; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;&lt;/span&gt;Email: mail@mail.com&lt;/p&gt;  &lt;/div&gt; &lt;div class=&quot;col-md-8&quot;&gt;
+ 
+ &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-6 form-group&quot;&gt; &lt;input class=&quot;form-control&quot; id=&quot;name&quot; name=&quot;name&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; required&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-6 form-group&quot;&gt; &lt;input class=&quot;form-control&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Email&quot; type=&quot;email&quot; required&gt; &lt;/div&gt; &lt;/div&gt; &lt;textarea class=&quot;form-control&quot; id=&quot;comments&quot; name=&quot;comments&quot; placeholder=&quot;Comment&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-md-12 form-group&quot;&gt; &lt;button class=&quot;btn pull-right&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt; &lt;/div&gt;
+ 
+ &lt;/div&gt;  &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Contact Container</h2>
+<p>Create a new container, with two columns of unequal width (<code class="w3-codespan">.col-md-4</code> and <code class="w3-codespan">.col-md-8</code>).</p>
+<p>Add informational icons with text inside the first column and form controls 
+in the second:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container&quot;&gt;<br>&#xA0; &lt;h3 class=&quot;text-center&quot;&gt;Contact&lt;/h3&gt;<br>
+ &#xA0; &lt;p class=&quot;text-center&quot;&gt;&lt;em&gt;We love our fans!&lt;/em&gt;&lt;/p&gt;<br>
+ &#xA0;
+ &lt;div class=&quot;row test&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-md-4&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Fan? Drop a note.&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-map-marker&quot;&gt;&lt;/span&gt;Chicago, US&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-phone&quot;&gt;&lt;/span&gt;Phone: +00 1515151515&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;&lt;span class=&quot;glyphicon glyphicon-envelope&quot;&gt;&lt;/span&gt;Email: mail@mail.com&lt;/p&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-md-8&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;div class=&quot;row&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-6 form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input class=&quot;form-control&quot; id=&quot;name&quot; name=&quot;name&quot; placeholder=&quot;Name&quot; type=&quot;text&quot; required&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-6 form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input class=&quot;form-control&quot; id=&quot;email&quot; name=&quot;email&quot; placeholder=&quot;Email&quot; type=&quot;email&quot; required&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;textarea class=&quot;form-control&quot; id=&quot;comments&quot; name=&quot;comments&quot; placeholder=&quot;Comment&quot; rows=&quot;5&quot;&gt;&lt;/textarea&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;row&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-md-12 form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button class=&quot;btn pull-right&quot; type=&quot;submit&quot;&gt;Send&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;/div&gt; <br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div class="w3-white" style="padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+  <h3 class="text-center">Contact</h3>
+  <p class="text-center"><em>We love our fans!</em></p>
+
+  <div class="row test">
+    <div class="col-md-4">
+      <p>Fan? Drop a note.</p>
+      <p><span class="glyphicon glyphicon-map-marker"></span>Chicago, US</p>
+      <p><span class="glyphicon glyphicon-phone"></span>Phone: +00 1515151515</p>
+      <p><span class="glyphicon glyphicon-envelope"></span>Email: mail@mail.com</p>    
+    </div>
+    <div class="col-md-8">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="name" name="name" placeholder="Name" type="text" required>
+        </div>
+        <div class="col-sm-6 form-group">
+          <input class="form-control" id="email" name="email" placeholder="Email" type="email" required>
+        </div>
+      </div>
+      <textarea class="form-control" id="comments" name="comments" placeholder="Comment" rows="5"></textarea>
+      <br>
+      <div class="row">
+        <div class="col-md-12 form-group">
+          <button class="btn btn-default pull-right" type="submit">Send</button>
+        </div>
+      </div> 
+    </div>
+  </div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_contact&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;style&gt;.nav-tabs li a { color: #777;}&lt;/style&gt;&lt;h3 class=&quot;text-center&quot;&gt;From The Blog&lt;/h3&gt; &lt;ul class=&quot;nav nav-tabs&quot;&gt; &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#home&quot;&gt;Mike&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu1&quot;&gt;Chandler&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu2&quot;&gt;Peter&lt;/a&gt;&lt;/li&gt;&lt;/ul&gt;&lt;div class=&quot;tab-content&quot;&gt; &lt;div id=&quot;home&quot; class=&quot;tab-pane fade in active&quot;&gt; &lt;h2&gt;Mike Ross, Manager&lt;/h2&gt; &lt;p&gt;Man, we&apos;ve been on the road for some time now. Looking forward to lorem ipsum.&lt;/p&gt; &lt;/div&gt; &lt;div id=&quot;menu1&quot; class=&quot;tab-pane fade&quot;&gt; &lt;h2&gt;Chandler Bing, Guitarist&lt;/h2&gt; &lt;p&gt;Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?&lt;/p&gt; &lt;/div&gt; &lt;div id=&quot;menu2&quot; class=&quot;tab-pane fade&quot;&gt; &lt;h2&gt;Peter Griffin, Bass player&lt;/h2&gt; &lt;p&gt;I mean, sometimes I enjoy the show, but other times I enjoy other things.&lt;/p&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Toggable Tabs</h2>
+<p>Add tabs (<code class="w3-codespan">.nav nav-tabs</code>) inside the contact container, with 
+&quot;quotes&quot; from the band members:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>.nav-tabs li a {<br>&#xA0;&#xA0;&#xA0; color: #777;<br>}<br>&lt;/style&gt;<br><br>&lt;h3 class=&quot;text-center&quot;&gt;From The Blog&lt;/h3&gt; <br>&lt;ul class=&quot;nav nav-tabs&quot;&gt;<br>&#xA0; &lt;li class=&quot;active&quot;&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#home&quot;&gt;Mike&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu1&quot;&gt;Chandler&lt;/a&gt;&lt;/li&gt;<br>&#xA0; &lt;li&gt;&lt;a data-toggle=&quot;tab&quot; href=&quot;#menu2&quot;&gt;Peter&lt;/a&gt;&lt;/li&gt;<br>&lt;/ul&gt;<br><br>&lt;div class=&quot;tab-content&quot;&gt;<br>&#xA0; &lt;div id=&quot;home&quot; class=&quot;tab-pane fade in active&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h2&gt;Mike Ross, Manager&lt;/h2&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p&gt;Man, we&apos;ve been on the road for some time now. Looking forward to lorem ipsum.&lt;/p&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div id=&quot;menu1&quot; class=&quot;tab-pane fade&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h2&gt;Chandler Bing, Guitarist&lt;/h2&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p&gt;Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?&lt;/p&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div id=&quot;menu2&quot; class=&quot;tab-pane fade&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h2&gt;Peter Griffin, Bass player&lt;/h2&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p&gt;I mean, sometimes I enjoy the show, but other times I enjoy other things.&lt;/p&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<p>Result:</p>
+<div class="w3-white" style="padding-top:70px;padding-bottom:70px;padding-right:55px;padding-left:55px;">
+  <h3 class="text-center">From The Blog</h3>
+  
+  <ul class="nav nav-tabs blog">
+    <li class="active"><a data-toggle="tab" href="#home"></a></li>
+    <li><a data-toggle="tab" href="#menu1"></a></li>
+    <li><a data-toggle="tab" href="#menu2"></a></li>
+  </ul>
+
+  <div class="tab-content">
+    <div id="home" class="tab-pane fade in active">
+      <h2>Mike Ross, Manager</h2>
+      <p>Man, we&apos;ve been on the road for some time now. Looking forward to lorem ipsum.</p>
+    </div>
+    <div id="menu1" class="tab-pane fade">
+      <h2>Chandler Bing, Guitarist</h2>
+      <p>Always a pleasure people! Hope you enjoyed it as much as I did. Could I BE.. any more pleased?</p>
+    </div>
+    <div id="menu2" class="tab-pane fade">
+      <h2>Peter Griffin, Bass player</h2>
+      <p>I mean, sometimes I enjoy the show, but other times I enjoy other things.</p>
+    </div>
+  </div>
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_tabs&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;style&gt;#googleMap { width: 100%; /* Span the entire width of the screen */ height: 400px; /* Set the height to 400 pixels */ -webkit-filter: grayscale(100%); filter: grayscale(100%); /* Change the color of the map to black and white * /}
+ &lt;/style&gt;&lt;!-- Add Google Maps --&gt;&lt;div id=&quot;googleMap&quot;&gt;&lt;/div&gt;
+  &lt;script&gt;function myMap() {var myCenter = new google.maps.LatLng(41.878114, 
+  -87.629798);var mapProp = {center:myCenter, zoom:12, scrollwheel:false, 
+  draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};var map = new 
+  google.maps.Map(document.getElementById(&quot;googleMap&quot;),mapProp);var marker = 
+  new google.maps.Marker({position:myCenter});marker.setMap(map);}
+  &lt;/script&gt;&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&amp;callback=myMap&quot;&gt;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Google Maps</h2>
+<p>Add Google Maps (For more information, read our
+<a href="/graphics/google_maps_intro.asp">Google Maps Tutorial</a>).</p>
+<p>Use CSS to set the width, height and color of the map:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br><span lang="no-bok">#googleMap {<br>&#xA0;&#xA0;&#xA0; width: 100%; /* Span the entire width of the screen */<br>&#xA0;&#xA0;&#xA0; height: 400px; /* Set the height to 400 pixels */<br>&#xA0;&#xA0;&#xA0; -webkit-filter: grayscale(100%);<br>&#xA0;&#xA0;&#xA0; filter: grayscale(100%); /* Change the color of the map to black and white * /<br>}<br>
+ &lt;/style&gt;</span><br><br>&lt;!-- Add Google Maps --&gt;<br>&lt;div id=&quot;googleMap&quot;&gt;&lt;/div&gt;<br>
+  &lt;script&gt;<br>function myMap() {<br>var myCenter = new google.maps.LatLng(41.878114, 
+  -87.629798);<br>var mapProp = {center:myCenter, zoom:12, scrollwheel:false, 
+  draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};<br>var map = new 
+  google.maps.Map(document.getElementById(&quot;googleMap&quot;),mapProp);<br>var marker = 
+  new google.maps.Marker({position:myCenter});<br>marker.setMap(map);<br>}<br>
+  &lt;/script&gt;<br>&lt;script src=&quot;https://maps.googleapis.com/maps/api/js?key=YOUR_KEY&amp;callback=myMap&quot;&gt;&lt;/script&gt;</div>
+<p>Result:</p>
+<div id="googleMap" style="height:400px;width:100%; -webkit-filter: grayscale(100%);filter:grayscale(100%)"></div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_map&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot;&gt; &lt;div class=&quot;container-fluid&quot;&gt; &lt;div class=&quot;navbar-header&quot;&gt; &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;
+ 
+ &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;  &lt;/button&gt; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Logo&lt;/a&gt;
+ 
+ &lt;/div&gt; &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt; &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#band&quot;&gt;BAND&lt;/a&gt;&lt;/li&gt;
+ 
+ &lt;li&gt;&lt;a href=&quot;#tour&quot;&gt;TOUR&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;
+ 
+ &lt;li class=&quot;dropdown&quot;&gt; &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;MORE &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt; &lt;/a&gt; &lt;ul class=&quot;dropdown-menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Merchandise&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Extras&lt;/a&gt;&lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Media&lt;/a&gt;&lt;/li&gt;  &lt;/ul&gt;
+ 
+ &lt;/li&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;
+ 
+ &lt;/ul&gt; &lt;/div&gt; &lt;/div&gt;&lt;/nav&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<script>
+function myMap() {
+var myCenter = new google.maps.LatLng(41.878114, -87.629798);
+var mapProp = {center:myCenter, zoom:12, scrollwheel:false, draggable:false, mapTypeId:google.maps.MapTypeId.ROADMAP};
+var map = new google.maps.Map(document.getElementById("googleMap"),mapProp);
+var marker = new google.maps.Marker({position:myCenter});
+marker.setMap(map);
+}
+</script>
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBu-916DdpKAjTmJNIgngS6HL_kDIKU0aU&amp;callback=myMap"></script>
+
+<h2>Add a Navbar</h2>
+<p>Add a navbar at the top of the page that collapses on smaller screens:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-default navbar-fixed-top&quot;&gt;<br>&#xA0; &lt;div class=&quot;container-fluid&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;navbar-header&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;button&quot; class=&quot;navbar-toggle&quot; data-toggle=&quot;collapse&quot; data-target=&quot;#myNavbar&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;span class=&quot;icon-bar&quot;&gt;&lt;/span&gt; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/button&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;a class=&quot;navbar-brand&quot; href=&quot;#&quot;&gt;Logo&lt;/a&gt;<br>
+ &#xA0;&#xA0;&#xA0;
+ &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;collapse navbar-collapse&quot; id=&quot;myNavbar&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;ul class=&quot;nav navbar-nav navbar-right&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#home&quot;&gt;HOME&lt;/a&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#band&quot;&gt;BAND&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;li&gt;&lt;a href=&quot;#tour&quot;&gt;TOUR&lt;/a&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#contact&quot;&gt;CONTACT&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;li class=&quot;dropdown&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;a class=&quot;dropdown-toggle&quot; data-toggle=&quot;dropdown&quot; href=&quot;#&quot;&gt;MORE<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;ul class=&quot;dropdown-menu&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Merchandise&lt;/a&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Extras&lt;/a&gt;&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;Media&lt;/a&gt;&lt;/li&gt; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/ul&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;&lt;span class=&quot;glyphicon glyphicon-search&quot;&gt;&lt;/span&gt;&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+ &lt;/ul&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/nav&gt;<br></div>
+<p>Result:</p>
+<nav class="navbar navbar-default">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span> 
+      </button>
+      <a class="navbar-brand" href="javascript:void(0)" style="text-decoration:none;"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#myPage" style="text-decoration:none;"></a></li>
+        <li><a href="#band" style="text-decoration:none;"></a></li>
+        <li><a href="#tour" style="text-decoration:none;"></a></li>
+        <li><a href="#contact" style="text-decoration:none;"></a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#" style="text-decoration:none;"></a>
+          <ul class="dropdown-menu">
+            <li><a href="javascript:void(0)" style="text-decoration:none;"></a></li>
+            <li><a href="javascript:void(0)" style="text-decoration:none;"></a></li>
+            <li><a href="javascript:void(0)" style="text-decoration:none;"></a></li> 
+          </ul>
+        </li>
+        <li><a href="#"></a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_navbar&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;/* Add a dark background color with a little bit see-through */ .navbar { margin-bottom: 0; background-color: #2d2d30; border: 0; font-size: 11px !important; letter-spacing: 4px; opacity:0.9;}/* Add a gray color to all navbar links */.navbar li a, .navbar .navbar-brand {  color: #d5d5d5 !important;}/* On hover, the links will turn white */.navbar-nav li a:hover { color: #fff !important;}/* The active link */.navbar-nav li.active a { color: #fff !important; background-color:#29292c !important;}/* Remove border color from the collapsible button */.navbar-default .navbar-toggle { border-color: transparent;}/* Dropdown */.open .dropdown-toggle { color: #fff ; background-color: #555 !important;}/* Dropdown links */
+ .dropdown-menu li a { color: #000 !important;}
+ /* On hover, the dropdown links will turn red */.dropdown-menu li a:hover { background-color: red !important;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> Right-align the navigation links with the <code class="w3-codespan">navbar-right</code>
+class.<br>If you want one of the links in the navbar to behave like a dropdown 
+menu, use the <code class="w3-codespan">.dropdown</code> class</p>
+</div>
+
+<hr>
+
+<h2>Style The Navbar</h2>
+<p>Use CSS to customize the navigation bar:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ /* Add a dark background color with a little bit see-through */ <br>.navbar {<br>&#xA0;&#xA0;&#xA0; margin-bottom: 0;<br>&#xA0;&#xA0;&#xA0; background-color: #2d2d30;<br>&#xA0;&#xA0;&#xA0; border: 0;<br>&#xA0;&#xA0;&#xA0; font-size: 11px !important;<br>&#xA0;&#xA0;&#xA0; letter-spacing: 4px;<br>&#xA0;&#xA0;&#xA0; opacity:0.9;<br>}<br><br>/* Add a gray color to all navbar links */<br>.navbar li a, .navbar .navbar-brand { <br>&#xA0;&#xA0;&#xA0; color: #d5d5d5 !important;<br>}<br><br>/* On hover, the links will turn white */<br>.navbar-nav li a:hover {<br>&#xA0;&#xA0;&#xA0; color: #fff !important;<br>}<br><br>/* The active link */<br>.navbar-nav li.active a {<br>&#xA0;&#xA0;&#xA0; color: #fff !important;<br>&#xA0;&#xA0;&#xA0; background-color:#29292c !important;<br>}<br><br>/* Remove border color from the collapsible button */<br>.navbar-default .navbar-toggle {<br>&#xA0;&#xA0;&#xA0; border-color: transparent;<br>}<br><br>/* Dropdown */<br>.open .dropdown-toggle {<br>&#xA0;&#xA0;&#xA0; color: #fff ;<br>&#xA0;&#xA0;&#xA0; background-color: #555 !important;<br>}<br><br>/* Dropdown links */<br>
+ .dropdown-menu li a {<br>&#xA0;&#xA0;&#xA0; color: #000 !important;<br>}<br>
+ <br>/* On hover, the dropdown links will turn red */<br>.dropdown-menu li a:hover {<br>&#xA0;&#xA0;&#xA0; background-color: red !important;<br>}</div>
+<p>Result:</p>
+<iframe src="trybs_theme_band_navbar_iframe.htm" style="margin:25px 0 50px 0;height:auto;border:none;width:100%;"></iframe>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_navbar_css&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body id=&quot;myPage&quot; data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;
+ &lt;div id=&quot;band&quot; class=&quot;container&quot;&gt;&lt;div id=&quot;tour&quot; class=&quot;container&quot;&gt;&lt;div id=&quot;contact&quot; class=&quot;container&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add Scrollspy</h2>
+<p>Add scrollspy to automatically update navbar links when scrolling:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body id=&quot;myPage&quot; data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;<br>
+ <br>&lt;div id=&quot;band&quot; class=&quot;container&quot;&gt;<br>&lt;div id=&quot;tour&quot; class=&quot;container&quot;&gt;<br>&lt;div id=&quot;contact&quot; class=&quot;container&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_scrollspy&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;style&gt;/* Add a dark background color to the footer */footer { background-color: #2d2d30; color: #f5f5f5; padding: 32px;}footer a { color: #f5f5f5;}footer a:hover { color: #777; text-decoration: none;}&lt;/style&gt;
+ &lt;footer class=&quot;text-center&quot;&gt; &lt;a class=&quot;up-arrow&quot; href=&quot;#myPage&quot; data-toggle=&quot;tooltip&quot; title=&quot;TO TOP&quot;&gt; &lt;span class=&quot;glyphicon glyphicon-chevron-up&quot;&gt;&lt;/span&gt; &lt;/a&gt;&lt;br&gt;&lt;br&gt; &lt;p&gt;Bootstrap Theme Made By &lt;a href=&quot;http://www.w3schools.com&quot; data-toggle=&quot;tooltip&quot; title=&quot;Visit w3schools&quot;&gt;www.w3schools.com&lt;/a&gt;&lt;/p&gt; 
+ &lt;/footer&gt;&lt;script&gt;$(document).ready(function(){ // Initialize Tooltip $(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); })
+ &lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add a Footer</h2>
+<p>1. Create a <code class="w3-codespan">&lt;footer&gt;</code> element and add some text.</p>
+<p>2. Use CSS to style the footer.</p>
+<p>3. Add an &quot;Up Arrow&quot; icon, which will take the user to the top of the page 
+when clicked on.</p>
+<p>4. Use jQuery to initialize the tooltip plugin:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;style&gt;<br>/* Add a dark background color to the footer */<br>footer {<br>&#xA0;&#xA0;&#xA0; background-color: #2d2d30;<br>&#xA0;&#xA0;&#xA0; color: #f5f5f5;<br>&#xA0;&#xA0;&#xA0; padding: 32px;<br>}<br><br>footer a {<br>&#xA0;&#xA0;&#xA0; color: #f5f5f5;<br>}<br><br>footer a:hover {<br>&#xA0;&#xA0;&#xA0; color: #777;<br>&#xA0;&#xA0;&#xA0; text-decoration: none;<br>}<br>&lt;/style&gt;<br><br>
+ &lt;footer class=&quot;text-center&quot;&gt;<br>&#xA0; &lt;a class=&quot;up-arrow&quot; href=&quot;#myPage&quot; data-toggle=&quot;tooltip&quot; title=&quot;TO TOP&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;glyphicon glyphicon-chevron-up&quot;&gt;&lt;/span&gt;<br>&#xA0; &lt;/a&gt;&lt;br&gt;&lt;br&gt;<br>&#xA0; &lt;p&gt;Bootstrap Theme Made By &lt;a href=&quot;http://www.w3schools.com&quot; data-toggle=&quot;tooltip&quot; title=&quot;Visit w3schools&quot;&gt;www.w3schools.com&lt;/a&gt;&lt;/p&gt; <br>
+ &lt;/footer&gt;<br><br>&lt;script&gt;<br>$(document).ready(function(){<br>&#xA0;&#xA0;&#xA0; // Initialize Tooltip<br>&#xA0;&#xA0;&#xA0; $(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); <br>})<br>
+ &lt;/script&gt;</div>
+<p>Result:</p>
+<footer class="w3-padding-64 text-center" style="background-color: #2d2d30; color: #f5f5f5;">
+<a style="text-decoration:none !important" class="up-arrow" href="#myPage" data-toggle="tooltip" title="TO TOP"></a><br><br>
+<p>Bootstrap Theme Made By <a href="http://www.w3schools.com" data-toggle="tooltip" title="Visit w3schools"></a></p> 
+</footer>
+<script>
+$(document).ready(function(){
+    // Initialize Tooltip
+    $('[data-toggle="tooltip"]').tooltip(); 
+})
+</script>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_footer&amp;stacked=h" class="w3-btn w3-margin-bottom w3-margin-top"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;script&gt;$(document).ready(function(){// Add smooth scrolling to all links in navbar + footer link $(&quot;.navbar a, footer a[href=&apos;#myPage&apos;]&quot;).on(&apos;click&apos;, function(event) { // Make sure this.hash has a value before overriding default behavior if (this.hash !== &quot;&quot;) { // Prevent default anchor click behavior event.preventDefault(); // Store hash var hash = this.hash; // Using jQuery&apos;s animate() method to add smooth page scroll // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area $(&apos;html, body&apos;).animate({
+   scrollTop: $(hash).offset().top }, 900, function(){ // Add hash (#) to URL when done scrolling (default click behavior)
+  window.location.hash = hash; }); } // End if  });})&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Adding Smooth Scrolling</h2>
+<p>Use jQuery to add smooth scrolling (when clicking on the links in the navbar):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ &lt;script&gt;<br>$(document).ready(function(){<br>&#xA0;&#xA0;// Add smooth scrolling to all links in navbar + footer link<br>&#xA0; $(&quot;.navbar a, footer a[href=&apos;#myPage&apos;]&quot;).on(&apos;click&apos;, function(event) {<br><br>&#xA0; // Make sure this.hash has a value before overriding default behavior<br>&#xA0; if (this.hash !== &quot;&quot;) {<br><br>&#xA0;&#xA0;&#xA0; // Prevent default anchor click behavior<br>&#xA0;&#xA0;&#xA0; event.preventDefault();<br><br>&#xA0;&#xA0;&#xA0; // Store hash<br>&#xA0;&#xA0;&#xA0; var hash = this.hash;<br><br>&#xA0;&#xA0;&#xA0; // Using jQuery&apos;s animate() method to add smooth page scroll<br>&#xA0;&#xA0;&#xA0; // The optional number (900) specifies the number of milliseconds it takes to scroll to the specified area<br>&#xA0;&#xA0;&#xA0; $(&apos;html, body&apos;).animate({<br>
+ &#xA0;&#xA0;&#xA0; &#xA0; scrollTop: $(hash).offset().top<br>&#xA0;&#xA0;&#xA0; }, 900, function(){<br><br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // Add hash (#) to URL when done scrolling (default click behavior)<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; window.location.hash = hash;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; });<br>&#xA0;&#xA0;&#xA0; } // End if <br>&#xA0; });<br>})<br>&lt;/script&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_smoothscroll&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;body { font: 400 15px/1.8 Lato, sans-serif; color: #777;}.navbar { font-family: Montserrat, sans-serif;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Final Touch</h2>
+<p>Personalize your Theme by adding a font that you like. We have used &quot;Montserrat&quot; 
+and &quot;Lato&quot; from Google&apos;s Font Library.</p>
+<p>Link to the font in the 
+<code class="w3-codespan">&lt;head&gt;</code> section:</p>
+<p><code class="w3-codespan">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Montserrat&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></p>
+<p><code class="w3-codespan">&lt;link href=&quot;https://fonts.googleapis.com/css?family=Lato&quot; rel=&quot;stylesheet&quot; type=&quot;text/css&quot;&gt;</code></p>
+<p>Then you can use them in the page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ body {<br>&#xA0;&#xA0;&#xA0; font: 400 15px/1.8 Lato, sans-serif;<br>&#xA0;&#xA0;&#xA0; color: #777;<br>}<br><br>.navbar {<br>&#xA0;&#xA0;&#xA0; font-family: Montserrat, sans-serif;<br>}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;/* Overwrite default styles of h3 and h4 */h3, h4 { margin: 10px 0 30px 0; letter-spacing: 10px;  font-size: 20px; color: #111;}/* Remove rounded borders on input fields */
+ .form-control { border-radius: 0;}/* Disable the ability to resize textareas */
+ textarea { resize: none;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>We have also added some extra style to some elements:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ /* Overwrite default styles of h3 and h4 */<br>h3, h4 {<br>&#xA0;&#xA0;&#xA0; margin: 10px 0 30px 0;<br>&#xA0;&#xA0;&#xA0; letter-spacing: 10px; <br>&#xA0;&#xA0;&#xA0; font-size: 20px;<br>&#xA0;&#xA0;&#xA0; color: #111;<br>}<br><br>/* Remove rounded borders on input fields */<br>
+ .form-control {<br>&#xA0;&#xA0;&#xA0; border-radius: 0;<br>}<br><br>/* Disable the ability to resize textareas */<br>
+ textarea {<br>&#xA0;&#xA0;&#xA0; resize: none;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trybs_theme_band_complete&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+</div>
+<hr>
+
+<h2>Complete &quot;The Band&quot; Theme</h2>
+<br>
+<div class="btncon" style="margin-bottom:25px;">
+<a href="trybs_theme_band_full.htm" target="_blank" class="btn btn-default">Full Page Demo <i class="fa fa-file-text"></i></a>
+<a href="tryit.asp?filename=trybs_theme_band_complete&amp;stacked=h" target="_blank" class="btn btn-default">Full Source Code <i class="fa fa-file-text-o"></i></a>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_theme_company.asp">&#x276E; Previous</a>
+ <a class="w3-right w3-btn" href="bootstrap_examples.asp">Next &#x276F;</a>
+</div>

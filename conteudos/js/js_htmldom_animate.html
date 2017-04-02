@@ -1,0 +1,149 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_3']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.50);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript HTML DOM Animation</h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_css.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_events.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Learn to create HTML animations using JavaScript.</p>
+<hr>
+<h2>A Basic Web Page</h2>
+<p>To demonstrate how to create HTML animations with JavaScript, we will use a simple 
+web page:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;h1&gt;My First 
+ JavaScript Animation&lt;/h1&gt;<br><br>
+&lt;div id=&quot;animation&quot;&gt;My animation will go here&lt;/div&gt;<br><br>
+&lt;/body&gt;<br>&lt;/html&gt;<br></div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_animate_1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;&lt;h1&gt;My First 
+ JavaScript Animation&lt;/h1&gt;
+&lt;div id=&quot;animation&quot;&gt;My animation will go here&lt;/div&gt;
+&lt;/body&gt;&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<h2>Create an Animation Container</h2>
+
+<p>All animations should be relative to a container element.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div id =&quot;container&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id =&quot;animate&quot;&gt;My 
+ animation will go here&lt;/div&gt;<br>&lt;/div&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;div id =&quot;container&quot;&gt; &lt;div id =&quot;animate&quot;&gt;My 
+ animation will go here&lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<h2>Style the Elements</h2>
+<p>The container element should be created with style = &quot;position: relative&quot;.</p>
+<p>The animation element should be created with style = &quot;position: absolute&quot;.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ #container {<br>&#xA0;&#xA0;&#xA0; width: 400px;<br>&#xA0;&#xA0;&#xA0; height: 
+ 400px;<br>&#xA0;&#xA0;&#xA0; position: relative;<br>&#xA0;&#xA0;&#xA0; 
+ background: yellow;<br>
+ }<br>#animate {<br>&#xA0;&#xA0;&#xA0; width: 50px;<br>&#xA0;&#xA0;&#xA0; height: 
+ 50px;<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>&#xA0;&#xA0;&#xA0; 
+ background: red;<br>}
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_animate_2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;#container { width: 400px; height: 
+ 400px; position: relative; 
+ background: yellow;
+ }#animate { width: 50px; height: 
+ 50px; position: absolute; 
+ background: red;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Animation Code</h2>
+<p>JavaScript animations are done by programming gradual changes in an element&apos;s 
+style.</p>
+<p>The changes are called by a timer. When the timer interval is small, the 
+animation looks continuous.</p>
+<p>The basic code is:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var id = setInterval(frame, 5);<br><br>function frame() {<br>&#xA0;&#xA0;&#xA0; if (/* 
+ test for finished */) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;clearInterval(id);<br>&#xA0;&#xA0;&#xA0;&#xA0;} else {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ /* code to change the element style */&#xA0; <br>&#xA0;&#xA0;&#xA0;&#xA0;}<br>}
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var id = setInterval(frame, 5);function frame() { if (/* 
+ test for finished */) {clearInterval(id);} else { 
+ /* code to change the element style */ }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Create the Animation Using JavaScript</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ function myMove() {<br>&#xA0;&#xA0;&#xA0; var elem = 
+ document.getElementById(&quot;animate&quot;); <br>&#xA0;&#xA0;&#xA0; var pos = 0;<br>&#xA0;&#xA0;&#xA0; var id = setInterval(frame, 5);<br>&#xA0;&#xA0;&#xA0; 
+ function frame() {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if (pos == 
+ 350) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ clearInterval(id);<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; } else {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ pos++; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ elem.style.top = pos + &apos;px&apos;; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ elem.style.left = pos + &apos;px&apos;; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0; 
+ }<br>}</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_animate_3" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function myMove() { var elem = 
+ document.getElementById(&quot;animate&quot;);  var pos = 0; var id = setInterval(frame, 5); 
+ function frame() { if (pos == 
+ 350) { 
+ clearInterval(id); } else { 
+ pos++;  
+ elem.style.top = pos + &apos;px&apos;;  
+ elem.style.left = pos + &apos;px&apos;;  } 
+ }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_css.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_events.asp">Next &#x276F;</a>
+</div>

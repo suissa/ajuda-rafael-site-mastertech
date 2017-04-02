@@ -1,0 +1,426 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.25:504696,1.90:504715,2.20:504718,1.80:504714,0.30:504697,0.50:504701,0.60:504702,1.10:504707,1.20:504708,1.30:504709,1.70:504713,2.60:504720,3.50:504724,0.35:504698,2.40:504719,3.00:504722,5.00:504727,0.45:504700,0.70:504703,4.00:504725,1.50:504711,0.05:504692,0.15:504694,0.80:504704,0.90:504705,1.40:504710,1.60:504712,4.50:504726,2.80:504721,0.10:504693,0.20:504695,0.40:504699,1.00:504706,2.00:504716,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 9.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Errors - Throw and Try to Catch</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_regexp.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_debugging.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The <strong>try</strong> statement lets you test a block of code 
+for errors.</p>
+<p class="intro">The <strong>catch</strong> statement lets you handle the error.</p>
+<p class="intro">The <strong>throw</strong> statement lets you create custom 
+errors.</p>
+<p class="intro">The <strong>finally</strong> statement lets you execute code, 
+after try and catch, regardless of the result.</p>
+<hr>
+
+<h2>Errors Will Happen!</h2>
+<p>When executing JavaScript code, different errors can 
+occur. </p>
+<p>Errors can be coding errors made by the programmer, errors due to wrong 
+input, and other unforeseeable things.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>In this example we have written alert as adddlert to deliberately produce an error:</p>
+<div class="w3-code notranslate htmlHigh">
+ &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br><br>&lt;script&gt;<br>
+try {<br>&#xA0;&#xA0;&#xA0; adddlert(&quot;Welcome guest!&quot;);<br>}<br>catch(err) {<br>&#xA0;&#xA0;&#xA0; 
+document.getElementById(&quot;demo&quot;).innerHTML = err.message;<br>}<br>&lt;/script&gt;</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_try_catch" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;&lt;script&gt;
+try { adddlert(&quot;Welcome guest!&quot;);}catch(err) { 
+document.getElementById(&quot;demo&quot;).innerHTML = err.message;}&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p>JavaScript catches <strong>adddlert</strong> as an error, and executes the 
+catch code to 
+handle it.</p>
+</div>
+
+<hr>
+
+<h2>JavaScript try and catch</h2>
+<p>The <strong>try</strong> statement allows you to define a block of code to be 
+tested for errors while it is being executed.</p>
+<p>The <strong>catch</strong> statement allows you to define a block of code to 
+be executed, if an error occurs in the try block.</p>
+<p>The JavaScript statements <strong>try</strong> and <strong>catch</strong> 
+come in pairs:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+try {<br>
+&#xA0;&#xA0;&#xA0; <em>Block of code to try<br>
+</em>}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; <em>Block of code to handle errors<br>
+</em>}
+</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;try {
+ Block of code to try
+}
+catch(err) {
+ Block of code to handle errors
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>JavaScript Throws Errors</h2>
+<p>When an error occurs, JavaScript will 
+normally stop and generate an error message.</p>
+<p>The technical term for this is: JavaScript will&#xA0; <strong>throw an 
+exception (throw an error)</strong>.</p>
+<div class="w3-panel w3-note">
+<p>JavaScript will actually create an <strong>Error object</strong> with two properties: 
+<strong>name</strong> and <strong>message</strong>.</p>
+</div>
+<hr>
+
+<h2>The throw Statement</h2>
+<p>The <strong>throw</strong> statement allows you to create a custom error.</p>
+<p>Technically you can <strong>throw an exception (throw an error)</strong>.</p>
+
+<p>The exception can be a JavaScript String, a Number, a Boolean or an Object:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+throw &quot;Too big&quot;;&#xA0;&#xA0;&#xA0; // throw a text<br>
+throw 500;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // throw a number</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;throw &quot;Too big&quot;; // throw a text
+throw 500; // throw a number&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>If you use <strong>throw</strong> together with <strong>try</strong> and 
+<strong>catch</strong>, you can control program 
+flow and generate custom error messages.</p>
+<hr>
+
+<h2>Input Validation Example</h2>
+<p>This example examines input. If the value is wrong, 
+an exception (err) is thrown.</p>
+<p>The exception (err) is caught by the catch statement and a custom error message is displayed:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;Please input a number between 
+5 and 10:&lt;/p&gt;<br><br>&lt;input id=&quot;demo&quot; type=&quot;text&quot;&gt;<br>&lt;button type=&quot;button&quot; 
+onclick=&quot;myFunction()&quot;&gt;Test Input&lt;/button&gt;<br>&lt;p id=&quot;message&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>function myFunction() {<br>&#xA0;&#xA0;&#xA0; var message, x;<br>&#xA0;&#xA0;&#xA0; message = 
+document.getElementById(&quot;message&quot;);<br>&#xA0;&#xA0;&#xA0; message.innerHTML = &quot;&quot;;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;x = 
+document.getElementById(&quot;demo&quot;).value;<br>&#xA0;&#xA0;&#xA0; 
+try { <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(x == &quot;&quot;) throw &quot;empty&quot;;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ if(isNaN(x)) throw &quot;not a number&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+ x = Number(x);<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(x &lt; 5) throw 
+ &quot;too low&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(x &gt; 10) throw &quot;too 
+ high&quot;;<br>&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0; 
+catch(err) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; message.innerHTML = 
+&quot;Input is &quot; + err;<br>&#xA0;&#xA0;&#xA0; }<br>}<br>&lt;/script&gt;<br><br>&lt;/body&gt;<br>&lt;/html&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_throw_error" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;&lt;body&gt;&lt;p&gt;Please input a number between 
+5 and 10:&lt;/p&gt;&lt;input id=&quot;demo&quot; type=&quot;text&quot;&gt;&lt;button type=&quot;button&quot; 
+onclick=&quot;myFunction()&quot;&gt;Test Input&lt;/button&gt;&lt;p id=&quot;message&quot;&gt;&lt;/p&gt;
+&lt;script&gt;function myFunction() { var message, x; message = 
+document.getElementById(&quot;message&quot;); message.innerHTML = &quot;&quot;;
+x = 
+document.getElementById(&quot;demo&quot;).value; 
+try {  if(x == &quot;&quot;) throw &quot;empty&quot;;
+ 
+ if(isNaN(x)) throw &quot;not a number&quot;; 
+ x = Number(x); if(x &lt; 5) throw 
+ &quot;too low&quot;; if(x &gt; 10) throw &quot;too 
+ high&quot;; } 
+catch(err) { message.innerHTML = 
+&quot;Input is &quot; + err; }}&lt;/script&gt;&lt;/body&gt;&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>HTML Validation</h2>
+<p>The code above is just an example.</p>
+<p>Modern browsers will often use a combination of JavaScript and built-in HTML 
+validation, using predefined validation rules defined in HTML attributes: </p>
+<div class="w3-example">
+<div class="w3-code notranslate htmlHigh">
+ &lt;input id=&quot;demo&quot; type=&quot;number&quot; min=&quot;5&quot; max=&quot;10&quot; step=&quot;1&quot;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;input id=&quot;demo&quot; type=&quot;number&quot; min=&quot;5&quot; max=&quot;10&quot; step=&quot;1&quot;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>You can read more about forms validation in a later chapter of this tutorial.</p>
+
+<hr>
+
+<h2>The finally Statement</h2>
+<p>The <strong>finally</strong> statement lets you execute code, after try and 
+catch, regardless of the result:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate">
+try {<br>
+&#xA0;&#xA0;&#xA0; <em>Block of code to try<br>
+</em>}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; <em>Block of code to handle errors<br>
+</em>}
+<br>finally {<br>&#xA0;&#xA0;&#xA0; <em>Block of code to be executed regardless of the try / catch result<br>
+</em>}</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;try {
+ Block of code to try
+}
+catch(err) {
+ Block of code to handle errors
+}
+finally { Block of code to be executed regardless of the try / catch result
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ function myFunction() {<br>&#xA0;&#xA0;&#xA0; var message, x;<br>&#xA0;&#xA0;&#xA0; message = 
+document.getElementById(&quot;message&quot;);<br>&#xA0;&#xA0;&#xA0; message.innerHTML = &quot;&quot;;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;x = 
+document.getElementById(&quot;demo&quot;).value;<br>&#xA0;&#xA0;&#xA0; 
+try { <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+if(x == &quot;&quot;) throw &quot;is empty&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(isNaN(x)) 
+throw &quot;is not a number&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+    x = Number(x);<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(x &gt; 
+10) throw &quot;is too high&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if(x &lt; 
+5) throw &quot;is too low&quot;;<br>&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0; catch(err) 
+{<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; message.innerHTML = &quot;Error: &quot; + 
+err + &quot;.&quot;;<br>&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0; finally {<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;document.getElementById(&quot;demo&quot;).value = &quot;&quot;;<br>&#xA0;&#xA0;&#xA0; }<br>}</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_finally_error" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function myFunction() { var message, x; message = 
+document.getElementById(&quot;message&quot;); message.innerHTML = &quot;&quot;;
+x = 
+document.getElementById(&quot;demo&quot;).value; 
+try {  
+if(x == &quot;&quot;) throw &quot;is empty&quot;; if(isNaN(x)) 
+throw &quot;is not a number&quot;; 
+    x = Number(x); if(x &gt; 
+10) throw &quot;is too high&quot;; if(x &lt; 
+5) throw &quot;is too low&quot;; } catch(err) 
+{ message.innerHTML = &quot;Error: &quot; + 
+err + &quot;.&quot;; } finally { document.getElementById(&quot;demo&quot;).value = &quot;&quot;; }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The Error Object</h2>
+<p>JavaScript has a built in error object that provides error information when 
+an error occurs. </p>
+<p>The error object provides two useful properties: name and message.</p>
+<hr>
+
+<h2>Error Object Properties</h2>
+<table class="w3-table-all">
+<tr><th>Property</th><th>Description</th></tr>
+<tr><td>name</td><td>Sets or returns an error name</td></tr>
+<tr><td>message</td><td>Sets or returns an error message (a string)</td></tr>
+</table>
+
+<hr>
+<h2>Error Name Values</h2>
+<p>Six different values can be returned by the error name property:</p>
+<table class="w3-table-all">
+<tr><th>Error Name</th><th>Description</th></tr>
+<tr><td>EvalError</td><td>An error has occurred in the eval() function</td></tr>
+<tr><td>RangeError</td><td>An number out of range error has occurred</td></tr>
+<tr><td>ReferenceError</td><td>An illegal reference has occurred</td></tr>
+<tr><td>SyntaxError</td><td>A syntax error has occurred</td></tr>
+<tr><td>TypeError</td><td>A type error has occurred</td></tr>
+<tr><td>URIError</td><td>An error in encodeURI() has occurred</td></tr>
+</table>
+<p>The six different values are described below.</p>
+<hr>
+
+<h2>Eval Error</h2>
+<p>An <strong>EvalError</strong> indicates an error in the eval() function.</p>
+<div class="w3-panel w3-warning">
+<p>Newer versions of JavaScript does not throw any EvalError. Use SyntaxError instead.</p>
+</div>
+<hr>
+
+<h2>Range Error</h2>
+<p>A <strong>RangeError</strong> is thrown if you use a number that is outside 
+the range of legal values.</p>
+<p>For example: You cannot set the number of significant digits of a number to 
+500. </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var num = 1;<br>
+try {<br>
+&#xA0;&#xA0;&#xA0; num.toPrecision(500);&#xA0;&#xA0; // A number cannot have 500 
+ significant digits<br>
+}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+}
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_error_rangeerror" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var num = 1;
+try {
+ num.toPrecision(500); // A number cannot have 500 
+ significant digits
+}
+catch(err) {
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Reference Error</h2>
+<p>A <strong>ReferenceError</strong> is thrown if you use (reference) a variable 
+that has not been declared:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var x;<br>try {<br>
+&#xA0;&#xA0;&#xA0; x = y + 1;&#xA0;&#xA0; // y cannot be referenced (used)<br>
+}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_error_referenceerror" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x;try {
+ x = y + 1; // y cannot be referenced (used)
+}
+catch(err) {
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Syntax Error</h2>
+<p>A <strong>SyntaxError</strong> is thrown if you try to evaluate code with a 
+syntax error.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ try {<br>&#xA0;&#xA0;&#xA0; eval(&quot;alert(&apos;Hello)&quot;);&#xA0;&#xA0; // 
+ Missing &apos; will produce an error<br>}<br>catch(err) {<br>&#xA0;&#xA0;&#xA0; 
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>} </div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_error_syntaxerror" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;try { eval(&quot;alert(&apos;Hello)&quot;); // 
+ Missing &apos; will produce an error}catch(err) { 
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Type Error</h2>
+<p>A <strong>TypeError</strong> is thrown if you use a value that is outside the 
+range of expected types:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var num = 1;<br>
+try {<br>
+&#xA0;&#xA0;&#xA0; num.toUpperCase();&#xA0;&#xA0; // You cannot convert a number 
+ to upper case<br>
+}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_error_typeerror" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var num = 1;
+try {
+ num.toUpperCase(); // You cannot convert a number 
+ to upper case
+}
+catch(err) {
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>URI Error</h2>
+<p>A <strong>URIError</strong> is thrown if you use illegal characters in a URI function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+try {<br>
+&#xA0;&#xA0;&#xA0; decodeURI(&quot;%%%&quot;);&#xA0;&#xA0; // You cannot URI decode 
+ these percent signs<br>
+}<br>
+catch(err) {<br>
+&#xA0;&#xA0;&#xA0; document.getElementById(&quot;demo&quot;).innerHTML = err.name;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_error_urierror" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;try {
+ decodeURI(&quot;%%%&quot;); // You cannot URI decode 
+ these percent signs
+}
+catch(err) {
+ document.getElementById(&quot;demo&quot;).innerHTML = err.name;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Non-Standard Error Object Properties</h2>
+<div class="w3-panel w3-warning">
+<p>Mozilla and Microsoft defines some non-standard error object properties:</p>
+<p>fileName (Mozilla)<br>
+lineNumber (Mozilla)<br>
+columnNumber (Mozilla)<br>
+stack (Mozilla)<br>
+description (Microsoft)<br>
+number (Microsoft)</p>
+<p>Do not use these properties in public web sites. They will not work in all browsers.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_regexp.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_debugging.asp">Next &#x276F;</a>
+</div>

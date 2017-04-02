@@ -1,0 +1,181 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JSON <span class="color_h1">Arrays</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_json_objects.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_json_parse.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Arrays as JSON Objects</h2>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  [ 
+  &quot;Ford&quot;, &quot;BMW&quot;, &quot;Fiat&quot; ]</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;[ 
+  &quot;Ford&quot;, &quot;BMW&quot;, &quot;Fiat&quot; ]&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Arrays in JSON are almost the same as arrays in JavaScript.</p>
+<p>In JSON, array values must be of type string, number, object, array, boolean 
+or <em>null</em>.</p>
+<p>In JavaScript, array values can be all of the above, plus any other valid 
+JavaScript expression, including functions, dates, and <em>undefined.</em></p>
+<hr>
+
+<h2>Arrays in JSON Objects</h2>
+<p>Arrays can be values of an object property:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  {<br>&quot;name&quot;:&quot;John&quot;,<br>&quot;age&quot;:30,<br>&quot;cars&quot;:[ 
+  &quot;Ford&quot;, &quot;BMW&quot;, &quot;Fiat&quot; ]<br>}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;{&quot;name&quot;:&quot;John&quot;,&quot;age&quot;:30,&quot;cars&quot;:[ 
+  &quot;Ford&quot;, &quot;BMW&quot;, &quot;Fiat&quot; ]}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Accessing Array Values</h2>
+<p>You access the array values by using the index number:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  x = myObj.cars[0];<br></div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_access"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;x = myObj.cars[0];&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+<h2>Looping Through an Array</h2>
+<p>You can access array values by using a for-in loop:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  for (i in myObj.cars) {<br>&#xA0;&#xA0;&#xA0; 
+  x 
+  += myObj.cars[i];<br>}</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_loop_in" target="_blank"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;for (i in myObj.cars) { 
+  x 
+  += myObj.cars[i];}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Or you can use a for loop:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  for (i 
+  = 0; i &lt; myObj.cars.length; i++) {<br>&#xA0;&#xA0;&#xA0; x 
+  += myObj.cars[i];<br>}</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_loop" target="_blank"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;for (i 
+  = 0; i &lt; myObj.cars.length; i++) { x 
+  += myObj.cars[i];}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Nested Arrays in JSON Objects</h2>
+<p>Values in an array can also be another array, or even another JSON object:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  myObj =
+  {<br>&#xA0;&#xA0;&#xA0; 
+  &quot;name&quot;:&quot;John&quot;,<br>&#xA0;&#xA0;&#xA0; &quot;age&quot;:30,<br>&#xA0;&#xA0;&#xA0; 
+  &quot;cars&quot;: [<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; { &quot;name&quot;:&quot;Ford&quot;, 
+  &quot;models&quot;:[ &quot;Fiesta&quot;, &quot;Focus&quot;, &quot;Mustang&quot; ] },<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+  { &quot;name&quot;:&quot;BMW&quot;, &quot;models&quot;:[ &quot;320&quot;, &quot;X3&quot;, &quot;X5&quot; ] },<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+  { &quot;name&quot;:&quot;Fiat&quot;, &quot;models&quot;:[ &quot;500&quot;, &quot;Panda&quot; ] }<br>
+  &#xA0;&#xA0;&#xA0; ]<br>&#xA0;}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;myObj =
+  { 
+  &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, 
+  &quot;cars&quot;: [ { &quot;name&quot;:&quot;Ford&quot;, 
+  &quot;models&quot;:[ &quot;Fiesta&quot;, &quot;Focus&quot;, &quot;Mustang&quot; ] }, 
+  { &quot;name&quot;:&quot;BMW&quot;, &quot;models&quot;:[ &quot;320&quot;, &quot;X3&quot;, &quot;X5&quot; ] }, 
+  { &quot;name&quot;:&quot;Fiat&quot;, &quot;models&quot;:[ &quot;500&quot;, &quot;Panda&quot; ] }
+   ]}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>To access arrays inside arrays, use a for-in loop for each array:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  for (i in myObj.cars) {<br>&#xA0;&#xA0;&#xA0; x += &quot;&lt;h1&gt;&quot; + myObj.cars[i].name 
+  + &quot;&lt;/h1&gt;&quot;;<br>&#xA0;&#xA0;&#xA0; for (j in myObj.cars[i].models) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+  x += myObj.cars[i].models[j];<br>&#xA0;&#xA0;&#xA0; }<br>}<br></div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_nested" target="_blank"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;for (i in myObj.cars) { x += &quot;&lt;h1&gt;&quot; + myObj.cars[i].name 
+  + &quot;&lt;/h1&gt;&quot;; for (j in myObj.cars[i].models) { 
+  x += myObj.cars[i].models[j]; }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Modify Array Values</h2>
+<p>Use the index number to modify an array:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  &#xA0;myObj.cars[1] = &quot;Mercedes&quot;;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_modify"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;myObj.cars[1] = &quot;Mercedes&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+
+
+<hr>
+
+<h2>Delete Array Items</h2>
+<p>Use the delete keyword to delete items from an array:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+  delete myObj.cars[1];</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_array_delete"></a>  
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;delete myObj.cars[1];&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_json_objects.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_json_parse.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,249 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Outline</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_boxmodel.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_text.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>CSS Outline</h2>
+<p>The CSS <code class="w3-codespan">outline</code> properties specify the style, color, and width of an outline.</p>
+<p>An outline is a line that is drawn around elements (outside the borders) to make the element &quot;stand out&quot;. </p>
+<p>However, the outline property is different from the border property - The outline is 
+NOT a part of an element&apos;s dimensions; the element&apos;s total width and height
+is not affected by the width of the outline.</p>
+
+<div class="w3-boxmodel">
+<div class="outline w3-theme">
+    <div class="border">
+      <div class="content"></div>
+     </div>
+</div>
+</div>
+
+<div style="width:98%;border:2px solid #555;outline:#4CAF50 double 10px;padding:15px;margin:auto;text-align:center">
+<p>This element has a thin black border and a double outline that is 10px wide and 
+green.</p>
+</div>
+<hr>
+
+<h2>Outline Style</h2>
+<p>The <code class="w3-codespan">outline-style</code> property specifies the style of the outline.</p>
+<p>The <code class="w3-codespan">outline-style</code> property can have one of the following values:</p>
+<ul>
+<li><code class="w3-codespan">dotted</code> - Defines a dotted outline</li>
+<li><code class="w3-codespan">dashed</code> - Defines a dashed outline</li>
+<li><code class="w3-codespan">solid</code> - Defines a solid outline</li>
+<li><code class="w3-codespan">double</code> - Defines a double outline</li>
+<li><code class="w3-codespan">groove</code> - Defines a 3D grooved outline. The effect depends on the outline-color value</li>
+<li><code class="w3-codespan">ridge</code> - Defines a 3D ridged outline. The effect depends on the outline-color value</li>
+<li><code class="w3-codespan">inset</code> - Defines a 3D inset outline. The effect depends on the outline-color value</li>
+<li><code class="w3-codespan">outset</code> - Defines a 3D outset outline. The effect depends on the outline-color value</li>
+<li><code class="w3-codespan">none</code> - Defines no outline</li>
+<li><code class="w3-codespan">hidden</code> - Defines a hidden outline</li>
+</ul>
+
+<p>The following example first sets a thin black border around each &lt;p&gt; element, 
+then it shows the different <code class="w3-codespan">outline-style</code> values:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {<br>&#xA0;&#xA0;&#xA0; border: 1px solid black;<br>&#xA0;&#xA0;&#xA0; 
+outline-color: red;<br>}<br><br>p.dotted {outline-style: dotted;}<br>
+p.dashed {outline-style: dashed;}<br>p.solid {outline-style: solid;}<br>
+p.double {outline-style: double;}<br>p.groove {outline-style: groove;}<br>
+p.ridge {outline-style: ridge;}<br>p.inset {outline-style: inset;}<br>
+p.outset {outline-style: outset;}</div>
+<p>Result:</p>
+<div class="w3-white w3-padding notranslate">
+<p style="border: 1px solid black;outline-style: dotted;outline-color: red;">A dotted outline.</p>
+<p style="border: 1px solid black;outline-style: dashed;outline-color: red;">A dashed outline.</p>
+<p style="border: 1px solid black;outline-style: solid;outline-color: red;">A solid outline.</p>
+<p style="border: 1px solid black;outline-style: double;outline-color: red;">A double outline.</p>
+<p style="border: 1px solid black;outline-style: groove;outline-color: red;">A groove outline. The effect depends on the outline-color value.</p>
+<p style="border: 1px solid black;outline-style: ridge;outline-color: red;">A ridge outline. The effect depends on the outline-color value.</p>
+<p style="border: 1px solid black;outline-style: inset;outline-color: red;">An inset outline. The effect depends on the outline-color value.</p>
+<p style="border: 1px solid black;outline-style: outset;outline-color: red;">An outset outline. The effect depends on the outline-color value.</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_outline-style" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p { border: 1px solid black; 
+outline-color: red;}p.dotted {outline-style: dotted;}
+p.dashed {outline-style: dashed;}p.solid {outline-style: solid;}
+p.double {outline-style: double;}p.groove {outline-style: groove;}
+p.ridge {outline-style: ridge;}p.inset {outline-style: inset;}
+p.outset {outline-style: outset;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+  <p><b>Note:</b> None of the OTHER CSS outline properties described below will have ANY effect unless the 
+<code class="w3-codespan">outline-style</code> property is set!</p>
+</div>
+
+<hr>
+
+<h2>Outline Color</h2>
+<p>The <code class="w3-codespan">outline-color</code> property is used to set the color of the outline.</p>
+<p>The color can be set by:</p>
+<ul>
+<li>name - specify a color name, like &quot;red&quot;</li>
+<li>RGB - specify a RGB value, like &quot;rgb(255,0,0)&quot;</li>
+<li>Hex - specify a hex value, like &quot;#ff0000&quot;</li>
+<li>invert - performs a color inversion (which ensures that the outline is visible, regardless of color background)</li>
+</ul>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p
+{<br>
+&#xA0;&#xA0;&#xA0; border: 1px solid black;<br>&#xA0;&#xA0;&#xA0;
+outline-style: double;<br>
+&#xA0;&#xA0;&#xA0;
+outline-color: red;<br>
+}</div>
+<p>Result:</p>
+<div class="w3-padding w3-white notranslate">
+<p style="border: 1px solid black;outline-style:double;outline-color:red;">A 
+colored outline.</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_outline-color" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p
+{
+ border: 1px solid black;
+outline-style: double;
+
+outline-color: red;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Outline Width</h2>
+<p>The <code class="w3-codespan">outline-width</code> property specifies the width of the outline.</p>
+<p>The width can be set as a specific size (in px, pt, cm, em, etc) or by using one of the three pre-defined values: 
+thin, medium, or thick.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {border: 1px solid black;}<br><br>p.one
+{<br>
+&#xA0;&#xA0;&#xA0;
+outline-style: double;<br>&#xA0;&#xA0;&#xA0; outline-color: red;<br>
+&#xA0;&#xA0;&#xA0;
+outline-width: thick;<br>
+}<br><br>
+p.two
+{<br>
+&#xA0;&#xA0;&#xA0;
+outline-style: double;<br>&#xA0;&#xA0;&#xA0; outline-color: green;<br>
+&#xA0;&#xA0;&#xA0;
+outline-width: 3px;<br>
+}
+</div>
+<p>Result:</p>
+<div class="w3-padding w3-white notranslate">
+<p style="border: 1px solid black;outline-style: double;outline-color:red;outline-width:thick;">A thick outline.</p>
+<p style="border: 1px solid black;outline-style: double;outline-color:green;outline-width:3px;">A thinner outline.</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_outline-width" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p {border: 1px solid black;}p.one
+{
+
+outline-style: double; outline-color: red;
+
+outline-width: thick;
+}
+p.two
+{
+
+outline-style: double; outline-color: green;
+
+outline-width: 3px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Outline - Shorthand property</h2>
+<p>To shorten the code, it is also possible to specify all the individual 
+outline properties in one property.</p>
+<p>The <code class="w3-codespan">outline</code> property is a shorthand property for the following individual 
+outline properties:</p>
+<ul>
+<li><code class="w3-codespan">outline-width</code></li>
+<li><code class="w3-codespan">outline-style</code> (required)</li>
+<li><code class="w3-codespan">outline-color</code></li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+p {<br>&#xA0;&#xA0;&#xA0; border: 1px solid black;<br>&#xA0;&#xA0;&#xA0; 
+outline: 5px dotted red;<br>}</div>
+<p>Result:</p>
+<div class="w3-padding w3-white notranslate">
+<p style="border: 1px solid black;outline: 5px dotted red;">An outline.</p>
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_outline" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;p { border: 1px solid black; 
+outline: 5px dotted red;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_outline1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_outline2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_outline3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+<hr>
+<h2>All CSS Outline Properties</h2>
+
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:20%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_outline.asp">outline</a></td>
+    <td>Sets all the outline properties in one declaration</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_outline-color.asp">outline-color</a></td>
+    <td>Sets the color of an outline</td>
+  </tr>
+    <tr>
+    <td><a href="/cssref/css3_pr_outline-offset.asp">outline-offset</a></td>
+    <td>Specifies the space between an outline and the edge or border of an element</td>
+    </tr>
+  <tr>
+    <td><a href="/cssref/pr_outline-style.asp">outline-style</a></td>
+    <td>Sets the style of an outline</td>
+  </tr>
+  <tr>
+    <td>
+      <a href="/cssref/pr_outline-width.asp">outline-width</a></td>
+    <td>Sets the width of an outline</td>
+  </tr>
+</table>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_boxmodel.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_text.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,307 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.20:504695,0.25:504696,0.80:504704,1.30:504709,2.20:504718,3.00:504722,0.15:504694,0.30:504697,1.40:504710,4.50:504726,0.05:504692,0.10:504693,0.60:504702,1.10:504707,1.70:504713,0.70:504703,1.20:504708,1.50:504711,1.60:504712,2.40:504719,4.00:504725,1.00:504706,2.60:504720,1.80:504714,2.00:504716,2.80:504721,3.50:504724,0.45:504700,0.50:504701,0.90:504705,5.00:504727,0.35:504698,0.40:504699,1.90:504715,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Regular Expressions</span></h1>
+<div class="w3-clear nextprev">
+ <a class="w3-left w3-btn" href="js_bitwise.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_errors.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">A regular expression is a sequence of characters that forms a 
+search pattern.</p>
+<p class="intro">The search pattern can be used for text search and text replace 
+operations. </p>
+<hr>
+
+<h2>What Is a Regular Expression?</h2>
+<p>A regular expression is a sequence of characters that forms a <strong>search 
+pattern</strong>.</p>
+<p>When you search for data in a text, you can use this search pattern to describe what you are searching for.</p>
+<p>A regular expression can be a single character, or a more complicated pattern.</p>
+<p>Regular expressions can be used to perform all types of <strong>text search</strong> 
+and <strong>text replace</strong> operations.</p>
+
+<h2>Syntax</h2>
+<div class="w3-code w3-border notranslate"><div>
+ /<em>pattern</em>/<em>modifiers</em>;
+</div></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate">
+ var patt = /w3schools/i;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;/pattern/modifiers;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Example explained:</p>
+<p><strong>/w3schools/i</strong>&#xA0; is a regular expression.</p>
+<p><strong>w3schools</strong>&#xA0; is a pattern (to be used in a search).</p>
+<p><strong>i</strong>&#xA0; is a modifier (modifies the search to be case-insensitive).</p>
+<hr>
+
+<h2>Using String Methods</h2>
+<p>In JavaScript, regular expressions are often used with the two <strong>string 
+methods</strong>: search() and replace().</p>
+<p><strong>The search() method</strong> uses an expression to search for a 
+match, and returns the position of the match.</p>
+<p><strong>The replace() method</strong> returns a modified string where the 
+pattern is replaced.</p>
+<hr>
+
+<h2>Using String search() With a Regular Expression</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use a regular expression to do a case-insensitive search for &quot;w3schools&quot; in a string:</p>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Visit W3Schools&quot;;<br>
+var n = str.search(/w3schools/i);
+</div>
+<p>The result in n will be:</p>
+<div class="w3-code notranslate">
+6
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_search_regexp" target="_blank"></a><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var patt = /w3schools/i;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Using String search() With String</h2>
+<p>The search method will also accept a string as search 
+argument. The string argument will be converted to a regular expression: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use a string to do a search for &quot;W3schools&quot; in a string:</p>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Visit W3Schools!&quot;;<br>
+var n = str.search(&quot;W3Schools&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_search" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Visit W3Schools&quot;;
+var n = str.search(/w3schools/i);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Use String replace() With a Regular Expression</h2>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Use a case insensitive regular expression to replace Microsoft with W3Schools 
+in a string:</p>
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Visit Microsoft!&quot;;<br>
+var res = str.replace(/microsoft/i, &quot;W3Schools&quot;);
+</div>
+<p>The result in res will be:</p>
+<div class="w3-code notranslate">
+Visit W3Schools!</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_replace_regexp" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;6&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h2>Using String replace() With a String</h2>
+<p>The replace() method will also accept a string as search 
+argument: </p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var str = &quot;Visit Microsoft!&quot;;<br>
+var res = str.replace(&quot;Microsoft&quot;, &quot;W3Schools&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_string_replace" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Visit W3Schools!&quot;;
+var n = str.search(&quot;W3Schools&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Did You Notice?</h2>
+
+<div class="w3-panel w3-note">
+<p>Regular expression arguments (instead of string arguments) can be used in the methods above.<br>
+Regular expressions can make your search much more powerful (case insensitive for example).</p>
+</div>
+
+<hr>
+<h2>Regular Expression Modifiers</h2>
+<p><strong>Modifiers</strong> can be used to perform case-insensitive more global searches:</p>
+
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%">Modifier</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>i</td>
+    <td>Perform case-insensitive matching</td>
+  </tr>
+  <tr>
+    <td>g</td>
+    <td>Perform a global match (find all matches rather than stopping after the first match)</td>
+  </tr>
+  <tr>
+    <td>m</td>
+    <td>Perform multiline matching</td>
+  </tr>
+</table>
+
+<h2>Regular Expression Patterns</h2>
+<p><strong>Brackets</strong> are used to find a range of characters:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%">Expression</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>[abc]</td>
+    <td>Find any of the characters between the brackets</td>
+  </tr><tr>
+    <td>[0-9]</td>
+    <td>Find any of the digits between the brackets</td>
+    </tr><tr>
+    <td>(x|y)</td>
+    <td>Find any of the alternatives separated with |</td>
+  </tr>
+</table>
+
+<p><strong>Metacharacters</strong> are characters with a special meaning:</p>
+<table class="w3-table-all notranslate">
+<tr>
+    <th style="width:22%">Metacharacter</th>
+    <th>Description</th>
+</tr>
+<tr>
+    <td>\d</td>
+    <td>Find a digit</td>
+</tr>
+<tr>
+    <td>\s</td>
+    <td>Find a whitespace character</td>
+</tr>
+<tr>
+    <td>\b</td>
+    <td>Find a match at the beginning or at the end of a word</td>
+</tr>
+<tr>
+    <td>\uxxxx</td>
+    <td>Find the Unicode character specified by the hexadecimal number xxxx</td>
+</tr>
+</table>
+
+<p><strong>Quantifiers</strong> define quantities:</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%">Quantifier</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td>n+</td>
+    <td>Matches any string that contains at least one <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n*</td>
+    <td>Matches any string that contains zero or more occurrences of <em>n</em></td>
+  </tr>
+  <tr>
+    <td>n?</td>
+    <td>Matches any string that contains zero or one occurrences of <em>n</em></td>
+  </tr>
+</table>
+<hr>
+
+<h2>Using the RegExp Object</h2>
+<p>In JavaScript, the RegExp object is a regular expression object with 
+predefined properties and methods.</p>
+<hr>
+
+<h2>Using test()</h2>
+<p>The test() method is a RegExp expression method.</p>
+<p>It searches a string for a pattern, and returns true 
+or false, depending on the result.</p>
+<p>The following example searches a string for the character &quot;e&quot;:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var patt = /e/;<br>
+patt.test(&quot;The best things in life are free!&quot;);
+</div>
+<p>Since there is an &quot;e&quot; in the string, the output of the code above will be:</p>
+<div class="w3-code notranslate">
+true
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_regexp_test" class="w3-btn w3-margin-bottom"></a>
+<p>You don&apos;t have to put the regular expression in a variable first. The two 
+lines above can be shortened to one:</p>
+<div class="w3-code notranslate jsHigh">
+/e/.test(&quot;The best things in life are free!&quot;);</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var str = &quot;Visit Microsoft!&quot;;
+var res = str.replace(/microsoft/i, &quot;W3Schools&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Using exec()</h2>
+<p>The exec() method is a RegExp expression method.</p>
+<p>It searches a string for a specified pattern, and returns the found text. </p>
+<p>If no match is found, it returns <i>null.</i></p>
+<p>The following example searches a string for the character &quot;e&quot;:</p>
+
+<div class="w3-example">
+<h3>Example 1</h3>
+<div class="w3-code notranslate jsHigh">
+ /e/.exec(&quot;The best things in life are free!&quot;);
+</div>
+<p>Since there is an &quot;e&quot; in the string, the output of the code above will be:</p>
+<div class="w3-code notranslate">
+e</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_regexp_exec" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Visit W3Schools!&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Complete RegExp Reference</h2>
+<p>For a complete reference, go to our <a href="/jsref/jsref_obj_regexp.asp">Complete 
+JavaScript RegExp Reference</a>.</p>
+<p>The reference contains descriptions and examples of all RegExp 
+properties and methods.</p>
+<br>
+<div class="w3-clear nextprev">
+ <a class="w3-left w3-btn" href="js_bitwise.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_errors.asp">Next &#x276F;</a>
+</div>

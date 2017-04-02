@@ -1,0 +1,118 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Input Sizing</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_forms_inputs2.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_media_objects.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Input Sizing in Forms</h2>
+<p>Set the heights of input elements using classes like <code class="w3-codespan">.input-lg</code> and <code class="w3-codespan">.input-sm</code>.</p>
+<p>Set the widths of elements using grid column classes like <code class="w3-codespan">.col-lg-*</code>and <code class="w3-codespan">.col-sm-*</code>.</p>
+<hr>
+
+<h2>Height Sizing</h2>
+<div style="margin:21px 0 25px 0;">
+  <div class="form-group">
+    <label for="inputsm">Small input</label>
+    <input class="form-control input-sm" id="inputsm" type="text">
+  </div>
+  <div class="form-group">
+    <label for="inputdefault">Default input</label>
+    <input class="form-control" id="inputdefault" type="text">
+  </div>
+  <div class="form-group">
+    <label for="inputlg">Large input</label>
+    <input class="form-control input-lg" id="inputlg" type="text">
+  </div>
+</div>
+<p>The following examples shows input elements with different heights:</p>
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;form&gt;<br>&#xA0; &lt;div  class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;inputdefault&quot;&gt;Default  input&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;  &lt;input class=&quot;form-control&quot; id=&quot;inputdefault&quot; type=&quot;text&quot;&gt;<br>&#xA0;  &lt;/div&gt;<br>&#xA0; &lt;div  class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;inputlg&quot;&gt;input-lg&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;  &lt;input class=&quot;form-control input-lg&quot; id=&quot;inputlg&quot; type=&quot;text&quot;&gt;<br>&#xA0;  &lt;/div&gt;<br>&#xA0; &lt;div  class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;inputsm&quot;&gt;input-sm&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;  &lt;input class=&quot;form-control input-sm&quot; id=&quot;inputsm&quot; type=&quot;text&quot;&gt;<br>&#xA0;  &lt;/div&gt;<br>&lt;/form&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_input_height&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form&gt; &lt;div  class=&quot;form-group&quot;&gt; &lt;label for=&quot;inputdefault&quot;&gt;Default  input&lt;/label&gt;  &lt;input class=&quot;form-control&quot; id=&quot;inputdefault&quot; type=&quot;text&quot;&gt;  &lt;/div&gt; &lt;div  class=&quot;form-group&quot;&gt; &lt;label for=&quot;inputlg&quot;&gt;input-lg&lt;/label&gt;  &lt;input class=&quot;form-control input-lg&quot; id=&quot;inputlg&quot; type=&quot;text&quot;&gt;  &lt;/div&gt; &lt;div  class=&quot;form-group&quot;&gt; &lt;label for=&quot;inputsm&quot;&gt;input-sm&lt;/label&gt;  &lt;input class=&quot;form-control input-sm&quot; id=&quot;inputsm&quot; type=&quot;text&quot;&gt;  &lt;/div&gt;&lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>You can quickly size labels and form controls within a <strong>Horizontal form</strong> by 
+adding <code class="w3-codespan">.form-group-*</code> to the <code class="w3-codespan">&lt;div class=&quot;form-group&quot;&gt;</code> element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;form-group form-group-lg&quot;&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_input_height2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;form-group form-group-lg&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>You can also quickly size all inputs and other elements inside an <code>.input-group</code> with the <code>.input-group-sm</code> or <code>.input-group-lg</code> classes:</p>
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;input-group input-group-lg&quot;&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_input_group_size&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;input-group input-group-lg&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Column Sizing</h2>
+<div style="margin:20px 0 25px 0;">
+<div class="col-xs-2">
+  <label for="ex1">col-xs-2</label>
+  <input class="form-control" id="ex1" type="text">
+</div>
+<div class="col-xs-3">
+  <label for="ex2">col-xs-3</label>
+  <input class="form-control" id="ex2" type="text">
+</div>
+<div class="col-xs-4">
+  <label for="ex3">col-xs-4</label>
+  <input class="form-control" id="ex3" type="text">
+</div>
+</div>
+<p style="clear:both;"></p>
+<p style="margin-top:25px;">The following examples shows input elements with different widths using different 
+<code class="w3-codespan">.col-xs-*</code> classes:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;col-xs-2&quot;&gt;<br>&#xA0; &lt;label for=&quot;ex1&quot;&gt;col-xs-2&lt;/label&gt;<br>&#xA0;  &lt;input class=&quot;form-control&quot; id=&quot;ex1&quot; type=&quot;text&quot;&gt;<br>&lt;/div&gt;<br>&lt;div  class=&quot;col-xs-3&quot;&gt;<br>&#xA0; &lt;label for=&quot;ex2&quot;&gt;col-xs-3&lt;/label&gt;<br>&#xA0;  &lt;input class=&quot;form-control&quot; id=&quot;ex2&quot; type=&quot;text&quot;&gt;<br>&lt;/div&gt;<br>&lt;div  class=&quot;col-xs-4&quot;&gt;<br>&#xA0; &lt;label for=&quot;ex3&quot;&gt;col-xs-4&lt;/label&gt;<br>&#xA0;  &lt;input class=&quot;form-control&quot; id=&quot;ex3&quot; type=&quot;text&quot;&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_input_width&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;col-xs-2&quot;&gt; &lt;label for=&quot;ex1&quot;&gt;col-xs-2&lt;/label&gt;  &lt;input class=&quot;form-control&quot; id=&quot;ex1&quot; type=&quot;text&quot;&gt;&lt;/div&gt;&lt;div  class=&quot;col-xs-3&quot;&gt; &lt;label for=&quot;ex2&quot;&gt;col-xs-3&lt;/label&gt;  &lt;input class=&quot;form-control&quot; id=&quot;ex2&quot; type=&quot;text&quot;&gt;&lt;/div&gt;&lt;div  class=&quot;col-xs-4&quot;&gt; &lt;label for=&quot;ex3&quot;&gt;col-xs-4&lt;/label&gt;  &lt;input class=&quot;form-control&quot; id=&quot;ex3&quot; type=&quot;text&quot;&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Help Text</h2>
+<p>Use the <code class="w3-codespan">.help-block</code> class to add a block level help text in forms:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+  &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0;  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter  password&quot;&gt;<br>&#xA0; &lt;span class=&quot;help-block&quot;&gt;This is some help  text...&lt;/span&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_input_help-block&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter  password&quot;&gt; &lt;span class=&quot;help-block&quot;&gt;This is some help  text...&lt;/span&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_forms_inputs2.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_media_objects.asp">Next &#x276F;</a>
+</div>

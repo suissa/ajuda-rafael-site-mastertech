@@ -1,0 +1,176 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">List Groups</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_pager.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_panels.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Basic List Groups</h2>
+<p>The most basic list group is an unordered list with list items:</p>
+<ul class="list-group">
+  <li class="list-group-item">First item</li>
+  <li class="list-group-item">Second item</li>
+  <li class="list-group-item">Third item</li>
+</ul>
+<p>To create a basic list group, use an <code class="w3-codespan">&lt;ul&gt;</code> element with class <code class="w3-codespan">.list-group</code>, and
+<code class="w3-codespan">&lt;li&gt;</code> elements with class <code class="w3-codespan">.list-group-item</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;First item&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Second item&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Third item&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item&quot;&gt;First item&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;Second item&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;Third item&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>List Group With Badges</h2>
+<p>You can also add badges to a list group. The badges will automatically be 
+positioned on the right:</p>
+<ul class="list-group">
+  <li class="list-group-item"><span class="badge">12</span> New</li>
+  <li class="list-group-item"><span class="badge">5</span> Deleted</li>  
+  <li class="list-group-item"><span class="badge">3</span> Warnings</li>  
+</ul>
+<p>To create a badge, create a <code class="w3-codespan">&lt;span&gt;</code> element with class <code class="w3-codespan">.badge</code> 
+inside the list item:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;New &lt;span class=&quot;badge&quot;&gt;12&lt;/span&gt;&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Deleted &lt;span class=&quot;badge&quot;&gt;5&lt;/span&gt;&lt;/li&gt; <br>&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Warnings &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/li&gt; <br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_badge&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item&quot;&gt;New &lt;span class=&quot;badge&quot;&gt;12&lt;/span&gt;&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;Deleted &lt;span class=&quot;badge&quot;&gt;5&lt;/span&gt;&lt;/li&gt;  &lt;li class=&quot;list-group-item&quot;&gt;Warnings &lt;span class=&quot;badge&quot;&gt;3&lt;/span&gt;&lt;/li&gt; &lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>List Group With Linked Items</h2>
+<p>The items in a list group can also be hyperlinks. This will add a grey 
+background color on hover:</p>
+<div class="list-group test">
+  <a href="#" class="list-group-item">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+<p>To create a list group with linked items, use <code class="w3-codespan">&lt;div&gt;</code> instead of <code class="w3-codespan">&lt;ul&gt;</code> 
+and <code class="w3-codespan">&lt;a&gt;</code> instead of <code class="w3-codespan">&lt;li&gt;</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;First item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_link&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;list-group&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;First item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Active State</h2>
+<div class="list-group test">
+  <a href="#" class="list-group-item active">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+<p>Use the <code class="w3-codespan">.active</code> class to highlight the current item:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;First item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_active&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;list-group&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;First item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Disabled Item</h2>
+<p>The following list group has a disabled item:</p>
+<div class="list-group test">
+  <a href="#" class="list-group-item disabled">First item</a>
+  <a href="#" class="list-group-item">Second item</a>
+  <a href="#" class="list-group-item">Third item</a>
+</div>
+<p>To disable an item, add the <code class="w3-codespan">.disabled</code> class:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;First item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_disabled&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;list-group&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item disabled&quot;&gt;First item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Second item&lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;Third item&lt;/a&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Contextual Classes</h2>
+<p>Contextual classes can be used to color list items:</p>
+<ul class="list-group">
+  <li class="list-group-item list-group-item-success">First item</li>
+  <li class="list-group-item list-group-item-info">Second item</li>
+  <li class="list-group-item list-group-item-warning">Third item</li>
+  <li class="list-group-item list-group-item-danger">Fourth item</li>
+</ul>
+
+<p>The classes for coloring list-items are: <code class="w3-codespan">
+.list-group-item-success</code>, <code class="w3-codespan">list-group-item-info</code>, <code class="w3-codespan">
+list-group-item-warning</code>, and <code class="w3-codespan">.list-group-item-danger</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;First item&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;Second item&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;Third item&lt;/li&gt;<br>&#xA0; &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;Fourth item&lt;/li&gt;<br>&lt;/ul&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_context&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item list-group-item-success&quot;&gt;First item&lt;/li&gt; &lt;li class=&quot;list-group-item list-group-item-info&quot;&gt;Second item&lt;/li&gt; &lt;li class=&quot;list-group-item list-group-item-warning&quot;&gt;Third item&lt;/li&gt; &lt;li class=&quot;list-group-item list-group-item-danger&quot;&gt;Fourth item&lt;/li&gt;&lt;/ul&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Custom Content</h2>
+<p>You can add nearly any HTML inside a list group item.</p>
+<p>Bootstrap provides the classes <code class="w3-codespan">.list-group-item-heading</code> and
+<code class="w3-codespan">.list-group-item-text</code> which can be used as follows:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;list-group&quot;&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;First List Group Item Heading&lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt;<br>&#xA0; &lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Second List Group Item Heading&lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt;<br>&#xA0; &lt;/a&gt;<br>&#xA0; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Third List Group Item Heading&lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt;<br>&#xA0; &lt;/a&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_list_group_custom&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;list-group&quot;&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item active&quot;&gt; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;First List Group Item Heading&lt;/h4&gt; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt; &lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Second List Group Item Heading&lt;/h4&gt; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt; &lt;/a&gt; &lt;a href=&quot;#&quot; class=&quot;list-group-item&quot;&gt; &lt;h4 class=&quot;list-group-item-heading&quot;&gt;Third List Group Item Heading&lt;/h4&gt; &lt;p class=&quot;list-group-item-text&quot;&gt;List Group Item Text&lt;/p&gt; &lt;/a&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_listgroups1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_listgroups2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_listgroups3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_listgroups4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_listgroups5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_pager.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_panels.asp">Next &#x276F;</a>
+</div>

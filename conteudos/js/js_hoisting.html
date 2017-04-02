@@ -1,0 +1,170 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.60:504702,2.60:504720,2.80:504721,4.00:504725,4.50:504726,0.20:504695,0.70:504703,1.70:504713,1.90:504715,0.40:504699,1.60:504712,0.15:504694,0.80:504704,0.90:504705,1.10:504707,2.40:504719,0.10:504693,1.00:504706,1.40:504710,2.00:504716,2.20:504718,0.30:504697,0.45:504700,1.20:504708,1.80:504714,3.50:504724,0.25:504696,0.35:504698,0.50:504701,1.50:504711,0.05:504692,1.30:504709,3.00:504722,5.00:504727,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Hoisting</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_debugging.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_strict.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Hoisting is JavaScript&apos;s default behavior of moving declarations to the 
+top.</p>
+<hr>
+
+<h2>JavaScript Declarations are Hoisted</h2>
+<p>In JavaScript, a variable can be declared after it has been used.</p>
+<p>In other words; a variable can be used before it has been declared.</p>
+<p><strong>Example 1</strong> gives the same result as <strong>Example 2</strong>:</p>
+<div class="w3-example">
+<h3>Example 1</h3>
+<div class="w3-code notranslate jsHigh">
+x = 5; // Assign 5 to x<br>
+<br>
+elem = document.getElementById(&quot;demo&quot;); // Find an element <br>
+elem.innerHTML = x;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+// Display x in the element<br><br>var x; // Declare x
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_hoisting1" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;x = 5; // Assign 5 to x
+
+elem = document.getElementById(&quot;demo&quot;); // Find an element 
+elem.innerHTML = x; 
+// Display x in the elementvar x; // Declare x&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<br>
+<div class="w3-example">
+<h3>Example 2</h3>
+<div class="w3-code notranslate jsHigh">
+var x; // Declare x<br>
+x = 5; // Assign 5 to x<br><br>
+elem = document.getElementById(&quot;demo&quot;); // Find an element <br>elem.innerHTML = x;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+// Display x in the element<br>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_hoisting2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x; // Declare x
+x = 5; // Assign 5 to x
+elem = document.getElementById(&quot;demo&quot;); // Find an element elem.innerHTML = x; 
+// Display x in the element&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>To understand this, you have to understand the term &quot;hoisting&quot;.</p>
+<p>Hoisting is JavaScript&apos;s default behavior of moving all declarations to the 
+top of the current scope (to the top of the current script or the current function).</p>
+<hr>
+
+<h2>JavaScript Initializations are Not Hoisted</h2>
+<p>JavaScript only hoists declarations, not initializations.</p>
+<p><strong>Example 1</strong> does <strong>not</strong> give the same result as
+<strong>Example 2</strong>:</p>
+
+<div class="w3-example">
+<h3>Example 1</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5; // Initialize x<br>var y = 7; // Initialize y<br><br>elem = document.getElementById(&quot;demo&quot;); // Find an element <br>
+elem.innerHTML = x + &quot; &quot; + y;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Display x and y
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_hoisting4" class="w3-btn w3-margin-bottom"></a> 
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5; // Initialize xvar y = 7; // Initialize yelem = document.getElementById(&quot;demo&quot;); // Find an element 
+elem.innerHTML = x + &quot; &quot; + y;// Display x and y&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<br>
+<div class="w3-example">
+<h3>Example 2</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5; // Initialize x<br>
+<br>
+elem = document.getElementById(&quot;demo&quot;); // Find an element <br>
+elem.innerHTML = x + &quot; &quot; + y;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Display x and y<br>
+<br>
+var y = 7; // Initialize y
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_hoisting3" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5; // Initialize x
+
+elem = document.getElementById(&quot;demo&quot;); // Find an element 
+elem.innerHTML = x + &quot; &quot; + y;// Display x and y
+
+var y = 7; // Initialize y&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Does it make sense that y is undefined in the last example?</p>
+<p>This is because only the declaration (var y), not the initialization (=7) is hoisted to the top.</p>
+<p>Because of hoisting, y has been declared before it is used, but because 
+initializations are not hoisted, the value of y is undefined.</p>
+<p>Example 2 is the same as writing:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5; // Initialize x<br>
+var y;&#xA0;&#xA0;&#xA0;&#xA0; // Declare y<br>
+<br>
+elem = document.getElementById(&quot;demo&quot;); // Find an element <br>
+elem.innerHTML = x + &quot; &quot; + y;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Display x and y<br>
+<br>
+y = 7;&#xA0;&#xA0;&#xA0; // Assign 7 to y 
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_hoisting5" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5; // Initialize x
+var y; // Declare y
+
+elem = document.getElementById(&quot;demo&quot;); // Find an element 
+elem.innerHTML = x + &quot; &quot; + y;// Display x and y
+
+y = 7; // Assign 7 to y&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Declare Your Variables At the Top !</h2>
+<p>Hoisting is (to many developers) an unknown or overlooked behavior of  
+JavaScript.</p><p>
+If a developer doesn&apos;t understand hoisting, programs may contain bugs (errors).</p><p>
+To avoid bugs, always declare all variables at the beginning of 
+every scope.</p><p>
+Since this is how JavaScript interprets the 
+code, it is always a good rule.
+</p>
+
+<div class="w3-panel w3-note">
+<p>JavaScript in strict mode does not allow variables to be used if they are 
+not declared.<br>Study <strong>&quot;use strict&quot;</strong> in the next chapter.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_debugging.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_strict.asp">Next &#x276F;</a>
+</div>

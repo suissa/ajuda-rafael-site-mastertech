@@ -1,0 +1,386 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.25:504696,1.40:504710,1.50:504711,1.70:504713,2.20:504718,2.60:504720,0.05:504692,0.70:504703,1.00:504706,1.90:504715,3.50:504724,0.90:504705,1.10:504707,1.30:504709,3.00:504722,4.00:504725,0.45:504700,1.20:504708,1.60:504712,0.20:504695,2.80:504721,0.30:504697,0.60:504702,2.40:504719,1.80:504714,2.00:504716,4.50:504726,0.10:504693,0.15:504694,0.50:504701,5.00:504727,0.35:504698,0.40:504699,0.80:504704,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Best Practices</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_conventions.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_mistakes.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Avoid global variables,&#xA0; avoid new,&#xA0; avoid&#xA0; ==,&#xA0; avoid eval()</p>
+<hr>
+
+<h2>Avoid Global Variables</h2>
+<p>Minimize the use of global variables.</p>
+<p>This includes all data types, objects, and functions.</p>
+<p>Global variables and functions can be overwritten by other scripts.</p>
+<p>Use local variables instead, and learn how to use 
+<a href="js_function_closures.asp">closures</a>. </p>
+<hr>
+
+<h2>Always Declare Local Variables</h2>
+<p>All variables used in a function should be declared as <strong>local</strong> variables. </p>
+
+<p>Local variables <strong>must</strong> be declared with the <strong>var </strong>keyword, 
+otherwise they will become global variables.</p>
+
+<div class="w3-panel w3-note">
+<p>Strict mode does not allow undeclared variables.</p>
+</div>
+
+<hr>
+<h2>Declarations on Top</h2>
+<p>It is a good coding practice to put all declarations at the top of each script 
+or function.</p>
+<p>This will:</p>
+<ul>
+ <li>Give cleaner code</li>
+ <li>Provide a single place to look for local variables</li>
+ <li>Make it easier to avoid unwanted (implied) global variables</li>
+ <li>Reduce the possibility of unwanted re-declarations</li>
+</ul>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+ // Declare at the beginning<br>var firstName, lastName, price, discount, fullPrice;<br>
+ <br>// Use later<br>firstName = &quot;John&quot;;<br>lastName = &quot;Doe&quot;;<br><br>price = 19.90;<br>
+discount = 0.10;<br><br>fullPrice = price * 100 / discount;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;// Declare at the beginningvar firstName, lastName, price, discount, fullPrice;
+ // Use laterfirstName = &quot;John&quot;;lastName = &quot;Doe&quot;;price = 19.90;
+discount = 0.10;fullPrice = price * 100 / discount;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>This also goes for loop variables:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+ // Declare at the beginning<br>var i;<br><br>// Use later<br>for (i = 0; i &lt; 5; i++) 
+ {</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;// Declare at the beginningvar i;// Use laterfor (i = 0; i &lt; 5; i++) 
+ {&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>By default, JavaScript moves all declarations to the top (JavaScript hoisting).</p>
+</div>
+
+<hr>
+<h2>Initialize Variables</h2>
+<p>It is a good coding practice to initialize variables when you declare them.</p>
+<p>This will:</p>
+<ul>
+ <li>Give cleaner code</li>
+ <li>Provide a single place to initialize variables</li>
+ <li>Avoid undefined values</li>
+</ul>
+<div class="w3-example">
+ <div class="w3-code notranslate jsHigh">
+  // Declare and initiate at the beginning<br>var firstName = &quot;&quot;,<br>&#xA0;&#xA0;&#xA0; lastName 
+  = &quot;&quot;,<br>&#xA0;&#xA0;&#xA0; price = 0,<br>&#xA0;&#xA0;&#xA0; discount = 0,<br>&#xA0;&#xA0;&#xA0; fullPrice 
+  = 0,<br>&#xA0;&#xA0;&#xA0; myArray = [],<br>&#xA0;&#xA0;&#xA0; myObject = {};</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;// Declare and initiate at the beginningvar firstName = &quot;&quot;, lastName 
+  = &quot;&quot;, price = 0, discount = 0, fullPrice 
+  = 0, myArray = [], myObject = {};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Initializing variables provides an idea of the intended use (and intended data type).</p>
+</div>
+
+<hr>
+<h2>Never Declare Number, String, or Boolean Objects</h2>
+<p>Always treat numbers, strings, or booleans as primitive values. Not as 
+objects.</p>
+<p>Declaring these types as objects, slows down execution speed, 
+and produces nasty side effects:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = &quot;John&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<br>
+var y = new String(&quot;John&quot;);<br>
+(x === y) // is false because x is a string and y is an object.
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_object_string1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = &quot;John&quot;;
+var y = new String(&quot;John&quot;);
+(x === y) // is false because x is a string and y is an object.&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Or even worse:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = new String(&quot;John&quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;<br>
+var y = new String(&quot;John&quot;);<br>
+(x == y) // is false because you cannot compare objects.
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_object_string2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = new String(&quot;John&quot;);
+var y = new String(&quot;John&quot;);
+(x == y) // is false because you cannot compare objects.&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Don&apos;t Use new Object()</h2>
+<ul>
+  <li>Use {} instead of new Object()</li>
+  <li>Use &quot;&quot; instead of new String()</li>
+  <li>Use 0 instead of new Number()</li>
+  <li>Use false instead of new Boolean()</li>
+  <li>Use [] instead of new Array()</li>
+  <li>Use /()/ instead of new RegExp() </li>
+  <li>Use function (){} instead of new Function()</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x1 = {};&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new object<br>
+var x2 = &quot;&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive string<br>
+var x3 = 0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive number<br>
+var x4 = false;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive boolean<br>
+var x5 = [];&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new array object<br>
+var x6 = /()/;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new regexp object<br>
+var x7 = function(){};&#xA0;// new function object</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_constructors" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x1 = {}; // new object
+var x2 = &quot;&quot;; // new primitive string
+var x3 = 0; // new primitive number
+var x4 = false; // new primitive boolean
+var x5 = []; // new array object
+var x6 = /()/; // new regexp object
+var x7 = function(){};// new function object&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Beware of Automatic Type Conversions</h2>
+<p>Beware that numbers can accidentally be converted to strings or NaN (Not a 
+Number).</p>
+
+<p>JavaScript is loosely typed. A variable can contain different data types, and 
+a variable can change its data type:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = &quot;Hello&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// typeof x is a string<br>
+x = 5;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// changes typeof x to a number
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_best_typeof" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = &quot;Hello&quot;;// typeof x is a string
+x = 5;// changes typeof x to a number&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>When doing mathematical operations, JavaScript can convert numbers to strings:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x = 5 + 7;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // x.valueOf() is 12,&#xA0; typeof x is a number<br>
+var x = 5 + &quot;7&quot;;&#xA0;&#xA0;&#xA0;&#xA0; // x.valueOf() is 57,&#xA0; typeof x is a string<br>
+var x = &quot;5&quot; + 7;&#xA0;&#xA0;&#xA0;&#xA0; // x.valueOf() is 57,&#xA0; typeof x is a string<br>
+var x = 5 - 7; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // x.valueOf() is -2,&#xA0; typeof x is a number<br>
+var x = 5 - &quot;7&quot;; &#xA0;&#xA0;&#xA0; // x.valueOf() is -2,&#xA0; typeof x is a number<br>
+var x = &quot;5&quot; - 7; &#xA0;&#xA0;&#xA0; // x.valueOf() is -2,&#xA0; typeof x is a number<br>
+var x = 5 - &quot;x&quot;;&#xA0; &#xA0;&#xA0; // x.valueOf() is NaN, typeof x is a number
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_valueof" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = 5 + 7; // x.valueOf() is 12, typeof x is a number
+var x = 5 + &quot;7&quot;; // x.valueOf() is 57, typeof x is a string
+var x = &quot;5&quot; + 7; // x.valueOf() is 57, typeof x is a string
+var x = 5 - 7;  // x.valueOf() is -2, typeof x is a number
+var x = 5 - &quot;7&quot;;  // x.valueOf() is -2, typeof x is a number
+var x = &quot;5&quot; - 7;  // x.valueOf() is -2, typeof x is a number
+var x = 5 - &quot;x&quot;;  // x.valueOf() is NaN, typeof x is a number&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Subtracting a string from a string, does not 
+generate an error but returns NaN (Not a Number):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ &quot;Hello&quot; - &quot;Dolly&quot; &#xA0;&#xA0; // returns NaN</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_string_op1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&quot;Hello&quot; - &quot;Dolly&quot;  // returns NaN&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Use === Comparison</h2>
+<p>The == comparison operator always converts (to matching types) before 
+comparison.</p>
+<p>The === operator forces comparison of values and type: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+0 == &quot;&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // true<br>
+1 == &quot;1&quot;; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // true<br>
+1 == true;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // true<br><br>
+0 === &quot;&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // false<br>
+1 === &quot;1&quot;; &#xA0;&#xA0; &#xA0; // false<br>
+1 === true;&#xA0;&#xA0;&#xA0;&#xA0; 
+// false
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_comparison" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;0 == &quot;&quot;; // true
+1 == &quot;1&quot;;  // true
+1 == true; // true
+0 === &quot;&quot;; // false
+1 === &quot;1&quot;;   // false
+1 === true; 
+// false&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Use Parameter Defaults</h2>
+<p>If a function is called with a missing argument, the value of the missing 
+argument is set to
+<strong>undefined</strong>.</p>
+<p>Undefined values can break your code. It is a good habit to assign default 
+values to arguments.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function myFunction(x, y) {<br>
+&#xA0;&#xA0;&#xA0; if (y === undefined) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; y = 0;<br>
+&#xA0;&#xA0;&#xA0;  }<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_best_parameter_default" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function myFunction(x, y) {
+ if (y === undefined) {
+ y = 0;
+  }
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Read more about function parameters and arguments at <a href="js_function_parameters.asp">Function Parameters</a></p>
+<hr>
+
+<h2>End Your Switches with Defaults</h2>
+<p>Always end your switch statements with a default. Even if you think there is 
+no need for it.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+switch (new Date().getDay()) {<br>
+&#xA0;&#xA0;&#xA0;
+case 0:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Sunday&quot;;<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 1:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Monday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 2:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Tuesday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 3:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Wednesday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 4:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Thursday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 5:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Friday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0;
+case 6:<br>
+&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = &quot;Saturday&quot;;<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; break;<br>
+&#xA0;&#xA0;&#xA0; default:<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; day = 
+ &quot;Unknown&quot;;<br>}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_break_switch" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;switch (new Date().getDay()) {
+
+case 0:
+  day = &quot;Sunday&quot;;
+ break;
+
+case 1:
+  day = &quot;Monday&quot;;
+  break;
+
+case 2:
+  day = &quot;Tuesday&quot;;
+  break;
+
+case 3:
+  day = &quot;Wednesday&quot;;
+  break;
+
+case 4:
+  day = &quot;Thursday&quot;;
+  break;
+
+case 5:
+  day = &quot;Friday&quot;;
+  break;
+
+case 6:
+  day = &quot;Saturday&quot;;
+  break;
+ default: day = 
+ &quot;Unknown&quot;;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+
+<hr>
+<h2>Avoid Using eval()</h2>
+<p>The eval() function is used to run text as code. In almost all cases, it 
+should not be necessary to use it.</p>
+<p>Because it allows arbitrary code to be run, it also represents a security 
+problem.</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_conventions.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_mistakes.asp">Next &#x276F;</a>
+</div>

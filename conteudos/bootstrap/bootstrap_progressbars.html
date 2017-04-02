@@ -1,0 +1,199 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Progress Bars</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_badges_labels.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pagination.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>Basic Progress Bar</h2>
+<p>A progress bar can be used to show a user how far along he/she is in a 
+process.</p>
+<p>Bootstrap provides several types of progress bars.</p>
+<p>A default progress bar in Bootstrap looks like this:</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    <span class="sr-only">70% Complete</span>
+  </div>
+</div>
+<p>To create a default progress bar, add a <code class="w3-codespan">.progress</code> class to a <code class="w3-codespan">&lt;div&gt;</code> element:</p>                  
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar1&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt; &lt;span class=&quot;sr-only&quot;&gt;70% Complete&lt;/span&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note: </strong>Progress bars are not supported in Internet Explorer 9 and 
+earlier (because they use CSS3 transitions and animations to achieve some of 
+their effects).<br><br><strong>Note:</strong> To help improve accessibility for 
+people using screen readers, you should include the aria-* attributes.</p>
+</div>
+<hr>
+
+<h2>Progress Bar With Label</h2>
+<p>A progress bar with a label looks like this:</p>
+<div class="progress">
+  <div class="progress-bar" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width:70%">
+    70%
+  </div>
+</div>
+<p>Remove the <code class="w3-codespan">.sr-only</code> class from the progress bar to show a visible percentage:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 70%<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt; 70% &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Colored Progress Bars</h2>
+<p>Contextual classes are used to provide &quot;meaning through colors&quot;.</p>
+<p>The contextual classes that can be used with progress bars are:</p>
+<ul>
+  <li><code class="w3-codespan">.progress-bar-success</code></li>
+  <li><code class="w3-codespan">.progress-bar-info</code></li>
+  <li><code class="w3-codespan">.progress-bar-warning</code></li>
+  <li><code class="w3-codespan">.progress-bar-danger</code></li>
+</ul>
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    40% Complete (success)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    50% Complete (info)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    60% Complete (warning)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    70% Complete (danger)
+  </div>
+</div>
+<p>The following example shows how to create progress bars with the different 
+contextual classes:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 40% Complete (success)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 50% Complete (info)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 60% Complete (warning)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot;<br>&#xA0; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 70% Complete (danger)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar3&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt; 40% Complete (success) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-info&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt; 50% Complete (info) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt; 60% Complete (warning) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt; 70% Complete (danger) &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Striped Progress Bars</h2>
+<p>Progress bars can also be striped:</p>
+<div class="progress">
+    <div class="progress-bar progress-bar-success progress-bar-striped" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+    40% Complete (success)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-info progress-bar-striped" role="progressbar" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100" style="width: 50%">
+    50% Complete (info)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-warning progress-bar-striped" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width: 60%">
+    60% Complete (warning)
+  </div>
+</div>
+<div class="progress">
+  <div class="progress-bar progress-bar-danger progress-bar-striped" role="progressbar" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100" style="width: 70%">
+    70% Complete (danger)
+  </div>
+</div>
+<p>Add class <code class="w3-codespan">.progress-bar-striped</code> to add stripes to the progress bars:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-success progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&#xA0; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 40% Complete (success)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-info progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&#xA0; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 50% Complete (info)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-warning progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&#xA0; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 60% Complete (warning)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;<br><br>&lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-danger progress-bar-striped&quot; role=&quot;progressbar&quot;<br>&#xA0; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 70% Complete (danger)<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar4&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-success progress-bar-striped&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt; 40% Complete (success) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-info progress-bar-striped&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;50&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:50%&quot;&gt; 50% Complete (info) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-warning progress-bar-striped&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;60&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:60%&quot;&gt; 60% Complete (warning) &lt;/div&gt;&lt;/div&gt;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-danger progress-bar-striped&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;70&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:70%&quot;&gt; 70% Complete (danger) &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Animated Progress Bar</h2>
+<p>Here is an &quot;animated&quot; progress bar:</p>
+<div class="progress">
+    <div class="progress-bar progress-bar-striped active" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" style="width: 40%">
+      40%
+  </div>
+</div>
+<p>Add class <code class="w3-codespan">.active</code> to animate the progress bar:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-striped active&quot; role=&quot;progressbar&quot;<br>&#xA0; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; 40%<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar5&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-striped active&quot; role=&quot;progressbar&quot; aria-valuenow=&quot;40&quot; aria-valuemin=&quot;0&quot; aria-valuemax=&quot;100&quot; style=&quot;width:40%&quot;&gt; 40% &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Stacked Progress Bars</h2>
+<p>Progress bars can also be stacked:</p> 
+<div class="progress">
+  <div class="progress-bar progress-bar-success" role="progressbar" style="width:40%">
+    Free Space
+  </div>
+  <div class="progress-bar progress-bar-warning" role="progressbar" style="width:10%">
+    Warning
+  </div>
+  <div class="progress-bar progress-bar-danger" role="progressbar" style="width:20%">
+    Danger
+  </div>
+</div>
+<p>Create a stacked progress bar by placing multiple bars into the same <code class="w3-codespan">&lt;div class=&quot;progress&quot;&gt;</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;progress&quot;&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width:40%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; Free Space<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; style=&quot;width:10%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; Warning<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; style=&quot;width:20%&quot;&gt;<br>&#xA0;&#xA0;&#xA0; Danger<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_progressbar6&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;progress&quot;&gt; &lt;div class=&quot;progress-bar progress-bar-success&quot; role=&quot;progressbar&quot; style=&quot;width:40%&quot;&gt; Free Space &lt;/div&gt; &lt;div class=&quot;progress-bar progress-bar-warning&quot; role=&quot;progressbar&quot; style=&quot;width:10%&quot;&gt; Warning &lt;/div&gt; &lt;div class=&quot;progress-bar progress-bar-danger&quot; role=&quot;progressbar&quot; style=&quot;width:20%&quot;&gt; Danger &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_progressbars4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_badges_labels.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_pagination.asp">Next &#x276F;</a>
+</div>

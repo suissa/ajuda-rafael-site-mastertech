@@ -1,0 +1,225 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">If...Else</span> Statements</h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_comparisons.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_switch.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Conditional statements are used to perform different actions based on different conditions.</p>
+<hr>
+
+<h2>Conditional Statements</h2>
+<p>Very often when you write code, you want to perform different actions for different decisions.</p>
+<p>You can use conditional statements in your code to do this.</p>
+<p>In JavaScript we have the following conditional statements:</p>
+<ul>
+  <li>Use<b> if </b>to specify a block of code to be executed, if a specified condition is true</li>
+  <li>Use <b>else</b> to specify a block of code to be executed, if the same condition is 
+  false</li>
+  <li>Use <b>else if</b> to specify a new condition to test, if the first condition is false</li>
+  <li>Use <b>switch</b> to specify many alternative blocks of code to be executed</li>
+</ul>
+<hr>
+
+<h2>The if Statement</h2>
+<p>Use the <strong>if</strong> statement to specify a block of JavaScript code to 
+be executed if a condition is true.</p>
+
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+if (<i>condition</i>) {<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if the condition is true<br>
+ </em>}
+</div>
+</div>
+
+<div class="w3-panel w3-note">
+<p>Note that <strong>if</strong> is in lowercase letters. Uppercase letters (If or IF) will generate a JavaScript error.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Make a &quot;Good day&quot; greeting if the hour is less than 
+18:00:</p>
+<div class="w3-code notranslate jsHigh">
+if (hour &lt; 18) {<br>
+&#xA0;&#xA0;&#xA0; greeting = &quot;Good day&quot;;<br>
+ }</div>
+<p>The result of greeting will be:</p>
+<div class="w3-code notranslate">
+<script>
+var d=new Date();
+var time=d.getHours();
+if (time<20)
+  {
+  document.write("Good day");
+  }
+</script>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_ifthen" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;if (condition) {
+  block of code to be executed if the condition is true
+ }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The else Statement</h2>
+<p>Use the <strong>else</strong> statement to specify a block of code to be 
+executed if the condition is 
+false.</p>
+<div class="w3-code w3-border notranslate"><div>
+if (<i>condition</i>) {<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if the condition is true<br>
+ </em>}
+else {
+<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if the condition is false<br>
+ </em>}</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>If the hour is less than 18, create a &quot;Good day&quot; 
+greeting, otherwise &quot;Good evening&quot;:</p>
+<div class="w3-code notranslate jsHigh">
+if (hour &lt; 18) {<br>
+&#xA0;
+&#xA0;&#xA0;greeting = &quot;Good day&quot;;<br>
+ }
+else {<br>
+&#xA0;&#xA0;&#xA0; greeting = &quot;Good evening&quot;;<br>
+ }
+</div>
+<p>The result of greeting will be:</p>
+<div class="w3-code notranslate">
+<script>
+var d=new Date();
+var time=d.getHours();
+if (time<20)
+  {
+  document.write("Good day");
+  }
+else
+  {
+  document.write("Good evening");
+  }
+</script>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_ifthenelse" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;if (hour &lt; 18) {
+ greeting = &quot;Good day&quot;;
+ }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The else if&#xA0;Statement</h2>
+<p>Use the <strong>else if</strong> statement to specify a new condition if the first condition is false.</p>
+
+<h3>Syntax</h3>
+<div class="w3-code w3-border notranslate"><div>
+
+if (<i>condition1</i>) {<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if condition1 is true<br>
+ </em>}
+else if (<i>condition2</i>) {<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if the condition1 is false and condition2 is true</em><br>
+} else {<br>
+ <em>&#xA0;&#xA0;&#xA0; block of code to be executed if the condition1 is false and condition2 is false<br>
+ </em>}</div>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>If time is less than 10:00, create a &quot;Good 
+morning&quot; 
+greeting, if not, but time is less than 20:00, create a &quot;Good day&quot; greeting, 
+otherwise a &quot;Good evening&quot;:</p>
+<div class="w3-code notranslate jsHigh">
+if (time &lt; 10) {<br>
+&#xA0;&#xA0;&#xA0; greeting = &quot;Good morning&quot;;<br>
+ }
+else if (time &lt; 20)&#xA0;{<br>
+&#xA0;&#xA0;&#xA0; greeting = &quot;Good day&quot;;<br>
+ }
+else&#xA0;{<br>
+&#xA0;&#xA0;&#xA0; greeting = &quot;Good evening&quot;;<br>
+ }
+</div>
+<p>The result of greeting will be:</p>
+<div class="w3-code notranslate">
+<script>
+var d=new Date();
+var time=d.getHours();
+if (time<10)
+  {
+  document.write("Good morning");
+  }
+else if (time<20)
+  {
+  document.write("Good day");
+  }
+else
+  {
+  document.write("Good evening");
+  }
+</script>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_elseif" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>More Examples</h2>
+<p><a target="_blank" href="tryit.asp?filename=tryjs_randomlink">Random link</a><br>
+This example will write a link to either W3Schools or to the World Wildlife 
+Foundation (WWF). By using a random number, there is a 50% chance for each of the 
+links.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions5" target="_blank">Exercise 5 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_conditions6" target="_blank">Exercise 6 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_comparisons.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_switch.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,201 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">HTML DOM Elements (Nodes)</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_navigation.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_nodelist.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Adding and Removing Nodes (HTML Elements)</p>
+<hr>
+<h2>Creating New HTML Elements (Nodes)</h2>
+<p>To add a new element to the HTML DOM, you must create the element (element node) first, 
+and then append it to an existing element. </p>
+<div class="w3-example">
+<h3>&#xA0;Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div id=&quot;div1&quot;&gt;<br>
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/div&gt;<br><br>&lt;script&gt;<br>
+var para = document.createElement(&quot;p&quot;);<br>
+var node = document.createTextNode(&quot;This is new.&quot;);<br>
+para.appendChild(node);<br><br>
+ var
+element = document.getElementById(&quot;div1&quot;);<br>
+element.appendChild(para);<br>
+&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_elementcreate" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;div id=&quot;div1&quot;&gt;
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;
+&lt;/div&gt;&lt;script&gt;
+var para = document.createElement(&quot;p&quot;);
+var node = document.createTextNode(&quot;This is new.&quot;);
+para.appendChild(node);
+ var
+element = document.getElementById(&quot;div1&quot;);
+element.appendChild(para);
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Example Explained&#xA0;</h2>
+<p>This code creates a new &lt;p&gt; element:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+var para = document.createElement(&quot;p&quot;);</div>
+</div>
+<p>To add text to the &lt;p&gt; element, you must create a text node first. This code creates a text node:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+var node = document.createTextNode(&quot;This is a new paragraph.&quot;);</div>
+</div>
+<p>Then you must append the text node to the &lt;p&gt; element:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+ para.appendChild(node);</div>
+</div>
+<p>Finally you must append the new element to an existing element.</p>
+<p>This code finds an existing element:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+ var
+ element = document.getElementById(&quot;div1&quot;);</div>
+</div>
+<p>This code appends the new element to the existing element:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+ element.appendChild(para);</div>
+</div>
+<hr>
+
+<h2>Creating new HTML Elements - insertBefore()</h2>
+<p>The appendChild() method in the previous example, appended the new element as 
+the last child of the parent.</p>
+<p>If you don&apos;t want that you can use the insertBefore() method: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div id=&quot;div1&quot;&gt;<br>
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/div&gt;<br><br>&lt;script&gt;<br>
+ var para = document.createElement(&quot;p&quot;);<br>var node = document.createTextNode(&quot;This is new.&quot;);<br>para.appendChild(node);<br><br>var element = document.getElementById(&quot;div1&quot;);<br>
+ var child = document.getElementById(&quot;p1&quot;);<br>element.insertBefore(para, child);<br>
+&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_elementcreate2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var para = document.createElement(&quot;p&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Removing Existing HTML Elements</h2>
+<p>To remove an HTML element, you must know the parent of the element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div id=&quot;div1&quot;&gt;<br>
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/div&gt;<br><br>&lt;script&gt;<br>
+var parent = document.getElementById(&quot;div1&quot;);<br>
+var child = document.getElementById(&quot;p1&quot;);<br>
+parent.removeChild(child);<br>
+&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_elementremove" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var node = document.createTextNode(&quot;This is a new paragraph.&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<p>The method node.remove() is implemented in the DOM 4 specification.<br>
+But because of poor browser support, you should not use it.</p>
+</div>
+
+<hr>
+<h2>Example Explained&#xA0;</h2>
+<p>This HTML document contains a &lt;div&gt; element with two child nodes (two &lt;p&gt; 
+elements):</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+&lt;div id=&quot;div1&quot;&gt;<br>
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/div&gt;</div>
+</div>
+<p>Find the element with id=&quot;div1&quot;:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+var parent = document.getElementById(&quot;div1&quot;);</div>
+</div>
+<p>Find the &lt;p&gt; element with id=&quot;p1&quot;:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+var child = document.getElementById(&quot;p1&quot;);</div>
+</div>
+<p>Remove the child from the parent:</p>
+
+<div class="w3-code w3-border notranslate">
+<div>
+parent.removeChild(child);</div>
+</div>
+
+<div class="w3-panel w3-note">
+<p>It would be nice to be able to remove an element without referring to the parent.<br>
+But sorry. The DOM needs to know both the element you want to remove, and its parent.</p>
+</div>
+
+<p>Here is a common workaround: Find the child you want to remove, and use its 
+parentNode property to find the parent:</p>
+<div class="w3-code w3-border notranslate">
+<div class="auto-style1">
+ var child = document.getElementById(&quot;p1&quot;);<br>child.parentNode.removeChild(child);</div>
+</div>
+<hr>
+
+<h2>Replacing HTML Elements&#xA0;</h2>
+<p>To replace an element to the HTML DOM, use the replaceChild() method:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;div id=&quot;div1&quot;&gt;<br>
+&lt;p id=&quot;p1&quot;&gt;This is a paragraph.&lt;/p&gt;<br>
+&lt;p id=&quot;p2&quot;&gt;This is another paragraph.&lt;/p&gt;<br>
+&lt;/div&gt;<br><br>&lt;script&gt;<br>
+ var para = document.createElement(&quot;p&quot;);<br>
+var node = document.createTextNode(&quot;This is new.&quot;);<br>para.appendChild(node);<br>
+ <br>var parent = document.getElementById(&quot;div1&quot;);<br>var child = document.getElementById(&quot;p1&quot;);<br>parent.replaceChild(para, child);<br>
+&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_elementreplace" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;para.appendChild(node);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_navigation.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_nodelist.asp">Next &#x276F;</a>
+</div>

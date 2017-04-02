@@ -1,0 +1,188 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Collapse</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_dropdowns.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_tabs_pills.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>Basic Collapsible</h2>
+<p>Collapsibles are useful when you want to hide and show large amount of content:</p>
+
+<div style="margin:16px 0">
+  <button type="button" class="btn btn-danger" data-toggle="collapse" data-target="#demo">Click Me</button>
+  <div id="demo" class="collapse">
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+    sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+    quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+  </div>
+</div>
+  <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;button data-toggle=&quot;collapse&quot; data-target=&quot;#demo&quot;&gt;Collapsible&lt;/button&gt;<br><br>&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;button data-toggle=&quot;collapse&quot; data-target=&quot;#demo&quot;&gt;Collapsible&lt;/button&gt;&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;Lorem ipsum dolor text....&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Example Explained</h3>
+<p>The <code class="w3-codespan">.collapse</code> class indicates a collapsible element (a &lt;div&gt; in our example); 
+this is the content that will be shown or hidden with a click of a button.</p>
+
+<p>To control (show/hide) the collapsible content, add the <code class="w3-codespan">data-toggle=&quot;collapse&quot;</code> attribute to an &lt;a&gt; or a &lt;button&gt; element. 
+Then add the <code class="w3-codespan">data-target=&quot;#id&quot;</code> attribute to 
+connect the button with the collapsible content (&lt;div id=&quot;demo&quot;&gt;).</p>
+<p><strong>Note:</strong> For &lt;a&gt; 
+elements, you can use the <code class="w3-codespan">href</code> attribute instead of the <code class="w3-codespan">data-target</code> 
+attribute:</p>
+  <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt;Collapsible&lt;/a&gt;<br><br>&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#demo&quot; data-toggle=&quot;collapse&quot;&gt;Collapsible&lt;/a&gt;&lt;div id=&quot;demo&quot; class=&quot;collapse&quot;&gt;Lorem ipsum dolor text....&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>By default, the collapsible content is hidden. However, you can add the <code class="w3-codespan">.in</code> class to show the content by default:</p>
+  <div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div id=&quot;demo&quot; class=&quot;collapse in&quot;&gt;<br>Lorem ipsum dolor text....<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible_in&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div id=&quot;demo&quot; class=&quot;collapse in&quot;&gt;Lorem ipsum dolor text....&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Collapsible Panel</h2>
+  <div class="panel-group" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse1">Collapsible panel</a>
+        </h4>
+      </div>
+      <div id="collapse1" class="panel-collapse collapse">
+        <div class="panel-body">Panel Body</div>
+        <div class="panel-footer">Panel Footer</div>
+      </div>
+    </div>
+  </div>
+<p>The following example shows a collapsible panel:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot;&gt;<br>&#xA0; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-heading&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible panel&lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-body&quot;&gt;Panel Body&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-footer&quot;&gt;Panel Footer&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible_panel&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;panel-group&quot;&gt; &lt;div class=&quot;panel panel-default&quot;&gt; &lt;div class=&quot;panel-heading&quot;&gt; &lt;h4 class=&quot;panel-title&quot;&gt; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible panel&lt;/a&gt; &lt;/h4&gt; &lt;/div&gt; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt; &lt;div class=&quot;panel-body&quot;&gt;Panel Body&lt;/div&gt; &lt;div class=&quot;panel-footer&quot;&gt;Panel Footer&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Collapsible List Group</h2>
+<div class="panel-group" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" href="#collapse2">Collapsible list group</a>
+        </h4>
+      </div>
+      <div id="collapse2" class="panel-collapse collapse">
+        <ul class="list-group">
+          <li class="list-group-item">One</li>
+          <li class="list-group-item">Two</li>
+          <li class="list-group-item">Three</li>
+        </ul>
+        <div class="panel-footer">Footer</div>
+      </div>
+    </div>
+</div>
+<p>The following shows a collapsible panel with a list group inside:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot;&gt;<br>&#xA0; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-heading&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible list group&lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;ul class=&quot;list-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;One&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Two&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;li class=&quot;list-group-item&quot;&gt;Three&lt;/li&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/ul&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-footer&quot;&gt;Footer&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible_listgroup&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;panel-group&quot;&gt; &lt;div class=&quot;panel panel-default&quot;&gt; &lt;div class=&quot;panel-heading&quot;&gt; &lt;h4 class=&quot;panel-title&quot;&gt; &lt;a data-toggle=&quot;collapse&quot; href=&quot;#collapse1&quot;&gt;Collapsible list group&lt;/a&gt; &lt;/h4&gt; &lt;/div&gt; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse&quot;&gt; &lt;ul class=&quot;list-group&quot;&gt; &lt;li class=&quot;list-group-item&quot;&gt;One&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;Two&lt;/li&gt; &lt;li class=&quot;list-group-item&quot;&gt;Three&lt;/li&gt; &lt;/ul&gt; &lt;div class=&quot;panel-footer&quot;&gt;Footer&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Accordion</h2>
+  <div class="panel-group" id="accordion" style="margin:25px 0">
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">Collapsible Group 1</a>
+        </h4>
+      </div>
+      <div id="collapse4" class="panel-collapse collapse in">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">Collapsible Group 2</a>
+        </h4>
+      </div>
+      <div id="collapse5" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+    <div class="panel panel-default">
+      <div class="panel-heading">
+        <h4 class="panel-title">
+          <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">Collapsible Group 3</a>
+        </h4>
+      </div>
+      <div id="collapse6" class="panel-collapse collapse">
+        <div class="panel-body">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+        sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</div>
+      </div>
+    </div>
+  </div> 
+<p>The following example shows a simple accordion by extending the panel component.</p>
+<p><strong>Note:</strong> Use the <code class="w3-codespan">data-parent</code> attribute to make 
+sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt;<br>&#xA0; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-heading&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &#xA0; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0; &#xA0;&#xA0; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse1&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Collapsible Group 1&lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &#xA0; &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse in&quot;&gt;<br>&#xA0;&#xA0; &#xA0;&#xA0; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&#xA0;&#xA0;&#xA0; &#xA0; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; commodo consequat.&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&#xA0; &#xA0; &lt;div class=&quot;panel-heading&quot;&gt;<br>&#xA0;&#xA0; &#xA0;&#xA0; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse2&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Collapsible Group 2&lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/h4&gt;<br>&#xA0; &#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;collapse2&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &#xA0; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; commodo consequat.&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;panel panel-default&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-heading&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h4 class=&quot;panel-title&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse3&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; Collapsible Group 3&lt;/a&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/h4&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div id=&quot;collapse3&quot; class=&quot;panel-collapse collapse&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; commodo consequat.&lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&lt;/div&gt; </div>
+<a target="_blank" href="tryit.asp?filename=trybs_collapsible_accordion&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;panel-group&quot; id=&quot;accordion&quot;&gt; &lt;div class=&quot;panel panel-default&quot;&gt; &lt;div class=&quot;panel-heading&quot;&gt;  &lt;h4 class=&quot;panel-title&quot;&gt;  &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse1&quot;&gt; Collapsible Group 1&lt;/a&gt; &lt;/h4&gt; &lt;/div&gt;  &lt;div id=&quot;collapse1&quot; class=&quot;panel-collapse collapse in&quot;&gt;  &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit,  sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;panel panel-default&quot;&gt;  &lt;div class=&quot;panel-heading&quot;&gt;  &lt;h4 class=&quot;panel-title&quot;&gt;  &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse2&quot;&gt; Collapsible Group 2&lt;/a&gt; &lt;/h4&gt;  &lt;/div&gt; &lt;div id=&quot;collapse2&quot; class=&quot;panel-collapse collapse&quot;&gt;  &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;panel panel-default&quot;&gt; &lt;div class=&quot;panel-heading&quot;&gt; &lt;h4 class=&quot;panel-title&quot;&gt; &lt;a data-toggle=&quot;collapse&quot; data-parent=&quot;#accordion&quot; href=&quot;#collapse3&quot;&gt; Collapsible Group 3&lt;/a&gt; &lt;/h4&gt; &lt;/div&gt; &lt;div id=&quot;collapse3&quot; class=&quot;panel-collapse collapse&quot;&gt; &lt;div class=&quot;panel-body&quot;&gt;Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.&lt;/div&gt; &lt;/div&gt; &lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Complete Bootstrap Collapse Reference</h2>
+<p>For a complete reference of all collapse options, methods and events, go to our
+<a href="bootstrap_ref_js_collapse.asp">Bootstrap JS Collapse Reference</a>.</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_dropdowns.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_tabs_pills.asp">Next &#x276F;</a>
+</div>

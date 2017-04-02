@@ -1,0 +1,246 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {2.20:504718,5.00:504727,0.25:504696,0.35:504698,1.30:504709,1.50:504711,0.70:504703,2.80:504721,1.40:504710,4.50:504726,0.05:504692,0.40:504699,0.50:504701,1.20:504708,2.00:504716,4.00:504725,0.45:504700,3.50:504724,1.70:504713,1.80:504714,1.90:504715,2.40:504719,0.10:504693,0.90:504705,1.00:504706,1.10:504707,2.60:504720,3.00:504722,0.15:504694,0.30:504697,0.60:504702,0.80:504704,0.20:504695,1.60:504712,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 8.00);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>AJAX - Send a <span class="color_h1">Request</span> To a Server</h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_ajax_http.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_http_response.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The XMLHttpRequest object is used to exchange data with a 
+server.</p>
+<hr>
+
+<h2>Send a Request To a Server</h2>
+<p>To send a request to a server, we use the open() and send() methods of the XMLHttpRequest object:</p>
+<div class="w3-code w3-border notranslate jsHigh"><div>
+ xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, true);<br>
+ xhttp.send();</div></div>
+
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:30%">Method</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>open(<i>method, url, async</i>)</td>
+    <td>Specifies the type of request<br><br>
+ <i>method</i>: the type of request: GET or POST<br>
+ <i>url</i>: the server (file) location<br>
+ <i>async</i>: true (asynchronous) or false (synchronous)</td>
+  </tr>
+  <tr>
+    <td>send()</td>
+    <td>Sends the request to the server (used for GET)</td>
+  </tr>
+  <tr>
+    <td>send(<i>string</i>)</td>
+    <td>Sends the request to the server (used for POST)</td>
+  </tr>
+ </table>
+<hr>
+
+<h2>GET or POST?</h2>
+<p>GET is simpler and faster than POST, and can be used in most cases.</p>
+<p>However, always use POST requests when:</p>
+<ul>
+  <li>A cached file is not an option (update a file or database on the server).</li>
+  <li>Sending a large amount of data to the server (POST has no size limitations).</li>
+  <li>Sending user input (which can contain unknown characters), POST is more robust and secure than GET.</li>
+</ul>
+<hr>
+
+<h2>GET Requests</h2>
+<p>A simple GET request:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;GET&quot;, &quot;demo_get.asp&quot;, true);<br>
+ xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_get"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, true);
+ xhttp.send();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>In the example above, you may get a cached result. To avoid this, add a unique ID to the URL:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;GET&quot;, &quot;demo_get.asp?t=&quot; + Math.random(), true);<br>
+ xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_get_unique"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;GET&quot;, &quot;demo_get.asp&quot;, true);
+ xhttp.send();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you want to send information with the GET method, add the information to the URL:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;GET&quot;, &quot;demo_get2.asp?fname=Henry&amp;lname=Ford&quot;, true);<br>
+ xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_get2"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;GET&quot;, &quot;demo_get.asp?t=&quot; + Math.random(), true);
+ xhttp.send();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>POST Requests</h2>
+
+<p>A simple POST request:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;POST&quot;, &quot;demo_post.asp&quot;, true);<br>
+ xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_post"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;GET&quot;, &quot;demo_get2.asp?fname=Henry&amp;lname=Ford&quot;, true);
+ xhttp.send();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>To POST data like an HTML form, add an HTTP header with setRequestHeader(). 
+Specify the data you want to send in the send() method:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;POST&quot;, &quot;ajax_test.asp&quot;, true);<br>
+ xhttp.setRequestHeader(&quot;Content-type&quot;, &quot;application/x-www-form-urlencoded&quot;);<br>
+ xhttp.send(&quot;fname=Henry&amp;lname=Ford&quot;);</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_post2"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;POST&quot;, &quot;demo_post.asp&quot;, true);
+ xhttp.send();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<table class="w3-table-all notranslate"> 
+  <tr>
+    <th style="width:40%">Method</th>
+    <th>Description</th>
+  </tr>  
+  <tr>
+    <td>setRequestHeader(<i>header, value</i>)</td>
+    <td>Adds HTTP headers to the request<br><br>
+ <i>header</i>: specifies the header name<br>
+ <i>value</i>: specifies the header value</td>
+  </tr>
+   </table>
+<hr>
+
+<h2>The url - A File On a Server</h2>
+<p>The url parameter of the open() method, is an address to a file on a server:</p>
+<div class="w3-code w3-border notranslate jsHigh"><div>
+ xhttp.open(&quot;GET&quot;, &quot;ajax_test.asp&quot;, true);</div></div>
+<p>The file can be any kind of file, like .txt and 
+.xml, or server scripting files like .asp and .php (which can perform  
+actions on the server before sending the response back).</p>
+<hr>
+
+<h2>Asynchronous - True or False?</h2>
+<p>To send the request asynchronously, the async parameter of the open() 
+method has to be set to true:</p>
+
+<div class="w3-code w3-border notranslate jsHigh">
+ <div>
+ xhttp.open(&quot;GET&quot;, &quot;ajax_test.asp&quot;, true);</div></div>
+
+<p>Sending asynchronous requests is a huge improvement for web developers. Many of the tasks  
+performed on the server are very time consuming. Before AJAX, this operation could 
+cause the application to hang or stop.</p>
+<p>By sending asynchronously, the 
+JavaScript does not have to wait for the server response, but can instead:</p>
+<ul>
+  <li>execute other scripts while waiting for server response</li>
+  <li>deal with the response when the response ready</li>
+</ul>
+<hr>
+
+<h2>Async = true</h2>
+
+<p>When using async = true, specify a function to execute when the response is ready in the onreadystatechange event:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.onreadystatechange = function() {<br>
+&#xA0; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>
+&#xA0;&#xA0;&#xA0; document.getElementById(&quot;demo&quot;).innerHTML = this.responseText;<br>
+&#xA0;&#xA0;}<br>
+ };<br>
+ xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, true);<br>
+ xhttp.send();</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_first"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;POST&quot;, &quot;ajax_test.asp&quot;, true);
+ xhttp.setRequestHeader(&quot;Content-type&quot;, &quot;application/x-www-form-urlencoded&quot;);
+ xhttp.send(&quot;fname=Henry&amp;lname=Ford&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>You will learn more about onreadystatechange in a later chapter.<br>
+</p>
+<hr>
+
+<h2>Async = false</h2>
+
+<p>To use async = false, change the third 
+parameter in the open() method to false:</p>
+
+<div class="w3-code w3-border notranslate jsHigh"><div>
+ xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, false);</div></div>
+
+<p>Using async = false is not recommended, but for a few small requests this can be ok.</p>
+<p>Remember that the JavaScript will NOT continue to execute, 
+until the server response is ready. If the server is busy or slow, the 
+application will hang or stop.</p>
+<p><b>Note:</b> When you use async = false, do NOT write an onreadystatechange 
+function - just put the code after the send() statement:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ xhttp.open(&quot;GET&quot;, &quot;ajax_info.txt&quot;, false);<br>
+ xhttp.send();<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = xhttp.responseText;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_ajax_asyncfalse"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;xhttp.open(&quot;GET&quot;, &quot;ajax_test.asp&quot;, true);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_ajax_http.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_http_response.asp">Next &#x276F;</a>
+</div>

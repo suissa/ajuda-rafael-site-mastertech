@@ -1,0 +1,196 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Responsive Web Design <span class="color_h1">- Media Queries</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_rwd_grid.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_rwd_images.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>What is a Media Query?</h2>
+<p>Media query is a CSS technique introduced in CSS3.</p>
+<p>It uses the <code class="w3-codespan">@media</code> rule to include a block of CSS properties only if a 
+certain condition is true.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>If the browser window is smaller than 500px, the background color will change 
+to lightblue:</p>
+<div class="w3-code notranslate cssHigh">
+@media only screen and (max-width: 500px) {<br>&#xA0;&#xA0;&#xA0; body {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+background-color: lightblue;<br>&#xA0;&#xA0;&#xA0; }<br>}<br></div>
+<a target="_blank" href="tryit.asp?filename=tryresponsive_mediaquery" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;@media only screen and (max-width: 500px) { body {
+
+background-color: lightblue; }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Add a Breakpoint</h2>
+<p>Earlier in this tutorial we made a web page with rows and columns, and it 
+was responsive, but it did not look good on a small screen.</p>
+<p>Media queries can help with that. We can add a breakpoint where 
+certain parts of the design will behave differently on each side of the 
+breakpoint.</p>
+<div class="row" style="text-align:center;font-weight:bold;font-size:90%;">
+  <div class="col-sm-6">
+    <img src="rwd_desktop.png" style="border:2px solid #dddddd;">
+    <br>
+    Desktop
+  </div>
+  <div class="col-sm-6">
+    <img src="rwd_phone.png" style="border:2px solid #dddddd;">
+    <br>
+    Phone
+  </div>
+</div>
+<br>
+<p>Use a media query to add a breakpoint at 768px:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>When the screen (browser window) gets smaller than 768px, each column should have a width of 100%:</p>
+<div class="w3-code notranslate cssHigh">
+/* For desktop: */<br>.col-1 {width: 8.33%;}<br>.col-2 {width: 16.66%;}<br>.col-3 {width: 25%;}<br>
+.col-4 {width: 33.33%;}<br>.col-5 {width: 41.66%;}<br>.col-6 {width: 50%;}<br>
+.col-7 {width: 58.33%;}<br>.col-8 {width: 66.66%;}<br>.col-9 {width: 75%;}<br>
+.col-10 {width: 83.33%;}<br>.col-11 {width: 91.66%;}<br>.col-12 {width: 
+100%;}<br><br>@media only screen and (max-width: 768px) {<br>&#xA0;&#xA0;&#xA0; 
+/* For mobile phones: */<br>&#xA0;&#xA0;&#xA0; 
+[class*=&quot;col-&quot;] {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; 
+}<br>}<br></div>
+<a target="_blank" href="tryit.asp?filename=tryresponsive_breakpoints" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;/* For desktop: */.col-1 {width: 8.33%;}.col-2 {width: 16.66%;}.col-3 {width: 25%;}
+.col-4 {width: 33.33%;}.col-5 {width: 41.66%;}.col-6 {width: 50%;}
+.col-7 {width: 58.33%;}.col-8 {width: 66.66%;}.col-9 {width: 75%;}
+.col-10 {width: 83.33%;}.col-11 {width: 91.66%;}.col-12 {width: 
+100%;}@media only screen and (max-width: 768px) { 
+/* For mobile phones: */ 
+[class*=&quot;col-&quot;] { width: 100%; 
+}}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Always Design for Mobile First</h2>
+<p>Mobile First means designing for mobile before designing for desktop or any 
+other device (This will make the page display faster on smaller devices).</p>
+<p>This means that we must make some changes in our CSS.</p>
+<p>Instead of changing styles when the width gets <em>smaller</em> than 
+768px, we should change the design when the width gets <em>larger</em> than 
+768px. This will make our design Mobile First:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+/* For mobile phones: */<br>[class*=&quot;col-&quot;] {<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>}<br>@media only screen and (min-width: 
+768px) {<br>&#xA0;&#xA0;&#xA0; /* For desktop: */<br>&#xA0;&#xA0;&#xA0; .col-1 {width: 8.33%;}<br>&#xA0;&#xA0;&#xA0; .col-2 {width: 16.66%;}<br>&#xA0;&#xA0;&#xA0; .col-3 {width: 25%;}<br>&#xA0;&#xA0;&#xA0; .col-4 {width: 33.33%;}<br>&#xA0;&#xA0;&#xA0; .col-5 {width: 41.66%;}<br>&#xA0;&#xA0;&#xA0; .col-6 {width: 50%;}<br>&#xA0;&#xA0;&#xA0; .col-7 {width: 58.33%;}<br>&#xA0;&#xA0;&#xA0; .col-8 {width: 66.66%;}<br>&#xA0;&#xA0;&#xA0; .col-9 {width: 75%;}<br>&#xA0;&#xA0;&#xA0; .col-10 {width: 83.33%;}<br>&#xA0;&#xA0;&#xA0; .col-11 {width: 91.66%;}<br>&#xA0;&#xA0;&#xA0; .col-12 {width: 100%;}<br>}<br></div>
+<a target="_blank" href="tryit.asp?filename=tryresponsive_mobilefirst" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;/* For mobile phones: */[class*=&quot;col-&quot;] { width: 100%;}@media only screen and (min-width: 
+768px) { /* For desktop: */ .col-1 {width: 8.33%;} .col-2 {width: 16.66%;} .col-3 {width: 25%;} .col-4 {width: 33.33%;} .col-5 {width: 41.66%;} .col-6 {width: 50%;} .col-7 {width: 58.33%;} .col-8 {width: 66.66%;} .col-9 {width: 75%;} .col-10 {width: 83.33%;} .col-11 {width: 91.66%;} .col-12 {width: 100%;}}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Another Breakpoint</h2>
+<p>You can add as many breakpoints as you like.</p>
+<p>We will also insert a breakpoint between tablets and mobile phones.</p>
+<div class="row" style="text-align:center;font-weight:bold;font-size:90%;">
+  <div class="col-sm-6">
+    <img src="rwd_desktop.png" style="border:2px solid #dddddd;">
+    <br>
+    Desktop
+  </div>
+  <div class="col-sm-4">
+    <img src="rwd_tablet.png" style="border:2px solid #dddddd;">
+    <br>
+    Tablet
+  </div>
+  <div class="col-sm-2">
+    <img src="rwd_phone.png" style="border:2px solid #dddddd;">
+    <br>
+    Phone
+  </div>
+</div>
+<br>
+<p>We do this by adding one more media query (at 600px), and a set of new classes for devices larger than 600px 
+(but smaller than 768px):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<p>Note that the two sets of classes are almost identical, the only 
+difference is the name (col- and col-m-):</p>
+<div class="w3-code notranslate cssHigh">
+/* For mobile phones: */<br>[class*=&quot;col-&quot;] {<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>}<br>@media only screen and (min-width: 600px) {<br>&#xA0;&#xA0;&#xA0; 
+/* For tablets: */<br>&#xA0;&#xA0;&#xA0; .col-m-1 {width: 8.33%;}<br>&#xA0;&#xA0;&#xA0; .col-m-2 {width: 16.66%;}<br>&#xA0;&#xA0;&#xA0; .col-m-3 {width: 25%;}<br>&#xA0;&#xA0;&#xA0; .col-m-4 {width: 33.33%;}<br>&#xA0;&#xA0;&#xA0; .col-m-5 {width: 41.66%;}<br>&#xA0;&#xA0;&#xA0; .col-m-6 {width: 50%;}<br>&#xA0;&#xA0;&#xA0; .col-m-7 {width: 58.33%;}<br>&#xA0;&#xA0;&#xA0; .col-m-8 {width: 66.66%;}<br>&#xA0;&#xA0;&#xA0; .col-m-9 {width: 75%;}<br>&#xA0;&#xA0;&#xA0; .col-m-10 {width: 83.33%;}<br>&#xA0;&#xA0;&#xA0; .col-m-11 {width: 91.66%;}<br>&#xA0;&#xA0;&#xA0; .col-m-12 {width: 100%;}<br>}<br>@media only screen and (min-width: 
+768px) {<br>&#xA0;&#xA0;&#xA0; /* For desktop: */<br>&#xA0;&#xA0;&#xA0; .col-1 {width: 8.33%;}<br>&#xA0;&#xA0;&#xA0; .col-2 {width: 16.66%;}<br>&#xA0;&#xA0;&#xA0; .col-3 {width: 25%;}<br>&#xA0;&#xA0;&#xA0; .col-4 {width: 33.33%;}<br>&#xA0;&#xA0;&#xA0; .col-5 {width: 41.66%;}<br>&#xA0;&#xA0;&#xA0; .col-6 {width: 50%;}<br>&#xA0;&#xA0;&#xA0; .col-7 {width: 58.33%;}<br>&#xA0;&#xA0;&#xA0; .col-8 {width: 66.66%;}<br>&#xA0;&#xA0;&#xA0; .col-9 {width: 75%;}<br>&#xA0;&#xA0;&#xA0; .col-10 {width: 83.33%;}<br>&#xA0;&#xA0;&#xA0; .col-11 {width: 91.66%;}<br>&#xA0;&#xA0;&#xA0; .col-12 {width: 100%;}<br>}</div>
+<a target="_blank" href="tryit.asp?filename=tryresponsive_col-s" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;/* For mobile phones: */[class*=&quot;col-&quot;] { width: 100%;}@media only screen and (min-width: 600px) { 
+/* For tablets: */ .col-m-1 {width: 8.33%;} .col-m-2 {width: 16.66%;} .col-m-3 {width: 25%;} .col-m-4 {width: 33.33%;} .col-m-5 {width: 41.66%;} .col-m-6 {width: 50%;} .col-m-7 {width: 58.33%;} .col-m-8 {width: 66.66%;} .col-m-9 {width: 75%;} .col-m-10 {width: 83.33%;} .col-m-11 {width: 91.66%;} .col-m-12 {width: 100%;}}@media only screen and (min-width: 
+768px) { /* For desktop: */ .col-1 {width: 8.33%;} .col-2 {width: 16.66%;} .col-3 {width: 25%;} .col-4 {width: 33.33%;} .col-5 {width: 41.66%;} .col-6 {width: 50%;} .col-7 {width: 58.33%;} .col-8 {width: 66.66%;} .col-9 {width: 75%;} .col-10 {width: 83.33%;} .col-11 {width: 91.66%;} .col-12 {width: 100%;}}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>It might seem odd that we have two sets of identical classes, but it gives us the 
+opportunity <em>in HTML</em>, to decide what will happen with the columns at each 
+breakpoint:</p>
+<div class="w3-example">
+<h3>HTML Example</h3>
+<p><strong>For desktop:</strong></p>
+<p>The first and the third section will both span 3 columns each. The middle section will span 6 columns.</p>
+<p><strong>For tablets:</strong></p>
+<p>The first section will span 3 columns, the second will span 9, and the third section will be displayed below the first two sections, and it will span 12 columns:</p>
+<div class="w3-code notranslate htmlHigh">
+&lt;div class=&quot;row&quot;&gt;<br>&lt;div class=&quot;col-3 col-m-3&quot;&gt;...&lt;/div&gt;<br>&lt;div 
+class=&quot;col-6 col-m-9&quot;&gt;...&lt;/div&gt;<br>&lt;div 
+class=&quot;col-3 col-m-12&quot;&gt;...&lt;/div&gt;<br>&lt;/div&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;div class=&quot;row&quot;&gt;&lt;div class=&quot;col-3 col-m-3&quot;&gt;...&lt;/div&gt;&lt;div 
+class=&quot;col-6 col-m-9&quot;&gt;...&lt;/div&gt;&lt;div 
+class=&quot;col-3 col-m-12&quot;&gt;...&lt;/div&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Orientation: Portrait / Landscape</h2>
+<p>Media queries can also be used to change layout of a page depending on the 
+orientation of the browser.</p>
+<p>You can have a set of CSS properties that will only 
+apply when the browser window is wider than its height, a so called &quot;Landscape&quot; 
+orientation: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<p>The web page will have a lightblue background if the orientation is in landscape mode:</p>
+<div class="w3-code notranslate cssHigh">
+@media only screen and (orientation: 
+landscape) {<br>&#xA0;&#xA0;&#xA0; body {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+background-color: lightblue;<br>&#xA0;&#xA0;&#xA0; }<br>}</div>
+<a target="_blank" href="tryit.asp?filename=tryresponsive_mediaquery_orientation" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;@media only screen and (orientation: 
+landscape) { body {
+
+background-color: lightblue; }}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_rwd_grid.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_rwd_images.asp">Next &#x276F;</a>
+</div>

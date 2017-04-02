@@ -1,0 +1,179 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Forms</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_navbar.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Bootstrap&apos;s Default Settings</h2>
+<p>Form controls automatically receive some global styling with Bootstrap:</p>
+<p>All textual <code class="w3-codespan">&lt;input&gt;</code>, <code class="w3-codespan">&lt;textarea&gt;</code>, and 
+<code class="w3-codespan">&lt;select&gt;</code> elements 
+with class <code class="w3-codespan">.form-control</code> have a width of 100%.</p>
+<hr>
+<h2>Bootstrap Form Layouts</h2>
+<p>Bootstrap provides three types of form layouts:</p>
+<ul>
+  <li>Vertical form (this is default)</li>
+  <li>Horizontal form</li>
+  <li>Inline form</li>
+</ul>
+<p>Standard rules for all three form layouts:</p>
+<ul>
+  <li>Wrap labels and form controls in <code class="w3-codespan">&lt;div class=&quot;form-group&quot;&gt;</code> (needed for optimum spacing)</li>
+  <li>Add class <code class="w3-codespan">.form-control</code> to all textual <code class="w3-codespan">&lt;input&gt;</code>, <code class="w3-codespan">&lt;textarea&gt;</code>, and <code class="w3-codespan">&lt;select&gt;</code> elements</li>
+</ul>
+<hr>
+
+<h2>Bootstrap Vertical Form (default)</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" class="form-control" id="email" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="button" class="btn btn-default">Submit</button>
+</div>
+
+<p>The following example creates a vertical form with two input fields, one checkbox, and a submit button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;email&quot;&gt;Email address:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;<br>
+ &lt;/form&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_basic&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;email&quot;&gt;Email address:&lt;/label&gt; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt; &lt;/div&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt; &lt;/div&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Inline Form</h2>
+<div style="margin:25px 0 25px 0;">
+  <form class="form-inline" role="form">
+    <div class="form-group">
+      <label for="email2">Email:</label>
+      <input type="email" class="form-control" id="email2" placeholder="Enter email">
+    </div>
+    <div class="form-group">
+      <label for="pwd2">Password:</label>
+      <input type="password" class="form-control" id="pwd2" placeholder="Enter password">
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox"> Remember me</label>
+    </div>
+    <button type="button" class="btn btn-default">Submit</button>
+  </form>
+</div>
+
+<p>In an inline form, all of the elements are inline, left-aligned, and the labels are alongside.</p>
+<p><strong>Note: This only applies to forms within viewports that are at least 768px wide!</strong></p>
+<p>Additional rule for an inline form:</p>
+<ul>
+  <li>Add class <code class="w3-codespan">.form-inline</code> to the <code class="w3-codespan">&lt;form&gt;</code> element</li>
+</ul>
+
+<p>The following example creates an inline form with two input fields, one checkbox, and one submit button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form class=&quot;form-inline&quot;&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;label for=&quot;email&quot;&gt;Email address:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;<br>
+ &lt;/form&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_inline&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form class=&quot;form-inline&quot;&gt; &lt;div class=&quot;form-group&quot;&gt;
+  &lt;label for=&quot;email&quot;&gt;Email address:&lt;/label&gt; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt; &lt;/div&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt; &lt;/div&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Tip:</strong> If you don&apos;t include a label for every input, screen readers will have trouble with your forms. 
+You can hide the labels for all devices, except screen readers, by using the 
+<code class="w3-codespan">.sr-only</code> class:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form class=&quot;form-inline&quot;&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label class=&quot;sr-only&quot; for=&quot;email&quot;&gt;Email address:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label class=&quot;sr-only&quot; for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;<br>
+ &lt;/form&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_inline_sr&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form class=&quot;form-inline&quot;&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label class=&quot;sr-only&quot; for=&quot;email&quot;&gt;Email address:&lt;/label&gt; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot;&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label class=&quot;sr-only&quot; for=&quot;pwd&quot;&gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt; &lt;/div&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt; &lt;/div&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Horizontal Form</h2>
+<div style="margin:25px 0 25px 0;">
+  <form class="form-horizontal" role="form">
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="email3">Email:</label>
+      <div class="col-sm-10">
+        <input type="email" class="form-control" id="email3" placeholder="Enter email">
+      </div>
+    </div>
+    <div class="form-group">
+      <label class="control-label col-sm-2" for="pwd3">Password:</label>
+      <div class="col-sm-10">          
+        <input type="password" class="form-control" id="pwd3" placeholder="Enter password">
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <div class="checkbox">
+          <label><input type="checkbox"> Remember me</label>
+        </div>
+      </div>
+    </div>
+    <div class="form-group">        
+      <div class="col-sm-offset-2 col-sm-10">
+        <button type="button" class="btn btn-default">Submit</button>
+      </div>
+    </div>
+  </form>
+</div>
+  
+<p>A horizontal form stands apart from the other forms both in the amount of markup, and in the presentation of the form.</p>
+<p>Additional rules for a horizontal form:</p>
+<ul>
+  <li>Add class <code class="w3-codespan">.form-horizontal</code> to the <code class="w3-codespan">&lt;form&gt;</code> element</li>
+  <li>Add class <code class="w3-codespan">.control-label</code> to all <code class="w3-codespan">&lt;label&gt;</code> elements</li>
+</ul>
+
+<p><strong>Tip:</strong> Use Bootstrap&apos;s predefined grid classes to align labels 
+and groups of form controls in a horizontal layout.</p>
+<p>The following example creates a horizontal form with two input fields, one checkbox, and one submit button:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;form class=&quot;form-horizontal&quot;&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label class=&quot;control-label col-sm-2&quot; for=&quot;email&quot;&gt;Email:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-10&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;label class=&quot;control-label col-sm-2&quot; for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-10&quot;&gt; <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter password&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt; <br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>&#xA0; &lt;div class=&quot;form-group&quot;&gt; <br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>
+ &lt;/form&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_horizontal&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;form class=&quot;form-horizontal&quot;&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label class=&quot;control-label col-sm-2&quot; for=&quot;email&quot;&gt;Email:&lt;/label&gt; &lt;div class=&quot;col-sm-10&quot;&gt; &lt;input type=&quot;email&quot; class=&quot;form-control&quot; id=&quot;email&quot; placeholder=&quot;Enter email&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt; &lt;label class=&quot;control-label col-sm-2&quot; for=&quot;pwd&quot;&gt;Password:&lt;/label&gt; &lt;div class=&quot;col-sm-10&quot;&gt;  &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot; placeholder=&quot;Enter password&quot;&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt;  &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt; &lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot;&gt; Remember me&lt;/label&gt; &lt;/div&gt; &lt;/div&gt; &lt;/div&gt; &lt;div class=&quot;form-group&quot;&gt;  &lt;div class=&quot;col-sm-offset-2 col-sm-10&quot;&gt; &lt;button type=&quot;submit&quot; class=&quot;btn btn-default&quot;&gt;Submit&lt;/button&gt; &lt;/div&gt; &lt;/div&gt;
+ &lt;/form&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_navbar.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs.asp">Next &#x276F;</a>
+</div>

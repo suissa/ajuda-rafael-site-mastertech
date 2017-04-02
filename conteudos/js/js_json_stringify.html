@@ -1,0 +1,214 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JSON<span class="color_h1">.stringify()</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_json_parse.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_json_php.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">A common use of JSON is to exchange data to/from a web server.</p>
+<p class="intro">When sending data to a web server, the data has to be 
+a string.</p>
+<p class="intro">Convert a JavaScript object into a string with JSON.stringify().</p>
+<hr>
+<h2>Stringify a JavaScript Object</h2>
+<p>Imagine we have this object in JavaScript:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+  var obj = { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;city&quot;:&quot;New 
+  York&quot;};</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj = { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;city&quot;:&quot;New 
+  York&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Use the JavaScript function JSON.stringify() to convert it into a string.</p>
+ 
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var myJSON = JSON.stringify(obj);</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myJSON = JSON.stringify(obj);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p>The result will be a string following the JSON notation.</p>
+</div>
+
+<p>myJSON is now a string, and ready to be sent to a server:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+  var obj = { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;city&quot;:&quot;New York&quot;};<br>var myJSON = 
+  JSON.stringify(obj);<br>document.getElementById(&quot;demo&quot;).innerHTML = myJSON;</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_stringify"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj = { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:30, &quot;city&quot;:&quot;New York&quot;};var myJSON = 
+  JSON.stringify(obj);document.getElementById(&quot;demo&quot;).innerHTML = myJSON;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>You will learn how to send JSON to the server in the next chapter.</p>
+
+<hr>
+<h2>Stringify a JavaScript Array</h2>
+<p>It is also possible to stringify JavaScript arrays:</p>
+<p>Imagine we have this array in JavaScript:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+  var arr = [ &quot;John&quot;, &quot;Peter&quot;, &quot;Sally&quot;, &quot;Jane&quot; ];</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var arr = [ &quot;John&quot;, &quot;Peter&quot;, &quot;Sally&quot;, &quot;Jane&quot; ];&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Use the JavaScript function JSON.stringify() to convert it into a string.</p>
+ 
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var myJSON = JSON.stringify(arr);</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myJSON = JSON.stringify(arr);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p>The result will be a string following the JSON notation.</p>
+</div>
+
+<p>myJSON is now a string, and ready to be sent to a server:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+  var arr = [ &quot;John&quot;, &quot;Peter&quot;, &quot;Sally&quot;, &quot;Jane&quot; ];<br>var myJSON = 
+  JSON.stringify(arr);<br>document.getElementById(&quot;demo&quot;).innerHTML = myJSON;</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_stringify_array" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var arr = [ &quot;John&quot;, &quot;Peter&quot;, &quot;Sally&quot;, &quot;Jane&quot; ];var myJSON = 
+  JSON.stringify(arr);document.getElementById(&quot;demo&quot;).innerHTML = myJSON;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>You will learn how to send JSON to the server in the next chapter.</p>
+
+<hr>
+<h2>Exceptions</h2>
+<h3>Stringify Dates</h3>
+<p>In JSON, date objects are not allowed. The JSON.stringify() function will convert 
+any dates into strings.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+  var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;today&quot;:new Date(), &quot;city&quot;:&quot;New York&quot;};<br>
+  var myJSON = JSON.stringify(obj);<br>
+  <br>document.getElementById(&quot;demo&quot;).innerHTML = myJSON;</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_stringify_date" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;today&quot;:new Date(), &quot;city&quot;:&quot;New York&quot;};
+  var myJSON = JSON.stringify(obj);
+  document.getElementById(&quot;demo&quot;).innerHTML = myJSON;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>You can convert the string back into a date object at the receiver.</p>
+
+
+
+<hr>
+
+
+
+
+<h3>Stringify Functions</h3>
+<p>In JSON, functions are not allowed as object values.</p>
+<p>The JSON.stringify() function will remove any functions from a JavaScript 
+object, both the key and the value:</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+  var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:function () {return 30;}, &quot;city&quot;:&quot;New York&quot;};<br>
+  var myJSON = JSON.stringify(obj);<br>
+  <br>document.getElementById(&quot;demo&quot;).innerHTML = myJSON;</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_stringify_function" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:function () {return 30;}, &quot;city&quot;:&quot;New York&quot;};
+  var myJSON = JSON.stringify(obj);
+  document.getElementById(&quot;demo&quot;).innerHTML = myJSON;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>This can be omitted if you convert your functions into strings before running 
+the JSON.stringify() function.</p>
+<div class="w3-example">
+  <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+  var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:function () {return 30;}, &quot;city&quot;:&quot;New York&quot;};<br>
+  obj.age = obj.age.toString();<br>var myJSON = JSON.stringify(obj);<br>
+  <br>document.getElementById(&quot;demo&quot;).innerHTML = myJSON;</div>
+  <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjson_stringify_function_tostring" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var obj =
+  { &quot;name&quot;:&quot;John&quot;, &quot;age&quot;:function () {return 30;}, &quot;city&quot;:&quot;New York&quot;};
+  obj.age = obj.age.toString();var myJSON = JSON.stringify(obj);
+  document.getElementById(&quot;demo&quot;).innerHTML = myJSON;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<p>You should avoid using functions in JSON, the functions will loose their scope, 
+and you would have to use eval() to convert them back into functions.</p>
+</div>
+
+
+<hr>
+
+
+
+
+<h2>Browser Support</h2>
+<p>The JSON.stringify() function is included in all major browsers and in the latest ECMAScript (JavaScript) standard:</p>
+<table class="w3-table-all notranslate">
+<tr><th>Web Browsers Support</th></tr>
+<tr>
+<td><ul>
+  <li>Firefox 3.5</li>
+  <li>Internet Explorer 8</li>
+  <li>Chrome</li>
+  <li>Opera 10</li>
+  <li>Safari 4<br></li>
+</ul></td>
+</tr>
+</table>
+
+<hr>
+
+
+
+
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_json_parse.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_json_php.asp">Next &#x276F;</a>
+</div>

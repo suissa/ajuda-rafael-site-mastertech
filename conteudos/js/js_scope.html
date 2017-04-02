@@ -1,0 +1,139 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Scope</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_objects.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_events.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Scope is the set of variables you have access to.</p>
+<hr>
+<h2>JavaScript Scope</h2>
+<p>In JavaScript, objects and functions are also variables.</p>
+<p><strong>In JavaScript, scope is the set of variables, objects, and functions 
+you have access to.</strong></p>
+<p>JavaScript has function scope: The scope changes inside functions.</p>
+<hr>
+<h2>Local JavaScript Variables</h2>
+<p>Variables declared within a JavaScript function, become <strong>
+LOCAL</strong> to 
+the function.</p>
+<p>Local variables have <strong>local scope</strong>: They can only be accessed 
+within the function.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+// code here can not use carName<br><br>function myFunction() {<br>
+&#xA0;&#xA0;&#xA0; var carName = &quot;Volvo&quot;;<br><br>
+&#xA0;&#xA0;&#xA0; // code here can use carName<br><br>}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_scope_local" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;// code here can not use carNamefunction myFunction() {
+ var carName = &quot;Volvo&quot;;
+ // code here can use carName}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Since local variables are only recognized inside their functions, variables with the same name can be used in different functions.</p>
+<p>Local variables are created when a function starts, and deleted when the function is completed.</p>
+<hr>
+
+<h2>Global JavaScript Variables</h2>
+<p>A variable declared outside a function, becomes <strong>GLOBAL</strong>.</p>
+<p>A global variable has <strong>global scope</strong>: All scripts and functions 
+on a web page can access it.&#xA0;</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var carName = &quot; Volvo&quot;;<br><br>
+// code here can use carName<br><br>
+function myFunction() {<br><br>
+&#xA0;&#xA0;&#xA0; // code here can use carName <br><br>}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_scope_global" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var carName = &quot; Volvo&quot;;
+// code here can use carName
+function myFunction() {
+ // code here can use carName }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Automatically Global</h2>
+<p>If you assign a value to a variable that has not been declared, it will automatically become a <b>GLOBAL</b> variable.</p>
+<p>This code example will declare a global variable <strong>carName</strong>, even if 
+the value is assigned inside a function.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ myFunction();<br><br>// code here can use carName
+ <br><br>function myFunction() {<br>
+&#xA0;&#xA0;&#xA0; carName = &quot;Volvo&quot;;<br>}</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_local_global" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;myFunction();// code here can use carName
+ function myFunction() {
+ carName = &quot;Volvo&quot;;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<p>Do NOT create global variables unless you intend to.</p>
+<p>In &quot;Strict Mode&quot; automatically global variables will fail.</p>
+</div>
+
+<hr>
+<h2>Global Variables in HTML</h2>
+<p>With JavaScript, the global scope is the complete JavaScript environment. </p>
+<p>In HTML, the global scope is the window object. All global variables belong to the window object.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var carName = &quot;Volvo&quot;;<br><br>// code here 
+ can use window.carName<br>&#xA0;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_scope_window" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var carName = &quot;Volvo&quot;;// code here 
+ can use window.carName&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Did You Know?</h2>
+
+<div class="w3-panel w3-note">
+<p>Your global variables (or functions) can overwrite window variables (or 
+functions).<br>Any function, including the window object, can overwrite your global 
+variables and functions.</p>
+</div>
+
+<hr>
+<h2>The Lifetime of JavaScript Variables</h2>
+<p>The lifetime of a JavaScript variable starts when it is declared.</p>
+<p>Local variables are deleted when the function is completed.</p>
+<p>In a web browser, global variables are deleted when you close the browser 
+window (or tab), but remains available to new pages loaded into the same window.</p>
+<hr>
+
+<h2>Function Arguments</h2>
+<p>Function arguments (parameters) work as local variables inside functions.</p>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_objects.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_events.asp">Next &#x276F;</a>
+</div>

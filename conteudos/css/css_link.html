@@ -1,0 +1,155 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Links</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_icons.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_list.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">With CSS, links can be styled in different ways.</p>
+<a href="javascript:void(0)" class="txtlink2">Text Link</a>
+<a href="javascript:void(0)" class="txtlink">Text Link</a>
+<a href="javascript:void(0)" class="button button1">Link Button</a> 
+<a href="javascript:void(0)" class="btn">Link Button</a>
+<hr>
+<h2>Styling Links</h2>
+<p>Links can be styled with any CSS property (e.g. <code class="w3-codespan">color</code>, <code class="w3-codespan">font-family</code>, 
+<code class="w3-codespan">background</code>, etc.).</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+   a {<br>&#xA0;&#xA0;&#xA0; color: hotpink;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_link_all" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;a { color: hotpink;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>In addition, links can be styled 
+differently depending on what <strong>state</strong> they are in.</p>
+<p>The four links states are: </p>
+<ul>
+<li><code class="w3-codespan">a:link</code> - a normal, unvisited link</li>
+<li><code class="w3-codespan">a:visited</code> - a link the user has visited</li>
+<li><code class="w3-codespan">a:hover</code> - a link when the user mouses over it</li>
+<li><code class="w3-codespan">a:active</code> - a link the moment it is clicked</li>
+</ul>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+/* unvisited link */<br>a:link {<br>&#xA0;&#xA0;&#xA0; color: red;<br>}<br><br>/* visited 
+link */<br>a:visited {<br>&#xA0;&#xA0;&#xA0; color: green;<br>}<br><br>/* mouse over link */<br>
+a:hover {<br>&#xA0;&#xA0;&#xA0; color: hotpink;<br>}<br><br>/* selected link */<br>a:active {<br>
+&#xA0;&#xA0;&#xA0;
+color: blue;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_link" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;/* unvisited link */a:link { color: red;}/* visited 
+link */a:visited { color: green;}/* mouse over link */
+a:hover { color: hotpink;}/* selected link */a:active {
+
+color: blue;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>When setting the style for several link states, there are some order rules:</p>
+<ul>
+<li>a:hover MUST come after a:link and a:visited</li>
+<li>a:active MUST come after a:hover</li>
+</ul>
+<hr>
+
+<h2>Text Decoration</h2>
+<p>The <code class="w3-codespan">text-decoration</code> property is mostly used to remove underlines from links:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+a:link {<br>&#xA0;&#xA0;&#xA0; text-decoration: none;<br>}<br>
+<br>a:visited {<br>&#xA0;&#xA0;&#xA0; text-decoration: none;<br>}<br>
+<br>a:hover {<br>&#xA0;&#xA0;&#xA0; text-decoration: underline;<br>}<br>
+<br>a:active {<br>&#xA0;&#xA0;&#xA0; text-decoration: underline;<br>}</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_link_decoration"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;a:link { text-decoration: none;}
+a:visited { text-decoration: none;}
+a:hover { text-decoration: underline;}
+a:active { text-decoration: underline;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Background Color</h2>
+<p>The <code class="w3-codespan">background-color</code> property can be used to specify a background color for links:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+a:link {<br>&#xA0;&#xA0;&#xA0; background-color: yellow;<br>}<br><br>
+a:visited {<br>&#xA0;&#xA0;&#xA0; background-color: cyan;<br>}<br><br>
+a:hover {<br>&#xA0;&#xA0;&#xA0; background-color: lightgreen;<br>}<br><br>
+a:active {<br>&#xA0;&#xA0;&#xA0; background-color: hotpink;<br>}&#xA0;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_link_background"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;a:link { background-color: yellow;}
+a:visited { background-color: cyan;}
+a:hover { background-color: lightgreen;}
+a:active { background-color: hotpink;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Advanced - Link Buttons</h2>
+<p>This example demonstrates a more advanced example where we combine several CSS 
+properties to display links as boxes/buttons:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+a:link, a:visited {<br>&#xA0;&#xA0;&#xA0; background-color: #f44336;<br>&#xA0;&#xA0;&#xA0; 
+color: white;<br>&#xA0;&#xA0;&#xA0; padding: 14px 25px;<br>&#xA0;&#xA0;&#xA0; 
+text-align: center; <br>&#xA0;&#xA0;&#xA0; text-decoration: none;<br>&#xA0;&#xA0;&#xA0; 
+display: inline-block;<br>}<br><br>a:hover, a:active {<br>&#xA0;&#xA0;&#xA0; 
+background-color: red;<br>}</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_link_advanced"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;a:link, a:visited { background-color: #f44336; 
+color: white; padding: 14px 25px; 
+text-align: center;  text-decoration: none; 
+display: inline-block;}a:hover, a:active { 
+background-color: red;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+
+<h2>More Examples</h2>
+<p><a target="_blank" href="tryit.asp?filename=trycss_link2">Add different 
+styles to hyperlinks</a><br>
+This example demonstrates how to add other styles to hyperlinks.</p>
+
+<p><a target="_blank" href="tryit.asp?filename=trycss_link_advanced2">Advanced - 
+Create a link button with borders</a><br>
+Another example of how to create link boxes/buttons.</p>
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_link1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_link2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_link3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_link4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_icons.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_list.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,220 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">JS Affix</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_comp_glyphs.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_alert.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JS Affix (affix.js)</h2>
+<p>The Affix plugin allows an element to become affixed (locked) to an area on the page. This is often used with navigation menus or social icon buttons, to make them &quot;stick&quot; at a specific area while scrolling up and down the page.</p>
+
+<p>The plugin toggles this behavior on and off (changes the value of CSS position from static to fixed), depending on scroll position.</p>
+
+<p>The affix plugin toggles between three classes: <code class="w3-codespan">.affix</code>, <code class="w3-codespan">.affix-top</code>, and 
+<code class="w3-codespan">.affix-bottom</code>. Each class represents a particular state. You must add CSS 
+properties to handle the actual positions, with the exception of <code class="w3-codespan">position:fixed</code> 
+on the <code class="w3-codespan">.affix</code> class.</p>
+<p>For more information, read our <a href="bootstrap_affix.asp">Bootstrap 
+Affix Tutorial</a>.</p>
+<p><strong>Tip:</strong> The Affix plugin is often used together with the
+<a href="bootstrap_ref_js_scrollspy.asp">Scrollspy</a> plugin.</p>
+<hr>
+
+<h2>Via data-* Attributes</h2>
+<p>Add <code class="w3-codespan">data-spy=&quot;affix&quot;</code> to the element you want to spy on, 
+and the <code class="w3-codespan">data-offset-top|bottom=&quot;<em>number</em>&quot;</code> 
+attribute to calculate the position of the scroll.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_affix_nav&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Via JavaScript</h2>
+<p>Enable manually with:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+$(&apos;.nav&apos;).affix({offset: {top: 150} });
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_affix_js&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;$(&apos;.nav&apos;).affix({offset: {top: 150} });&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Affix Options</h2>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, 
+append the option name to data-, as in data-offset=&quot;&quot;.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:15%;">Name</th>
+    <th style="width:15%;">Type</th>
+    <th style="width:10%;">Default</th>
+    <th style="width:52%;">Description</th>
+  </tr>
+  <tr>
+    <td>offset</td>
+    <td>number | object | function</td>
+    <td>10</td>
+    <td>
+ Specifies the number of pixels to offset from screen when calculating position of scroll. When using a single number, the offset is added to both top and bottom directions. If you only want to control the top or the bottom, use an object, like <code class="w3-codespan">offset: {top:25}</code><br><br>For multiple offsets, use <code class="w3-codespan">offset: {top:25, bottom:50}</code><br><br><strong>Tip:</strong> Use a function to dynamically provide an offset (can be useful for responsive designs)</td>
+  </tr>
+  <tr>
+    <td>target</td>
+    <td>selector | node | element</td>
+    <td>the window object</td>
+    <td>
+ Specifies the target element of the affix</td>
+  </tr>
+</table>
+
+<h2>Affix Events</h2>
+<p>The following table lists all available affix events.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>affix.bs.affix</td>
+    <td>Occurs before fixed positioning is added to the element (e.g, when the <code class="w3-codespan">.affix-top</code> class is about to be replaced with the <code class="w3-codespan">.affix</code> class)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affix&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>affixed.bs.affix</td>
+    <td>Occurs after fixed positioning is added to the element (e.g., after the <code class="w3-codespan">.affix-top</code> class is replaced with the <code class="w3-codespan">.affix</code> class)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affixed&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>affix-top.bs.affix</td>
+    <td>Occurs before the top element returns to its original (non-fixed) position (e.g., the <code class="w3-codespan">.affix</code> class is about to be replaced with <code class="w3-codespan">.affix-top</code>)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affixtop&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>affixed-top.bs.affix</td>
+    <td>Occurs after the top element returns to its original (non-fixed) position (e.g., the <code class="w3-codespan">.affix</code> class has been replaced with <code class="w3-codespan">.affix-top</code>)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affixedtop&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>affix-bottom.bs.affix</td>
+    <td>Occurs before the bottom element returns to its original (non-fixed) position (e.g., the <code class="w3-codespan">.affix</code> class is about to be replaced with <code class="w3-codespan">.affix-bottom</code>)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affixbottom&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>affixed-bottom.bs.affix</td>
+    <td>Occurs after the bottom element returns to its original (non-fixed) position (e.g., the <code class="w3-codespan">.affix</code> class has been replaced with <code class="w3-codespan">.affix-bottom</code>)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_affix_event_affixedbottom&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+</div>
+<hr>
+
+<h2>More Examples</h2>
+
+<h3>Affixed navbar</h3>
+<p>Create a horizontal affixed navigation menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_affix&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Using jQuery to automatically affix a navbar</h3>
+<p>Use jQuery&apos;s <a href="/jquery/html_outerheight.asp">outerHeight()</a> method to affix the navbar after the user has scrolled passed a 
+specified 
+element (&lt;header&gt;):</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ $(&quot;.navbar&quot;).affix({offset: {top: $(&quot;header&quot;).outerHeight(true)}
+ });</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_affix_outerheight&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;$(&quot;.navbar&quot;).affix({offset: {top: $(&quot;header&quot;).outerHeight(true)}
+ });&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Scrollspy &amp; Affix</h3>
+<p>Using the Affix plugin together with the <a href="bootstrap_scrollspy.asp">Scrollspy</a> 
+plugin:</p>
+<div class="w3-example">
+<h3>Horizontal Menu (Navbar)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;<br><br>&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;<br>
+ ...<br>&lt;/nav&gt;<br><br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;.navbar&quot; data-offset=&quot;50&quot;&gt;&lt;nav class=&quot;navbar navbar-inverse&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;197&quot;&gt;
+ ...&lt;/nav&gt;&lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Vertical Menu (Sidenav)</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;<br><br>
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt;<br>&#xA0; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt;<br>&#xA0; ...<br>&lt;/nav&gt;<br>
+ <br>&lt;/body&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_scrollspy_affix2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;body data-spy=&quot;scroll&quot; data-target=&quot;#myScrollspy&quot; data-offset=&quot;15&quot;&gt;
+ &lt;nav class=&quot;col-sm-3&quot; id=&quot;myScrollspy&quot;&gt; &lt;ul class=&quot;nav nav-pills nav-stacked&quot; data-spy=&quot;affix&quot; data-offset-top=&quot;205&quot;&gt; ...&lt;/nav&gt;
+ &lt;/body&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Animated navbar on affix</h3>
+<p>Use CSS to manipulate the different .affix classes:</p>
+<div class="w3-example">
+<h3>Example - Change background color and padding of navbar on scroll</h3>
+<div class="w3-code notranslate cssHigh">
+ .affix {<br>&#xA0;&#xA0;&#xA0; top: 0;<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; -webkit-transition: all .5s ease-in-out;<br>&#xA0;&#xA0;&#xA0; transition: all .5s ease-in-out;<br>&#xA0;&#xA0;&#xA0; background-color: #F44336;<br>&#xA0;&#xA0;&#xA0; border-color: #F44336;<br>}<br><br>.affix a {<br>&#xA0;&#xA0;&#xA0; color: #fff !important;<br>&#xA0;&#xA0;&#xA0; padding: 15px !important;<br>&#xA0;&#xA0;&#xA0; -webkit-transition: all .5s ease-in-out;<br>&#xA0;&#xA0;&#xA0; transition: all .5s ease-in-out;<br>}<br><br>.affix-top a {<br>&#xA0;&#xA0;&#xA0; padding: 25px !important;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_affix_transition&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;.affix { top: 0; width: 100%; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out; background-color: #F44336; border-color: #F44336;}.affix a { color: #fff !important; padding: 15px !important; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}.affix-top a { padding: 25px !important;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example - Slide in the navbar</h3>
+<div class="w3-code notranslate cssHigh">
+ .affix {<br>&#xA0;&#xA0;&#xA0; top: 0;<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; -webkit-transition: all .5s ease-in-out;<br>&#xA0;&#xA0;&#xA0; transition: all .5s ease-in-out;<br>}<br><br>.affix-top {<br>&#xA0;&#xA0;&#xA0; position: static;<br>&#xA0;&#xA0;&#xA0; top: -35px;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_affix_transition2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;.affix { top: 0; width: 100%; -webkit-transition: all .5s ease-in-out; transition: all .5s ease-in-out;}.affix-top { position: static; top: -35px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_comp_glyphs.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_alert.asp">Next &#x276F;</a>
+</div>

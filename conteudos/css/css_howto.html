@@ -1,0 +1,216 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.70);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">How To...</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_syntax.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_colors.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">When a browser reads a style sheet, it will format the HTML document according to 
+the information in the style sheet.</p>
+<hr>
+
+<h2>Three Ways to Insert CSS</h2>
+<p>There are three ways of inserting a style sheet:</p>
+<ul class="w3-leftbar w3-border w3-border-green w3-padding-8">
+<li>External style sheet</li>
+<li>Internal style sheet</li>
+<li>Inline style</li>
+</ul>
+<hr>
+
+<h2>External Style Sheet</h2>
+<p>With an
+external style sheet, you can change the look of an entire website by changing 
+just one file!</p>
+<p>Each page must include a reference to the external style sheet file inside the &lt;link&gt; 
+element. The &lt;link&gt; element goes inside the &lt;head&gt; section:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;head&gt;<br>
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+href=&quot;mystyle.css&quot;&gt;<br>
+&lt;/head&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trycss_howto_external" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;head&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot;
+href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>An external style sheet can be written in any text editor. The file should not contain any html tags. 
+The style sheet file must be saved with a .css extension.</p>
+<p>Here is how the &quot;myStyle.css&quot; looks:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; background-color: lightblue;<br>}<br><br>h1 {<br>&#xA0;&#xA0;&#xA0; 
+color: navy;<br>&#xA0;&#xA0;&#xA0; margin-left: 20px;<br>}</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { background-color: lightblue;}h1 { 
+color: navy; margin-left: 20px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-warning">
+  <p><strong>Note:</strong> Do not add a space between the property value and the unit (such as <code class="w3-codespan">margin-left: 20 px;</code>). The correct way is: <code class="w3-codespan">margin-left: 20px;</code></p>
+</div>
+<hr>
+
+<h2>Internal Style Sheet</h2>
+<p>An internal style sheet may be used if one single page has a unique style.</p>
+<p>Internal styles are defined within the &lt;style&gt; element, inside the &lt;head&gt; section of an HTML page:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;head&gt;<br>&lt;style&gt;<br>body {<br>&#xA0;&#xA0;&#xA0; background-color: linen;<br>}<br><br>
+h1 {<br>&#xA0;&#xA0;&#xA0; color: maroon;<br>&#xA0;&#xA0;&#xA0; margin-left: 40px;<br>} <br>
+&lt;/style&gt;<br>&lt;/head&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trycss_howto_internal" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;head&gt;&lt;style&gt;body { background-color: linen;}
+h1 { color: maroon; margin-left: 40px;} 
+&lt;/style&gt;&lt;/head&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Inline Styles</h2>
+<p>An inline style may be used to apply a unique style for a single element.</p>
+<p>To use inline styles, add the style attribute to the relevant element. The
+style attribute can contain any CSS property.</p>
+<p>The example below shows how to change
+the color and the left margin of a &lt;h1&gt; element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;h1 style=&quot;color:blue;margin-left:30px;&quot;&gt;This is a heading.&lt;/h1&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trycss_howto_inline" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;h1 style=&quot;color:blue;margin-left:30px;&quot;&gt;This is a heading.&lt;/h1&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><strong>Tip:</strong> An inline style loses many of the advantages of a style sheet (by mixing
+content with presentation). Use this method sparingly</p>
+</div>
+
+<hr>
+
+<h2>Multiple Style Sheets</h2>
+<p>If some properties have been defined for the same selector (element) in different style sheets,
+the value from the last read style sheet will be used.&#xA0;</p>
+<h3> Example</h3>
+<p> Assume that an external style sheet has the following 
+style for the &lt;h1&gt; element:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+h1
+{<br>
+&#xA0;&#xA0;&#xA0;
+color: navy;<br>
+}</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1
+{
+
+color: navy;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>then, assume that an internal style sheet also has the following style for the 
+&lt;h1&gt; element:</p>
+<div class="w3-example">
+<div class="w3-code notranslate cssHigh">
+h1
+{<br>
+&#xA0;&#xA0;&#xA0; color: orange;&#xA0;&#xA0;&#xA0;
+<br>}</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1
+{
+ color: orange;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If the internal style is defined after the link to the external style sheet, the &lt;h1&gt; elements will be 
+&quot;orange&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;head&gt;<br>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br>
+&lt;style&gt;<br>h1 {<br>&#xA0;&#xA0;&#xA0; color: orange;<br>}<br>&lt;/style&gt;<br>&lt;/head&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trycss_howto_multiple" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;head&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;style&gt;h1 { color: orange;}&lt;/style&gt;&lt;/head&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>However, if the internal style is defined before the link to the external style sheet, the &lt;h1&gt; elements will be 
+&quot;navy&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh htmlHigh">
+&lt;head&gt;<br>&lt;style&gt;<br>h1 {<br>&#xA0;&#xA0;&#xA0; color: orange;<br>}<br>&lt;/style&gt;<br>&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;<br>
+&lt;/head&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trycss_howto_multiple2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;head&gt;&lt;style&gt;h1 { color: orange;}&lt;/style&gt;&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;mystyle.css&quot;&gt;
+&lt;/head&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Cascading Order</h2>
+<p>What style will be used when there is more than one style specified for an HTML element?</p>
+<p>Generally speaking we can say that all the styles will &quot;cascade&quot; into a new &quot;virtual&quot; style
+sheet by the following rules, where number one has the highest priority:</p>
+<ol>
+  <li>Inline style (inside an HTML element)</li>
+  <li>External and internal style sheets (in the head section)</li>
+  <li>Browser default</li>
+</ol>
+<p>So, an inline style (inside a specific HTML element) has the highest priority, which means that it will override a style defined inside the &lt;head&gt; tag, or in
+an external style sheet, or a browser default value.</p>
+<p><a class="w3-btn" href="tryit.asp?filename=trycss_howto_cascade" target="_blank">Try it Yourself &#xBB;</a></p>
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_howto1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_howto2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_howto3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_howto4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_syntax.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_colors.asp">Next &#x276F;</a>
+</div>

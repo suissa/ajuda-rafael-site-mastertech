@@ -1,0 +1,493 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Array Methods</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_arrays.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_array_sort.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The strength of JavaScript arrays lies in the array methods.</p>
+<hr>
+
+<h2>Converting Arrays to Strings</h2>
+
+<p>The JavaScript method <strong>toString()</strong> converts an array to a 
+string of (comma separated) array values.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+document.getElementById(&quot;demo&quot;).innerHTML = fruits.toString();
+</div>
+<h3>Result</h3>
+<div class="w3-code notranslate">
+ Banana,Orange,Apple,Mango<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_tostring" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+document.getElementById(&quot;demo&quot;).innerHTML = fruits.toString();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The <strong>join()</strong> method also joins all array elements into a string.</p>
+<p>It behaves just like toString(), but in addition you can specify the separator:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;,&quot;Apple&quot;, &quot;Mango&quot;];<br>
+document.getElementById(&quot;demo&quot;).innerHTML = fruits.join(&quot; * &quot;);
+</div>
+<h3>Result</h3>
+<div class="w3-code notranslate">
+ Banana * Orange * Apple * Mango</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_join" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana,Orange,Apple,Mango&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Popping and Pushing</h2>
+<p>When you work with arrays, it is easy to remove elements and add 
+new elements.</p>
+<p>This is what popping and pushing is:</p>
+<p>Popping items <strong>out</strong> of an array, or pushing 
+items <strong>into</strong> an array.</p>
+<hr>
+
+<h2>Popping</h2>
+<p>The <strong>pop()</strong> method removes the last element from an array: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.pop();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+// Removes the last element (&quot;Mango&quot;) from fruits</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_pop" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;,&quot;Apple&quot;, &quot;Mango&quot;];
+document.getElementById(&quot;demo&quot;).innerHTML = fruits.join(&quot; * &quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The pop() method returns the value that was &quot;popped out&quot;:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+ var x =
+fruits.pop();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; 
+// the value of x is &quot;Mango&quot;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_pop_out" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;Banana * Orange * Apple * Mango&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Pushing</h2>
+
+<p>The <strong>push()</strong> method adds a new element to an array (at the end):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+ fruits.push(&quot;Kiwi&quot;);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; //&#xA0; Adds a new element (&quot;Kiwi&quot;) to fruits</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_push" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.pop(); 
+// Removes the last element (&quot;Mango&quot;) from fruits&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The push() method returns the new array length:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+ var x =
+ fruits.push(&quot;Kiwi&quot;);&#xA0;&#xA0; //&#xA0; the value of x is 5</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_push_length" target="_blank"></a><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+ var x =
+fruits.pop(); 
+// the value of x is &quot;Mango&quot;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Shifting Elements</h2>
+<p>Shifting is equivalent to popping, working on the first element instead of 
+the last.</p>
+<p>The <strong>shift()</strong> method removes the first array element and &quot;shifts&quot; all 
+other elements to a lower index.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.shift();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+// Removes the first element &quot;Banana&quot; from fruits
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_shift" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+ fruits.push(&quot;Kiwi&quot;); // Adds a new element (&quot;Kiwi&quot;) to fruits&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The shift() method returns the string that was &quot;shifted out&quot;:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.shift();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // 
+ Returns &quot;Banana&quot;
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_shift_return" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+ var x =
+ fruits.push(&quot;Kiwi&quot;); // the value of x is 5&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The <strong>unshift()</strong> method adds a new element to an array (at the beginning), and &quot;unshifts&quot; 
+older elements: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.unshift(&quot;Lemon&quot;);&#xA0;&#xA0;&#xA0;
+// Adds a new element &quot;Lemon&quot; to fruits
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_unshift" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.shift();
+// Removes the first element &quot;Banana&quot; from fruits&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The unshift() method returns the new array length.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.unshift(&quot;Lemon&quot;);&#xA0;&#xA0;&#xA0;
+// Returns 5
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_unshift_return" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.shift(); // 
+ Returns &quot;Banana&quot;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Changing Elements</h2>
+<p>Array elements are accessed using their <strong>index number</strong>:</p>
+
+<div class="w3-panel w3-note">
+<p>Array <strong>indexes</strong> start with 0.
+[0] is the first array element, [1] is the second, [2] is the third ...</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits[0] = &quot;Kiwi&quot;; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+// Changes the first element of fruits to &quot;Kiwi&quot;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_change" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.unshift(&quot;Lemon&quot;);
+// Adds a new element &quot;Lemon&quot; to fruits&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The length property provides an easy way to append a new element to an array:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits[fruits.length] = &quot;Kiwi&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+// Appends &quot;Kiwi&quot; to fruit</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_change_add" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.unshift(&quot;Lemon&quot;);
+// Returns 5&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Deleting Elements</h2>
+<p>Since JavaScript arrays are objects, elements can be deleted by using the 
+JavaScript operator <strong>delete</strong>: </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+delete fruits[0];&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+// Changes the first element in fruits to <strong>undefined</strong></div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_delete" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits[0] = &quot;Kiwi&quot;; 
+// Changes the first element of fruits to &quot;Kiwi&quot;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-warning">
+<p>Using <strong>delete</strong> may leave undefined holes in the 
+array. Use pop() or shift() instead.</p>
+</div>
+
+<hr>
+<h2>Splicing an Array</h2>
+<p>The <strong>splice()</strong> method can be used to add new items to an array: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.splice(2, 0, &quot;Lemon&quot;, &quot;Kiwi&quot;);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_splice" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits[fruits.length] = &quot;Kiwi&quot;;
+// Appends &quot;Kiwi&quot; to fruit&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The first parameter (2) defines the position <strong>where</strong> new elements should be 
+<strong>added</strong> (spliced in).</p>
+<p>The second parameter (0) defines <strong>how many</strong> elements should be
+<strong>removed</strong>.</p>
+<p>The rest of the parameters (&quot;Lemon&quot; , &quot;Kiwi&quot;) define the new elements to be
+<strong>added</strong>.</p>
+<hr>
+
+<h2>Using splice() to Remove Elements</h2>
+<p>With clever parameter setting, you can use splice() to remove elements without leaving 
+&quot;holes&quot; in the array: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+fruits.splice(0, 1);&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;
+// Removes the first element of fruits
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_remove" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+delete fruits[0];
+// Changes the first element in fruits to undefined&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The first parameter (0) defines the position where new elements should be 
+<strong>added</strong> (spliced in).</p>
+<p>The second parameter (1) defines <strong>how many</strong> elements should be
+<strong>removed</strong>.</p>
+<p>The rest of the parameters are omitted. No new elements will be added.</p>
+<hr>
+
+<h2>Joining Arrays</h2>
+
+<p>The <strong>concat()</strong> method creates a new array by concatenating two arrays:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var myGirls = [&quot;Cecilie&quot;, &quot;Lone&quot;];<br>
+var myBoys = [&quot;Emil&quot;, &quot;Tobias&quot;,&quot;Linus&quot;];<br>
+var myChildren = myGirls.concat(myBoys);&#xA0;&#xA0;&#xA0;&#xA0;
+// Concatenates (joins) myGirls and myBoys
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_concat" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.splice(2, 0, &quot;Lemon&quot;, &quot;Kiwi&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The concat() method can take any number of array arguments:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var arr1 = [&quot;Cecilie&quot;, &quot;Lone&quot;];<br>
+var arr2 = [&quot;Emil&quot;, &quot;Tobias&quot;,&quot;Linus&quot;];<br>
+var arr3 = [&quot;Robin&quot;, &quot;Morgan&quot;];<br>
+var myChildren = arr1.concat(arr2, arr3);&#xA0;&#xA0;&#xA0;&#xA0;
+// Concatenates arr1 with arr2 and arr3
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_concat2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+fruits.splice(0, 1);
+// Removes the first element of fruits&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Slicing an Array</h2>
+
+<p>The <strong>slice()</strong> method slices out a piece of an array into a new 
+array.</p>
+<p>This example slices out a part of an array starting from array element 1 
+(&quot;Orange&quot;):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+var citrus = fruits.slice(1);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_slice1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myGirls = [&quot;Cecilie&quot;, &quot;Lone&quot;];
+var myBoys = [&quot;Emil&quot;, &quot;Tobias&quot;,&quot;Linus&quot;];
+var myChildren = myGirls.concat(myBoys);
+// Concatenates (joins) myGirls and myBoys&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The slice() method creates a new array. It does not remove any elements from 
+the source array.</p>
+</div>
+
+<p>This example slices out a part of an array starting from array element 3 
+(&quot;Apple&quot;):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+var citrus = fruits.slice(3);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_slice3" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var arr1 = [&quot;Cecilie&quot;, &quot;Lone&quot;];
+var arr2 = [&quot;Emil&quot;, &quot;Tobias&quot;,&quot;Linus&quot;];
+var arr3 = [&quot;Robin&quot;, &quot;Morgan&quot;];
+var myChildren = arr1.concat(arr2, arr3);
+// Concatenates arr1 with arr2 and arr3&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The slice() method can take two arguments like slice(1, 3).</p>
+<p>The method then selects elements from the start argument, and up to (but not 
+including) the end argument.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+var citrus = fruits.slice(1, 3);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_slice" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+var citrus = fruits.slice(1);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If the end argument is omitted, like in the first examples, the slice() 
+method slices out the rest of the array.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+var citrus = fruits.slice(2);
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_slice2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+var citrus = fruits.slice(3);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>Automatic toString()</h2>
+
+<p>&#xA0;JavaScript will automatically convert an array to a string when a primitive value is expected. 
+These two examples will produce the same result:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+document.getElementById(&quot;demo&quot;).innerHTML = fruits.toString();
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_tostring" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+var citrus = fruits.slice(1, 3);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Apple&quot;, &quot;Mango&quot;];<br>
+document.getElementById(&quot;demo&quot;).innerHTML = fruits;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_array_automatic" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var fruits = [&quot;Banana&quot;, &quot;Orange&quot;, &quot;Lemon&quot;, &quot;Apple&quot;, &quot;Mango&quot;];
+var citrus = fruits.slice(2);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+ <p>All JavaScript objects have a toString() method.</p>
+</div>
+
+<hr>
+<h2>Sorting Arrays</h2>
+<p>Sorting arrays are covered in the next chapter of this tutorial.</p>
+
+<hr>
+
+<h2>Complete Array Reference</h2>
+<p>For a complete reference, go to our <a href="/jsref/jsref_obj_array.asp">Complete 
+JavaScript Array Reference</a>.</p>
+<p>The reference contains descriptions and examples of all Array 
+properties and methods.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_arraysmet1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_arraysmet2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_arraysmet4" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_arraysmet6" target="_blank">Exercise 
+4 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_arrays.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_array_sort.asp">Next &#x276F;</a>
+</div>

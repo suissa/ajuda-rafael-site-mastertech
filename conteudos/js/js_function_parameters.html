@@ -1,0 +1,162 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Function Parameters</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_function_definition.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_function_invocation.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<p class="intro">A JavaScript function does not perform any checking on 
+parameter values (arguments).</p>
+<hr>
+
+<h2>Function Parameters and Arguments</h2>
+<p>Earlier in this tutorial, you learned that functions can have <strong>
+parameters</strong>:</p>
+<div class="w3-example">
+<div class="w3-code notranslate">
+ <em>functionName</em>(<em>parameter1, parameter2, parameter3</em>) {<br>
+&#xA0;&#xA0;&#xA0; <em>code to be executed</em><br>
+}
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;functionName(parameter1, parameter2, parameter3) {
+ code to be executed
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Function <strong>parameters</strong> are the <strong>names</strong> listed in 
+the function definition.</p>
+<p>Function <strong>arguments</strong> are the real <strong>values</strong> 
+passed to (and received by) the function.</p>
+<hr>
+
+<h2>Parameter Rules</h2>
+<p>JavaScript function definitions do not specify data types for 
+parameters.</p>
+<p>JavaScript functions do not perform type checking on the passed 
+arguments.</p>
+<p>JavaScript functions do not check the number of arguments received.</p>
+<hr>
+
+<h2>Parameter Defaults</h2>
+<p>If a function is called with <strong>missing arguments</strong> (less than declared), the missing values are set to:
+<strong>undefined</strong> </p>
+<p>Sometimes this is acceptable, but sometimes it is better to assign a default 
+value to the parameter:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+function myFunction(x, y) {<br>
+&#xA0;&#xA0;&#xA0; if (y === undefined) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; y = 0;<br>
+&#xA0;&#xA0;&#xA0;  }
+<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_function_undefined" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function myFunction(x, y) {
+ if (y === undefined) {
+ y = 0;
+  }
+
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If a function is called with <strong>too many arguments</strong> (more than declared),
+these arguments can be reached using <strong>the arguments object</strong>.</p>
+<hr>
+
+<h2>The Arguments Object</h2>
+<p>JavaScript functions have a built-in object called the arguments 
+object.</p>
+<p>The argument object contains an array of the arguments used when the function 
+was called (invoked).</p>
+<p>This way you can simply use a function to find (for instance) the highest 
+value in a list of numbers:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+x = findMax(1, 123, 500, 115, 44, 88);<br><br>function findMax() {<br>
+&#xA0;&#xA0;&#xA0; var i;<br>&#xA0;&#xA0;&#xA0; var max = -Infinity;<br>
+&#xA0;&#xA0;&#xA0; for (i = 0; i &lt; arguments.length; i++) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if (arguments[i] &gt; max) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; max = arguments[i];<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br>
+&#xA0;&#xA0;&#xA0; }<br>
+&#xA0;&#xA0;&#xA0; return max;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_function_arguments" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;x = findMax(1, 123, 500, 115, 44, 88);function findMax() {
+ var i; var max = -Infinity;
+ for (i = 0; i &lt; arguments.length; i++) {
+ if (arguments[i] &gt; max) {
+ max = arguments[i];
+ }
+ }
+ return max;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Or create a function to sum all input values:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+x = sumAll(1, 123, 500, 115, 44, 88);<br><br>
+function sumAll() {<br>
+&#xA0;&#xA0;&#xA0; var i, sum = 0;<br>
+&#xA0;&#xA0;&#xA0; for (i = 0; i &lt; arguments.length; i++) {<br>
+&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; sum += arguments[i];<br>
+&#xA0;&#xA0;&#xA0; }<br>
+&#xA0;&#xA0;&#xA0; return sum;<br>
+}
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_function_arguments_sum" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;x = sumAll(1, 123, 500, 115, 44, 88);
+function sumAll() {
+ var i, sum = 0;
+ for (i = 0; i &lt; arguments.length; i++) {
+ sum += arguments[i];
+ }
+ return sum;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Arguments are Passed by Value</h2>
+<p>The parameters, in a function call, are the function&apos;s arguments.</p>
+<p>JavaScript arguments are passed by <strong>value</strong>: The function only 
+gets to know the values, not the argument&apos;s locations.</p>
+<p>If a function changes an argument&apos;s value, it does not change the parameter&apos;s 
+original value.</p>
+<p><strong>Changes to arguments are not visible (reflected) outside the function.</strong></p>
+<hr>
+
+<h2>Objects are Passed by Reference</h2>
+<p>In JavaScript, object references are values.</p>
+<p>Because of this, objects will behave like they are passed by <strong>reference:</strong></p>
+<p>If a function changes an object property, it changes the original value.</p>
+<p><strong>Changes to object properties are visible (reflected) outside the function.</strong></p>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_function_definition.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_function_invocation.asp">Next &#x276F;</a>
+</div>

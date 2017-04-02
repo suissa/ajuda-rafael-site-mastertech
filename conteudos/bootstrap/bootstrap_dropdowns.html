@@ -1,0 +1,235 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Dropdowns</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_panels.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_collapse.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>Basic Dropdown</h2>
+<p>A dropdown menu is a toggleable menu that allows the user to choose one value 
+from a predefined list:</p>
+      <div class="dropdown" style="margin-bottom:10px;">
+        <button class="btn btn-primary dropdown-toggle" type="button" id="menu1" data-toggle="dropdown">Dropdown Example
+        <span class="caret"></span></button>
+        <ul class="dropdown-menu test" role="menu" aria-labelledby="menu1">
+          <li role="presentation"><a role="menuitem" href="javascript:void(0);">HTML</a></li>
+          <li role="presentation"><a role="menuitem" href="javascript:void(0);">CSS</a></li>
+          <li role="presentation"><a role="menuitem" href="javascript:void(0);">JavaScript</a></li>
+          <li role="presentation" class="divider"></li>
+          <li role="presentation"><a role="menuitem" href="javascript:void(0);">About Us</a></li>
+        </ul>
+      </div>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;dropdown&quot;&gt;<br>
+ &#xA0; &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown Example<br>
+ &#xA0; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;<br>
+ &#xA0; &lt;ul class=&quot;dropdown-menu&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0; &lt;/ul&gt;<br>&lt;/div&gt;
+ </div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-menu&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-primary dropdown-toggle&quot; type=&quot;button&quot; data-toggle=&quot;dropdown&quot;&gt;Dropdown Example
+  &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot;&gt; &lt;li&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li&gt;&lt;a href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Example Explained</h3>
+<p>The <code class="w3-codespan">.dropdown</code> class indicates a dropdown menu.</p>
+<p>To open the dropdown menu, use a button or a link with a class of <code class="w3-codespan">.dropdown-toggle</code> and 
+the 
+<code class="w3-codespan">data-toggle=&quot;dropdown&quot;</code> attribute.</p>
+<p>The <code class="w3-codespan">.caret</code> class creates a caret arrow icon (<span class="caret"></span>), which indicates that the 
+button is a dropdown.</p>
+<p>Add the <code class="w3-codespan">.dropdown-menu</code> class to a <code class="w3-codespan">&lt;ul&gt;</code> element to actually build the dropdown menu.</p>
+<hr>
+
+<h2>Dropdown Divider</h2>
+<p>The <code class="w3-codespan">.divider</code> class is used to separate links inside the dropdown menu with a thin horizontal border:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-divider&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;li class=&quot;divider&quot;&gt;&lt;/li&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Dropdown Header</h2>
+<div class="dropdown" style="margin-bottom:16px;">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu2" data-toggle="dropdown">Dropdown Header Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu test" role="menu" aria-labelledby="menu2">
+    <li role="presentation" class="dropdown-header">Dropdown header 1</li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">HTML</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">CSS</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">JavaScript</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation" class="dropdown-header">Dropdown header 2</li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">About Us</a></li>
+  </ul>
+</div>
+
+<p>The <code class="w3-codespan">.dropdown-header</code> class is used to add headers inside the dropdown menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header 1&lt;/li&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-header&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;li class=&quot;dropdown-header&quot;&gt;Dropdown header 1&lt;/li&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Disable and Active items</h2>
+<div class="dropdown" style="margin-bottom:10px;">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu3" data-toggle="dropdown">Dropdown Disabled Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu test" role="menu" aria-labelledby="menu3">
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">Normal</a></li>
+    <li class="disabled" role="presentation"><a role="menuitem" href="javascript:void(0);">Disabled</a></li>
+    <li class="active" role="presentation"><a role="menuitem" href="javascript:void(0);" style="background-color: #337ab7;">Active</a></li>
+  </ul>
+</div>
+
+<p>Highlight a specific dropdown item with the .active class (adds a blue background color).</p>
+<p>To disable an item in the dropdown menu, use the <code class="w3-codespan">.disabled</code> class (gets a light-grey text color and a &quot;no-parking-sign&quot; icon on hover):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;<br>
+ &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-active&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;li class=&quot;disabled&quot;&gt;&lt;a href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+ &lt;li class=&quot;active&quot;&gt;&lt;a href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Dropdown Position</h2>
+<div class="dropdown" style="margin-bottom:10px;">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu4" data-toggle="dropdown">Dropdown Right Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu dropdown-menu-right test" role="menu" aria-labelledby="menu4">
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">HTML</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">CSS</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">JavaScript</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">About Us</a></li>
+  </ul>
+</div>
+
+<p>To right-align the dropdown, add the <code class="w3-codespan">.dropdown-menu-right</code> class to the element 
+with .dropdown-menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-menu-right&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;ul class=&quot;dropdown-menu dropdown-menu-right&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h2>Dropup</h2>
+
+<div class="dropup" style="margin-bottom:10px;">
+  <button class="btn btn-primary dropdown-toggle" type="button" id="menu4" data-toggle="dropdown">Dropup Example
+  <span class="caret"></span></button>
+  <ul class="dropdown-menu test" role="menu" aria-labelledby="menu4">
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">HTML</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">CSS</a></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">JavaScript</a></li>
+    <li role="presentation" class="divider"></li>
+    <li role="presentation"><a role="menuitem" href="javascript:void(0);">About Us</a></li>
+  </ul>
+</div>
+
+<p>If you want the dropdown menu to expand upwards instead of downwards, change 
+the &lt;div&gt; element with class=&quot;dropdown&quot; to <code class="w3-codespan">&quot;dropup&quot;</code>:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;dropup&quot;&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_dropdown-menu-dropup&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;dropup&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Dropdown Accessibility</h2>
+<p>To help improve accessibility for people using screen readers, you should 
+include the following <code class="w3-codespan">role</code> and <code class="w3-codespan">aria-*</code> attributes, when creating a dropdown menu:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;dropdown&quot;&gt;<br>
+ &#xA0; &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;menu1&quot; data-toggle=&quot;dropdown&quot;&gt;Tutorials<br>
+ &#xA0; &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;<br>
+ &#xA0; &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;menu1&quot;&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;<br>
+ &#xA0;&#xA0;&#xA0; &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;<br>
+ &#xA0; &lt;/ul&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_comp_dropdown-menu&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;dropdown&quot;&gt;
+  &lt;button class=&quot;btn btn-default dropdown-toggle&quot; type=&quot;button&quot; id=&quot;menu1&quot; data-toggle=&quot;dropdown&quot;&gt;Tutorials
+  &lt;span class=&quot;caret&quot;&gt;&lt;/span&gt;&lt;/button&gt;
+  &lt;ul class=&quot;dropdown-menu&quot; role=&quot;menu&quot; aria-labelledby=&quot;menu1&quot;&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;HTML&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;CSS&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;JavaScript&lt;/a&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot; class=&quot;divider&quot;&gt;&lt;/li&gt;
+  &lt;li role=&quot;presentation&quot;&gt;&lt;a role=&quot;menuitem&quot; href=&quot;#&quot;&gt;About Us&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_dropdowns1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dropdowns2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dropdowns3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dropdowns4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_dropdowns5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+<hr>
+
+<h2>Complete Bootstrap Dropdown Reference</h2>
+<p>For a complete reference of all dropdown options, methods and events, go to our
+<a href="bootstrap_ref_js_dropdown.asp">Bootstrap JS Dropdown Reference</a>.</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_panels.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_collapse.asp">Next &#x276F;</a>
+</div>

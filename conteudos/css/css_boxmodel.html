@@ -1,0 +1,128 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Box Model</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_dimension.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_outline.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<h2>The CSS Box Model</h2>
+<p>All HTML elements can be considered as boxes. In CSS, the term &quot;box model&quot; is 
+used when talking about design and layout.</p>
+<p>The CSS box model is essentially a box that wraps around every HTML element. 
+It consists of: margins, borders, padding, and the actual content. The image below illustrates the box model:</p>
+<div class="w3-boxmodel">
+<div class="margin">
+  <div class="border w3-theme">
+    <div class="padding">
+      <div class="content"></div>
+     </div>
+  </div>
+</div>
+</div>
+<p>Explanation of the different parts:</p>
+<ul>
+<li><b>Content</b> - The content of the box, where text and images appear</li>
+<li><b>Padding</b> - Clears an area around the content. The padding is transparent</li>
+<li><b>Border</b> - A border that goes around the padding and content</li>
+<li><b>Margin</b> - Clears an area outside the border. The margin is 
+transparent</li>
+</ul>
+<p>The box model allows us to add a border around elements, and to define space 
+between elements.&#xA0;</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div {<br>&#xA0;&#xA0;&#xA0; width: 300px;<br>&#xA0;&#xA0;&#xA0; border: 25px solid 
+green;<br>&#xA0;&#xA0;&#xA0; 
+padding: 25px;<br>&#xA0;&#xA0;&#xA0; 
+margin: 25px;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_boxmodel" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div { width: 300px; border: 25px solid 
+green; 
+padding: 25px; 
+margin: 25px;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Width and Height of an Element</h2>
+<p>In order to set the width and height of an element correctly in all browsers, you need to know how the box model works.</p>
+
+<div class="w3-panel w3-note">
+  <p><b>Important:</b> When you set the width and height properties of an 
+element with CSS, you just set the width and height of the <b>content area</b>. To 
+calculate the full size of an element, you must also add padding, borders and margins.</p>
+</div>
+
+<p>Assume we want to style a &lt;div&gt; element to have a total width of 350px:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div {<br>&#xA0;&#xA0;&#xA0;
+width: 320px;<br>
+&#xA0;&#xA0;&#xA0;
+padding: 10px;<br>
+&#xA0;&#xA0;&#xA0;
+border: 5px solid gray;<br>
+&#xA0;&#xA0;&#xA0;
+margin: 0;
+<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_boxmodel_width" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div {
+width: 320px;
+
+padding: 10px;
+
+border: 5px solid gray;
+
+margin: 0;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Here is the math:<br>
+<div class="w3-leftbar w3-border w3-padding w3-theme-border">
+320px (width)<br>
++ 20px (left + right padding)<br>
++ 10px (left + right border)<br>
++ 0px (left + right margin)<br>
+<strong>= 350px
+</strong>
+</div>
+</p><p>The total width of an element should be calculated like this:</p>
+<p>Total element width = width + left padding + right padding + left 
+border + right border + left margin + right margin</p>
+<p>The total height of an element should be calculated like this:</p>
+<p>Total element height = height + top padding + bottom padding + top 
+border + bottom border + top margin + bottom margin</p>
+
+<p><strong>Note for old IE:</strong> Internet Explorer 8 and earlier versions, include padding and border in the width property.
+To fix this problem, add a &lt;!DOCTYPE html&gt; to the HTML page.</p>
+
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_boxmodel1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_boxmodel2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_boxmodel3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_boxmodel4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_dimension.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_outline.asp">Next &#x276F;</a>
+</div>

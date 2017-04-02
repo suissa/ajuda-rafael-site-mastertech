@@ -1,0 +1,431 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">HTML DOM Navigation</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_eventlistener.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_nodes.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">With the HTML DOM, you can navigate the node tree using node 
+relationships.</p>
+<hr>
+<h2>DOM Nodes</h2>
+<p>According to the W3C HTML DOM standard, everything in an HTML document is a node:</p>
+<ul>
+  <li>The entire document is a document node</li>
+  <li>Every HTML element is an element node</li>
+  <li>The text inside HTML elements are text nodes</li>
+  <li>Every HTML attribute is an attribute node</li>
+  <li>All comments are comment nodes</li>
+</ul>
+
+<div class="w3-white notranslate">
+<img class="w3-image" src="pic_htmltree.gif" alt="DOM HTML tree">
+</div>
+<p>With the HTML DOM, all nodes in the node tree can be accessed by JavaScript.</p>
+<p>New nodes can be created, and all 
+nodes can be modified or deleted. </p>
+
+<hr>
+<h2>Node Relationships</h2>
+<p>The nodes in the node tree have a hierarchical relationship to each other.</p>
+<p>The terms parent, child, and sibling are used to describe the relationships. </p>
+<ul>
+  <li>In a node tree, the top node is called the root (or root node)</li>
+  <li>Every node has exactly one parent, except the root (which has no parent)</li>
+  <li>A node can have a number of children</li>
+  <li>Siblings (brothers or sisters) are nodes with the same parent</li>
+</ul>
+
+<div class="w3-row-padding" style="margin:0 -16px">
+  <div class="w3-half">
+    <div class="w3-code w3-border notranslate htmlHigh">
+&lt;html&gt;<br><br>
+     &#xA0; &lt;head&gt;<br>
+     &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;title&gt;DOM Tutorial&lt;/title&gt;<br>
+     &#xA0; &lt;/head&gt;<br><br>&#xA0;
+&lt;body&gt;<br>
+     &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;h1&gt;DOM Lesson one&lt;/h1&gt;<br>
+     &#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Hello world!&lt;/p&gt;<br>
+     &#xA0; &lt;/body&gt;<br>
+     <br>&lt;/html&gt;
+    </div>
+  </div>
+  <div class="w3-half">
+    <img style="margin-top:30px;width:362px;height:255px" src="pic_navigate.gif" alt="Node tree">
+  </div>
+</div>
+
+<p>From the HTML above you can read:</p>
+<ul>
+  <li>&lt;html&gt; is the root node</li>
+  <li>&lt;html&gt; has no parents </li>
+  <li>&lt;html&gt; is the parent of &lt;head&gt; and &lt;body&gt;</li>
+  <li>&lt;head&gt; is the first child of &lt;html&gt;</li>
+  <li>&lt;body&gt; is the last child of &lt;html&gt;</li>
+</ul>
+<p>and:</p>
+<ul>
+  <li>&lt;head&gt; has one child: &lt;title&gt;</li>
+  <li>&lt;title&gt; has one child (a text node): &quot;DOM Tutorial&quot;</li>
+  <li>&lt;body&gt; has two children: &lt;h1&gt; and &lt;p&gt;</li>
+  <li>&lt;h1&gt; has one child: &quot;DOM Lesson one&quot;</li>
+  <li>&lt;p&gt; has one child: &quot;Hello world!&quot;</li>
+  <li>&lt;h1&gt; and &lt;p&gt; are siblings</li>
+</ul>
+
+<hr>
+<h2>Navigating Between Nodes</h2>
+<p>You can use the following node properties to navigate between nodes with 
+JavaScript:</p>
+<ul>
+  <li>parentNode</li>
+  <li>childNodes[<em>nodenumber</em>]</li>
+  <li>firstChild</li>
+  <li>lastChild</li>
+  <li>nextSibling</li>
+  <li>previousSibling</li>
+</ul>
+<hr>
+
+<h2>Child Nodes and Node Values</h2>
+
+<div class="w3-panel w3-note">
+<p>A common error in DOM processing is to expect an element node to contain text.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example:</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;title 
+ id=&quot;demo&quot;&gt;DOM Tutorial&lt;/title&gt;
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+      &lt;head&gt;
+      &lt;title&gt;DOM Tutorial&lt;/title&gt;
+      &lt;/head&gt;
+&lt;body&gt;
+      &lt;h1&gt;DOM Lesson one&lt;/h1&gt;
+      &lt;p&gt;Hello world!&lt;/p&gt;
+      &lt;/body&gt;
+     &lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The element node 
+&lt;title&gt; (in the example above) does <strong>not</strong> contain text.</p>
+<p>It contains a <b>text node</b> with the value &quot;DOM Tutorial&quot;. </p>
+<p>The value of the text node can be accessed by the 
+node&apos;s 
+<b>innerHTML</b> property:
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+ var myTitle =
+document.getElementById(&quot;demo&quot;).innerHTML;
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;title 
+ id=&quot;demo&quot;&gt;DOM Tutorial&lt;/title&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+</p><p>Accessing the innerHTML property is the same as accessing the <strong>nodeValue</strong> 
+of the first child:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+ var myTitle =
+document.getElementById(&quot;demo&quot;).firstChild.nodeValue;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myTitle =
+document.getElementById(&quot;demo&quot;).innerHTML;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Accessing the first child can also be done like this:</p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+ var myTitle =
+document.getElementById(&quot;demo&quot;).childNodes[0].nodeValue;
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myTitle =
+document.getElementById(&quot;demo&quot;).firstChild.nodeValue;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>All the (3) following examples retrieves the text of an &lt;h1&gt; element and copies it 
+into a &lt;p&gt; element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;<br>&lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>
+ document.getElementById(&quot;id02&quot;).innerHTML 
+ = document.getElementById(&quot;id01&quot;).innerHTML;<br>
+&lt;/script&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_nav_innerhtml1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myTitle =
+document.getElementById(&quot;demo&quot;).childNodes[0].nodeValue;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;<br>&lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;<br><br>
+&lt;script&gt;<br>
+ document.getElementById(&quot;id02&quot;).innerHTML = document.getElementById(&quot;id01&quot;).firstChild.nodeValue;<br>
+&lt;/script&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_nav_innerhtml2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;&lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+ document.getElementById(&quot;id02&quot;).innerHTML 
+ = document.getElementById(&quot;id01&quot;).innerHTML;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;<br>&lt;p id=&quot;id02&quot;&gt;Hello!&lt;/p&gt;<br><br>
+&lt;script&gt;<br>
+ document.getElementById(&quot;id02&quot;).innerHTML = document.getElementById(&quot;id01&quot;).childNodes[0].nodeValue;<br>
+&lt;/script&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_nav_innerhtml3" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;&lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;
+&lt;script&gt;
+ document.getElementById(&quot;id02&quot;).innerHTML = document.getElementById(&quot;id01&quot;).firstChild.nodeValue;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+
+<h2>InnerHTML</h2>
+<p>In this tutorial we use the innerHTML property to retrieve the content of an 
+HTML element.</p>
+<p>However, learning 
+the other methods above is useful for understanding the tree structure and the 
+navigation of the DOM.</p>
+<hr>
+
+<h2>DOM Root Nodes</h2>
+<p>There are two special properties that allow access to the full document:</p>
+<ul>
+  <li>document.body - The body of the document</li>
+  <li>document.documentElement - The full document</li>
+</ul>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;p&gt;Hello World!&lt;/p&gt;<br>
+&lt;div&gt;<br>
+&lt;p&gt;The DOM is very useful!&lt;/p&gt;<br>
+&lt;p&gt;This example demonstrates the &lt;b&gt;document.body&lt;/b&gt; property.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;script&gt;<br>
+alert(document.body.innerHTML);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_body" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;&lt;p id=&quot;id02&quot;&gt;Hello!&lt;/p&gt;
+&lt;script&gt;
+ document.getElementById(&quot;id02&quot;).innerHTML = document.getElementById(&quot;id01&quot;).childNodes[0].nodeValue;
+&lt;/script&gt;
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;p&gt;Hello World!&lt;/p&gt;<br>
+&lt;div&gt;<br>
+&lt;p&gt;The DOM is very useful!&lt;/p&gt;<br>
+&lt;p&gt;This example demonstrates the &lt;b&gt;document.documentElement&lt;/b&gt; property.&lt;/p&gt;<br>
+&lt;/div&gt;<br>
+<br>
+&lt;script&gt;<br>
+alert(document.documentElement.innerHTML);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_document" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;The DOM is very useful!&lt;/p&gt;
+&lt;p&gt;This example demonstrates the &lt;b&gt;document.body&lt;/b&gt; property.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+alert(document.body.innerHTML);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The nodeName Property</h2>
+<p>The nodeName property specifies the name of a node.</p>
+<ul>
+  <li>nodeName is read-only</li>
+  <li>nodeName of an element node is the same as the tag name</li>
+  <li>nodeName of an attribute node is the attribute name</li>
+  <li>nodeName of a text node is always #text</li>
+  <li>nodeName of the document node is always #document</li>
+</ul>
+
+<div class="w3-example">
+<h3>Example</h3>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;<br>
+ &lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;<br><br>&lt;script&gt;<br>document.getElementById(&quot;id02&quot;).innerHTML 
+ = document.getElementById(&quot;id01&quot;).nodeName;<br>&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_nav_nodename" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;
+&lt;body&gt;
+
+&lt;p&gt;Hello World!&lt;/p&gt;
+&lt;div&gt;
+&lt;p&gt;The DOM is very useful!&lt;/p&gt;
+&lt;p&gt;This example demonstrates the &lt;b&gt;document.documentElement&lt;/b&gt; property.&lt;/p&gt;
+&lt;/div&gt;
+
+&lt;script&gt;
+alert(document.documentElement.innerHTML);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+<p><b>Note:</b> nodeName always contains the uppercase tag name of an HTML element.</p>
+</div>
+<hr>
+
+<h2>The nodeValue Property</h2>
+<p>The nodeValue property specifies the value of a node.</p>
+<ul>
+  <li>nodeValue for element nodes is undefined</li>
+  <li>nodeValue for text nodes is the text itself</li>
+  <li>nodeValue for attribute nodes is the attribute value</li>
+</ul>
+
+<hr>
+<h2>The nodeType Property</h2>
+<p>The nodeType property returns the type of node. nodeType is read only.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;<br>
+ &lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;<br><br>&lt;script&gt;<br>document.getElementById(&quot;id02&quot;).innerHTML 
+ = document.getElementById(&quot;id01&quot;).nodeType;<br>&lt;/script&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_dom_nav_nodetype" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;h1 id=&quot;id01&quot;&gt;My First Page&lt;/h1&gt;
+ &lt;p id=&quot;id02&quot;&gt;&lt;/p&gt;&lt;script&gt;document.getElementById(&quot;id02&quot;).innerHTML 
+ = document.getElementById(&quot;id01&quot;).nodeName;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The most important node types are:</p>
+
+<table class="w3-table-all notranslate">
+<tr>
+<th>Element type</th>
+<th>NodeType</th>
+</tr>
+<tr>
+  <td>Element</td>
+  <td>1</td>
+</tr>
+<tr>
+  <td>Attribute</td>
+  <td>2</td>
+</tr>
+<tr>
+  <td>Text</td>
+  <td>3</td>
+</tr>
+<tr>
+  <td>Comment</td>
+  <td>8</td>
+</tr>
+<tr>
+  <td>Document</td>
+  <td>9</td>
+</tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_htmldom_eventlistener.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_htmldom_nodes.asp">Next &#x276F;</a>
+</div>

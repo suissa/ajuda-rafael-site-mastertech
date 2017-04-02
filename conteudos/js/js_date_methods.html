@@ -1,0 +1,370 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Date Methods</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_date_formats.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_arrays.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Date methods let you get and set date values (years, 
+months, days, hours, minutes, seconds, milliseconds)</p>
+<hr>
+<h2>Date Get Methods</h2>
+<p>Get methods are used for getting a part of a date. Here are the most common 
+(alphabetically):</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>getDate()</td>
+<td>Get the day as a number (1-31)</td>
+</tr>
+<tr>
+<td>getDay()</td>
+<td>Get the weekday as a number (0-6)</td>
+</tr>
+<tr>
+<td>getFullYear()</td>
+<td>Get the four digit year (yyyy)</td>
+</tr>
+<tr>
+<td>getHours()</td>
+<td>Get the hour (0-23)</td>
+</tr>
+<tr>
+<td>getMilliseconds()</td>
+<td>Get the milliseconds (0-999)</td>
+</tr>
+<tr>
+<td>getMinutes()</td>
+<td>Get the minutes (0-59)</td>
+</tr>
+<tr>
+<td>getMonth()</td>
+<td>Get the month (0-11)</td>
+</tr>
+<tr>
+<td>getSeconds()</td>
+<td>Get the seconds (0-59)</td>
+</tr>
+<tr>
+<td>getTime()</td>
+<td>Get the time (milliseconds since January 1, 1970)</td>
+</tr>
+</table>
+<hr>
+
+<h2>The getTime() Method</h2>
+ 
+<p><strong>getTime()</strong> returns the number of milliseconds since January 1, 1970:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>document.getElementById(&quot;demo&quot;).innerHTML = d.getTime();<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_gettime" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();document.getElementById(&quot;demo&quot;).innerHTML = d.getTime();
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The getFullYear() Method</h2>
+  
+<p><strong>getFullYear()</strong> returns the year of a date as a four digit 
+number:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>document.getElementById(&quot;demo&quot;).innerHTML = d.getFullYear();<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_getfullyear" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();document.getElementById(&quot;demo&quot;).innerHTML = d.getFullYear();
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The getDay() Method</h2>
+  
+<p><strong>getDay()</strong> returns the weekday as a number (0-6):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>document.getElementById(&quot;demo&quot;).innerHTML = d.getDay();<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_getday" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();document.getElementById(&quot;demo&quot;).innerHTML = d.getDay();
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>In JavaScript, the first day of the week (0) means &quot;Sunday&quot;, even if some countries 
+in the world consider the first day of the week to be &quot;Monday&quot;</p>
+</div>
+
+<p>You can use an array of names, and getDay() to return the weekday as a name:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+var d = new Date();<br>
+var days = [&quot;Sunday&quot;,&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;];<br>
+document.getElementById(&quot;demo&quot;).innerHTML = days[d.getDay()];<br>
+&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_weekday" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+var d = new Date();
+var days = [&quot;Sunday&quot;,&quot;Monday&quot;,&quot;Tuesday&quot;,&quot;Wednesday&quot;,&quot;Thursday&quot;,&quot;Friday&quot;,&quot;Saturday&quot;];
+document.getElementById(&quot;demo&quot;).innerHTML = days[d.getDay()];
+&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Date Set Methods</h2>
+<p>Set methods are used for setting a part of a date. Here are the most common 
+(alphabetically):</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>setDate()</td>
+<td>Set the day as a number (1-31)</td>
+</tr>
+<tr>
+<td>setFullYear()</td>
+<td>Set the year (optionally month and day)</td>
+</tr>
+<tr>
+<td>setHours()</td>
+<td>Set the hour (0-23)</td>
+</tr>
+<tr>
+<td>setMilliseconds()</td>
+<td>Set the milliseconds (0-999)</td>
+</tr>
+<tr>
+<td>setMinutes()</td>
+<td>Set the minutes (0-59)</td>
+</tr>
+<tr>
+<td>setMonth()</td>
+<td>Set the month (0-11)</td>
+</tr>
+<tr>
+<td>setSeconds()</td>
+<td>Set the seconds (0-59)</td>
+</tr>
+<tr>
+<td>setTime()</td>
+<td>Set the time (milliseconds since January 1, 1970)</td>
+</tr>
+</table>
+<hr>
+
+<h2>The setFullYear() Method</h2>
+<p><strong>setFullYear()</strong> sets a date object to a specific date. In this example, to January 
+14, 2020:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>
+ d.setFullYear(2020, 0, 14);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_setfullyear" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();
+ d.setFullYear(2020, 0, 14);document.getElementById(&quot;demo&quot;).innerHTML = d;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The setDate() Method</h2>
+
+<p><strong>setDate()</strong> sets the day of the month (1-31):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>
+ d.setDate(20);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_setdate" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();
+ d.setDate(20);document.getElementById(&quot;demo&quot;).innerHTML = d;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The setDate() method can also be used to <strong>add days</strong> to a date:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var d = new Date();<br>
+ d.setDate(d.getDate() + 50);<br>document.getElementById(&quot;demo&quot;).innerHTML = d;<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_ahead" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var d = new Date();
+ d.setDate(d.getDate() + 50);document.getElementById(&quot;demo&quot;).innerHTML = d;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>If adding days, shifts the month or year, the changes are handled automatically by the Date object.</p>
+</div>
+
+<hr>
+<h2>Date Input - Parsing Dates</h2>
+<p>If you have a valid date string, you can use the <strong>
+Date.parse()</strong> method to convert it to milliseconds.</p>
+<p><strong>Date.parse()</strong> returns the number of milliseconds between the date and January 
+1, 1970:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var msec = Date.parse(&quot;March 21, 2012&quot;);<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = msec;<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_parse" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var msec = Date.parse(&quot;March 21, 2012&quot;);
+ document.getElementById(&quot;demo&quot;).innerHTML = msec;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>You can then use the number of milliseconds to <strong>convert it to a date</strong> object:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;script&gt;<br>
+ var msec = Date.parse(&quot;March 21, 2012&quot;);<br>var d = new Date(msec);<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = d;<br>&lt;/script&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_convert" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;script&gt;
+ var msec = Date.parse(&quot;March 21, 2012&quot;);var d = new Date(msec);
+ document.getElementById(&quot;demo&quot;).innerHTML = d;&lt;/script&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Compare Dates</h2>
+<p>Dates can easily be compared.</p>
+<p>The following example compares today&apos;s date with January 14, 2100:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var today, someday, text;<br>today = new Date();<br>someday = new Date();<br>
+ someday.setFullYear(2100, 0, 14);<br><br>if (someday &gt; today) {<br>&#xA0;&#xA0;&#xA0; text = &quot;Today is before January 14, 2100.&quot;;<br>} else {<br>&#xA0;&#xA0;&#xA0; text = &quot;Today is after January 14, 2100.&quot;;<br>}<br>document.getElementById(&quot;demo&quot;).innerHTML = text;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_date_compare" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var today, someday, text;today = new Date();someday = new Date();
+ someday.setFullYear(2100, 0, 14);if (someday &gt; today) { text = &quot;Today is before January 14, 2100.&quot;;} else { text = &quot;Today is after January 14, 2100.&quot;;}document.getElementById(&quot;demo&quot;).innerHTML = text;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>JavaScript counts months from 0 to 11. January is 0. December is 11.</p>
+</div>
+
+<hr>
+<h2>UTC Date Methods</h2>
+<p>UTC date methods are used for working UTC dates (Universal Time Zone dates):</p>
+<table class="w3-table-all notranslate">
+<tr>
+<th>Method</th>
+<th>Description</th>
+</tr>
+<tr>
+<td>getUTCDate()</td>
+<td>Same as getDate(), but returns the UTC date</td>
+</tr>
+<tr>
+<td>getUTCDay()</td>
+<td>Same as getDay(), but returns the UTC day</td>
+</tr>
+<tr>
+<td>getUTCFullYear()</td>
+<td>Same as getFullYear(), but returns the UTC year</td>
+</tr>
+<tr>
+<td>getUTCHours()</td>
+<td>Same as getHours(), but returns the UTC hour</td>
+</tr>
+<tr>
+<td>getUTCMilliseconds()</td>
+<td>Same as getMilliseconds(), but returns the UTC milliseconds</td>
+</tr>
+<tr>
+<td>getUTCMinutes()</td>
+<td>Same as getMinutes(), but returns the UTC minutes</td>
+</tr>
+<tr>
+<td>getUTCMonth()</td>
+<td>Same as getMonth(), but returns the UTC month</td>
+</tr>
+<tr>
+<td>getUTCSeconds()</td>
+<td>Same as getSeconds(), but returns the UTC seconds</td>
+</tr>
+</table>
+
+<hr>
+
+<h2>Complete JavaScript Date Reference</h2>
+<p>For a complete reference, go to our <a href="/jsref/jsref_obj_date.asp">Complete JavaScript Date Reference</a>.</p>
+<p>The reference contains descriptions and examples of all Date properties and 
+methods.</p>
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_date_formats.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_arrays.asp">Next &#x276F;</a>
+</div>

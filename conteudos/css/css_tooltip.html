@@ -1,0 +1,380 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.10:504693,0.20:504695,1.80:504714,2.00:504716,0.35:504698,0.40:504699,0.45:504700,1.30:504709,5.00:504727,3.50:504724,1.70:504713,4.00:504725,0.30:504697,0.70:504703,1.50:504711,1.60:504712,2.40:504719,0.90:504705,1.10:504707,2.80:504721,0.15:504694,1.20:504708,1.40:504710,1.90:504715,2.60:504720,4.50:504726,0.05:504692,0.25:504696,0.50:504701,0.60:504702,0.80:504704,1.00:504706,2.20:504718,3.00:504722,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_2']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 6.50);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Tooltip</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_dropdowns.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_image_gallery.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">Create tooltips with CSS.</p>
+<hr>
+<h2>Demo: Tooltip Examples</h2>
+
+<p>A tooltip is often used to specify extra information about something when the 
+user moves the mouse pointer over an element:</p>
+
+<div class="w3-row w3-center" style="margin-top:35px;margin-bottom:35px;">
+
+<div class="w3-quarter">
+  <div class="tooltip">Top
+    <span class="tooltiptext tooltip-top">Tooltip text</span>
+  </div>
+</div>
+
+<div class="w3-quarter">
+  <div class="tooltip">Right
+    <span class="tooltiptext tooltip-right">Tooltip text</span>
+  </div>
+</div>
+
+<div class="w3-quarter">
+  <div class="tooltip">Bottom
+    <span class="tooltiptext tooltip-bottom">Tooltip text</span>
+  </div>
+</div>
+
+
+<div class="w3-quarter">
+  <div class="tooltip">Left
+    <span class="tooltiptext tooltip-left">Tooltip text</span>
+  </div>
+</div>
+
+</div>
+<p style="clear:both"></p>
+<hr>
+
+<h2>Basic Tooltip</h2>
+
+<p>Create a tooltip that appears when the user moves the mouse over an element:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+&lt;style&gt;<br>/* Tooltip container */<br>.tooltip {<br>&#xA0;&#xA0;&#xA0; position: relative;<br>&#xA0;&#xA0;&#xA0; 
+display: inline-block;<br>&#xA0;&#xA0;&#xA0; border-bottom: 1px dotted 
+black; /* If you want dots under the hoverable text */<br>}<br><br>/* Tooltip text 
+*/<br>.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; visibility: hidden;<br>&#xA0;&#xA0;&#xA0; width: 120px;<br>&#xA0;&#xA0;&#xA0; 
+background-color: black;<br>&#xA0;&#xA0;&#xA0; color: #fff;<br>&#xA0;&#xA0;&#xA0; 
+text-align: center;<br>&#xA0;&#xA0;&#xA0; padding: 5px 0;<br>&#xA0;&#xA0;&#xA0; 
+border-radius: 6px;<br>&#xA0;<br>&#xA0;&#xA0;&#xA0; 
+/* Position the tooltip text - see examples below! */<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>
+&#xA0;&#xA0;&#xA0; z-index: 1;<br>}<br><br>/* Show 
+the tooltip text when you mouse over the tooltip container */<br>.tooltip:hover 
+.tooltiptext {<br>&#xA0;&#xA0;&#xA0; visibility: visible;<br>}<br>&lt;/style&gt;<br><br><span class="htmlHigh">&lt;div class=&quot;tooltip&quot;&gt;<span style="color:black !important">Hover 
+over me</span><br>
+&#xA0; &lt;span class=&quot;tooltiptext&quot;&gt;<span style="color:black;">Tooltip 
+text</span>&lt;/span&gt;<br>&lt;/div&gt;</span></div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;&lt;style&gt;/* Tooltip container */.tooltip { position: relative; 
+display: inline-block; border-bottom: 1px dotted 
+black; /* If you want dots under the hoverable text */}/* Tooltip text 
+*/.tooltip .tooltiptext { visibility: hidden; width: 120px; 
+background-color: black; color: #fff; 
+text-align: center; padding: 5px 0; 
+border-radius: 6px; 
+/* Position the tooltip text - see examples below! */ position: absolute;
+ z-index: 1;}/* Show 
+the tooltip text when you mouse over the tooltip container */.tooltip:hover 
+.tooltiptext { visibility: visible;}&lt;/style&gt;&lt;div class=&quot;tooltip&quot;&gt;Hover 
+over me
+ &lt;span class=&quot;tooltiptext&quot;&gt;Tooltip 
+text&lt;/span&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<h3>Example Explained</h3>
+<p><strong>HTML)</strong> Use a container element (like &lt;div&gt;) and add the 
+<code class="w3-codespan">&quot;tooltip&quot;</code> class to it. When the user mouse over this &lt;div&gt;, it will show the 
+tooltip text.</p>
+<p>The tooltip text is placed inside an inline element (like &lt;span&gt;) with <code class="w3-codespan">class=&quot;tooltiptext&quot;</code>.</p>
+<p><strong>CSS)</strong> The <code class="w3-codespan">tooltip</code> class use <code class="w3-codespan">position:relative</code>, 
+which is needed to position the tooltip text (<code class="w3-codespan">position:absolute</code>).
+<strong>Note:</strong> See examples below on how to position the tooltip.</p>
+<p>The <code class="w3-codespan">tooltiptext</code> class holds the actual tooltip text. It is 
+hidden by default, and will be visible on hover (see below). We have also added 
+some basic styles to it: 120px width, black background color, white text color, 
+centered text, and 5px top and bottom padding. </p>
+<p>The CSS3 <code class="w3-codespan">border-radius</code> property is used to add rounded corners to the tooltip 
+text.</p>
+<p>The <code class="w3-codespan">:hover</code> selector is used to show the tooltip text when the user moves the 
+mouse over the &lt;div&gt; with <code class="w3-codespan">class=&quot;tooltip&quot;</code>.</p>
+<hr>
+
+<h2>Positioning Tooltips</h2>
+
+<p>In this example, the tooltip is placed to the right (<code class="w3-codespan">left:105%</code>) of the &quot;hoverable&quot; 
+text (&lt;div&gt;). Also note that <code class="w3-codespan">top:-5px</code> is used to place it in the middle of its container element. 
+We use the number <strong>5</strong> because the tooltip text has a top and 
+bottom padding of 
+5px. If you increase its padding, also increase the value of the <code class="w3-codespan">top</code> property to 
+ensure that it stays in the middle (if this is something you want). The same 
+applies if you want the tooltip placed to the left.</p>
+
+<div class="w3-example">
+<h3>Right Tooltip</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; top: -5px;<br>&#xA0;&#xA0;&#xA0; 
+left: 
+105%; <br>}
+</div>
+<p>Result:</p>
+   <div class="w3-padding w3-white notranslate w3-center">
+     <div class="tooltip">Hover over me
+       <span class="tooltiptext2 tooltip-right2">Tooltip text</span>
+     </div>
+   </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_right" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext { top: -5px; 
+left: 
+105%; }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Left Tooltip</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; top: -5px;<br>&#xA0;&#xA0;&#xA0; 
+right: 
+105%; <br>}
+</div>
+<p>Result:</p>
+   <div class="w3-padding w3-white notranslate w3-center">
+     <div class="tooltip">Hover over me
+       <span class="tooltiptext2 tooltip-left2">Tooltip text</span>
+     </div>
+   </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_left" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext { top: -5px; 
+right: 
+105%; }&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you want the tooltip to appear on top or on the bottom, see examples 
+below. Note that we use the <code class="w3-codespan">margin-left</code> property with a value of minus 60 
+pixels. This is to center the tooltip above/below the hoverable text. It is set 
+to the half of the tooltip&apos;s width (120/2 = 60).</p>
+
+<div class="w3-example">
+<h3>Top Tooltip</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; width: 120px;<br>&#xA0;&#xA0;&#xA0; 
+bottom: 100%;<br>&#xA0;&#xA0;&#xA0; left: 
+50%; <br>&#xA0;&#xA0;&#xA0; margin-left: -60px; /* Use half of the width 
+(120/2 = 60), to center the tooltip */<br>}
+</div>
+<p>Result:</p>
+   <div class="w3-padding w3-white notranslate w3-center">
+     <div class="tooltip">Hover over me
+       <span class="tooltiptext2 tooltip-top2">Tooltip text</span>
+     </div>
+   </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_top" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext { width: 120px; 
+bottom: 100%; left: 
+50%;  margin-left: -60px; /* Use half of the width 
+(120/2 = 60), to center the tooltip */}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Bottom Tooltip</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; width: 120px;<br>&#xA0;&#xA0;&#xA0; top: 100%;<br>&#xA0;&#xA0;&#xA0; left: 
+50%; <br>&#xA0;&#xA0;&#xA0; margin-left: -60px; /* Use half of the width 
+(120/2 = 60), to center the tooltip */<br>}
+</div>
+<p>Result:</p>
+    <div class="w3-padding w3-white notranslate w3-center">
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext2 tooltip-bottom2">Tooltip text</span>
+      </div>
+    </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_bottom" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext { width: 120px; top: 100%; left: 
+50%;  margin-left: -60px; /* Use half of the width 
+(120/2 = 60), to center the tooltip */}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Tooltip Arrows</h2>
+
+<p>To create an arrow that should appear from a specific side of the tooltip, add &quot;empty&quot; 
+content after 
+tooltip, with the pseudo-element class <code class="w3-codespan">::after</code> together with the <code class="w3-codespan">content</code> 
+property. The arrow itself is created using borders. This will make the tooltip 
+look like a speech bubble.</p>
+<p>This example demonstrates how to add an arrow to the bottom of the tooltip:</p>
+
+<div class="w3-example">
+<h3>Bottom Arrow</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext::after {<br>&#xA0;&#xA0;&#xA0; content: &quot; &quot;;<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>&#xA0;&#xA0;&#xA0; top: 100%; 
+/* At the bottom of the tooltip */<br>&#xA0;&#xA0;&#xA0; left: 50%;<br>&#xA0;&#xA0;&#xA0; margin-left: -5px;<br>&#xA0;&#xA0;&#xA0; 
+border-width: 5px;<br>&#xA0;&#xA0;&#xA0; border-style: solid;<br>&#xA0;&#xA0;&#xA0; 
+border-color: black transparent transparent transparent;<br>}
+</div>
+   <p>Result:</p>
+   <div class="w3-padding w3-white notranslate w3-center">
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext-bottomarrow">Tooltip text</span>
+      </div>
+    </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_arrow_bottom" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext::after { content: &quot; &quot;; position: absolute; top: 100%; 
+/* At the bottom of the tooltip */ left: 50%; margin-left: -5px; 
+border-width: 5px; border-style: solid; 
+border-color: black transparent transparent transparent;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<h3>Example Explained</h3>
+<p>Position the arrow inside the tooltip: <code class="w3-codespan">top: 100%</code> will place the arrow at the 
+bottom of the tooltip. <code class="w3-codespan">left: 50%</code> will center the arrow.</p>
+
+<p><strong>Note:</strong> The <code class="w3-codespan">border-width</code> property specifies the size of the 
+arrow. If you change this, also change the <code class="w3-codespan">margin-left</code> value to the same. This 
+will keep the arrow centered.</p>
+<p>The <code class="w3-codespan">border-color</code> is used to transform the content into an arrow. We set the 
+top border to black, and the rest to transparent. If all sides were black, you 
+would end up with a black square box.</p>
+
+<p>This example demonstrates how to add an arrow to the top of the tooltip. 
+Notice that we set the bottom border color this time:</p>
+
+<div class="w3-example">
+<h3>Top Arrow</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext::after {<br>&#xA0;&#xA0;&#xA0; content: &quot; &quot;;<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>&#xA0;&#xA0;&#xA0; 
+bottom: 100%;&#xA0; /* At the top of the tooltip */<br>&#xA0;&#xA0;&#xA0; left: 50%;<br>&#xA0;&#xA0;&#xA0; margin-left: -5px;<br>&#xA0;&#xA0;&#xA0; 
+border-width: 5px;<br>&#xA0;&#xA0;&#xA0; border-style: solid;<br>&#xA0;&#xA0;&#xA0; 
+border-color: transparent transparent black transparent;<br>}
+</div>
+<p>Result:</p>
+   <div class="w3-padding w3-white notranslate w3-center">
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext-toparrow">Tooltip text</span>
+      </div>
+    </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_arrow_top" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext::after { content: &quot; &quot;; position: absolute; 
+bottom: 100%; /* At the top of the tooltip */ left: 50%; margin-left: -5px; 
+border-width: 5px; border-style: solid; 
+border-color: transparent transparent black transparent;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>This example demonstrates how to add an arrow to the left of the tooltip:</p>
+
+<div class="w3-example">
+<h3>Left Arrow</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext::after {<br>&#xA0;&#xA0;&#xA0; content: &quot; &quot;;<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>&#xA0;&#xA0;&#xA0; 
+top: 50%;<br>&#xA0;&#xA0;&#xA0; right: 100%; /* To the left of the tooltip 
+*/<br>&#xA0;&#xA0;&#xA0; margin-top: -5px;<br>&#xA0;&#xA0;&#xA0; 
+border-width: 5px;<br>&#xA0;&#xA0;&#xA0; border-style: solid;<br>&#xA0;&#xA0;&#xA0; 
+border-color: transparent black transparent transparent;<br>}
+</div>
+   <p>Result:</p>
+    <div class="w3-padding w3-white notranslate w3-center">
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext-leftarrow">Tooltip text</span>
+      </div>
+    </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_arrow_left" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext::after { content: &quot; &quot;; position: absolute; 
+top: 50%; right: 100%; /* To the left of the tooltip 
+*/ margin-top: -5px; 
+border-width: 5px; border-style: solid; 
+border-color: transparent black transparent transparent;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>This example demonstrates how to add an arrow to the right of the tooltip:</p>
+
+<div class="w3-example">
+<h3>Right Arrow</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext::after {<br>&#xA0;&#xA0;&#xA0; content: &quot; &quot;;<br>&#xA0;&#xA0;&#xA0; position: absolute;<br>
+&#xA0;&#xA0;&#xA0; top: 50%;<br>&#xA0;&#xA0;&#xA0; left: 100%; /* To the right of the 
+tooltip */<br>&#xA0;&#xA0;&#xA0; margin-top: -5px;<br>&#xA0;&#xA0;&#xA0; 
+border-width: 5px;<br>&#xA0;&#xA0;&#xA0; border-style: solid;<br>&#xA0;&#xA0;&#xA0; 
+border-color: transparent transparent transparent black;<br>}
+</div>
+   <p>Result:</p>
+    <div class="w3-padding w3-white notranslate w3-center">
+      <div class="tooltip">Hover over me
+        <span class="tooltiptext-rightarrow">Tooltip text</span>
+      </div>
+    </div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_arrow_right" class="w3-btn w3-margin-top w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext::after { content: &quot; &quot;; position: absolute;
+ top: 50%; left: 100%; /* To the right of the 
+tooltip */ margin-top: -5px; 
+border-width: 5px; border-style: solid; 
+border-color: transparent transparent transparent black;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Fade In Tooltips (Animation)</h2>
+
+<p>If you want to fade in the tooltip text when it is about to be visible, you can use the CSS3 <code class="w3-codespan">transition</code> property together with the <code class="w3-codespan">opacity</code> 
+property, and go from being completely invisible to 100% visible, in a number of specified seconds 
+(1 second in our example):</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.tooltip .tooltiptext {<br>&#xA0;&#xA0;&#xA0; opacity: 0;<br>&#xA0;&#xA0;&#xA0; 
+transition: opacity 1s;<br>}<br><br>.tooltip:hover 
+.tooltiptext {<br>&#xA0;&#xA0;&#xA0; opacity: 1;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_tooltip_transition" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.tooltip .tooltiptext { opacity: 0; 
+transition: opacity 1s;}.tooltip:hover 
+.tooltiptext { opacity: 1;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Note:</strong> You will learn more about transitions and animations later in our tutorial.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_dropdowns.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_image_gallery.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,464 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+
+<h1>JavaScript <span class="color_h1">Objects</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_validation_api.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_properties.asp">Next &#x276F;</a>
+</div>
+<hr>
+<div class="w3-panel w3-note">
+<p>In JavaScript, objects are king. If you understand objects, you understand JavaScript.</p>
+</div>
+<hr>
+
+<p>In JavaScript, almost &quot;everything&quot; is an object.</p>
+
+<ul>
+  <li>Booleans can be objects (if defined with the <strong>new</strong> keyword)</li>
+  <li>Numbers can be objects (if defined with the <strong>new</strong> keyword)</li>
+  <li>Strings can be objects (if defined with the <strong>new</strong> keyword)</li>
+  <li>Dates are always objects</li>
+  <li>Maths are always objects</li>
+    <li>Regular expressions are always objects</li>
+  <li>Arrays are always objects</li>
+  <li>Functions are always objects</li>
+    <li>Objects are always objects</li>
+</ul>
+<p>All JavaScript values, except primitives, are objects.</p>
+
+<hr>
+
+<h2>JavaScript Primitives</h2>
+<p>A <strong>primitive value</strong> is a value that has no properties or methods.</p>
+<p>A <strong>primitive data type</strong> is data that has a primitive value.</p>
+<p>JavaScript defines 5 types of primitive data types:</p>
+<ul>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>null</li>
+<li>undefined</li>
+</ul>
+
+<p>Primitive values are immutable (they are hardcoded and therefore cannot be changed).</p>
+
+<div class="w3-panel w3-note">
+<p>if x = 3.14, you can change the value of x. But you cannot change the value of 3.14.</p>
+</div>
+
+<table class="w3-table-all">
+<tr><th>Value</th><th>Type</th><th>Comment</th></tr>
+<tr><td>&quot;Hello&quot;</td><td>string</td><td>&quot;Hello&quot; is always &quot;Hello&quot;</td></tr>
+<tr><td>3.14</td><td>number</td><td>3.14 is always 3.14</td></tr>
+<tr><td>true</td><td>boolean</td><td>true is always true</td></tr>
+<tr><td>false</td><td>boolean</td><td>false is always false</td></tr>
+<tr><td>null</td><td>null (object)</td><td>null is always null</td></tr>
+<tr><td>undefined</td><td>undefined</td><td>undefined is always undefined</td></tr>
+</table>
+
+
+<hr>
+
+<h2>Objects are Variables Containing Variables</h2>
+<p>JavaScript variables can contain single values:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = &quot;John Doe&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_variable" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = &quot;John Doe&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Objects are variables too. But objects can contain many 
+values. </p>
+<p>The values are written as <strong>name : value</strong> pairs (name and value separated by a 
+colon).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_object" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>A JavaScript object is a collection of <strong>named values</strong></p>
+</div>
+
+<hr>
+<h2>Object Properties</h2>
+
+<p>The named values, in JavaScript objects, are called <strong>properties</strong>.</p>
+<table class="w3-table-all">
+ <tr>
+  <th style="width:20%">Property</th>
+  <th>Value</th>
+ </tr>
+ <tr>
+  <td>firstName</td>
+  <td>John</td>
+ </tr>
+ <tr>
+  <td>lastName</td>
+  <td>Doe</td>
+ </tr>
+ <tr>
+  <td>age</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>eyeColor</td>
+  <td>blue</td>
+ </tr>
+</table>
+
+<p>Objects written as name value pairs are similar to:</p>
+<ul>
+ <li>Associative arrays in PHP</li>
+ <li>Dictionaries in Python</li>
+ <li>Hash tables in C</li>
+ <li>Hash maps in Java</li>
+ <li>Hashes in Ruby and Perl</li>
+</ul>
+
+<hr>
+<h2>Object Methods</h2>
+<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
+
+<p>Object properties can be both primitive values, other objects, and functions.</p>
+
+<p>An <strong>object method</strong> is an object property containing a <strong>function 
+definition</strong>.</p>
+
+<table class="w3-table-all">
+ <tr>
+  <th style="width:20%">Property</th>
+  <th>Value</th>
+ </tr>
+ <tr>
+  <td>firstName</td>
+  <td>John</td>
+ </tr>
+ <tr>
+  <td>lastName</td>
+  <td>Doe</td>
+ </tr>
+ <tr>
+  <td>age</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>eyeColor</td>
+  <td>blue</td>
+ </tr>
+ <tr>
+  <td>fullName</td>
+  <td>function() {return this.firstName + &quot; &quot; + this.lastName;}</td>
+ </tr>
+</table>
+
+<div class="w3-panel w3-note">
+<p>JavaScript objects are containers for named values, called properties and methods.</p>
+</div>
+
+<p>You will learn more about methods in the next chapters.</p>
+
+<hr>
+<h2>Creating a JavaScript Object</h2>
+<p>With JavaScript, you can define and create your own objects.</p>
+<p>There are different ways to create new objects:</p>
+<ul>
+  <li>Define and create a single object, using an object literal.</li>
+  <li>Define and create a single object, with the keyword new.</li>
+  <li>Define an object constructor, and then create objects of the constructed type.</li>
+</ul>
+
+<div class="w3-panel w3-note">
+<p>In ECMAScript 5, an object can also be created with the function Object.create().</p>
+</div>
+
+<hr>
+<h2>Using an Object Literal</h2>
+<p>This is the easiest way to create a JavaScript Object.</p>
+<p>Using an object literal, you both define and create an object in one 
+statement.</p>
+<p>An object literal is a list of name:value pairs (like age:50) inside curly braces {}.</p>
+<p>The following example creates a new JavaScript object with four properties:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var
+person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_create_1"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var
+person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Spaces and line breaks are not important. An object definition can span multiple lines:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = {<br>&#xA0;&#xA0;&#xA0; firstName:&quot;John&quot;,<br>&#xA0;&#xA0;&#xA0; lastName:&quot;Doe&quot;,<br>&#xA0;&#xA0;&#xA0; age:50,<br>&#xA0;&#xA0;&#xA0; eyeColor:&quot;blue&quot;<br>};
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_create_2"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = { firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Using the JavaScript Keyword new</h2>
+<p>The following example also creates a new JavaScript object with four properties:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+ var
+person = new Object();<br>
+person.firstName = &quot;John&quot;;<br>
+person.lastName = &quot;Doe&quot;;<br>
+person.age = 50;<br>
+person.eyeColor = &quot;blue&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_create_new" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var
+person = new Object();
+person.firstName = &quot;John&quot;;
+person.lastName = &quot;Doe&quot;;
+person.age = 50;
+person.eyeColor = &quot;blue&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The two examples above do exactly the same. There is no need to use new Object().<br>
+For simplicity, readability and execution speed, use the first one (the object literal method).</p>
+</div>
+
+<hr>
+<h2>Using an Object Constructor</h2>
+<p>The examples above are limited in many situations. They only create a single 
+object.</p>
+<p>Sometimes we like to have an &quot;object type&quot; that can be used to create many 
+objects of one type.</p>
+<p>The standard way to create an &quot;object type&quot; is to use an object constructor 
+function:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+
+function person(first, last, age, eye) {<br>
+&#xA0;&#xA0;&#xA0;
+this.firstName = first;<br>
+&#xA0;&#xA0;&#xA0;
+this.lastName = last;<br>
+&#xA0;&#xA0;&#xA0;
+this.age = age;<br>
+&#xA0;&#xA0;&#xA0;
+this.eyeColor = eye;<br>
+}<br>var
+myFather = new person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);<br>
+var myMother = new person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_constructor" target="_blank"></a><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;function person(first, last, age, eye) {
+
+this.firstName = first;
+
+this.lastName = last;
+
+this.age = age;
+
+this.eyeColor = eye;
+}var
+myFather = new person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);
+var myMother = new person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The above function (person) is an object constructor.</p>
+<p>Once you have an object constructor, you can create new objects of the same 
+type:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var myFather = new person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);<br>
+var myMother = new person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var myFather = new person(&quot;John&quot;, &quot;Doe&quot;, 50, &quot;blue&quot;);
+var myMother = new person(&quot;Sally&quot;, &quot;Rally&quot;, 48, &quot;green&quot;);&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>The <em><strong>this</strong></em> Keyword</h2>
+
+<p>In JavaScript, the thing called <strong>this</strong>, is the object that 
+&quot;owns&quot; the JavaScript code.</p>
+
+<p>The value of <strong>this</strong>, when used in a function, is the object that &quot;owns&quot; the function.</p>
+
+<p>The value of <strong>this</strong>, when used in an object, is the object 
+itself.</p>
+<p>The <strong>this</strong> keyword in an object constructor does not have a 
+value. It is only a substitute for the new object.</p>
+<p>The value of <strong>this</strong> will become the new object when the 
+constructor is used to create an object.</p>
+
+<div class="w3-panel w3-note">
+<p>Note that <strong>this</strong> is not a variable.
+It is a keyword. You cannot change the value of <strong>this</strong>.</p>
+</div>
+
+<hr>
+<h2>Built-in JavaScript Constructors</h2>
+<p>JavaScript has built-in constructors for native objects:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x1 = new Object();&#xA0;&#xA0;&#xA0; // A new Object object<br>
+var x2 = new String();&#xA0;&#xA0;&#xA0; // A new String object<br>
+var x3 = new Number();&#xA0;&#xA0;&#xA0; // A new Number object<br>
+var x4 = new Boolean();&#xA0;&#xA0; // A new Boolean object<br>
+var x5 = new Array();&#xA0;&#xA0;&#xA0;&#xA0; // A new Array object<br>
+var x6 = new RegExp();&#xA0;&#xA0;&#xA0; // A new RegExp object<br>
+var x7 = new Function();&#xA0; // A new Function object<br>
+var x8 = new Date();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // A new Date object
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_builtin" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x1 = new Object(); // A new Object object
+var x2 = new String(); // A new String object
+var x3 = new Number(); // A new Number object
+var x4 = new Boolean(); // A new Boolean object
+var x5 = new Array(); // A new Array object
+var x6 = new RegExp(); // A new RegExp object
+var x7 = new Function(); // A new Function object
+var x8 = new Date(); // A new Date object&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The Math() object is not in the list. Math is a global object. The new keyword cannot be used on 
+Math.</p>
+
+<hr>
+<h2>Did You Know?</h2>
+<p>As you can see, JavaScript has object versions of the primitive 
+data types String, Number, and Boolean.</p>
+<p>There is no reason to create complex objects. Primitive values execute much faster.</p>
+
+<p>And there is no reason to use new Array(). Use array literals instead: []</p>
+<p>And there is no reason to use new RegExp(). Use pattern literals instead: /()/</p>
+<p>And there is no reason to use new Function(). Use function expressions instead: 
+function () {}.</p>
+<p>And there is no reason to use new Object(). Use object literals instead: {}</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var x1 = {};&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new object<br>
+var x2 = &quot;&quot;;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive string<br>
+var x3 = 0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive number<br>
+var x4 = false;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new primitive boolean<br>
+var x5 = [];&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new array object<br>
+var x6 = /()/&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // new regexp object<br>
+var x7 = function(){};&#xA0;&#xA0;// new function object</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_best" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x1 = {}; // new object
+var x2 = &quot;&quot;; // new primitive string
+var x3 = 0; // new primitive number
+var x4 = false; // new primitive boolean
+var x5 = []; // new array object
+var x6 = /()/ // new regexp object
+var x7 = function(){};// new function object&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+
+<hr>
+
+<h2>String Objects</h2>
+<p>Normally, strings are created as primitives: <strong>var firstName = &quot;John&quot;</strong></p>
+<p>But strings can also be created as objects using the <strong>new</strong> keyword: <strong>var 
+firstName = new 
+String(&quot;John&quot;)</strong></p>
+<p>Learn why strings should not be created as object in the chapter
+<a href="js_strings.asp">JS Strings</a>. </p>
+<hr>
+
+<h2>Number Objects</h2>
+<p>Normally, numbers are created as primitives: <strong>var x = 123</strong></p>
+<p>But numbers can also be created as objects using the <strong>new</strong> keyword: <strong>var x = new 
+Number(123)</strong></p>
+<p>Learn why numbers should not be created as object in the chapter
+<a href="js_numbers.asp">JS Numbers</a>. </p>
+<hr>
+
+<h2>Boolean Objects</h2>
+<p>Normally, booleans are created as primitives: <strong>var x = 
+false</strong></p>
+<p>But booleans can also be created as objects using the <strong>new</strong> keyword: <strong>var x = new 
+Boolean(false)</strong></p>
+<p>Learn why booleans should not be created as object in the chapter
+<a href="js_booleans.asp">JS Booleans</a>. </p>
+<hr>
+
+<h2>JavaScript Objects are Mutable</h2>
+<p>Objects are mutable: They are addressed by reference, not by value.</p>
+<p>If person is an object, the following statement will not create a copy of person:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var x = person;&#xA0; // This will not create a copy of person.
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = person; // This will not create a copy of person.&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The object x is <strong>not a copy</strong> of person. It <strong>is</strong> 
+person. 
+Both x and person are the same object.</p>
+<p>Any changes to x will also change person, because x and person are the same object. </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;}<br>
+ <br>var x = person;<br>
+x.age = 10;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; // This will change both x.age and person.age
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_object_mutable" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;}
+ var x = person;
+x.age = 10; // This will change both x.age and person.age&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p><strong>Note: </strong>JavaScript variables are not mutable. Only JavaScript objects.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_validation_api.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_properties.asp">Next &#x276F;</a>
+</div>

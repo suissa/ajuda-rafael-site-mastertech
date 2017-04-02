@@ -1,0 +1,168 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {0.35:504698,0.60:504702,1.30:504709,0.05:504692,0.15:504694,0.25:504696,0.30:504697,0.40:504699,1.80:504714,2.00:504716,0.50:504701,1.50:504711,4.00:504725,4.50:504726,0.20:504695,1.10:504707,1.90:504715,1.20:504708,1.60:504712,1.70:504713,2.20:504718,2.80:504721,3.00:504722,0.45:504700,0.70:504703,0.90:504705,1.00:504706,1.40:504710,2.40:504719,5.00:504727,0.10:504693,0.80:504704,2.60:504720,3.50:504724,};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-leader-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 6.50);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>AJAX <span class="color_h1">PHP Example</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_ajax_xmlfile.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_asp.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">AJAX is used to create more interactive applications.</p>
+<hr>
+
+<h2>AJAX PHP Example</h2>
+<p>The following example demonstrates how a web page can communicate with a 
+web server while a user types characters in an input field:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-padding w3-white notranslate">
+<p><b>Start typing a name in the input field below:</b></p>
+<form action=""> 
+First name: <input type="text" id="txt1" onkeyup="showHint(this.value)" size="20">
+</form>
+<p>Suggestions: <span id="txtHint"></span></p> 
+</div>
+<br>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;html&gt;&lt;head&gt;&lt;script&gt;function showHint(str) { if (str.length == 0) {  document.getElementById(&quot;txtHint&quot;).innerHTML = &quot;&quot;; return; } else {  var xmlhttp = new XMLHttpRequest();  xmlhttp.onreadystatechange = function() { if (this.readyState == 4 &amp;&amp; this.status == 200) { document.getElementById(&quot;txtHint&quot;).innerHTML = this.responseText;  } };  xmlhttp.open(&quot;GET&quot;, &quot;gethint.php?q=&quot; + str, true); xmlhttp.send(); }}&lt;/script&gt;&lt;/head&gt;&lt;body&gt;&lt;p&gt;&lt;b&gt;Start typing a name in the input field below:&lt;/b&gt;&lt;/p&gt;&lt;form&gt; First name: &lt;input type=&quot;text&quot; onkeyup=&quot;showHint(this.value)&quot;&gt;&lt;/form&gt;&lt;p&gt;Suggestions: &lt;span id=&quot;txtHint&quot;&gt;&lt;/span&gt;&lt;/p&gt;
+ &lt;/body&gt;&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Example Explained</h2>
+<p>In the example above, when a user types a character in the input field, a function 
+called &quot;showHint()&quot; is executed.</p>
+<p>The function is triggered by the onkeyup event.</p>
+<p>Here is the HTML code:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;html&gt;<br>&lt;head&gt;<br>&lt;script&gt;<br>function showHint(str) {<br>&#xA0;&#xA0;&#xA0; if (str.length == 0) { <br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; document.getElementById(&quot;txtHint&quot;).innerHTML = &quot;&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; return;<br>&#xA0;&#xA0;&#xA0; } else {<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0; var xmlhttp = new XMLHttpRequest();<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0; xmlhttp.onreadystatechange = function() {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if (this.readyState == 4 &amp;&amp; this.status == 200) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; document.getElementById(&quot;txtHint&quot;).innerHTML = this.responseText;<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; };<br>&#xA0;&#xA0;&#xA0; &#xA0;&#xA0;&#xA0; xmlhttp.open(&quot;GET&quot;, &quot;gethint.php?q=&quot; + str, true);<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; xmlhttp.send();<br>&#xA0;&#xA0;&#xA0; }<br>}<br>&lt;/script&gt;<br>&lt;/head&gt;<br>&lt;body&gt;<br><br>&lt;p&gt;&lt;b&gt;Start typing a name in the input field below:&lt;/b&gt;&lt;/p&gt;<br>&lt;form&gt; <br>First name: &lt;input type=&quot;text&quot; onkeyup=&quot;showHint(this.value)&quot;&gt;<br>&lt;/form&gt;<br>&lt;p&gt;Suggestions: &lt;span id=&quot;txtHint&quot;&gt;&lt;/span&gt;&lt;/p&gt;<br>
+ &lt;/body&gt;<br>&lt;/html&gt;</div>
+<a target="_blank" href="tryit.asp?filename=tryjs_ajax_suggest_php" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;?php
+// Array with names
+$a[] = &quot;Anna&quot;;
+$a[] = &quot;Brittany&quot;;
+$a[] = &quot;Cinderella&quot;;
+$a[] = &quot;Diana&quot;;
+$a[] = &quot;Eva&quot;;
+$a[] = &quot;Fiona&quot;;
+$a[] = &quot;Gunda&quot;;
+$a[] = &quot;Hege&quot;;
+$a[] = &quot;Inga&quot;;
+$a[] = &quot;Johanna&quot;;
+$a[] = &quot;Kitty&quot;;
+$a[] = &quot;Linda&quot;;
+$a[] = &quot;Nina&quot;;
+$a[] = &quot;Ophelia&quot;;
+$a[] = &quot;Petunia&quot;;
+$a[] = &quot;Amanda&quot;;
+$a[] = &quot;Raquel&quot;;
+$a[] = &quot;Cindy&quot;;
+$a[] = &quot;Doris&quot;;
+$a[] = &quot;Eve&quot;;
+$a[] = &quot;Evita&quot;;
+$a[] = &quot;Sunniva&quot;;
+$a[] = &quot;Tove&quot;;
+$a[] = &quot;Unni&quot;;
+$a[] = &quot;Violet&quot;;
+$a[] = &quot;Liza&quot;;
+$a[] = &quot;Elizabeth&quot;;
+$a[] = &quot;Ellen&quot;;
+$a[] = &quot;Wenche&quot;;
+$a[] = &quot;Vicky&quot;;
+ // get the q parameter from URL$q = $_REQUEST[&quot;q&quot;];$hint = &quot;&quot;;// lookup all hints from array if $q is different from &quot;&quot; if ($q !== &quot;&quot;) { $q = strtolower($q); $len=strlen($q); foreach($a as $name) { if (stristr($q, substr($name, 0, $len))) { if ($hint === &quot;&quot;) { $hint = $name;  } else { $hint .= &quot;, $name&quot;; }
+  } }}// Output &quot;no suggestion&quot; if no hint was found or output correct values 
+ echo $hint === &quot;&quot; ? &quot;no suggestion&quot; : $hint;?&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Code explanation:</p>
+<p>First, check if the input field is empty (str.length == 0). If it is, clear the 
+content of the txtHint placeholder and exit the function.</p>
+<p>However, if the input field is not empty, do the following:</p>
+<ul>
+  <li>Create an XMLHttpRequest object</li>
+  <li>Create the function to be executed when the server response is ready</li>
+  <li>Send the request off to a PHP file (gethint.php) on the server</li>
+  <li>Notice that q parameter is added gethint.php?q=&quot;+str</li>
+  <li>The str variable holds the content of the input field</li>
+</ul>
+<hr>
+
+<h2>The PHP File - &quot;gethint.php&quot;</h2>
+<p>The PHP file checks an array of names, and returns the corresponding name(s) to the 
+browser:</p>
+
+<div class="w3-code w3-border notranslate htmlHigh">
+&lt;?php<br>
+// Array with names<br>
+$a[] = &quot;Anna&quot;;<br>
+$a[] = &quot;Brittany&quot;;<br>
+$a[] = &quot;Cinderella&quot;;<br>
+$a[] = &quot;Diana&quot;;<br>
+$a[] = &quot;Eva&quot;;<br>
+$a[] = &quot;Fiona&quot;;<br>
+$a[] = &quot;Gunda&quot;;<br>
+$a[] = &quot;Hege&quot;;<br>
+$a[] = &quot;Inga&quot;;<br>
+$a[] = &quot;Johanna&quot;;<br>
+$a[] = &quot;Kitty&quot;;<br>
+$a[] = &quot;Linda&quot;;<br>
+$a[] = &quot;Nina&quot;;<br>
+$a[] = &quot;Ophelia&quot;;<br>
+$a[] = &quot;Petunia&quot;;<br>
+$a[] = &quot;Amanda&quot;;<br>
+$a[] = &quot;Raquel&quot;;<br>
+$a[] = &quot;Cindy&quot;;<br>
+$a[] = &quot;Doris&quot;;<br>
+$a[] = &quot;Eve&quot;;<br>
+$a[] = &quot;Evita&quot;;<br>
+$a[] = &quot;Sunniva&quot;;<br>
+$a[] = &quot;Tove&quot;;<br>
+$a[] = &quot;Unni&quot;;<br>
+$a[] = &quot;Violet&quot;;<br>
+$a[] = &quot;Liza&quot;;<br>
+$a[] = &quot;Elizabeth&quot;;<br>
+$a[] = &quot;Ellen&quot;;<br>
+$a[] = &quot;Wenche&quot;;<br>
+$a[] = &quot;Vicky&quot;;<br><br>
+ // get the q parameter from URL<br>$q = $_REQUEST[&quot;q&quot;];<br><br>$hint = &quot;&quot;;<br><br>// lookup all hints from array if $q is different from &quot;&quot; <br>if ($q !== &quot;&quot;) {<br>&#xA0;&#xA0;&#xA0; $q = strtolower($q);<br>&#xA0;&#xA0;&#xA0; $len=strlen($q);<br>&#xA0;&#xA0;&#xA0; foreach($a as $name) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if (stristr($q, substr($name, 0, $len))) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; if ($hint === &quot;&quot;) {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; $hint = $name;<br>&#xA0; &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; } else {<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; $hint .= &quot;, $name&quot;;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br>
+ &#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; }<br>&#xA0;&#xA0;&#xA0; }<br>}<br><br>// Output &quot;no suggestion&quot; if no hint was found or output correct values <br>
+ echo $hint === &quot;&quot; ? &quot;no suggestion&quot; : $hint;<br>?&gt;
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_ajax_xmlfile.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_ajax_asp.asp">Next &#x276F;</a>
+</div>

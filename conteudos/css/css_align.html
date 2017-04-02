@@ -1,0 +1,395 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Layout - Horizontal &amp; Vertical Align</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_inline-block.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_combinators.asp">Next &#x276F;</a>
+</div><br>
+<div style="border:3px solid green; max-width:500px; margin: auto; padding: 15px">
+  <h2>In CSS, several properties can be used to align elements horizontally and vertically.</h2>
+</div>
+<hr>
+
+<h2>Center Align Elements</h2>
+<p>To horizontally center a block element (like &lt;div&gt;), use <code class="w3-codespan">margin: auto;</code></p>
+<p>Setting the width of the element will prevent it from stretching out to the 
+edges of its container.</p>
+<p>The element will then take up the specified width, and the remaining space 
+will be split equally between the two margins:</p>
+
+<div style="margin:0 auto;width:50%;border:3px solid green;padding:10px;">
+  <p>This div element is centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center
+{<br>
+&#xA0;&#xA0;&#xA0;
+margin: auto;<br>
+&#xA0;&#xA0;&#xA0;
+width: 50%;<br>
+&#xA0;&#xA0;&#xA0;
+border: 3px solid green;<br>&#xA0;&#xA0;&#xA0; padding: 10px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_container" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center
+{
+
+margin: auto;
+
+width: 50%;
+
+border: 3px solid green; padding: 10px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><b>Note:</b> Center aligning has no effect if the <code class="w3-codespan">width</code> property is not set 
+(or set to 100%).</p>
+<hr>
+
+<h2>Center Align Text</h2>
+<p>To just center the text inside an element, use <code class="w3-codespan">text-align: center;</code></p>
+
+<div style="text-align:center;border:3px solid green">
+  <p>This text is centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center {<br>&#xA0;&#xA0;&#xA0; text-align: center;<br>&#xA0;&#xA0;&#xA0; 
+border: 3px solid green;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_text" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center { text-align: center; 
+border: 3px solid green;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Tip:</strong> For more examples on how to align text, see the <a href="css_text.asp">CSS Text</a> chapter.</p>
+<hr>
+
+<h2>Center an Image</h2>
+<p>To center an image, use <code class="w3-codespan">margin: auto;</code> and make it into a <strong>block</strong> element:</p>
+
+<img src="paris.jpg" alt="Paris" style="width:45%;display:block;margin:0 auto">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+img
+{<br>&#xA0;&#xA0;&#xA0; display: block;<br>
+&#xA0;&#xA0;&#xA0;
+margin: auto;<br>
+&#xA0;&#xA0;&#xA0;
+width: 40%;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_image" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;img
+{ display: block;
+
+margin: auto;
+
+width: 40%;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Left and Right Align - Using position</h2>
+<p>One method for aligning elements is to use <code class="w3-codespan">position: absolute;</code>:</p>
+
+<div style="position:relative;margin-bottom:180px">
+<div style="position: absolute;right: 0px;width: 300px;border: 3px solid #73AD21;padding: 10px;">
+ <p>In my younger and more vulnerable years my father gave me some advice that I&apos;ve been turning over in my mind ever since.</p>
+</div>
+</div>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.right
+{<br>
+&#xA0;&#xA0;&#xA0;
+position: absolute;<br>
+&#xA0;&#xA0;&#xA0;
+right: 0px;<br>
+&#xA0;&#xA0;&#xA0;
+width: 300px;<br>
+&#xA0;&#xA0;&#xA0; border: 3px solid #73AD21;<br>&#xA0;&#xA0;&#xA0; padding: 10px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_pos" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.right
+{
+
+position: absolute;
+
+right: 0px;
+
+width: 300px;
+ border: 3px solid #73AD21; padding: 10px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><b>Note:</b> Absolute positioned elements are removed from the 
+normal flow, and can overlap elements.</p>
+<p><strong>Tip:</strong> When aligning elements with <code class="w3-codespan">position</code>, always define
+<code class="w3-codespan">margin</code> and <code class="w3-codespan">padding</code> for
+the <code class="w3-codespan">&lt;body&gt;</code> element. This is to avoid visual differences in different browsers.</p>
+<p>There is also a problem with IE8 and earlier, when using <code class="w3-codespan">position</code>. If 
+a container element (in our case &lt;div class=&quot;container&quot;&gt;) has a specified width, 
+and the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on 
+the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE 
+declaration when using <code class="w3-codespan">position</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+margin: 0;<br>
+&#xA0;&#xA0;&#xA0;
+padding: 0;<br>
+}<br><br>
+.container
+{<br>
+&#xA0;&#xA0;&#xA0;
+position: relative;<br>
+&#xA0;&#xA0;&#xA0;
+width: 100%;<br>
+}<br><br>
+.right
+{<br>
+&#xA0;&#xA0;&#xA0;
+position: absolute;<br>
+&#xA0;&#xA0;&#xA0;
+right: 0px;<br>
+&#xA0;&#xA0;&#xA0;
+width: 300px;<br>
+&#xA0;&#xA0;&#xA0;
+background-color: #b0e0e6;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_pos_crossbrowser" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+margin: 0;
+
+padding: 0;
+}
+.container
+{
+
+position: relative;
+
+width: 100%;
+}
+.right
+{
+
+position: absolute;
+
+right: 0px;
+
+width: 300px;
+
+background-color: #b0e0e6;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Left and Right Align - Using float</h2>
+<p>Another method for aligning elements is to use the <code class="w3-codespan">float</code> property:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.right
+{<br>
+&#xA0;&#xA0;&#xA0;
+float: right;<br>
+&#xA0;&#xA0;&#xA0;
+width: 300px;<br>
+&#xA0;&#xA0;&#xA0; border: 3px solid #73AD21;<br>&#xA0;&#xA0;&#xA0; padding: 10px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_float" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.right
+{
+
+float: right;
+
+width: 300px;
+ border: 3px solid #73AD21; padding: 10px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Tip:</strong> When aligning elements with <code class="w3-codespan">float</code>, always define <code class="w3-codespan">margin</code> and 
+<code class="w3-codespan">padding</code> for
+the <code class="w3-codespan">&lt;body&gt;</code> element. This is to avoid visual differences in different browsers.</p>
+<p>There is also a problem with IE8 and earlier, when using <code class="w3-codespan">float</code>. If 
+the !DOCTYPE declaration is missing, IE8 and earlier versions will add a 17px margin on 
+the right side. This seems to be space reserved for a scrollbar. So, always set the !DOCTYPE 
+declaration when using <code class="w3-codespan">float</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+margin: 0;<br>
+&#xA0;&#xA0;&#xA0;
+padding: 0;<br>
+}<br><br>
+.right
+{<br>
+&#xA0;&#xA0;&#xA0;
+float: right;<br>
+&#xA0;&#xA0;&#xA0;
+width: 300px;<br>
+&#xA0;&#xA0;&#xA0;
+background-color: #b0e0e6;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_float_crossbrowser" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+margin: 0;
+
+padding: 0;
+}
+.right
+{
+
+float: right;
+
+width: 300px;
+
+background-color: #b0e0e6;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Center Vertically - Using padding</h2>
+<p>There are many ways to center an element vertically in CSS. A simple solution is to use top and bottom <code class="w3-codespan">padding</code>:</p>
+
+<div style="border:3px solid green;padding:70px 2px;">
+  <p>I am vertically centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center {<br>&#xA0;&#xA0;&#xA0; padding: 70px 0;<br>&#xA0;&#xA0;&#xA0; border: 3px solid 
+green;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_padding" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center { padding: 70px 0; border: 3px solid 
+green;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>To center both vertically and horizontally, use <code class="w3-codespan">padding</code> and <code class="w3-codespan">text-align: center</code>:</p>
+
+<div style="border:3px solid green;padding:70px 2px;;text-align:center;">
+  <p>I am vertically and horizontally centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center {<br>&#xA0;&#xA0;&#xA0; padding: 70px 0;<br>&#xA0;&#xA0;&#xA0; border: 3px solid 
+green;<br>&#xA0;&#xA0;&#xA0; text-align: center;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_padding2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center { padding: 70px 0; border: 3px solid 
+green; text-align: center;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Center Vertically - Using line-height</h2>
+<p>Another trick is to use the <code class="w3-codespan">line-height</code> property with a value that is equal 
+to the <code class="w3-codespan">height</code> property.</p>
+
+<div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+  <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">I am vertically and horizontally centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center {<br>&#xA0;&#xA0;&#xA0; line-height: 200px;<br>&#xA0;&#xA0;&#xA0; 
+height: 200px;<br>&#xA0;&#xA0;&#xA0; border: 3px solid green;<br>&#xA0;&#xA0;&#xA0; 
+text-align: center;<br>}<br><br>/* If the text has multiple lines, add the 
+following: */<br>.center p {<br>&#xA0;&#xA0;&#xA0; 
+line-height: 1.5;<br>&#xA0;&#xA0;&#xA0; display: inline-block;<br>&#xA0;&#xA0;&#xA0; 
+vertical-align: middle;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_line-height" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center { line-height: 200px; 
+height: 200px; border: 3px solid green; 
+text-align: center;}/* If the text has multiple lines, add the 
+following: */.center p { 
+line-height: 1.5; display: inline-block; 
+vertical-align: middle;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Center Vertically - Using position &amp; transform</h2>
+<p>If <code class="w3-codespan">padding</code> and <code class="w3-codespan">line-height</code> is not an option, a third solution is to use positioning and the <code class="w3-codespan">transform</code> property:</p>
+
+<div style="line-height:200px; height:200px;border:3px solid green;text-align:center;">
+ <p style=" line-height:1.2; display:inline-block; vertical-align:middle;">I am vertically and horizontally centered.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+.center { <br>&#xA0;&#xA0;&#xA0; height: 200px;<br>&#xA0;&#xA0;&#xA0; position: relative;<br>&#xA0;&#xA0;&#xA0; border: 3px solid green; <br>}<br><br>
+.center p {<br>&#xA0;&#xA0;&#xA0; margin: 0;<br>&#xA0;&#xA0;&#xA0; 
+position: absolute;<br>&#xA0;&#xA0;&#xA0; top: 50%;<br>&#xA0;&#xA0;&#xA0; 
+left: 50%;<br>&#xA0;&#xA0;&#xA0; transform: translate(-50%, -50%);<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_align_transform" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;.center {  height: 200px; position: relative; border: 3px solid green; }
+.center p { margin: 0; 
+position: absolute; top: 50%; 
+left: 50%; transform: translate(-50%, -50%);}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p><strong>Tip:</strong> You will learn more about the transform property in in our <a href="css3_2dtransforms.asp">2D Transforms 
+Chapter</a>.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_align1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_align2" target="_blank">Exercise 2 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_inline-block.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_combinators.asp">Next &#x276F;</a>
+</div>

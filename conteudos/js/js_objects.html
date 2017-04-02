@@ -1,0 +1,348 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.50);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Objects</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_functions.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_scope.asp">Next &#x276F;</a>
+</div>
+
+<hr>
+<h2>Real Life Objects, Properties, and Methods</h2>
+
+<p>In real life, a car is an <strong>object</strong>. </p>
+<p>A car has <strong>properties</strong> like weight and color, and <strong>methods</strong> like start and stop:</p>
+
+<div class="w3-responsive">
+<table class="w3-table-all">
+<tr>
+<th style="width:370px">
+Object
+</th>
+<th>
+Properties
+</th>
+<th>
+Methods
+</th>
+</tr>
+<tr>
+<td>
+<img src="objectExplained.gif" style="width:368px;height:230px;">
+</td>
+<td>
+<br>car.name = Fiat<br><br>
+car.model = 500<br><br>
+car.weight = 850kg<br><br>
+car.color = white
+</td>
+<td>
+<br>car.start()<br><br>
+car.drive()<br><br>
+car.brake()
+<br><br>car.stop()</td>
+</tr>
+</table>
+</div>
+
+<p>All cars have the same <strong>properties</strong>, but the property values differ from 
+car to car.</p>
+<p>All cars have the same <strong>methods</strong>, but the methods are performed at different times.</p>
+<hr>
+
+<h2>JavaScript Objects</h2>
+<p>You have already learned that JavaScript variables are 
+containers for data values.</p>
+<p>This code assigns a <strong>simple value</strong> (Fiat) to 
+a <strong>variable</strong> named car: </p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var car = &quot;Fiat&quot;;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_variable" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var car = &quot;Fiat&quot;;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Objects are variables too. But objects can contain many 
+values. </p>
+<p>This code assigns <strong>many values</strong> (Fiat, 500, white) to a
+<strong>variable</strong> 
+named car:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var car = {type:&quot;Fiat&quot;, model:&quot;500&quot;, color:&quot;white&quot;};
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_object" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var car = {type:&quot;Fiat&quot;, model:&quot;500&quot;, color:&quot;white&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>The values are written as <strong>name:value</strong> pairs (name and value separated by a 
+colon).</p>
+
+<div class="w3-panel w3-note">
+<p>JavaScript objects are containers for <strong>named values</strong>.</p>
+</div>
+
+<hr>
+<h2>Object Properties</h2>
+
+<p>The name:values pairs (in JavaScript objects) are called <strong>properties</strong>.</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<table class="w3-table-all">
+ <tr>
+  <th style="width:20%">Property</th>
+  <th>Property Value</th>
+ </tr>
+ <tr>
+  <td>firstName</td>
+  <td>John</td>
+ </tr>
+ <tr>
+  <td>lastName</td>
+  <td>Doe</td>
+ </tr>
+ <tr>
+  <td>age</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>eyeColor</td>
+  <td>blue</td>
+ </tr>
+</table>
+<hr>
+
+<h2>Object Methods</h2>
+<p>Methods are <strong>actions</strong> that can be performed on objects.</p>
+
+<p>Methods are stored in properties as <strong>function 
+definitions</strong>.</p>
+
+<table class="w3-table-all">
+ <tr>
+  <th style="width:20%">Property</th>
+  <th>Property Value</th>
+ </tr>
+ <tr>
+  <td>firstName</td>
+  <td>John</td>
+ </tr>
+ <tr>
+  <td>lastName</td>
+  <td>Doe</td>
+ </tr>
+ <tr>
+  <td>age</td>
+  <td>50</td>
+ </tr>
+ <tr>
+  <td>eyeColor</td>
+  <td>blue</td>
+ </tr>
+ <tr>
+  <td>fullName</td>
+  <td>function() {return this.firstName + &quot; &quot; + this.lastName;}</td>
+ </tr>
+</table>
+
+<div class="w3-panel w3-note">
+<p>JavaScript objects are containers for named values called properties or methods.</p>
+</div>
+
+<hr>
+<h2>Object Definition</h2>
+<p>You define (and create) a JavaScript object with an object literal:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_create_1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = {firstName:&quot;John&quot;, lastName:&quot;Doe&quot;, age:50, eyeColor:&quot;blue&quot;};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Spaces and line breaks are not important. An object definition can span multiple lines: </p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+var person = {<br>
+&#xA0;&#xA0;&#xA0; firstName:&quot;John&quot;,<br>
+&#xA0;&#xA0;&#xA0; lastName:&quot;Doe&quot;,<br>
+&#xA0;&#xA0;&#xA0; age:50,<br>
+&#xA0;&#xA0;&#xA0; eyeColor:&quot;blue&quot;<br>
+};
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_create_2" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var person = {
+ firstName:&quot;John&quot;,
+ lastName:&quot;Doe&quot;,
+ age:50,
+ eyeColor:&quot;blue&quot;
+};&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Accessing Object Properties</h2>
+<p>You can access object properties in two ways: </p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+<i>objectName.propertyName</i></div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;objectName.propertyName&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>or</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+<i>objectName[&quot;propertyName&quot;]</i>
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;objectName[&quot;propertyName&quot;]&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example1</h3>
+<div class="w3-code notranslate jsHigh">
+person.lastName;
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_properties_1"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;person.lastName;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example2</h3>
+<div class="w3-code notranslate jsHigh">
+ person[&quot;lastName&quot;];
+</div>
+<a target="_blank" class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_properties_2"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;person[&quot;lastName&quot;];&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Accessing Object Methods</h2>
+
+<p>You access an object method with the following syntax:</p>
+
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+<i>objectName.methodName()</i>
+</div><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;objectName.methodName()&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate">
+name = person.fullName();</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_method" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;name = person.fullName();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you access the fullName <strong>method</strong>, without (), it 
+will return the <strong>function definition</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate">
+name = person.fullName;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_objects_function" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;name = person.fullName;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>A method is actually a function definition stored as a property value.</p>
+</div>
+
+<hr>
+
+<h2>Do Not Declare Strings, Numbers, and Booleans as Objects!</h2>
+<p>When a JavaScript variable is declared with the keyword &quot;new&quot;, the variable is 
+created as 
+an object: </p>
+<div class="w3-example">
+<div class="w3-code notranslate jsHigh">
+var x = new String();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Declares x as a String object<br>
+var y =&#xA0;new Number();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Declares y as a Number object<br>
+var z =&#xA0;new Boolean();&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;&#xA0;// Declares z as a Boolean object
+</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;var x = new String();// Declares x as a String object
+var y =new Number();// Declares y as a Number object
+var z =new Boolean();// Declares z as a Boolean object&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Avoid String, Number, and Boolean objects. They complicate your code and slow down  
+execution speed.</p>
+
+<div class="w3-panel w3-note">
+<p>You will learn more about objects later in this tutorial.</p>
+</div>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_objects1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_objects2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_objects3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_functions.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_scope.asp">Next &#x276F;</a>
+</div>

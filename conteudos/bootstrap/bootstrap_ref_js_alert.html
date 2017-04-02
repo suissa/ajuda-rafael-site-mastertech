@@ -1,0 +1,156 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">JS Alert</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_affix.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_button.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JS Alert (alert.js)</h2>
+<p>The alert plugin include options and methods to close alert messages. </p>
+<p>For a tutorial about Alerts, read our <a href="bootstrap_alerts.asp">Bootstrap Alerts Tutorial</a>.</p>
+<hr>
+<h2>The Alert Plugin Classes</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:22%;">Class</th>
+    <th style="width:78%;">Description</th>
+    <th style="width:12%;">Example</th>
+  </tr>
+  <tr>
+    <td>.alert</td>
+    <td>Creates an alert message box</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert1&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-danger</td>
+    <td>Red alert. Indicates a dangerous or potentially negative action</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_danger&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-dismissible</td>
+    <td>Indicates a closable alert box. Together with the <code>.close</code> class, this class is used to   close the alert (adds extra padding)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_close2&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-info</td>
+    <td>Light-blue alert.Indicates a neutral informative change or action</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_info&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-link</td>
+    <td>Used on links inside alerts to provide matching colored links</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_link&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-success</td>
+    <td>Green alert. Indicates a successful or positive action</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_success&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.alert-warning</td>
+    <td>Yellow alert. Indicates caution should be taken with this action</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_warning&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.close</td>
+    <td>Styles the close button for the alert message (floats right with a specified font-size, color, etc.)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_close2&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+<hr>
+
+<h2>Close Alerts Via data-* Attributes</h2>
+<p>Add <code class="w3-codespan">data-dismiss=&quot;alert&quot;</code> to a link or a button element to close the 
+alert message.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; 
+aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_alert&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; class=&quot;close&quot; data-dismiss=&quot;alert&quot; 
+aria-label=&quot;close&quot;&gt;&amp;times;&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Close Alerts Via JavaScript</h2>
+<p>Close manually with:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+$(&apos;.close&apos;).alert();
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_alert_js&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;$(&apos;.close&apos;).alert();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Alert Options</h2>
+<table class="w3-table-all notranslate">
+  <tr>
+    <td>None</td>
+  </tr>
+</table>
+
+<h2>Alert Methods</h2>
+<p>The following table lists all available alert methods.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Method</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>.alert(&quot;close&quot;)</td>
+    <td>Closes the alert message</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_close&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+</div>
+
+<h2>Alert Events</h2>
+<p>The following table lists all available alert events.</p>
+<div class="table-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>close.bs.alert</td>
+    <td>Occurs when the alert message is about to be closed</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_event_close&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>closed.bs.alert</td>
+    <td>Occurs when the alert message has been closed</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_alert_event_closed&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+</div>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_affix.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_ref_js_button.asp">Next &#x276F;</a>
+</div>

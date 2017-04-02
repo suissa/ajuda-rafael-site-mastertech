@@ -1,0 +1,175 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Events</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_scope.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_strings.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">HTML events are <strong>&quot;things&quot;</strong> that happen to HTML elements.</p>
+<p class="intro">When JavaScript is used in HTML pages, JavaScript can <strong>
+&quot;react&quot;</strong> on 
+these events.</p>
+<hr>
+<h2>HTML Events</h2>
+<p>An HTML event can be something the browser does, or something a user does.</p>
+<p>Here are some examples of HTML events:</p>
+<ul>
+  <li>An HTML web page has finished loading</li>
+  <li>An HTML input field was changed</li>
+  <li>An HTML button was clicked</li>
+</ul>
+<p>Often, when events happen, you may want to do something.</p>
+<p>JavaScript lets you execute code when events are detected.</p>
+<p>HTML allows event handler attributes, <strong>with JavaScript code</strong>, to be added to HTML elements.</p>
+<p>With single quotes:</p>
+<div class="w3-code w3-border notranslate">
+ <div>
+&lt;<em>some-HTML-element</em>
+ <em>some-event</em>=<strong>&apos;</strong><em><strong>some JavaScript</strong></em><strong>&apos;</strong>&gt;</div></div>
+
+<p>With double quotes:</p>
+<div class="w3-code w3-border notranslate">
+<div>
+ &lt;<em>some-HTML-element</em>
+ <em>some-event</em>=<strong>&quot;</strong><em><strong>some JavaScript</strong></em><strong>&quot;</strong>&gt;</div></div>
+
+<p>In the following example, an onclick attribute (with code), is added to a button element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_event_onclick1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;some-HTML-element
+ some-event=&apos;some JavaScript&apos;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>In the example above, the JavaScript code changes the content of 
+the element with id=&quot;demo&quot;.</p>
+<p>In the next example, the code changes the content of 
+its own element (using <strong>this</strong>.innerHTML): </p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button onclick=&quot;this.innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;<br>
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_event_onclick" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;some-HTML-element
+ some-event=&quot;some JavaScript&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>JavaScript code is often several lines long. It is more common to see event attributes calling functions:</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;button onclick=&quot;displayDate()&quot;&gt;The time is?&lt;/button&gt;</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_events1" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;button onclick=&quot;document.getElementById(&apos;demo&apos;).innerHTML = Date()&quot;&gt;The time is?&lt;/button&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Common HTML Events</h2>
+<p>Here is a list of some common HTML events:</p>
+<table class="w3-table-all" style="width: 100%">
+<tr>
+  <th>Event</th>
+  <th>Description</th>
+</tr>
+<tr>
+  <td>onchange</td>
+  <td>An HTML element has been changed</td>
+</tr>
+<tr>
+  <td>onclick</td>
+  <td>The user clicks an HTML element</td>
+</tr>
+<tr>
+  <td>onmouseover</td>
+  <td>The user moves the mouse over an HTML element</td>
+</tr>
+<tr>
+  <td>onmouseout</td>
+  <td>The user moves the mouse away from an HTML element</td>
+</tr>
+<tr>
+  <td>onkeydown</td>
+  <td>The user pushes a keyboard key</td>
+</tr>
+<tr>
+  <td>onload</td>
+  <td>The browser has finished loading the page</td>
+</tr>
+</table>
+<p>The list is much longer: <a href="/jsref/dom_obj_event.asp">W3Schools JavaScript Reference HTML DOM Events</a>.</p>
+<hr>
+
+<h2>What can JavaScript Do?</h2>
+<p>Event handlers can be used to handle, and verify, user input, user actions, 
+and browser actions:</p>
+<ul>
+  <li>Things that should be done every time a page loads</li>
+  <li>Things that should be done when the page is closed</li>
+  <li>Action that should be performed when a user clicks a button</li>
+  <li>Content that should be verified when a user inputs data</li>
+  <li>And more ...</li>
+</ul>
+<p>Many different methods can be used to let JavaScript work with events:</p>
+<ul>
+  <li>HTML event attributes can execute JavaScript code directly</li>
+  <li>HTML event attributes can call JavaScript functions</li>
+  <li>You can assign your own event handler functions to HTML elements</li>
+  <li>You can prevent events from being sent or being handled</li>
+  <li>And more ...</li>
+</ul>
+
+<div class="w3-panel w3-note">
+<p>You will learn a lot more about events and event handlers in the HTML DOM chapters.</p>
+</div>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_events1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_events2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_events3" target="_blank">Exercise 3 &#xBB;</a>
+</p>
+<br>
+
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_scope.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_strings.asp">Next &#x276F;</a>
+</div>

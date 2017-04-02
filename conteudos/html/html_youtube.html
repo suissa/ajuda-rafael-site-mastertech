@@ -1,0 +1,149 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:inline-block;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:728px;" class="ezoic-ad leader-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-leader-1-0" ezaw="728" ezah="90" style="position:relative;z-index:0;display:block;" class="ezoic-ad"><script data-cfasync="false" type="text/javascript" style="display:none;">eval(ez_write_tag([[728,90],'w3schools_com-leader-1','ezslot_3']));</script></span></span>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>HTML <span class="color_h1">YouTube Videos</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_object.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html5_geolocation.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The easiest way to play videos in HTML, is to use YouTube.</p>
+<hr>
+
+<h2>Struggling with Video Formats?</h2>
+<p>Earlier in this tutorial, you have seen that you might have to convert your 
+videos to different formats to make them play in all browsers.</p>
+<p>Converting videos to different formats can be difficult and time-consuming.</p>
+<p>An easier solution is to let YouTube play the videos in your web page.</p>
+<hr>
+
+<h2>YouTube Video Id</h2>
+<p>YouTube will display an id (like XGSy3_Czz8k), when you save (or play) a video.</p>
+<p>You can use this id, and refer to your video in the HTML code.</p>
+<hr>
+
+<h2>Playing a YouTube Video in HTML</h2>
+<p>To play your video on a web page, do the following:</p>
+<ul>
+ <li>Upload the video to YouTube</li>
+ <li>Take a note of the video id</li>
+ <li>Define an &lt;iframe&gt; element in your web page</li>
+ <li>Let the src attribute point to the video URL</li>
+ <li>Use the width and height attributes to specify the dimension of the player</li>
+ <li>Add any other parameters to the URL (see below)</li>
+</ul>
+
+<div class="w3-example">
+<h3>Example - Using iFrame (recommended)</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot;<br>src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;<br>
+&lt;/iframe&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtubeiframe" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;iframe width=&quot;420&quot; height=&quot;315&quot;src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;
+&lt;/iframe&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>YouTube Autoplay</h2>
+<p>You can have your video start playing automatically when a user visits that 
+page by adding a simple parameter to your YouTube URL.</p>
+<div class="w3-panel w3-note">
+<p><strong>Note:</strong> Take careful consideration when deciding to autoplay your videos. 
+Automatically starting a video can annoy your visitor and end up causing more harm than good.</p>
+</div>
+
+<p>Value 0 (default): The video will not play automatically when the player loads.</p>
+<p>Value 1: The video will play automatically when the player loads.</p>
+<div class="w3-example">
+<h3>YouTube - Autoplay</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot;<br>src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1&quot;&gt;<br>
+&lt;/iframe&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtubeiframe_autoplay" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;iframe width=&quot;420&quot; height=&quot;315&quot;src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?autoplay=1&quot;&gt;
+&lt;/iframe&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+
+<h2>YouTube Playlist</h2>
+<p>A comma separated list of videos to play (in addition to the original URL).</p>
+<hr>
+
+<h2>YouTube Loop</h2>
+<p>Value 0 (default): The video will play only once.</p>
+<p>Value 1: The video will loop (forever).</p>
+<div class="w3-example">
+<h3>YouTube - Loop</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot;<br>src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&amp;loop=1&quot;&gt;<br>
+&lt;/iframe&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtubeiframe_loop" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;iframe width=&quot;420&quot; height=&quot;315&quot;src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?playlist=XGSy3_Czz8k&amp;loop=1&quot;&gt;
+&lt;/iframe&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>YouTube Controls</h2>
+<p>Value 0: Player controls does not display.</p>
+<p>Value 1 (default): Player controls display.</p>
+<div class="w3-example">
+<h3>YouTube - Controls</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;iframe width=&quot;420&quot; height=&quot;315&quot;<br>src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?controls=0&quot;&gt;<br>
+&lt;/iframe&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtubeiframe_controls" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;iframe width=&quot;420&quot; height=&quot;315&quot;src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k?controls=0&quot;&gt;
+&lt;/iframe&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>YouTube - Using &lt;object&gt; or &lt;embed&gt;</h2>
+<p><strong>Note:</strong> YouTube &lt;object&gt; and &lt;embed&gt; were deprecated from January 2015. You should migrate your 
+videos to use &lt;iframe&gt; instead.</p>
+<div class="w3-example">
+<h3>Example - Using &lt;object&gt; (deprecated)</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;object width=&quot;420&quot; height=&quot;315&quot;<br>
+data=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;<br>&lt;/object&gt;<br>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtubeobject" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;object width=&quot;420&quot; height=&quot;315&quot;
+data=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;&lt;/object&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-example">
+<h3>Example - Using &lt;embed&gt; (deprecated)</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;embed width=&quot;420&quot; height=&quot;315&quot;<br>
+src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;<br>
+</div>
+<a target="_blank" href="tryit.asp?filename=tryhtml_youtube_embed" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;embed width=&quot;420&quot; height=&quot;315&quot;
+src=&quot;https://www.youtube.com/embed/XGSy3_Czz8k&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_object.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html5_geolocation.asp">Next &#x276F;</a>
+</div>

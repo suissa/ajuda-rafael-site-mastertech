@@ -1,0 +1,94 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap Grid - <span class="color_h1">Small Devices</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_grid_stacked_to_horizontal.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_medium.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Bootstrap Grid Example: Small Devices</h2>
+<p>Assume we have a simple layout with two columns. We want the columns to be 
+split 25%/75% for small devices.</p>
+<p><strong>Tip:</strong> Small devices are defined as having a screen width from 
+768 pixels to 991 pixels.</p>
+<p>For small devices we will use the <code class="w3-codespan">.col-sm-*</code> classes.</p>
+<p>We will add the following classes to our two columns:</p>
+
+<div class="w3-example htmlHigh">
+<div class="w3-code notranslate">
+&lt;div class=&quot;col-sm-3&quot;&gt;....&lt;/div&gt;<br>
+&lt;div class=&quot;col-sm-9&quot;&gt;....&lt;/div&gt;</div>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;col-sm-3&quot;&gt;....&lt;/div&gt;
+&lt;div class=&quot;col-sm-9&quot;&gt;....&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Now Bootstrap is going to say &quot;at the small size, look for classes with 
+-sm- in them and use those&quot;.</p>
+<p>The following example will result in a 25%/75% split on small (and medium and 
+large) devices. On extra small devices, it will automatically stack (100%):</p>
+
+<div class="row w3-padding">
+  <div class="col-sm-3 w3-padding-16" style="background-color:yellow;">
+    col-sm-3
+  </div>
+  <div class="col-sm-9 w3-padding-16" style="background-color:pink;">
+    col-sm-9
+  </div>
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container-fluid&quot;&gt;<br>&#xA0; &lt;h1&gt;Hello World!&lt;/h1&gt;<br>&#xA0; &lt;div class=&quot;row&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-3&quot; style=&quot;background-color:yellow;&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-9&quot; style=&quot;background-color:pink;&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_grid_small&amp;stacked=h" class="w3-btn w3-margin-bottom"></a><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container-fluid&quot;&gt; &lt;h1&gt;Hello World!&lt;/h1&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-3&quot; style=&quot;background-color:yellow;&quot;&gt; &lt;p&gt;Lorem ipsum...&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-9&quot; style=&quot;background-color:pink;&quot;&gt; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+  <p><strong>Note:</strong> Make sure that the sum always adds up to 12.</p>
+</div>
+
+<p>For a 33.3%/66.6% split, you would use <code class="w3-codespan">.col-sm-4</code> and <code class="w3-codespan">.col-sm-8</code>:</p>
+
+<div class="row w3-padding">
+  <div class="col-sm-4 w3-padding-16" style="background-color:yellow;">
+    col-sm-4
+  </div>
+  <div class="col-sm-8 w3-padding-16" style="background-color:pink;">
+    col-sm-8
+  </div>
+</div>
+
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;container-fluid&quot;&gt;<br>&#xA0; &lt;h1&gt;Hello World!&lt;/h1&gt;<br>&#xA0; &lt;div class=&quot;row&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-4&quot; style=&quot;background-color:yellow;&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Lorem ipsum...&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0;&#xA0;&#xA0; &lt;div class=&quot;col-sm-8&quot; style=&quot;background-color:pink;&quot;&gt;<br>&#xA0;&#xA0;&#xA0;&#xA0;&#xA0; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt;<br>&#xA0;&#xA0;&#xA0; &lt;/div&gt;<br>&#xA0; &lt;/div&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_grid_small2&amp;stacked=h" class="w3-btn w3-margin-bottom"></a><form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;container-fluid&quot;&gt; &lt;h1&gt;Hello World!&lt;/h1&gt; &lt;div class=&quot;row&quot;&gt; &lt;div class=&quot;col-sm-4&quot; style=&quot;background-color:yellow;&quot;&gt; &lt;p&gt;Lorem ipsum...&lt;/p&gt; &lt;/div&gt; &lt;div class=&quot;col-sm-8&quot; style=&quot;background-color:pink;&quot;&gt; &lt;p&gt;Sed ut perspiciatis...&lt;/p&gt; &lt;/div&gt; &lt;/div&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+
+<p>The next chapter shows how to add a different split percent for medium devices.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_grid_stacked_to_horizontal.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_grid_medium.asp">Next &#x276F;</a>
+</div>

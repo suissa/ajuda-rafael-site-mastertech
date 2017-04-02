@@ -1,0 +1,221 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">Form Inputs</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_forms.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs2.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>Supported Form Controls</h2>
+<p>Bootstrap supports the following form controls:</p>
+<ul>
+  <li>input</li>
+  <li>textarea</li>
+  <li>checkbox</li>
+  <li>radio</li>
+  <li>select</li>
+</ul>
+<hr>
+
+<h2>Bootstrap Input</h2>
+<p>Bootstrap supports all the HTML5 input types: 
+text, password, datetime, datetime-local, date, month, time, week, number, 
+email, url, search, tel, and color. </p>
+<p><strong>Note:</strong> Inputs will NOT be fully styled if their type is not properly declared!</p>
+<div style="margin:20px 0 25px 0;">
+    <div class="form-group">
+      <label for="usr">Name:</label>
+      <input type="text" class="form-control" id="usr">
+    </div>
+    <div class="form-group">
+      <label for="pwd">Password:</label>
+      <input type="password" class="form-control" id="pwd">
+    </div>
+</div>    
+<p>The following example contains two input elements; one of type text and one of 
+type password:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0; &lt;label for=&quot;usr&quot;&gt;Name:&lt;/label&gt;<br>&#xA0; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usr&quot;&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;form-group&quot;&gt;<br>&#xA0; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt;<br>&#xA0; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_input&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;usr&quot;&gt;Name:&lt;/label&gt; &lt;input type=&quot;text&quot; class=&quot;form-control&quot; id=&quot;usr&quot;&gt;&lt;/div&gt;&lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;pwd&quot;&gt;Password:&lt;/label&gt; &lt;input type=&quot;password&quot; class=&quot;form-control&quot; id=&quot;pwd&quot;&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Textarea</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="form-group">
+      <label for="comment">Comment:</label>
+      <textarea class="form-control" rows="5" id="comment" style="max-width:100%;"></textarea>
+    </div>
+</div>
+
+<p>The following example contains a textarea:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0; &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt;<br>&#xA0; &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_textarea&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;comment&quot;&gt;Comment:&lt;/label&gt; &lt;textarea class=&quot;form-control&quot; rows=&quot;5&quot; id=&quot;comment&quot;&gt;&lt;/textarea&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Checkboxes</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 1</label>
+    </div>
+    <div class="checkbox">
+      <label><input type="checkbox" value="">Option 2</label>
+    </div>
+    <div class="checkbox disabled">
+      <label><input type="checkbox" value="" disabled>Option 3</label>
+    </div>
+</div>
+ 
+<p>Checkboxes are used if you want the user to select any number of options from 
+a list of preset options.</p>
+<p>The following example contains three checkboxes. The last option is disabled:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;checkbox&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;checkbox disabled&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;Option 3&lt;/label&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_checkbox&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;checkbox&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;checkbox disabled&quot;&gt; &lt;label&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot; disabled&gt;Option 3&lt;/label&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Use the <code class="w3-codespan">.checkbox-inline</code> class if you want the checkboxes to appear on the 
+same line:</p>
+<div style="margin:20px 0 25px 0;">
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 1
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 2
+    </label>
+    <label class="checkbox-inline">
+      <input type="checkbox" value="">Option 3
+    </label>
+</div>
+    
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;<br>&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;<br>&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 3&lt;/label&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_checkbox_inline&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 1&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 2&lt;/label&gt;&lt;label class=&quot;checkbox-inline&quot;&gt;&lt;input type=&quot;checkbox&quot; value=&quot;&quot;&gt;Option 3&lt;/label&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Radio Buttons</h2>
+<div style="margin:20px 0 25px 0;">
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 1</label>
+    </div>
+    <div class="radio">
+      <label><input type="radio" name="optradio">Option 2</label>
+    </div>
+    <div class="radio disabled">
+      <label><input type="radio" name="optradio" disabled>Option 3</label>
+    </div>
+</div>
+
+<p>Radio buttons are used if you want to limit the user to just one selection 
+from a list of preset options.</p>
+<p>The following example contains three radio buttons. The last option is disabled:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;radio&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;radio&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;<br>&lt;/div&gt;<br>&lt;div class=&quot;radio disabled&quot;&gt;<br>&#xA0; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot; disabled&gt;Option 3&lt;/label&gt;<br>
+ &lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_radio&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;radio&quot;&gt; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio&quot;&gt; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;&lt;/div&gt;&lt;div class=&quot;radio disabled&quot;&gt; &lt;label&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot; disabled&gt;Option 3&lt;/label&gt;
+ &lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Use the <code class="w3-codespan">.radio-inline</code> class if you want the radio buttons to appear on the same line:</p>
+<div style="margin:20px 0 25px 0;">
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 1
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 2
+    </label>
+    <label class="radio-inline">
+      <input type="radio" name="optradio">Option 3
+    </label>
+</div>    
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;<br>
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;<br>
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 3&lt;/label&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_radio_inline&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 1&lt;/label&gt;
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 2&lt;/label&gt;
+&lt;label class=&quot;radio-inline&quot;&gt;&lt;input type=&quot;radio&quot; name=&quot;optradio&quot;&gt;Option 3&lt;/label&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Bootstrap Select List</h2>
+
+<div style="margin:20px 0 25px 0;">
+   <div class="form-group">
+      <label for="sel1">Select list (select one):</label>
+      <select class="form-control" id="sel1">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+      </select>
+      <br>
+      <label for="sel2">Multiple select list (hold ctrl or shift (or drag with    the mouse) to select more than one):</label>
+      <select multiple class="form-control" id="sel2">
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+</div>    
+    
+<p>Select lists are used if you want to allow the user to pick from multiple options.</p>
+<p>The following example contains a dropdown list (select list):</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;div class=&quot;form-group&quot;&gt;<br>&#xA0; &lt;label for=&quot;sel1&quot;&gt;Select list:&lt;/label&gt;<br>&#xA0; &lt;select class=&quot;form-control&quot; id=&quot;sel1&quot;&gt;<br>&#xA0;&#xA0;&#xA0; &lt;option&gt;1&lt;/option&gt;<br>&#xA0;&#xA0;&#xA0; &lt;option&gt;2&lt;/option&gt;<br>&#xA0;&#xA0;&#xA0; &lt;option&gt;3&lt;/option&gt;<br>&#xA0;&#xA0;&#xA0; &lt;option&gt;4&lt;/option&gt;<br>&#xA0; &lt;/select&gt;<br>&lt;/div&gt;</div>
+<a target="_blank" href="tryit.asp?filename=trybs_form_select&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;div class=&quot;form-group&quot;&gt; &lt;label for=&quot;sel1&quot;&gt;Select list:&lt;/label&gt; &lt;select class=&quot;form-control&quot; id=&quot;sel1&quot;&gt; &lt;option&gt;1&lt;/option&gt; &lt;option&gt;2&lt;/option&gt; &lt;option&gt;3&lt;/option&gt; &lt;option&gt;4&lt;/option&gt; &lt;/select&gt;&lt;/div&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_forms.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="bootstrap_forms_inputs2.asp">Next &#x276F;</a>
+</div>

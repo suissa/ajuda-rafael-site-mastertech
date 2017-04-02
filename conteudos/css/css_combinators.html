@@ -1,0 +1,127 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Combinators</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_align.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_pseudo_classes.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>CSS Combinators</h2>
+
+<div class="w3-panel w3-note">
+  <p>A combinator is something that explains the relationship between the selectors.</p>
+</div>
+
+<!--
+<div class="w3-example w3-white">
+<p class="w3-btn w3-green w3-padding">Select all &lt;p&gt; elements inside the &lt;div&gt; element:</p>
+<div class="siblings">
+<div class="parentdiv">Div (parent)
+<p>Paragraph 1 in the div.</p>
+<div>Div in the div.</div>
+<p>Paragraph 2 in the div.</p>
+</div>
+<p>Paragraph 3. Not in a div.</p>
+</div>
+
+<div></div>
+</div>
+-->
+<p>A CSS selector can contain more than one simple selector. Between the simple 
+selectors, we can include a combinator.</p>
+
+<p>There are four different combinators in CSS3:</p>
+<ul>
+<li>descendant selector (space)</li>
+<li>child selector (&gt;)</li>
+<li>adjacent sibling selector (+)</li>
+<li>general sibling selector (~)</li>
+</ul>
+<hr>
+
+<h2>Descendant Selector</h2>
+<p>The descendant selector matches all elements that are descendants of a specified 
+element.</p>
+<p>The following example selects all &lt;p&gt; elements inside &lt;div&gt; elements:&#xA0;</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div p {<br>&#xA0;&#xA0;&#xA0; background-color: yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_sel_element_element" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div p { background-color: yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Child Selector</h2>
+<p>The child selector selects all elements that are the immediate children of a 
+specified element.</p>
+<p>The following example selects all &lt;p&gt; elements that are immediate 
+children of a &lt;div&gt; 
+element:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div &gt; p {<br>&#xA0;&#xA0;&#xA0; background-color: yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_sel_element_gt" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div &gt; p { background-color: yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Adjacent Sibling Selector</h2>
+<p>The adjacent sibling selector selects all elements that are the adjacent siblings 
+of a specified element.</p>
+<p>Sibling elements must have the same parent element, and &quot;adjacent&quot; means 
+&quot;immediately following&quot;.</p>
+<p>The following example selects all &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div + p {<br>&#xA0;&#xA0;&#xA0; background-color: yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_sel_element_pluss" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div + p { background-color: yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>General Sibling Selector</h2>
+<p>The general sibling selector selects all elements that are siblings of a specified element.</p>
+<p>The following example selects all &lt;p&gt; elements that are siblings of &lt;div&gt; elements:&#xA0;</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div ~ p {<br>&#xA0;&#xA0;&#xA0; background-color: yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_sel_element_tilde" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;div ~ p { background-color: yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_combinators1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_combinators2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_combinators3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_combinators4" target="_blank">Exercise 4 &#xBB;</a>
+</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_align.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_pseudo_classes.asp">Next &#x276F;</a>
+</div>

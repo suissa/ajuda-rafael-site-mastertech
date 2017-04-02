@@ -1,0 +1,380 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Forms</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_attribute_selectors.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_counters.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">The look of an HTML form can be greatly improved with CSS:</p>
+
+<div style="border-radius:5px;background-color:#f2f2f2;padding:40px;">
+<form action="action_page.php" class="test">
+  <label for="fname">First Name</label>
+  <input type="text" id="fname" name="firstname">
+
+  <label for="lname">Last Name</label>
+  <input type="text" id="lname" name="lastname">
+
+  <label for="country">State</label>
+  <select id="country" name="country">
+    <option value="usa">Australia</option>
+    <option value="usa">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+  
+<a target="_blank" href="tryit.asp?filename=trycss_forms" class="button">Try it Yourself &#xBB;</a>
+</form>
+</div>
+<hr>
+
+<h2>Styling Input Fields</h2>
+<p>Use the <code class="w3-codespan">width</code> property to determine the width of the input field:</p>
+  <label for="fname2">First Name</label>
+  <input type="text" id="fname2" name="firstname" style="width:100%;">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input
+{<br>
+&#xA0;&#xA0;&#xA0; width: 100%;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_width" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input
+{
+ width: 100%;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>The example above applies to all &lt;input&gt; elements. If you only want to 
+style a specific input type, you can use attribute selectors:</p>
+<ul>
+<li><code class="w3-codespan">input[type=text]</code> - will only select text fields</li>
+<li><code class="w3-codespan">input[type=password]</code> - will only select password fields</li>
+<li><code class="w3-codespan">input[type=number]</code> - will only select number fields</li>
+<li>etc..</li>
+</ul>
+<hr>
+
+<h2>Padded Inputs</h2>
+<p>Use the <code class="w3-codespan">padding</code> property to add space inside the text field.</p>
+<p><strong>Tip:</strong> When you have many inputs after each other, you might 
+also want to add some <code class="w3-codespan">margin</code>, to add more space 
+outside of them:</p>
+<label for="fname3">First Name</label>
+<input type="text" id="fname3" name="firstname" class="input1">
+<label for="lname3">Last Name</label>
+<input type="text" id="lname3" name="lastname" class="input1">
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]
+{<br>
+&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; padding: 12px 20px;<br>&#xA0;&#xA0;&#xA0; margin: 8px 0;<br>&#xA0;&#xA0;&#xA0; 
+box-sizing: border-box;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_padding" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]
+{
+ width: 100%; padding: 12px 20px; margin: 8px 0; 
+box-sizing: border-box;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p>Note that we have set the <code class="w3-codespan">box-sizing</code> property to 
+<code class="w3-codespan">border-box</code>. This makes sure that the padding and eventually borders are included in the 
+total width and height of the elements. <br>Read more about the <code class="w3-codespan">box-sizing</code> property in our <a href="css3_box-sizing.asp">CSS3 Box Sizing</a> chapter.</p>
+</div>
+
+<hr>
+
+<h2>Bordered Inputs</h2>
+<p>Use the <code class="w3-codespan">border</code> property to change the border size and color, and 
+use the <code class="w3-codespan">border-radius</code> property to add rounded corners:</p>
+
+<label for="fname4">First Name</label>
+<input type="text" id="fname4" name="firstname" class="inputborder">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]
+{<br>&#xA0;&#xA0;&#xA0; border: 2px solid red;<br>&#xA0;&#xA0;&#xA0; 
+border-radius: 4px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_border" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]
+{ border: 2px solid red; 
+border-radius: 4px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>If you only want a bottom border, use the <code class="w3-codespan">border-bottom</code> property:</p>
+ <label for="fname7">First Name</label>
+ <input type="text" id="fname7" name="firstname" class="inputborder2">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]
+{<br>&#xA0;&#xA0;&#xA0; border: none;<br>&#xA0;&#xA0;&#xA0; 
+border-bottom: 2px solid red;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_border2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]
+{ border: none; 
+border-bottom: 2px solid red;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Colored Inputs</h2>
+<p>Use the <code class="w3-codespan">background-color</code> property to add a background color to the input, and 
+the <code class="w3-codespan">color</code> property to change the text color:</p>
+
+<input type="text" value="John" name="firstname" class="inputcolor">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]
+{<br>&#xA0;&#xA0;&#xA0; 
+background-color: #3CBC8D;<br>&#xA0;&#xA0;&#xA0; color: white;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_color" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]
+{ 
+background-color: #3CBC8D; color: white;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Focused Inputs</h2>
+<p>By default, some browsers will add a blue outline around the input when it gets 
+focus (clicked on). You can remove this behavior by adding <code class="w3-codespan">outline: none;</code> to the input.</p>
+<p>Use the <code class="w3-codespan">:focus</code> selector to do something with the input field when it gets focus:</p>
+
+<div class="w3-row-padding" style="margin-left:-16px;margin-right:-16px;">
+<div class="w3-half">
+<input class="focus1" type="text" name="firstname">
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]:focus
+{<br>
+&#xA0;&#xA0;&#xA0; background-color: lightblue;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_focus" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]:focus
+{
+ background-color: lightblue;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+</div>
+<div class="w3-half">
+<input class="focus2" type="text" name="firstname">
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]:focus
+{<br>
+&#xA0;&#xA0;&#xA0; border: 3px solid #555;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_focus2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]:focus
+{
+ border: 3px solid #555;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+</div>
+
+</div>
+<hr>
+
+<h2>Input with icon/image</h2>
+<p>If you want an icon inside the input, use the <code class="w3-codespan">background-image</code> property and 
+position it with the <code class="w3-codespan">background-position</code> property. Also notice that we 
+add a 
+large left padding to reserve the space of the icon:</p>
+
+<input type="text" name="search" placeholder="Search.." class="icon">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text]
+{<br>&#xA0;&#xA0;&#xA0; background-color: white;<br>&#xA0;&#xA0;&#xA0; background-image: url(&apos;searchicon.png&apos;);<br>&#xA0;&#xA0;&#xA0; 
+background-position: 10px 10px; <br>&#xA0;&#xA0;&#xA0; background-repeat: 
+no-repeat;<br>&#xA0;&#xA0;&#xA0; 
+padding-left: 40px;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_icon" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text]
+{ background-color: white; background-image: url(&apos;searchicon.png&apos;); 
+background-position: 10px 10px;  background-repeat: 
+no-repeat; 
+padding-left: 40px;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Animated Search Input</h2>
+<p>In this example we use the CSS3 <code class="w3-codespan">transition</code> property to animate 
+the width of the search input when it gets focus. You will learn more about the <code class="w3-codespan">
+transition</code> property later, in our <a href="css3_transitions.asp">CSS3 Transitions</a> chapter.</p>
+
+<input id="myInp" type="text" name="search" placeholder="Search..">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=text] {<br>&#xA0;&#xA0;&#xA0; -webkit-transition: width 0.4s 
+ease-in-out;<br>&#xA0;&#xA0;&#xA0; transition: width 0.4s ease-in-out;<br>}<br><br>input[type=text]:focus {<br>&#xA0;&#xA0;&#xA0; 
+width: 100%;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_search_anim" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=text] { -webkit-transition: width 0.4s 
+ease-in-out; transition: width 0.4s ease-in-out;}input[type=text]:focus { 
+width: 100%;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Styling Textareas</h2>
+<p><strong>Tip:</strong> Use the <code class="w3-codespan">resize</code> property to prevent textareas from being resized (disable the &quot;grabber&quot; in the bottom right corner):</p>
+<textarea name="firstname" style="background-color:#f8f8f8;width:100%;padding: 12px 20px;resize:none;height:150px;box-sizing: border-box;border:2px solid #ccc;border-radius:4px;">
+Some text...
+</textarea>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+textarea
+{<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; height: 150px;<br>&#xA0;&#xA0;&#xA0; padding: 12px 20px;<br>&#xA0;&#xA0;&#xA0; 
+box-sizing: border-box;<br>&#xA0;&#xA0;&#xA0; border: 2px solid #ccc;<br>&#xA0;&#xA0;&#xA0; 
+border-radius: 4px;<br>&#xA0;&#xA0;&#xA0; background-color: #f8f8f8;<br>&#xA0;&#xA0;&#xA0; resize: none;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_textarea" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;textarea
+{ width: 100%; height: 150px; padding: 12px 20px; 
+box-sizing: border-box; border: 2px solid #ccc; 
+border-radius: 4px; background-color: #f8f8f8; resize: none;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Styling Select Menus</h2>
+<form class="test">
+  <select id="country" name="country" style="background-color:#f1f1f1;border:none;">
+    <option value="usa">Australia</option>
+    <option value="usa">Canada</option>
+    <option value="usa">USA</option>
+  </select>
+</form>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+select
+{<br>&#xA0;&#xA0;&#xA0; width: 100%;<br>&#xA0;&#xA0;&#xA0; padding: 16px 20px;<br>&#xA0;&#xA0;&#xA0; 
+border: none;<br>&#xA0;&#xA0;&#xA0; border-radius: 4px;<br>&#xA0;&#xA0;&#xA0; 
+background-color: #f1f1f1;<br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_select" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;select
+{ width: 100%; padding: 16px 20px; 
+border: none; border-radius: 4px; 
+background-color: #f1f1f1;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Styling Input Buttons</h2>
+
+<input type="button" value="Button" class="button">
+<input type="button" value="Button" class="button" style="width:100%;">
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+input[type=button], input[type=submit], input[type=reset]
+{<br>&#xA0;&#xA0;&#xA0; background-color: #4CAF50;<br>&#xA0;&#xA0;&#xA0; border: 
+none;<br>&#xA0;&#xA0;&#xA0; color: white;<br>&#xA0;&#xA0;&#xA0; padding: 
+16px 32px;<br>&#xA0;&#xA0;&#xA0; text-decoration: none;<br>&#xA0;&#xA0;&#xA0; 
+margin: 4px 2px;<br>&#xA0;&#xA0;&#xA0; cursor: pointer;<br>
+}<br><br>/* Tip: use <strong>width: 100%</strong> for full-width buttons */</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_button" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;input[type=button], input[type=submit], input[type=reset]
+{ background-color: #4CAF50; border: 
+none; color: white; padding: 
+16px 32px; text-decoration: none; 
+margin: 4px 2px; cursor: pointer;
+}/* Tip: use width: 100% for full-width buttons */&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>For more information about how to style buttons with CSS, read our <a href="css3_buttons.asp">CSS Buttons Tutorial</a>.</p>
+<!--
+<hr>
+<h2>Aligned Form</h2>
+<p>An example of how to style labels together with inputs to create a horizontal aligned form:</p>
+    <div>
+  <label for="fname10" class="label">First Name</label>
+  <input type="text" id="fname10" name="firstname" style="width:250px;padding:8px 20px; margin:8px 0">
+  </div>
+
+  <div>
+  <label for="mname" class="label">Middle Name</label>
+  <input type="text" id="mname" name="lastname" style="width:250px;padding:8px 20px; margin:8px 0">
+  </div>
+
+  <div>
+  <label for="lname10" class="label">Last Name</label>
+  <input type="text" id="lname10" name="lastname" style="width:250px;padding:8px 20px; margin:8px 0">
+  </div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+select
+{<br>&nbsp;&nbsp;&nbsp; color: green;<br>&nbsp;&nbsp;&nbsp; display: 
+inline-block;<br>&nbsp;&nbsp;&nbsp; width: 130px;<br>&nbsp;&nbsp;&nbsp; 
+text-align: right;<br>&nbsp;&nbsp;&nbsp; padding-right: 15px; <br>
+}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_form_aligned" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+-->
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_attribute_selectors.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_counters.asp">Next &#x276F;</a>
+</div>

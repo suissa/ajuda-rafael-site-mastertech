@@ -1,0 +1,217 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_2']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>JavaScript <span class="color_h1">Output</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_whereto.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_syntax.asp">Next &#x276F;</a>
+</div>
+<hr>
+<h2>JavaScript Display Possibilities</h2>
+<p>JavaScript can &quot;display&quot; data in different ways:</p>
+<ul>
+ <li>Writing into an HTML element, using <strong>innerHTML</strong>.</li>
+ <li>Writing into the HTML output using <strong>document.write()</strong>.</li>
+  <li>Writing into an alert box, using <strong>window.alert()</strong>.</li>
+  <li>Writing into the browser console, using <strong>console.log()</strong>.</li>
+</ul>
+
+<hr>
+<h2>Using innerHTML</h2>
+<p>To access an HTML element, JavaScript can use the <strong>document.getElementById(id)</strong> method. </p>
+<p>The <strong>id</strong> attribute defines the HTML element. The <strong>innerHTML</strong>  property defines the HTML content:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br>
+<br>
+&lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+ &lt;p&gt;My First Paragraph&lt;/p&gt;<br>
+    <br>&lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;<br>
+<br>
+&lt;script&gt;<br>
+ document.getElementById(&quot;demo&quot;).innerHTML = 5 + 6;<br>
+    &lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_output_dom" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;
+&lt;body&gt;
+
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+ &lt;p&gt;My First Paragraph&lt;/p&gt;
+    &lt;p id=&quot;demo&quot;&gt;&lt;/p&gt;
+
+&lt;script&gt;
+ document.getElementById(&quot;demo&quot;).innerHTML = 5 + 6;
+    &lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>Changing the innerHTML property of an HTML element
+is a common way to display data in HTML.</p>
+</div>
+
+<hr>
+
+<h2>Using document.write()</h2>
+<p>For testing purposes, it is convenient to use <strong>document.write()</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+ &lt;!DOCTYPE html&gt;<br>&lt;html&gt;<br>
+&lt;body&gt;<br><br>&lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+ &lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+ <br>&lt;script&gt;<br>document.write(5 + 6);<br>&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_output_write" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;&lt;html&gt;
+&lt;body&gt;&lt;h1&gt;My First Web Page&lt;/h1&gt;
+ &lt;p&gt;My first paragraph.&lt;/p&gt;
+ &lt;script&gt;document.write(5 + 6);&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>Using document.write() after an HTML document is fully loaded, will <strong>delete all existing HTML</strong>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;My First Web Page&lt;/h1&gt;<br>
+ &lt;p&gt;My first paragraph.&lt;/p&gt;<br><br>
+&lt;button onclick=&quot;document.write(5 + 6)&quot;&gt;Try it&lt;/button&gt;<br><br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_output_write_over" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Web Page&lt;/h1&gt;
+ &lt;p&gt;My first paragraph.&lt;/p&gt;
+&lt;button onclick=&quot;document.write(5 + 6)&quot;&gt;Try it&lt;/button&gt;
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>The document.write() method should only be used for testing.</p>
+</div>
+
+<hr>
+
+<h2>Using window.alert()</h2>
+<p>You can use an alert box to display data:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br><br>
+&lt;h1&gt;My First Web Page&lt;/h1&gt;<br>&lt;p&gt;My first paragraph.&lt;/p&gt;<br>
+ <br>
+&lt;script&gt;<br>window.alert(5 + 6);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_output_alert" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+&lt;h1&gt;My First Web Page&lt;/h1&gt;&lt;p&gt;My first paragraph.&lt;/p&gt;
+ 
+&lt;script&gt;window.alert(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<hr>
+<h2>Using console.log()</h2>
+<p>For debugging purposes, you can use the <strong>console.log()</strong> method to display data.</p>
+
+<div class="w3-panel w3-note">
+<p>You will learn more about debugging in a later chapter.</p>
+</div>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;!DOCTYPE html&gt;<br>
+&lt;html&gt;<br>
+&lt;body&gt;<br>
+ <br>
+&lt;script&gt;<br>
+console.log(5 + 6);<br>
+&lt;/script&gt;<br>
+<br>
+&lt;/body&gt;<br>
+&lt;/html&gt;
+</div>
+<a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=tryjs_output_console" target="_blank"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;js&apos;: &apos;&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+&lt;body&gt;
+ 
+&lt;script&gt;
+console.log(5 + 6);
+&lt;/script&gt;
+
+&lt;/body&gt;
+&lt;/html&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="js_whereto.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="js_syntax.asp">Next &#x276F;</a>
+</div>

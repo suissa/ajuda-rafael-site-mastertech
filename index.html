@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Apostla MasterTech</title>
+		<link rel="icon" href="img/favicon/mastertech_favicon.png" type="image/gif" sizes="22x22">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="css/font-awesome.min.css">
+        <link rel="stylesheet" href="css/content.css">
+		<link rel="stylesheet" href="css/style.css">
+
+        <script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/js/animacao.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="lib/js/w3codecolor.js"></script>
+
+
+ 	</head>
+
+	<body>
+
+		<!-- HEADER -->
+		<header>
+
+			<!-- HEADER -->
+			<div class="header">
+
+				<!-- logo -->
+				<div id="header_logo">
+					<!-- fazer com que ao clicar no logo, volte para a pg inicial -->
+					<img src="img/mt_logo.png" alt="MasterTech">
+				</div>
+
+				<!-- navBar -->
+				<div class="navBar">
+					<ul class="nav nav-pills">
+
+						 <li id="navBarAPOSTILA_MT" role="presentation" class="active"><a href="#">
+                            <span class="text-white">APOSTILA</span> <span>MT</span></a></li>
+						 <li id="navBar_Web_Front_End" role="presentation"><a href="#">Web Front-End</a></li>
+						 <li id="navBar_Algoritmos" role="presentation"><a href="#">Algoritmos</a></li>
+						 <li id="navBar_Javascript" role="presentation"><a href="#">Javascript</a></li>
+						 <li id="navBar_App_Front_End" role="presentation"><a href="#">App Front End</a></li>
+						 <li id="navBar_Web_Back_End" role="presentation"><a href="#">Web Back-End</a></li>
+						 <li id="navBar_App_Back_End" role="presentation"><a href="#">App Back-End</a></li>
+						 <li id="navBar_IoT" role="presentation"><a href="#">IoT</a></li>
+						 <li id="navBar_IA" role="presentation"><a href="#">IA</a></li>
+						 <li id="navBar_Impressao_3D" role="presentation"><a href="#">Impressão 3D</a></li>
+
+						 <!-- Campo de busca -->
+						 <div class="input-group input-group-sm">
+					  		  <span class="input-group-addon" id="sizing-addon3">?</span>
+	  						<input type="text" class="form-control" placeholder=". . ." aria-describedby="sizing-addon3">
+						</div>
+
+					</ul>
+				</div>
+
+			</div>
+		</header>
+
+		<!-- SECTION -->
+		<section>
+
+			<!-- Barra lateral -->
+			<div class="barraLateral">
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_Web_Front_End">
+
+                    <!-- Título e subtítulo ################## SUISSA #########################-->
+					<ul class="main-menu">
+						<!-- para ficar exato igual suissa só preciso tirar esta li -->
+                        <li class="tituloModulo">Web Front End</li>
+
+						<li class="tituloCurso"> <a id="itemCurso_HTML" href="#cursoHTML">HTML</a>
+                            <ul class="itemCurso" >
+                                <li><a class="conteudo-link" title="html_intro" href="">Introdução</a></li>
+                                <li><a class="conteudo-link" title="html_elements" href="">Elementos</a></li>
+                                <li><a class="conteudo-link" title="html_attributes" href="">Atributos</a></li>
+                                
+                            </ul>
+                        </li>
+
+						<li class="tituloCurso"> <a id="itemCurso_CSS" href="#cursoCSS">CSS</a>
+                            <ul class="itemCurso" id="course-css-list" >
+                             
+                                <li><a class="conteudo-link" title="css/css_intro" href="">Introdução</a></li>
+                                <li><a class="conteudo-link" title="css/css_syntax" href="#cursoCSS_Sintaxe">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="css/css_colors" href="">Colors</a></li>
+                                <li><a class="conteudo-link" title="css/css_background" href="">Background</a></li>
+                                <li><a class="conteudo-link" title="css/css_border" href="">Borders</a></li>
+                                <li><a class="conteudo-link" title="css/css_margin" href="">Margins</a></li>
+                                <li><a class="conteudo-link" title="css/css_paddings" href="">Paddings</a></li>
+                                <li><a class="conteudo-link" title="css/css_height" href="">Height/With</a></li>
+                                <li><a class="conteudo-link" title="css/css_boxmodel" href="">Box Model</a></li>
+                            </ul>
+                        </li>
+
+                        <li class="tituloCurso"> <a id="itemCurso_CSS" href="#cursoCSS">Bootstrap</a>
+                            <ul class="itemCurso" >
+                                <li><a class="conteudo-link" title="" href="">Introdução</a></li>
+                                <li><a class="conteudo-link" title="" href="#cursoCSS_Sintaxe">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Colors</a></li>
+                                <li><a class="conteudo-link" title="" href="">Background</a></li>
+                                <li><a class="conteudo-link" title="" href="">Borders</a></li>
+                                <li><a class="conteudo-link" title="" href="">Margins</a></li>
+                                <li><a class="conteudo-link" title="" href="">Paddings</a></li>
+                                <li><a class="conteudo-link" title="" href="">Height/With</a></li>
+                                <li><a class="conteudo-link" title="" href="">Box Model</a></li>
+                            </ul>
+                        </li>
+
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_Algoritmos">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">Algoritmo</li>
+
+						<li class="tituloCurso"> <a href="#cursoAlgoritmo1">Introdução</a>
+                            <ul class="itemCurso" id="itemCurso_Algoritmo">
+                                <li><a class="conteudo-link" title="algoritmo_01" href="">Introdução</a></li>
+                                <li><a class="conteudo-link" title="" href="">Pseudo-código</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_Javascript">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">Javascript</li>
+
+						<li class="tituloCurso"> <a href="#cursoAlgoritmo1">Introdução</a>
+                            <ul class="itemCurso" id="course-javascript-list">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_App_Front_End">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">App Front End</li>
+
+						<li class="tituloCurso"> <a href="#cursoApp_Front_End">IONIC</a>
+                            <ul class="itemCurso" id="itemCurso_App_Front_End">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_App_Back_End">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">App Back End</li>
+
+						<li class="tituloCurso"> <a href="#cursoApp_Back_End">Introdução</a>
+                            <ul class="itemCurso" id="itemCurso_App_Back_End">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_IoT">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">Iot</li>
+
+						<li class="tituloCurso"> <a href="#cursoIoT">Introdução</a>
+                            <ul class="itemCurso" id="itemCurso_IoT">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_AI">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">AI</li>
+
+						<li class="tituloCurso"> <a href="#cursoAI">Introdução</a>
+                            <ul class="itemCurso" id="itemCurso_AI">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+
+				<!-- Cada módulo -->
+				<div class="barraLateral_modulos" id="modulo_IMP_3D">
+
+                    <!-- Título e subtítulo -->
+					<ul class="main-menu">
+
+                        <li class="tituloModulo">Impressão 3D</li>
+
+						<li class="tituloCurso"> <a href="#cursoIMP_3D">Introdução</a>
+                            <ul class="itemCurso" id="itemCurso_IMP_3D">
+                                <li><a class="conteudo-link" title="" href="">Sintaxe</a></li>
+                                <li><a class="conteudo-link" title="" href="">Variáveis</a></li>
+                                <li><a class="conteudo-link" title="" href="">Funções</a></li>
+                                <li><a class="conteudo-link" title="" href="">Objetos</a></li>
+                                <li><a class="conteudo-link" title="" href="">JSON</a></li>
+                            </ul>
+                        </li>
+					</ul>
+
+				</div>
+
+			</div>
+
+			<!-- Área do conteúdo -->
+            <div class="areaCurso">
+                <form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                    <input type="hidden" name="data" value='{"title": "New Pen!", "html": "<div>Hello, World!</div>"}'>
+
+                    <input type="submit" value="Create New Pen with Prefilled Data">
+                </form> 
+
+
+                <article id="content">  
+                    <h2>AQUI VEM O CONTEUDO</h2>
+                </article>
+
+                <!-- <div class="curso" id="cursoCSS_Sintaxe">
+                    <ul>
+
+                        <li class="conteudoCursoTitulo">CSS - Sintaxe</li>
+                        <p class="conteudoCursoSubTitulo"></p>
+                        <div class="conteudoCursoConteudo" id="sec_CSS_Sintaxe">
+            				<img src="img/sec_Sintaxe_01.png" alt="inicio" />  
+            				<a href="http://codepen.io/Rafael_Arevalo/pen/GrNvOg?editors=1100#0" target="_blank"> 
+            				<img src="img/sec_Sintaxe_02.png" alt="inicio" />   
+            				</a>
+        				</div>
+
+                    </ul>
+                </div> -->
+            </div>
+
+		</section>
+
+		<!-- FOOTER -->
+		<footer>
+		</footer>
+
+		
+        <script type="text/javascript">
+            w3CodeColor();
+
+        </script>
+	</body>
+
+</html>

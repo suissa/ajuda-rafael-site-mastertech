@@ -1,0 +1,293 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>Bootstrap <span class="color_h1">JS Tooltip</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_tab.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="default.asp">Next &#x276F;</a>
+</div>
+<hr>
+
+<h2>JS Tooltip (tooltip.js)</h2>
+<p>The Tooltip plugin is small pop-up box that appears when the user moves the mouse pointer over an element.</p>
+<p>For a tutorial about Tooltips, read our <a href="bootstrap_tooltip.asp">Bootstrap Tooltip Tutorial</a>.</p>
+<!--
+<div class="w3-example">
+<h3>Example</h3>
+<div class="xexample_code notranslate htmlHigh">
+<button style="margin:7px 15px 17px 0;" type="button" class="btn btn-success" data-toggle="tooltip" data-placement="bottom" title="Hooray!">Hover over me</button>
+<a href="#" data-toggle="tooltip" data-placement="right" title="Hooray!">Hover over me</a>
+<script>
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip();   
+});
+</script>
+</div>
+ <br>
+ <div class="w3-code notranslate htmlHigh">
+  &lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Hooray!&quot;&gt;Hover over me&lt;/a&gt;<br>
+  <br>&lt;script&gt;<br>$(document).ready(function(){<br>&nbsp;&nbsp;&nbsp;  $('[data-toggle=&quot;tooltip&quot;]').tooltip(); <br>});<br>&lt;/script&gt;<br></div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_tooltip&stacked=h" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+-->
+<hr>
+
+<h2>Via data-* Attributes</h2>
+<p>The <code class="w3-codespan">data-toggle=&quot;tooltip&quot;</code> activates the tooltip.</p>
+<p>The <code class="w3-codespan">title</code> attribute specifies the text that should be displayed 
+inside the tooltip.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Hooray!&quot;&gt;Hover over me&lt;/a&gt;
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_tooltip&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;a href=&quot;#&quot; data-toggle=&quot;tooltip&quot; title=&quot;Hooray!&quot;&gt;Hover over me&lt;/a&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Via JavaScript</h2>
+<p>Tooltips are not CSS-only plugins, and must therefore be initialized with 
+jQuery: select the specified element and call the <code class="w3-codespan">tooltip()</code> method.</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate jsHigh">
+// Select all 
+elements with data-toggle=&quot;tooltips&quot; in the document<br>
+$(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); <br><br>// Select a specified 
+element<br>$(&apos;#myTooltip&apos;).tooltip();
+</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_tooltip&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;// Select all 
+elements with data-toggle=&quot;tooltips&quot; in the document
+$(&apos;[data-toggle=&quot;tooltip&quot;]&apos;).tooltip(); // Select a specified 
+element$(&apos;#myTooltip&apos;).tooltip();&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Tooltip Options</h2>
+<p>Options can be passed via data attributes or JavaScript. For data attributes, 
+append the option name to data-, as in data-placement=&quot;&quot;.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:15%;">Name</th>
+    <th style="width:15%;">Type</th>
+    <th style="width:10%;">Default</th>
+    <th style="width:53%;">Description</th>
+    <th>Try it</th>
+  </tr>
+  <tr>
+    <td>animation</td>
+    <td>boolean</td>
+    <td>true</td>
+    <td>
+ <p>Specifies whether to add a CSS fade transition effect when showing and hiding the tooltip</p>
+ <ul>
+    <li>true - Add a fading effect</li>
+    <li>false - Do not add a fading effect</li>
+ </ul>
+   </td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_animation&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>container</td>
+    <td>string, or the boolean false</td>
+    <td>false</td>
+    <td>Appends the tooltip to a specific element. <br>Example: container: &apos;body&apos;</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_container&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>delay</td>
+    <td>number, or object</td>
+    <td>0</td>
+    <td>Specifies the number of milliseconds it will take to show and hide the tooltip.<br><br>To specify a delay for showing and another one for hiding, use the object structure:<br><br>delay: {show: 500, hide: 100} - which will take 500 ms to show the tooltip, but only 100 ms to hide it</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_delay&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>html</td>
+    <td>boolean&#xA0;</td>
+    <td>false</td>
+    <td>Specifies whether to accept HTML tags in the tooltip:<br>&#xA0;<ul>
+    <li>true - Accept HTML tags</li>
+    <li>false - Do not accept HTML tags</li>
+ </ul>
+ <strong>Note:</strong>
+ The HTML must be inserted in the title attribute (or using the title option). <br><br>When set to false (default), jQuery&apos;s <a href="/jquery/html_text.asp">text()</a> method will be used. Use this if you are worried about XSS attacks</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_html&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>placement</td>
+    <td>string</td>
+    <td>&quot;top&quot;</td>
+    <td>Specifies the tooltip position. Possible values:<br><br><ul>
+    <li>&quot;top&quot; - Tooltip on top</li>
+    <li>&quot;bottom&quot; - Tooltip on bottom</li>
+    <li>&quot;left&quot; - Tooltip on left</li>
+    <li>&quot;right&quot; - Tooltip on right</li>
+    <li>&quot;auto&quot; - Lets the browser decide the position of the tooltip. For  example, if the value is &quot;auto left&quot;, the tooltip will display on the  left side when possible, otherwise on the right. If the value is &quot;auto  bottom&quot;, the tooltip will display at the bottom when possible, otherwise  on the top</li>
+ </ul>
+   </td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_placement&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>selector</td>
+    <td>string, or the boolean false</td>
+    <td>false</td>
+    <td>Adds the tooltip to a specified selector</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_selector&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>template</td>
+    <td>string</td>
+    <td>&#xA0;</td>
+    <td>Base HTML to use when creating the tooltip. <br><br>The tooltip&apos;s title will be inserted into the element having the class .tooltip-inner and the element with the class .tooltip-arrow will become the tooltip&apos;s arrow.<br><br>The outermost wrapper element should have the .tooltip class.</td>
+    <td></td>
+  </tr>
+  <tr>
+    <td>title</td>
+    <td>string</td>
+    <td>&quot;&quot;</td>
+    <td>Specifies the text that should be displayed inside the tooltip</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_title&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>trigger</td>
+    <td>string</td>
+    <td>&quot;hover focus&quot;</td>
+    <td>Specifies how the tooltip is triggered. Possible values:<br><br><ul>
+    <li>&quot;click&quot; - Trigger the tooltip with a click</li>
+    <li>&quot;hover&quot; - Trigger the tooltip on hover</li>
+    <li>&quot;focus&quot; - Trigger the tooltip when it gets focus (by tabbing or  clicking .e.g)</li>
+    <li>&quot;manual&quot; - Trigger the tooltip manually</li>
+ </ul>
+ <strong>Tip:</strong> To pass multiple values, separate them with a space</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_trigger&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>viewport</td>
+    <td>string, or object</td>
+    <td>{selector: &quot;body&quot;, padding: 0}</td>
+    <td>Keeps the tooltip within the bounds of this element. <br><br>Example: viewport: &apos;#viewport&apos; or {selector: &apos;#viewport&apos;, padding: 0}</td>
+    <td></td>
+  </tr>
+</table>
+
+<h2>Tooltip Methods</h2>
+<p>The following table lists all available tooltip methods.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Method</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>.tooltip(<em>options</em>)</td>
+    <td>Activates the tooltip with an option. See options above for valid values</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_placement&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.tooltip(&quot;show&quot;)</td>
+    <td>Shows the tooltip</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_methods&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.tooltip(&quot;hide&quot;)</td>
+    <td>Hides the tooltip</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_methods&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>.tooltip(&quot;toggle&quot;)</td>
+    <td>Toggles the tooltip</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_methods&amp;stacked=h">Try it</a></td>
+    </tr>
+  <tr>
+    <td>.tooltip(&quot;destroy&quot;)</td>
+    <td>Hides and destroys the tooltip</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_methods&amp;stacked=h">Try it</a></td>
+  </tr>
+</table>
+<hr>
+
+<h2>Tooltip Events</h2>
+<p>The following table lists all available tooltip events.</p>
+<table class="w3-table-all notranslate">
+  <tr>
+    <th>Event</th>
+    <th style="width:60%;">Description</th>
+    <th style="width:7%">Try it</th>
+  </tr>
+  <tr>
+    <td>show.bs.tooltip</td>
+    <td>Occurs when the tooltip is about to be shown</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>shown.bs.tooltip</td>
+    <td>Occurs when the tooltip is fully shown (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hide.bs.tooltip</td>
+    <td>Occurs when the tooltip is about to be hidden</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_events&amp;stacked=h">Try it</a></td>
+  </tr>
+  <tr>
+    <td>hidden.bs.tooltip</td>
+    <td>Occurs when the tooltip is fully hidden (after CSS transitions have completed)</td>
+    <td><a target="_blank" class="w3-btn btnsmall" href="tryit.asp?filename=trybs_ref_js_tooltip_events&amp;stacked=h">Try it</a></td>
+    </tr>
+</table>
+<hr>
+
+<h2>More Examples</h2>
+<h3>Custom Tooltip Design</h3>
+<p>Use CSS to customize the look of the tooltip:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+ /* Tooltip */<br>.test + .tooltip &gt; .tooltip-inner {<br>&#xA0;&#xA0;&#xA0; background-color: #73AD21; <br>&#xA0;&#xA0;&#xA0; color: #FFFFFF; <br>&#xA0;&#xA0;&#xA0; border: 1px solid green;<br>&#xA0;&#xA0;&#xA0; padding: 15px;<br>&#xA0;&#xA0;&#xA0; font-size: 20px;<br>}<br><br>/* Tooltip on top */<br>.test + .tooltip.top &gt; .tooltip-arrow {<br>&#xA0;&#xA0;&#xA0; border-top: 5px solid green;<br>}<br>
+ <br>/* Tooltip on bottom */<br>.test + .tooltip.bottom &gt; .tooltip-arrow {<br>&#xA0;&#xA0;&#xA0; border-bottom: 5px solid blue;<br>}<br>
+ <br>/* Tooltip on left */<br>.test + .tooltip.left &gt; .tooltip-arrow {<br>&#xA0;&#xA0;&#xA0; border-left: 5px solid red;<br>}<br>
+ <br>/* Tooltip on right */<br>.test + .tooltip.right &gt; .tooltip-arrow {<br>&#xA0;&#xA0;&#xA0; border-right: 5px solid black;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trybs_ref_js_tooltip_css&amp;stacked=h" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;/* Tooltip */.test + .tooltip &gt; .tooltip-inner { background-color: #73AD21;  color: #FFFFFF;  border: 1px solid green; padding: 15px; font-size: 20px;}/* Tooltip on top */.test + .tooltip.top &gt; .tooltip-arrow { border-top: 5px solid green;}
+ /* Tooltip on bottom */.test + .tooltip.bottom &gt; .tooltip-arrow { border-bottom: 5px solid blue;}
+ /* Tooltip on left */.test + .tooltip.left &gt; .tooltip-arrow { border-left: 5px solid red;}
+ /* Tooltip on right */.test + .tooltip.right &gt; .tooltip-arrow { border-right: 5px solid black;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="bootstrap_ref_js_tab.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="default.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,347 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <span id="ezoic-pub-ad-placeholder-103"></span><span style="display:none;float:none;margin-bottom:2px !important;margin-left:0px !important;margin-right:0px !important;margin-top:2px !important;min-height:110px;min-width:970px;" class="ezoic-ad large-leaderboard-1 adtester-container adtester-container-103"><span id="div-gpt-ad-w3schools_com-large-leaderboard-1-0" ezaw="970" ezah="90" style="position:relative;z-index:0;display:none;" class="ezoic-ad"><!--script-placeholder--></span></span><script>var ezzns1 = {};</script><script type="text/javascript" src="//static.criteo.net/js/ld/publishertag.js"></script>
+<div class="ezflad-47" style="display:inline-block" adunitname="w3schools_com-large-leaderboard-1" id="crt-1">
+<script type="text/javascript">
+var ezoflbf_2_1 = function() {IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.ReloadFromP(1103);};
+var ezoflbf_1 = function() { eval(ez_write_tag([[970,90],'w3schools_com-large-leaderboard-1','ezslot_1']));
+		};</script><script type="text/javascript">ezoflbf_1();
+</script></div><script type="text/javascript">setTimeout(function(){if(typeof IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL == 'object') {
+			var ezflaun = IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.GetNameFromPositionId(1103);
+				if(typeof ezflaun != 'undefined' && ezflaun.length > 0) {
+				if(typeof ez_ad_units != undefined) {
+					for(i=0;i<ez_ad_units.length;i++){
+
+						if(ezflaun.indexOf(ez_ad_units[i][1]) >= 0) {
+							return false;
+						}
+					}
+				}
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.StoreStatSource(ezflaun, 47, 0.60);
+				IL11ILILIIlLLLILILLLLIILLLIIL11111LLILiiLIliLlILlLiiLLIiILL.RemoveSlotById(ezflaun);
+			}
+
+		}}, 4000);</script><!--ezoicfl-->
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>HTML <span class="color_h1">Encoding (Character Sets)</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_symbols.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_urlencode.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p class="intro">To display an HTML page correctly, a web browser must know 
+which character set (character encoding) to use.</p>
+<hr>
+
+<h2>What is Character Encoding?</h2>
+<p>ASCII was the first <strong>character encoding standard</strong> (also called character 
+set). ASCII defined 127 different 
+alphanumeric characters that could be used on the internet: numbers (0-9), English letters (A-Z), and some special 
+characters like ! $ + - ( ) @ &lt; &gt; .</p>
+<p>ANSI (Windows-1252) was the original Windows character set, with support for 256 different 
+character codes. </p>
+<p>ISO-8859-1 was the default character set for HTML 4. This character set 
+also supported 256 different character codes. </p>
+<p>Because ANSI and ISO-8859-1 were so limited, the default character encoding was changed to UTF-8 in HTML5.</p>
+<p>UTF-8 (Unicode) covers almost all of the characters and symbols in the world.</p>
+<div class="w3-panel w3-note">
+<p>All HTML 4 processors also support UTF-8 encoding.</p>
+</div>
+<hr>
+
+<h2>The HTML charset Attribute</h2>
+<p>To display an HTML page correctly, a web browser must know the character set used in the page. </p>
+<p>This is specified in the &lt;meta&gt; tag:</p>
+<div class="w3-example">
+<h3>For HTML4:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;
+</div>
+<h3>For HTML5:</h3>
+<div class="w3-code notranslate htmlHigh">
+&lt;meta charset=&quot;UTF-8&quot;&gt;
+</div>
+<br>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;html&apos;: &apos;&lt;meta http-equiv=&quot;Content-Type&quot; content=&quot;text/html;charset=ISO-8859-1&quot;&gt;&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<div class="w3-panel w3-note">
+<p>If a browser detects ISO-8859-1 in a web page, it defaults to ANSI, because ANSI is identical to ISO-8859-1
+except that ANSI has 32 extra characters.</p>
+</div>
+<hr>
+
+<h2>Differences Between Character Sets</h2>
+<p>The following table displays the differences between the character sets described above:</p>
+<div class="w3-responsive">
+<table class="w3-table-all">
+<tr>
+<th style="width:7%">Numb</th>
+<th style="width:7%">ASCII</th>
+<th style="width:7%">ANSI</th>
+<th style="width:7%">8859</th>
+<th style="width:7%">UTF-8</th>
+<th>Description</th>
+</tr>
+
+<tr><td>32</td><td> </td><td> </td><td> </td><td> </td><td>space</td></tr>
+<tr><td>33</td><td>!</td><td>!</td><td>!</td><td>!</td><td>exclamation mark</td></tr>
+<tr><td>34</td><td>&quot;</td><td>&quot;</td><td>&quot;</td><td>&quot;</td><td>quotation mark</td></tr>
+<tr><td>35</td><td>#</td><td>#</td><td>#</td><td>#</td><td>number sign</td></tr>
+<tr><td>36</td><td>$</td><td>$</td><td>$</td><td>$</td><td>dollar sign</td></tr>
+<tr><td>37</td><td>%</td><td>%</td><td>%</td><td>%</td><td>percent sign</td></tr>
+<tr><td>38</td><td>&amp;</td><td>&amp;</td><td>&amp;</td><td>&amp;</td><td>ampersand</td></tr>
+<tr><td>39</td><td>&apos;</td><td>&apos;</td><td>&apos;</td><td>&apos;</td><td>apostrophe</td></tr>
+<tr><td>40</td><td>(</td><td>(</td><td>(</td><td>(</td><td>left parenthesis</td></tr>
+<tr><td>41</td><td>)</td><td>)</td><td>)</td><td>)</td><td>right parenthesis</td></tr>
+<tr><td>42</td><td>*</td><td>*</td><td>*</td><td>*</td><td>asterisk</td></tr>
+<tr><td>43</td><td>+</td><td>+</td><td>+</td><td>+</td><td>plus sign</td></tr>
+<tr><td>44</td><td>,</td><td>,</td><td>,</td><td>,</td><td>comma</td></tr>
+<tr><td>45</td><td>-</td><td>-</td><td>-</td><td>-</td><td>hyphen-minus</td></tr>
+<tr><td>46</td><td>.</td><td>.</td><td>.</td><td>.</td><td>full stop</td></tr>
+<tr><td>47</td><td>/</td><td>/</td><td>/</td><td>/</td><td>solidus</td></tr>
+<tr><td>48</td><td>0</td><td>0</td><td>0</td><td>0</td><td>digit zero</td></tr>
+<tr><td>49</td><td>1</td><td>1</td><td>1</td><td>1</td><td>digit one</td></tr>
+<tr><td>50</td><td>2</td><td>2</td><td>2</td><td>2</td><td>digit two</td></tr>
+<tr><td>51</td><td>3</td><td>3</td><td>3</td><td>3</td><td>digit three</td></tr>
+<tr><td>52</td><td>4</td><td>4</td><td>4</td><td>4</td><td>digit four</td></tr>
+<tr><td>53</td><td>5</td><td>5</td><td>5</td><td>5</td><td>digit five</td></tr>
+<tr><td>54</td><td>6</td><td>6</td><td>6</td><td>6</td><td>digit six</td></tr>
+<tr><td>55</td><td>7</td><td>7</td><td>7</td><td>7</td><td>digit seven</td></tr>
+<tr><td>56</td><td>8</td><td>8</td><td>8</td><td>8</td><td>digit eight</td></tr>
+<tr><td>57</td><td>9</td><td>9</td><td>9</td><td>9</td><td>digit nine</td></tr>
+<tr><td>58</td><td>:</td><td>:</td><td>:</td><td>:</td><td>colon</td></tr>
+<tr><td>59</td><td>;</td><td>;</td><td>;</td><td>;</td><td>semicolon</td></tr>
+<tr><td>60</td><td>&lt;</td><td>&lt;</td><td>&lt;</td><td>&lt;</td><td>less-than sign</td></tr>
+<tr><td>61</td><td>=</td><td>=</td><td>=</td><td>=</td><td>equals sign</td></tr>
+<tr><td>62</td><td>&gt;</td><td>&gt;</td><td>&gt;</td><td>&gt;</td><td>greater-than sign</td></tr>
+<tr><td>63</td><td>?</td><td>?</td><td>?</td><td>?</td><td>question mark</td></tr>
+<tr><td>64</td><td>@</td><td>@</td><td>@</td><td>@</td><td>commercial at</td></tr>
+<tr><td>65</td><td>A</td><td>A</td><td>A</td><td>A</td><td>Latin capital letter A</td></tr>
+<tr><td>66</td><td>B</td><td>B</td><td>B</td><td>B</td><td>Latin capital letter B</td></tr>
+<tr><td>67</td><td>C</td><td>C</td><td>C</td><td>C</td><td>Latin capital letter C</td></tr>
+<tr><td>68</td><td>D</td><td>D</td><td>D</td><td>D</td><td>Latin capital letter D</td></tr>
+<tr><td>69</td><td>E</td><td>E</td><td>E</td><td>E</td><td>Latin capital letter E</td></tr>
+<tr><td>70</td><td>F</td><td>F</td><td>F</td><td>F</td><td>Latin capital letter F</td></tr>
+<tr><td>71</td><td>G</td><td>G</td><td>G</td><td>G</td><td>Latin capital letter G</td></tr>
+<tr><td>72</td><td>H</td><td>H</td><td>H</td><td>H</td><td>Latin capital letter H</td></tr>
+<tr><td>73</td><td>I</td><td>I</td><td>I</td><td>I</td><td>Latin capital letter I</td></tr>
+<tr><td>74</td><td>J</td><td>J</td><td>J</td><td>J</td><td>Latin capital letter J</td></tr>
+<tr><td>75</td><td>K</td><td>K</td><td>K</td><td>K</td><td>Latin capital letter K</td></tr>
+<tr><td>76</td><td>L</td><td>L</td><td>L</td><td>L</td><td>Latin capital letter L</td></tr>
+<tr><td>77</td><td>M</td><td>M</td><td>M</td><td>M</td><td>Latin capital letter M</td></tr>
+<tr><td>78</td><td>N</td><td>N</td><td>N</td><td>N</td><td>Latin capital letter N</td></tr>
+<tr><td>79</td><td>O</td><td>O</td><td>O</td><td>O</td><td>Latin capital letter O</td></tr>
+<tr><td>80</td><td>P</td><td>P</td><td>P</td><td>P</td><td>Latin capital letter P</td></tr>
+<tr><td>81</td><td>Q</td><td>Q</td><td>Q</td><td>Q</td><td>Latin capital letter Q</td></tr>
+<tr><td>82</td><td>R</td><td>R</td><td>R</td><td>R</td><td>Latin capital letter R</td></tr>
+<tr><td>83</td><td>S</td><td>S</td><td>S</td><td>S</td><td>Latin capital letter S</td></tr>
+<tr><td>84</td><td>T</td><td>T</td><td>T</td><td>T</td><td>Latin capital letter T</td></tr>
+<tr><td>85</td><td>U</td><td>U</td><td>U</td><td>U</td><td>Latin capital letter U</td></tr>
+<tr><td>86</td><td>V</td><td>V</td><td>V</td><td>V</td><td>Latin capital letter V</td></tr>
+<tr><td>87</td><td>W</td><td>W</td><td>W</td><td>W</td><td>Latin capital letter W</td></tr>
+<tr><td>88</td><td>X</td><td>X</td><td>X</td><td>X</td><td>Latin capital letter X</td></tr>
+<tr><td>89</td><td>Y</td><td>Y</td><td>Y</td><td>Y</td><td>Latin capital letter Y</td></tr>
+<tr><td>90</td><td>Z</td><td>Z</td><td>Z</td><td>Z</td><td>Latin capital letter Z</td></tr>
+<tr><td>91</td><td>[</td><td>[</td><td>[</td><td>[</td><td>left square bracket</td></tr>
+<tr><td>92</td><td>\</td><td>\</td><td>\</td><td>\</td><td>reverse solidus</td></tr>
+<tr><td>93</td><td>]</td><td>]</td><td>]</td><td>]</td><td>right square bracket</td></tr>
+<tr><td>94</td><td>^</td><td>^</td><td>^</td><td>^</td><td>circumflex accent</td></tr>
+<tr><td>95</td><td>_</td><td>_</td><td>_</td><td>_</td><td>low line</td></tr>
+<tr><td>96</td><td>`</td><td>`</td><td>`</td><td>`</td><td>grave accent</td></tr>
+<tr><td>97</td><td>a</td><td>a</td><td>a</td><td>a</td><td>Latin small letter a</td></tr>
+<tr><td>98</td><td>b</td><td>b</td><td>b</td><td>b</td><td>Latin small letter b</td></tr>
+<tr><td>99</td><td>c</td><td>c</td><td>c</td><td>c</td><td>Latin small letter c</td></tr>
+<tr><td>100</td><td>d</td><td>d</td><td>d</td><td>d</td><td>Latin small letter d</td></tr>
+<tr><td>101</td><td>e</td><td>e</td><td>e</td><td>e</td><td>Latin small letter e</td></tr>
+<tr><td>102</td><td>f</td><td>f</td><td>f</td><td>f</td><td>Latin small letter f</td></tr>
+<tr><td>103</td><td>g</td><td>g</td><td>g</td><td>g</td><td>Latin small letter g</td></tr>
+<tr><td>104</td><td>h</td><td>h</td><td>h</td><td>h</td><td>Latin small letter h</td></tr>
+<tr><td>105</td><td>i</td><td>i</td><td>i</td><td>i</td><td>Latin small letter i</td></tr>
+<tr><td>106</td><td>j</td><td>j</td><td>j</td><td>j</td><td>Latin small letter j</td></tr>
+<tr><td>107</td><td>k</td><td>k</td><td>k</td><td>k</td><td>Latin small letter k</td></tr>
+<tr><td>108</td><td>l</td><td>l</td><td>l</td><td>l</td><td>Latin small letter l</td></tr>
+<tr><td>109</td><td>m</td><td>m</td><td>m</td><td>m</td><td>Latin small letter m</td></tr>
+<tr><td>110</td><td>n</td><td>n</td><td>n</td><td>n</td><td>Latin small letter n</td></tr>
+<tr><td>111</td><td>o</td><td>o</td><td>o</td><td>o</td><td>Latin small letter o</td></tr>
+<tr><td>112</td><td>p</td><td>p</td><td>p</td><td>p</td><td>Latin small letter p</td></tr>
+<tr><td>113</td><td>q</td><td>q</td><td>q</td><td>q</td><td>Latin small letter q</td></tr>
+<tr><td>114</td><td>r</td><td>r</td><td>r</td><td>r</td><td>Latin small letter r</td></tr>
+<tr><td>115</td><td>s</td><td>s</td><td>s</td><td>s</td><td>Latin small letter s</td></tr>
+<tr><td>116</td><td>t</td><td>t</td><td>t</td><td>t</td><td>Latin small letter t</td></tr>
+<tr><td>117</td><td>u</td><td>u</td><td>u</td><td>u</td><td>Latin small letter u</td></tr>
+<tr><td>118</td><td>v</td><td>v</td><td>v</td><td>v</td><td>Latin small letter v</td></tr>
+<tr><td>119</td><td>w</td><td>w</td><td>w</td><td>w</td><td>Latin small letter w</td></tr>
+<tr><td>120</td><td>x</td><td>x</td><td>x</td><td>x</td><td>Latin small letter x</td></tr>
+<tr><td>121</td><td>y</td><td>y</td><td>y</td><td>y</td><td>Latin small letter y</td></tr>
+<tr><td>122</td><td>z</td><td>z</td><td>z</td><td>z</td><td>Latin small letter z</td></tr>
+<tr><td>123</td><td>{</td><td>{</td><td>{</td><td>{</td><td>left curly bracket</td></tr>
+<tr><td>124</td><td>|</td><td>|</td><td>|</td><td>|</td><td>vertical line</td></tr>
+<tr><td>125</td><td>}</td><td>}</td><td>}</td><td>}</td><td>right curly bracket</td></tr>
+<tr><td>126</td><td>~</td><td>~</td><td>~</td><td>~</td><td>tilde</td></tr>
+<tr><td>127</td><td>DEL</td><td>&#xA0;</td><td>&#xA0;</td><td>&#xA0;</td><td>&#xA0;</td></tr>
+<tr><td>128</td><td>&#xA0;</td><td>&#x20AC;</td><td>&#xA0;</td><td>&#xA0;</td><td>euro sign</td></tr>
+<tr><td>129</td><td>&#xA0;</td><td>&#x81;</td><td>&#x81;</td><td>&#x81;</td><td>NOT USED</td></tr>
+<tr><td>130</td><td>&#xA0;</td><td>&#x201A;</td><td>&#xA0;</td><td>&#xA0;</td><td>single low-9 quotation mark</td></tr>
+<tr><td>131</td><td>&#xA0;</td><td>&#x192;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin small letter f with hook</td></tr>
+<tr><td>132</td><td>&#xA0;</td><td>&#x201E;</td><td>&#xA0;</td><td>&#xA0;</td><td>double low-9 quotation mark</td></tr>
+<tr><td>133</td><td>&#xA0;</td><td>&#x2026;</td><td>&#xA0;</td><td>&#xA0;</td><td>horizontal ellipsis</td></tr>
+<tr><td>134</td><td>&#xA0;</td><td>&#x2020;</td><td>&#xA0;</td><td>&#xA0;</td><td>dagger</td></tr>
+<tr><td>135</td><td>&#xA0;</td><td>&#x2021;</td><td>&#xA0;</td><td>&#xA0;</td><td>double dagger</td></tr>
+<tr><td>136</td><td>&#xA0;</td><td>&#x2C6;</td><td>&#xA0;</td><td>&#xA0;</td><td>modifier letter circumflex accent</td></tr>
+<tr><td>137</td><td>&#xA0;</td><td>&#x2030;</td><td>&#xA0;</td><td>&#xA0;</td><td>per mille sign</td></tr>
+<tr><td>138</td><td>&#xA0;</td><td>&#x160;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin capital letter S with caron</td></tr>
+<tr><td>139</td><td>&#xA0;</td><td>&#x2039;</td><td>&#xA0;</td><td>&#xA0;</td><td>single left-pointing angle quotation mark</td></tr>
+<tr><td>140</td><td>&#xA0;</td><td>&#x152;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin capital ligature OE</td></tr>
+<tr><td>141</td><td>&#xA0;</td><td>&#x8D;</td><td>&#x8D;</td><td>&#x8D;</td><td>NOT USED</td></tr>
+<tr><td>142</td><td>&#xA0;</td><td>&#x17D;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin capital letter Z with caron</td></tr>
+<tr><td>143</td><td>&#xA0;</td><td>&#x8F;</td><td>&#x8F;</td><td>&#x8F;</td><td>NOT USED</td></tr>
+<tr><td>144</td><td>&#xA0;</td><td>&#x90;</td><td>&#x90;</td><td>&#x90;</td><td>NOT USED</td></tr>
+<tr><td>145</td><td>&#xA0;</td><td>&#x2018;</td><td>&#xA0;</td><td>&#xA0;</td><td>left single quotation mark</td></tr>
+<tr><td>146</td><td>&#xA0;</td><td>&#x2019;</td><td>&#xA0;</td><td>&#xA0;</td><td>right single quotation mark</td></tr>
+<tr><td>147</td><td>&#xA0;</td><td>&#x201C;</td><td>&#xA0;</td><td>&#xA0;</td><td>left double quotation mark</td></tr>
+<tr><td>148</td><td>&#xA0;</td><td>&#x201D;</td><td>&#xA0;</td><td>&#xA0;</td><td>right double quotation mark</td></tr>
+<tr><td>149</td><td>&#xA0;</td><td>&#x2022;</td><td>&#xA0;</td><td>&#xA0;</td><td>bullet</td></tr>
+<tr><td>150</td><td>&#xA0;</td><td>&#x2013;</td><td>&#xA0;</td><td>&#xA0;</td><td>en dash</td></tr>
+<tr><td>151</td><td>&#xA0;</td><td>&#x2014;</td><td>&#xA0;</td><td>&#xA0;</td><td>em dash</td></tr>
+<tr><td>152</td><td>&#xA0;</td><td>&#x2DC;</td><td>&#xA0;</td><td>&#xA0;</td><td>small tilde</td></tr>
+<tr><td>153</td><td>&#xA0;</td><td>&#x2122;</td><td>&#xA0;</td><td>&#xA0;</td><td>trade mark sign</td></tr>
+<tr><td>154</td><td>&#xA0;</td><td>&#x161;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin small letter s with caron</td></tr>
+<tr><td>155</td><td>&#xA0;</td><td>&#x203A;</td><td>&#xA0;</td><td>&#xA0;</td><td>single right-pointing angle quotation mark</td></tr>
+<tr><td>156</td><td>&#xA0;</td><td>&#x153;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin small ligature oe</td></tr>
+<tr><td>157</td><td>&#xA0;</td><td>&#x9D;</td><td>&#x9D;</td><td>&#x9D;</td><td>NOT USED</td></tr>
+<tr><td>158</td><td>&#xA0;</td><td>&#x17E;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin small letter z with caron</td></tr>
+<tr><td>159</td><td>&#xA0;</td><td>&#x178;</td><td>&#xA0;</td><td>&#xA0;</td><td>Latin capital letter Y with diaeresis</td></tr>
+<tr><td>160</td><td>&#xA0;</td><td>&#xA0;</td><td>&#xA0;</td><td>&#xA0;</td><td>no-break space</td></tr>
+<tr><td>161</td><td>&#xA0;</td><td>&#xA1;</td><td>&#xA1;</td><td>&#xA1;</td><td>inverted exclamation mark</td></tr>
+<tr><td>162</td><td>&#xA0;</td><td>&#xA2;</td><td>&#xA2;</td><td>&#xA2;</td><td>cent sign</td></tr>
+<tr><td>163</td><td>&#xA0;</td><td>&#xA3;</td><td>&#xA3;</td><td>&#xA3;</td><td>pound sign</td></tr>
+<tr><td>164</td><td>&#xA0;</td><td>&#xA4;</td><td>&#xA4;</td><td>&#xA4;</td><td>currency sign</td></tr>
+<tr><td>165</td><td>&#xA0;</td><td>&#xA5;</td><td>&#xA5;</td><td>&#xA5;</td><td>yen sign</td></tr>
+<tr><td>166</td><td>&#xA0;</td><td>&#xA6;</td><td>&#xA6;</td><td>&#xA6;</td><td>broken bar</td></tr>
+<tr><td>167</td><td>&#xA0;</td><td>&#xA7;</td><td>&#xA7;</td><td>&#xA7;</td><td>section sign</td></tr>
+<tr><td>168</td><td>&#xA0;</td><td>&#xA8;</td><td>&#xA8;</td><td>&#xA8;</td><td>diaeresis</td></tr>
+<tr><td>169</td><td>&#xA0;</td><td>&#xA9;</td><td>&#xA9;</td><td>&#xA9;</td><td>copyright sign</td></tr>
+<tr><td>170</td><td>&#xA0;</td><td>&#xAA;</td><td>&#xAA;</td><td>&#xAA;</td><td>feminine ordinal indicator</td></tr>
+<tr><td>171</td><td>&#xA0;</td><td>&#xAB;</td><td>&#xAB;</td><td>&#xAB;</td><td>left-pointing double angle quotation mark</td></tr>
+<tr><td>172</td><td>&#xA0;</td><td>&#xAC;</td><td>&#xAC;</td><td>&#xAC;</td><td>not sign</td></tr>
+<tr><td>173</td><td>&#xA0;</td><td>&#xAD;</td><td>&#xAD;</td><td>&#xAD;</td><td>soft hyphen</td></tr>
+<tr><td>174</td><td>&#xA0;</td><td>&#xAE;</td><td>&#xAE;</td><td>&#xAE;</td><td>registered sign</td></tr>
+<tr><td>175</td><td>&#xA0;</td><td>&#xAF;</td><td>&#xAF;</td><td>&#xAF;</td><td>macron</td></tr>
+<tr><td>176</td><td>&#xA0;</td><td>&#xB0;</td><td>&#xB0;</td><td>&#xB0;</td><td>degree sign</td></tr>
+<tr><td>177</td><td>&#xA0;</td><td>&#xB1;</td><td>&#xB1;</td><td>&#xB1;</td><td>plus-minus sign</td></tr>
+<tr><td>178</td><td>&#xA0;</td><td>&#xB2;</td><td>&#xB2;</td><td>&#xB2;</td><td>superscript two</td></tr>
+<tr><td>179</td><td>&#xA0;</td><td>&#xB3;</td><td>&#xB3;</td><td>&#xB3;</td><td>superscript three</td></tr>
+<tr><td>180</td><td>&#xA0;</td><td>&#xB4;</td><td>&#xB4;</td><td>&#xB4;</td><td>acute accent</td></tr>
+<tr><td>181</td><td>&#xA0;</td><td>&#xB5;</td><td>&#xB5;</td><td>&#xB5;</td><td>micro sign</td></tr>
+<tr><td>182</td><td>&#xA0;</td><td>&#xB6;</td><td>&#xB6;</td><td>&#xB6;</td><td>pilcrow sign</td></tr>
+<tr><td>183</td><td>&#xA0;</td><td>&#xB7;</td><td>&#xB7;</td><td>&#xB7;</td><td>middle dot</td></tr>
+<tr><td>184</td><td>&#xA0;</td><td>&#xB8;</td><td>&#xB8;</td><td>&#xB8;</td><td>cedilla</td></tr>
+<tr><td>185</td><td>&#xA0;</td><td>&#xB9;</td><td>&#xB9;</td><td>&#xB9;</td><td>superscript one</td></tr>
+<tr><td>186</td><td>&#xA0;</td><td>&#xBA;</td><td>&#xBA;</td><td>&#xBA;</td><td>masculine ordinal indicator</td></tr>
+<tr><td>187</td><td>&#xA0;</td><td>&#xBB;</td><td>&#xBB;</td><td>&#xBB;</td><td>right-pointing double angle quotation mark</td></tr>
+<tr><td>188</td><td>&#xA0;</td><td>&#xBC;</td><td>&#xBC;</td><td>&#xBC;</td><td>vulgar fraction one quarter</td></tr>
+<tr><td>189</td><td>&#xA0;</td><td>&#xBD;</td><td>&#xBD;</td><td>&#xBD;</td><td>vulgar fraction one half</td></tr>
+<tr><td>190</td><td>&#xA0;</td><td>&#xBE;</td><td>&#xBE;</td><td>&#xBE;</td><td>vulgar fraction three quarters</td></tr>
+<tr><td>191</td><td>&#xA0;</td><td>&#xBF;</td><td>&#xBF;</td><td>&#xBF;</td><td>inverted question mark</td></tr>
+<tr><td>192</td><td>&#xA0;</td><td>&#xC0;</td><td>&#xC0;</td><td>&#xC0;</td><td>Latin capital letter A with grave</td></tr>
+<tr><td>193</td><td>&#xA0;</td><td>&#xC1;</td><td>&#xC1;</td><td>&#xC1;</td><td>Latin capital letter A with acute</td></tr>
+<tr><td>194</td><td>&#xA0;</td><td>&#xC2;</td><td>&#xC2;</td><td>&#xC2;</td><td>Latin capital letter A with circumflex</td></tr>
+<tr><td>195</td><td>&#xA0;</td><td>&#xC3;</td><td>&#xC3;</td><td>&#xC3;</td><td>Latin capital letter A with tilde</td></tr>
+<tr><td>196</td><td>&#xA0;</td><td>&#xC4;</td><td>&#xC4;</td><td>&#xC4;</td><td>Latin capital letter A with diaeresis</td></tr>
+<tr><td>197</td><td>&#xA0;</td><td>&#xC5;</td><td>&#xC5;</td><td>&#xC5;</td><td>Latin capital letter A with ring above</td></tr>
+<tr><td>198</td><td>&#xA0;</td><td>&#xC6;</td><td>&#xC6;</td><td>&#xC6;</td><td>Latin capital letter AE</td></tr>
+<tr><td>199</td><td>&#xA0;</td><td>&#xC7;</td><td>&#xC7;</td><td>&#xC7;</td><td>Latin capital letter C with cedilla</td></tr>
+<tr><td>200</td><td>&#xA0;</td><td>&#xC8;</td><td>&#xC8;</td><td>&#xC8;</td><td>Latin capital letter E with grave</td></tr>
+<tr><td>201</td><td>&#xA0;</td><td>&#xC9;</td><td>&#xC9;</td><td>&#xC9;</td><td>Latin capital letter E with acute</td></tr>
+<tr><td>202</td><td>&#xA0;</td><td>&#xCA;</td><td>&#xCA;</td><td>&#xCA;</td><td>Latin capital letter E with circumflex</td></tr>
+<tr><td>203</td><td>&#xA0;</td><td>&#xCB;</td><td>&#xCB;</td><td>&#xCB;</td><td>Latin capital letter E with diaeresis</td></tr>
+<tr><td>204</td><td>&#xA0;</td><td>&#xCC;</td><td>&#xCC;</td><td>&#xCC;</td><td>Latin capital letter I with grave</td></tr>
+<tr><td>205</td><td>&#xA0;</td><td>&#xCD;</td><td>&#xCD;</td><td>&#xCD;</td><td>Latin capital letter I with acute</td></tr>
+<tr><td>206</td><td>&#xA0;</td><td>&#xCE;</td><td>&#xCE;</td><td>&#xCE;</td><td>Latin capital letter I with circumflex</td></tr>
+<tr><td>207</td><td>&#xA0;</td><td>&#xCF;</td><td>&#xCF;</td><td>&#xCF;</td><td>Latin capital letter I with diaeresis</td></tr>
+<tr><td>208</td><td>&#xA0;</td><td>&#xD0;</td><td>&#xD0;</td><td>&#xD0;</td><td>Latin capital letter Eth</td></tr>
+<tr><td>209</td><td>&#xA0;</td><td>&#xD1;</td><td>&#xD1;</td><td>&#xD1;</td><td>Latin capital letter N with tilde</td></tr>
+<tr><td>210</td><td>&#xA0;</td><td>&#xD2;</td><td>&#xD2;</td><td>&#xD2;</td><td>Latin capital letter O with grave</td></tr>
+<tr><td>211</td><td>&#xA0;</td><td>&#xD3;</td><td>&#xD3;</td><td>&#xD3;</td><td>Latin capital letter O with acute</td></tr>
+<tr><td>212</td><td>&#xA0;</td><td>&#xD4;</td><td>&#xD4;</td><td>&#xD4;</td><td>Latin capital letter O with circumflex</td></tr>
+<tr><td>213</td><td>&#xA0;</td><td>&#xD5;</td><td>&#xD5;</td><td>&#xD5;</td><td>Latin capital letter O with tilde</td></tr>
+<tr><td>214</td><td>&#xA0;</td><td>&#xD6;</td><td>&#xD6;</td><td>&#xD6;</td><td>Latin capital letter O with diaeresis</td></tr>
+<tr><td>215</td><td>&#xA0;</td><td>&#xD7;</td><td>&#xD7;</td><td>&#xD7;</td><td>multiplication sign</td></tr>
+<tr><td>216</td><td>&#xA0;</td><td>&#xD8;</td><td>&#xD8;</td><td>&#xD8;</td><td>Latin capital letter O with stroke</td></tr>
+<tr><td>217</td><td>&#xA0;</td><td>&#xD9;</td><td>&#xD9;</td><td>&#xD9;</td><td>Latin capital letter U with grave</td></tr>
+<tr><td>218</td><td>&#xA0;</td><td>&#xDA;</td><td>&#xDA;</td><td>&#xDA;</td><td>Latin capital letter U with acute</td></tr>
+<tr><td>219</td><td>&#xA0;</td><td>&#xDB;</td><td>&#xDB;</td><td>&#xDB;</td><td>Latin capital letter U with circumflex</td></tr>
+<tr><td>220</td><td>&#xA0;</td><td>&#xDC;</td><td>&#xDC;</td><td>&#xDC;</td><td>Latin capital letter U with diaeresis</td></tr>
+<tr><td>221</td><td>&#xA0;</td><td>&#xDD;</td><td>&#xDD;</td><td>&#xDD;</td><td>Latin capital letter Y with acute</td></tr>
+<tr><td>222</td><td>&#xA0;</td><td>&#xDE;</td><td>&#xDE;</td><td>&#xDE;</td><td>Latin capital letter Thorn</td></tr>
+<tr><td>223</td><td>&#xA0;</td><td>&#xDF;</td><td>&#xDF;</td><td>&#xDF;</td><td>Latin small letter sharp s</td></tr>
+<tr><td>224</td><td>&#xA0;</td><td>&#xE0;</td><td>&#xE0;</td><td>&#xE0;</td><td>Latin small letter a with grave</td></tr>
+<tr><td>225</td><td>&#xA0;</td><td>&#xE1;</td><td>&#xE1;</td><td>&#xE1;</td><td>Latin small letter a with acute</td></tr>
+<tr><td>226</td><td>&#xA0;</td><td>&#xE2;</td><td>&#xE2;</td><td>&#xE2;</td><td>Latin small letter a with circumflex</td></tr>
+<tr><td>227</td><td>&#xA0;</td><td>&#xE3;</td><td>&#xE3;</td><td>&#xE3;</td><td>Latin small letter a with tilde</td></tr>
+<tr><td>228</td><td>&#xA0;</td><td>&#xE4;</td><td>&#xE4;</td><td>&#xE4;</td><td>Latin small letter a with diaeresis</td></tr>
+<tr><td>229</td><td>&#xA0;</td><td>&#xE5;</td><td>&#xE5;</td><td>&#xE5;</td><td>Latin small letter a with ring above</td></tr>
+<tr><td>230</td><td>&#xA0;</td><td>&#xE6;</td><td>&#xE6;</td><td>&#xE6;</td><td>Latin small letter ae</td></tr>
+<tr><td>231</td><td>&#xA0;</td><td>&#xE7;</td><td>&#xE7;</td><td>&#xE7;</td><td>Latin small letter c with cedilla</td></tr>
+<tr><td>232</td><td>&#xA0;</td><td>&#xE8;</td><td>&#xE8;</td><td>&#xE8;</td><td>Latin small letter e with grave</td></tr>
+<tr><td>233</td><td>&#xA0;</td><td>&#xE9;</td><td>&#xE9;</td><td>&#xE9;</td><td>Latin small letter e with acute</td></tr>
+<tr><td>234</td><td>&#xA0;</td><td>&#xEA;</td><td>&#xEA;</td><td>&#xEA;</td><td>Latin small letter e with circumflex</td></tr>
+<tr><td>235</td><td>&#xA0;</td><td>&#xEB;</td><td>&#xEB;</td><td>&#xEB;</td><td>Latin small letter e with diaeresis</td></tr>
+<tr><td>236</td><td>&#xA0;</td><td>&#xEC;</td><td>&#xEC;</td><td>&#xEC;</td><td>Latin small letter i with grave</td></tr>
+<tr><td>237</td><td>&#xA0;</td><td>&#xED;</td><td>&#xED;</td><td>&#xED;</td><td>Latin small letter i with acute</td></tr>
+<tr><td>238</td><td>&#xA0;</td><td>&#xEE;</td><td>&#xEE;</td><td>&#xEE;</td><td>Latin small letter i with circumflex</td></tr>
+<tr><td>239</td><td>&#xA0;</td><td>&#xEF;</td><td>&#xEF;</td><td>&#xEF;</td><td>Latin small letter i with diaeresis</td></tr>
+<tr><td>240</td><td>&#xA0;</td><td>&#xF0;</td><td>&#xF0;</td><td>&#xF0;</td><td>Latin small letter eth</td></tr>
+<tr><td>241</td><td>&#xA0;</td><td>&#xF1;</td><td>&#xF1;</td><td>&#xF1;</td><td>Latin small letter n with tilde</td></tr>
+<tr><td>242</td><td>&#xA0;</td><td>&#xF2;</td><td>&#xF2;</td><td>&#xF2;</td><td>Latin small letter o with grave</td></tr>
+<tr><td>243</td><td>&#xA0;</td><td>&#xF3;</td><td>&#xF3;</td><td>&#xF3;</td><td>Latin small letter o with acute</td></tr>
+<tr><td>244</td><td>&#xA0;</td><td>&#xF4;</td><td>&#xF4;</td><td>&#xF4;</td><td>Latin small letter o with circumflex</td></tr>
+<tr><td>245</td><td>&#xA0;</td><td>&#xF5;</td><td>&#xF5;</td><td>&#xF5;</td><td>Latin small letter o with tilde</td></tr>
+<tr><td>246</td><td>&#xA0;</td><td>&#xF6;</td><td>&#xF6;</td><td>&#xF6;</td><td>Latin small letter o with diaeresis</td></tr>
+<tr><td>247</td><td>&#xA0;</td><td>&#xF7;</td><td>&#xF7;</td><td>&#xF7;</td><td>division sign</td></tr>
+<tr><td>248</td><td>&#xA0;</td><td>&#xF8;</td><td>&#xF8;</td><td>&#xF8;</td><td>Latin small letter o with stroke</td></tr>
+<tr><td>249</td><td>&#xA0;</td><td>&#xF9;</td><td>&#xF9;</td><td>&#xF9;</td><td>Latin small letter u with grave</td></tr>
+<tr><td>250</td><td>&#xA0;</td><td>&#xFA;</td><td>&#xFA;</td><td>&#xFA;</td><td>Latin small letter u with acute</td></tr>
+<tr><td>251</td><td>&#xA0;</td><td>&#xFB;</td><td>&#xFB;</td><td>&#xFB;</td><td>Latin small letter with circumflex</td></tr>
+<tr><td>252</td><td>&#xA0;</td><td>&#xFC;</td><td>&#xFC;</td><td>&#xFC;</td><td>Latin small letter u with diaeresis</td></tr>
+<tr><td>253</td><td>&#xA0;</td><td>&#xFD;</td><td>&#xFD;</td><td>&#xFD;</td><td>Latin small letter y with acute</td></tr>
+<tr><td>254</td><td>&#xA0;</td><td>&#xFE;</td><td>&#xFE;</td><td>&#xFE;</td><td>Latin small letter thorn</td></tr>
+<tr><td>255</td><td>&#xA0;</td><td>&#xFF;</td><td>&#xFF;</td><td>&#xFF;</td><td>Latin small letter y with diaeresis</td></tr>
+</table>
+</div>
+<hr>
+<h2>The ASCII Character Set</h2>
+<p>ASCII uses the values from 0 to 31 (and 127) for control characters.</p>
+<p>ASCII uses the values from 32 to 126 for letters, digits, and symbols.</p>
+<p>ASCII does not use the values from 128 to 255.</p>
+<hr>
+<h2>The ANSI Character Set (Windows-1252)</h2>
+<p>ANSI is identical to ASCII for the values from 0 to 127.</p>
+<p>ANSI has a proprietary set of characters for the values from 128 to 159.</p>
+<p>ANSI is identical to UTF-8 for the values from 160 to 255.</p>
+<hr>
+<h2>The ISO-8859-1 Character Set</h2>
+<p>8859-1 is identical to ASCII for the values from 0 to 127.</p>
+<p>8859-1 does not use the values from 128 to 159.</p>
+<p>8859-1 is identical to UTF-8 for the values from 160 to 255.</p>
+<hr>
+<h2>The UTF-8 Character Set</h2>
+<p>UTF-8 is identical to ASCII for the values from 0 to 127.</p>
+<p>UTF-8 does not use the values from 128 to 159.&#xA0; </p>
+<p>UTF-8 is identical to both ANSI and 8859-1 for the values from 160 to 255.</p>
+<p>UTF-8 continues from the value 256 with more than 10 000 different 
+characters.</p>
+
+
+<p>For a closer look, study our <a href="/charsets/default.asp">Complete HTML Character Set Reference</a>.</p>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="html_symbols.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="html_urlencode.asp">Next &#x276F;</a>
+</div>

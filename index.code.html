@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html>
+
+	<head>
+		<meta charset="utf-8">
+		<title>Apostla MasterTech</title>
+		<link rel="icon" href="img/favicon/mastertech_favicon.png" type="image/gif" sizes="22x22">
+		<link rel="stylesheet" href="lib/bootstrap/css/bootstrap.min.css">
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/jquery.highlight.css">
+        <script src="lib/jquery/jquery.min.js"></script>
+		<script src="lib/js/animacao.js"></script>
+		<script src="lib/bootstrap/js/bootstrap.min.js"></script>
+        <script src="http://demo.webcodingstudio.com/highlight/jquery.highlight.js"></script>
+
+ 	</head>
+
+	<body>
+
+		<!-- HEADER -->
+		<header>
+
+			<!-- HEADER -->
+			<div class="header">
+
+				<!-- logo -->
+				<div id="header_logo">
+					<!-- fazer com que ao clicar no logo, volte para a pg inicial -->
+					<img src="img/mt_logo.png" alt="MasterTech">
+				</div>
+
+				<!-- navBar -->
+				<div class="navBar">
+					<ul class="nav nav-pills">
+
+						 <li id="navBarAPOSTILA_MT" role="presentation" class="active"><a href="#">
+                            <span class="text-white">APOSTILA</span> <span>MT</span></a></li>
+						 <li id="navBar_Web_Front_End" role="presentation"><a href="#">Web Front-End</a></li>
+						 <li id="navBar_Algoritmos" role="presentation"><a href="#">Algoritmos</a></li>
+						 <li id="navBar_Javascript" role="presentation"><a href="#">Javascript</a></li>
+						 <li id="navBar_App_Front_End" role="presentation"><a href="#">App Front End</a></li>
+						 <li id="navBar_Web_Back_End" role="presentation"><a href="#">Web Back-End</a></li>
+						 <li id="navBar_App_Back_End" role="presentation"><a href="#">App Back-End</a></li>
+						 <li id="navBar_IoT" role="presentation"><a href="#">IoT</a></li>
+						 <li id="navBar_IA" role="presentation"><a href="#">IA</a></li>
+						 <li id="navBar_Impressao_3D" role="presentation"><a href="#">Impressão 3D</a></li>
+
+						 <!-- Campo de busca -->
+						 <div class="input-group input-group-sm">
+					  		  <span class="input-group-addon" id="sizing-addon3">?</span>
+	  						<input type="text" class="form-control" placeholder=". . ." aria-describedby="sizing-addon3">
+						</div>
+
+					</ul>
+				</div>
+
+			</div>
+		</header>
+
+
+		<!-- FOOTER -->
+		<footer>
+
+<h2>JS code (default)</h2>
+<pre class="code" lang="js">
+$(document).ready(function(){
+    //init boxes opacity
+    $('#login').css('opacity', '1');
+    $('#member').css('opacity', '0.52');
+    
+    //change boxes opacity on hover
+    $('#login').hover(function(){
+        $('#login').animate({'opacity': '1'}, 200);
+        $('#member').animate({'opacity': '0.52'}, 200);
+    });
+    $('#member').hover(function(){
+        $('#member').animate({'opacity': '1'}, 200);
+        $('#login').animate({'opacity': '0.52'}, 200);
+    });
+    
+    //request membership expand
+    $('#request_membership').click(function(){
+        $('#member_request > div:first').css('display', 'none');
+        $('#member_request > div:last').css('display', 'block');
+        $('#login').css('display', 'none');
+        return false;
+    });
+    
+    //back
+    $('#back').click(function(){
+        $('#member_request > div:first').css('display', 'block');
+        $('#member_request > div:last').css('display', 'none');
+        $('#login').css('display', 'block');
+        return false;
+    });
+    
+    //input 
+    $('input[type="text"],input[type="password"]').focus(function(){
+        $(this).parent().parent().addClass('focus');
+    });
+    $('input[type="text"],input[type="password"]').blur(function(){
+        $(this).parent().parent().removeClass('focus');
+    });
+    
+    initFontSize(); 
+});
+
+//scaling font size
+function initFontSize() {
+    ratio = $(window).width() / 1200 * 16;
+    ratio = Math.floor(ratio * 100) / 100;  
+    if (ratio < 11) ratio = 11;
+    if (ratio > 14) ratio = 14; 
+    $('body').css('font-size', ratio + 'px');
+}
+
+$(window).resize(function() {
+    initFontSize();
+});
+$(window).trigger('resize');    
+</pre>
+		</footer>
+
+		
+
+	</body>
+
+</html>

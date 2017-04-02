@@ -1,0 +1,316 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Backgrounds</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_colors.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_border.asp">Next &#x276F;</a>
+</div>
+<br>
+
+<div style="width:100%;border:1px solid gray;padding:8px;background:#e1efbb url(&apos;mountain.jpg&apos;)">
+<p style="margin-right:150px;">The CSS background properties are used to define the background effects 
+for elements.</p>
+<p>CSS background properties:</p>
+<ul>
+  <li>background-color</li>
+  <li>background-image</li>
+  <li>background-repeat</li>
+  <li>background-attachment</li>
+  <li>background-position</li>
+</ul>
+</div>
+<hr>
+
+<h2>Background Color</h2>
+<p>The <code class="w3-codespan">background-color</code> property specifies the background color of an element.</p>
+<p>The background color of a page is set like this:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; background-color: lightblue;<br>}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-color_body" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { background-color: lightblue;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>With CSS, a color is most often specified by:</p>
+<ul>
+<li>a valid color name - like &quot;red&quot;</li>
+<li>a HEX value - like &quot;#ff0000&quot;</li>
+<li>an RGB value - like &quot;rgb(255,0,0)&quot;</li>
+</ul>
+<p>Look at <a href="/cssref/css_colors_legal.asp">CSS Color Values</a> for a complete 
+list of possible color values.</p>
+<p>In the example below, the &lt;h1&gt;, &lt;p&gt;, and &lt;div&gt; elements have different background colors:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+h1 {<br>&#xA0;&#xA0;&#xA0; background-color: green;<br>}<br><br>
+div {<br>&#xA0;&#xA0;&#xA0; background-color: lightblue;<br>}<br><br>p {<br>&#xA0;&#xA0;&#xA0; background-color: 
+yellow;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-color_elements" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;h1 { background-color: green;}
+div { background-color: lightblue;}p { background-color: 
+yellow;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Background Image</h2>
+<p>The <code class="w3-codespan">background-image</code> property specifies an image to use as the background of an element.</p>
+<p>By default, the image is repeated so it covers the entire element.</p>
+<p>The background image for a page can be set like this:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; background-image: url(&quot;paper.gif&quot;);<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { background-image: url(&quot;paper.gif&quot;);}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+
+<p>Below is an example of a <strong>bad</strong> combination of text and background image. The text is 
+hardly readable:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; background-image: url(&quot;bgdesert.jpg&quot;);<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_bad" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { background-image: url(&quot;bgdesert.jpg&quot;);}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><b>Note:</b> When using a background image, use an image that does not disturb the text.</p>
+</div>
+
+<hr>
+
+<h2>Background Image - Repeat Horizontally or Vertically</h2>
+<p>By default, the <code class="w3-codespan">background-image</code> property repeats an image both horizontally and vertically.</p>
+<p>Some images should be repeated only horizontally or vertically, or they will look strange, like this:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+background-image: url(&quot;gradient_bg.png&quot;);<br>
+}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_gradient1" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+background-image: url(&quot;gradient_bg.png&quot;);
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>If the image above is repeated only horizontally (<code class="w3-codespan">background-repeat: repeat-x;</code>), the background will look 
+better:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+background-image: url(&quot;gradient_bg.png&quot;);<br>
+&#xA0;&#xA0;&#xA0;
+background-repeat: repeat-x;<br>
+}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_gradient2" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+background-image: url(&quot;gradient_bg.png&quot;);
+
+background-repeat: repeat-x;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<div class="w3-panel w3-note">
+  <p><b>Tip:</b> To repeat an image vertically, set <code class="w3-codespan">background-repeat: repeat-y;</code></p>
+</div>
+
+<hr>
+
+<h2>Background Image - Set position and no-repeat</h2>
+<p>Showing the background image only once is also specified by the <code class="w3-codespan">background-repeat</code> property:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+background-image: url(&quot;img_tree.png&quot;);<br>
+&#xA0;&#xA0;&#xA0;
+background-repeat: no-repeat;<br>
+}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_norepeat" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+background-image: url(&quot;img_tree.png&quot;);
+
+background-repeat: no-repeat;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>In the example above, the background image is shown in the same place as the text. We want to change the position of the image, so that it does not 
+disturb the text too much.</p>
+<p>The position of the image is specified by the <code class="w3-codespan">background-position</code> property:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+background-image: url(&quot;img_tree.png&quot;);<br>
+&#xA0;&#xA0;&#xA0;
+background-repeat: no-repeat;<br>
+&#xA0;&#xA0;&#xA0;
+background-position: right top;<br>
+}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_position" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+background-image: url(&quot;img_tree.png&quot;);
+
+background-repeat: no-repeat;
+
+background-position: right top;
+}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Background Image - Fixed position</h2>
+<p>To specify that the background image should be fixed (will not scroll with the rest of the page), 
+use the <code class="w3-codespan">background-attachment</code> property:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body
+{<br>
+&#xA0;&#xA0;&#xA0;
+background-image: url(&quot;img_tree.png&quot;);<br>
+&#xA0;&#xA0;&#xA0;
+background-repeat: no-repeat;<br>
+&#xA0;&#xA0;&#xA0;
+background-position: right top;<br>
+&#xA0;&#xA0;&#xA0; background-attachment: fixed;<br>}
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background-image_attachment" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body
+{
+
+background-image: url(&quot;img_tree.png&quot;);
+
+background-repeat: no-repeat;
+
+background-position: right top;
+ background-attachment: fixed;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<hr>
+
+<h2>Background - Shorthand property</h2>
+<p>To shorten the code, it is also possible to specify all the background properties in one 
+single property. This is called a shorthand property.</p>
+<p>The shorthand property for background is <code class="w3-codespan">background</code>:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+body {<br>&#xA0;&#xA0;&#xA0; background: #ffffff url(&quot;img_tree.png&quot;) no-repeat right top;<br>}</div>
+<a target="_blank" href="tryit.asp?filename=trycss_background_shorthand" class="w3-btn w3-margin-bottom"></a>
+<form action="http://codepen.io/pen/define" method="POST" target="_blank">
+                        <input type="hidden" name="data" value="{ &apos;title&apos;: &apos;, &apos;css&apos;: &apos;body { background: #ffffff url(&quot;img_tree.png&quot;) no-repeat right top;}&apos; }">
+                        <input type="submit" value="Tente vc mesmo">
+                      </form></div>
+<p>
+When using the shorthand property the order of the property values is:</p>
+<ul>
+<li><code class="w3-codespan">background-color</code></li>
+<li><code class="w3-codespan">background-image</code></li>
+<li><code class="w3-codespan">background-repeat</code></li>
+<li><code class="w3-codespan">background-attachment</code></li>
+<li><code class="w3-codespan">background-position</code></li>
+</ul>
+<p>It does not matter if one of the property values is missing, as long as the 
+other ones are in this order.</p>
+<hr>
+
+<h2>Test Yourself with Exercises!</h2>
+<p>
+<a class="w3-btn" href="exercise.asp?filename=exercise_background1" target="_blank">Exercise 1 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_background2" target="_blank">Exercise 2 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_background3" target="_blank">Exercise 3 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_background4" target="_blank">Exercise 4 &#xBB;</a>&#xA0;
+<a class="w3-btn" href="exercise.asp?filename=exercise_background5" target="_blank">Exercise 5 &#xBB;</a>
+</p>
+<hr>
+
+<h2>All CSS Background Properties</h2>
+
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:30%">Property</th>
+    <th>Description</th>
+  </tr>
+  <tr>
+    <td><a href="/cssref/css3_pr_background.asp">background</a></td>
+    <td>Sets all the background properties in one declaration</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_background-attachment.asp">background-attachment</a></td>
+    <td>Sets whether a background image is fixed or scrolls with the rest of the page</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_background-color.asp">background-color</a></td>
+    <td>Sets the background color of an element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_background-image.asp">background-image</a></td>
+    <td>Sets the background image for an element</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_background-position.asp">background-position</a></td>
+    <td>Sets the starting position of a background image</td>
+  </tr>
+  <tr>
+    <td><a href="/cssref/pr_background-repeat.asp">background-repeat</a></td>
+    <td>Sets how a background image will be repeated</td>
+  </tr>
+</table>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_colors.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_border.asp">Next &#x276F;</a>
+</div>

@@ -1,0 +1,450 @@
+
+      <div id="mainLeaderboard" style="overflow:hidden;">
+      <!-- Ezoic - Leaderboard - top_of_page -->
+      <div id="ezoic-pub-ad-placeholder-103">
+        <!-- MainLeaderboard-->
+        <div id="div-gpt-ad-1422003450156-2">
+          <script type="text/javascript">googletag.cmd.push(function() { googletag.display('div-gpt-ad-1422003450156-2'); });</script>
+        </div>
+      </div>
+      <!-- End Ezoic - Leaderboard - top_of_page -->
+      </div>
+<h1>CSS <span class="color_h1">Colors</span></h1>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_howto.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_background.asp">Next &#x276F;</a>
+</div>
+<hr>
+<p>Colors in CSS are most often specified by:</p>
+<ul>
+<li>a valid color name - like &quot;red&quot;</li>
+<li>an RGB value - like &quot;rgb(255, 0, 0)&quot;</li>
+<li>a HEX value - like &quot;#ff0000&quot;</li>
+</ul>
+
+<hr>
+<h2>Color Names</h2>
+<p>Colors set by using color names:</p>
+<div class="w3-example">
+ <h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>Name</th>
+  </tr>
+  <tr><td style="background-color:red">&#xA0;</td><td>Red</td></tr>
+  <tr><td style="background-color:green">&#xA0;</td><td>Green</td></tr>
+  <tr><td style="background-color:blue">&#xA0;</td><td>Blue</td></tr>
+  <tr><td style="background-color:orange">&#xA0;</td><td>Orange</td></tr>
+  <tr><td style="background-color:yellow">&#xA0;</td><td>Yellow</td></tr>
+  <tr><td style="background-color:cyan">&#xA0;</td><td>Cyan</td></tr>
+  <tr><td style="background-color:black">&#xA0;</td><td>Black</td></tr>
+</table>
+</div>  
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_colors_names" class="w3-btn w3-margin-bottom"></a>
+</div>
+
+<p><strong>Note:</strong> Color names are case-insensitive: &quot;Red&quot; is the same as 
+&quot;red&quot; or &quot;RED&quot;.</p>
+<p>HTML and CSS supports <a href="/colors/colors_names.asp">140 standard color names</a>.</p>
+
+<hr>
+
+<h2>RGB (Red, Green, Blue)</h2>
+<p>RGB color values can be specified using this formula: rgb(red, green, blue).</p>
+<p>Each parameter (red, green,  
+blue) defines the intensity of the color between 0 and 255.</p>
+<p>For example, <code class="w3-codespan">rgb(255,0,0)</code> is displayed as red, 
+because red is set to its highest value (255) and the others are 
+set to 0. Experiment by mixing the RGB values below:</p>
+
+<div class="w3-responsive">
+<table class="w3-table w3-border" style="width:100%">
+<tr>
+<th>Red</th>
+<th>Green</th>
+<th>Blue</th>
+</tr>
+<tr>
+<td id="valRed">255</td>
+<td id="valGreen">0</td>
+<td id="valBlue">0</td>
+</tr>
+<tr>
+<td id="red" style="height:50px;background-color:red"></td>
+<td id="green" style="background-color:rgb(0, 255, 0)"></td>
+<td id="blue" style="background-color:blue"></td>
+</tr>
+<tr>
+<td>
+<input onchange="changeRed(this.value)" type="range" id="slideRed" name="slideRed" value="255" min="0" max="255">
+</td>
+<td>
+<input onchange="changeGreen(this.value)" type="range" id="slideGreen" name="slideGreen" value="0" min="0" max="255">
+</td>
+<td>
+<input onchange="changeBlue(this.value)" type="range" id="slideBlue" name="slideBlue" value="0" min="0" max="255">
+</td>
+</tr>
+</table>
+</div>
+<div id="change" style="height:50px"></div>
+<div id="changetxt" class="w3-large w3-padding-large w3-center"></div>
+<div class="w3-center"></div>
+
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>RGB</th>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(255, 0, 0)">&#xA0;</td>
+    <td>rgb(255,0,0)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(0, 255, 0)">&#xA0;</td>
+    <td>rgb(0,255,0)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(0, 0, 255)">&#xA0;</td>
+    <td>rgb(0,0,255)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(255, 165, 0)">&#xA0;</td>
+    <td>rgb(255,165,0)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(255, 255, 0)">&#xA0;</td>
+    <td>rgb(255,255,0)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(0, 255, 255)">&#xA0;</td>
+    <td>rgb(0,255,255)</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_rgb" target="_blank"></a>
+</div>
+
+<p>Shades of grey are often defined using equal values for all the 3 light sources:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>RGB</th>
+  </tr>
+  <tr>
+    <td style="background-color:#000000">&#xA0;</td>
+    <td>rgb(0,0,0)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#808080">&#xA0;</td>
+    <td>rgb(128,128,128)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FFFFFF">&#xA0;</td>
+    <td>rgb(255,255,255)</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_rgb_gray" target="_blank"></a>
+</div>
+<hr>
+<!--
+<h2>RGBA (Red, Green, Blue, Alpha)</h2>
+<p>RGBA color values are an extension of RGB color values with an alpha channel - which specifies the <strong>opacity </strong>of the 
+color.</p>
+<p>An RGBA color value is specified with: rgba(red, green, blue, alpha). The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>RGBA</th>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.2)">Red with 20% opacity</td>
+    <td>rgba(255, 0, 0, 0.2)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.4)">Red with 40% opacity</td>
+    <td>rgba(255, 0, 0, 0.4)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.7)">Red with 70% opacity</td>
+    <td>rgba(255, 0, 0, 0.7)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(255, 0, 0)">Red</td>
+    <td>rgb(255, 0, 0)</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_rgba" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p><strong>Note:</strong> RGBA color values are supported in all browsers, except IE8 and earlier. 
+However, you can declare a fallback color for IE8 and earlier, using rgb 
+instead:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp; background-color: rgb(255, 0, 0); /* Fallback 
+color (no opacity) */<br>&nbsp;&nbsp;&nbsp; background-color: rgba(255, 0, 0, 0.4);<br>}</div>
+</div>
+<hr>
+-->
+<h2>Hexadecimal Colors</h2>
+<p>RGB values can also be specified using <strong>hexadecimal</strong> color values in 
+the form: #<em>RRGGBB</em>, where RR (red), GG (green) and BB (blue) are hexadecimal 
+values between 00 and FF (same as decimal 0-255).</p>
+<p>For example, <code class="w3-codespan">#FF0000</code> is displayed as red, because red is set to its highest value (FF) and the others are set to 
+the lowest value (00). <strong>Note:</strong> HEX values are case-insensitive: &quot;#ff0000&quot; is the same as &quot;FF0000&quot;.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>HEX</th>
+  </tr>
+  <tr>
+    <td style="background-color:#FF0000">&#xA0;</td>
+    <td>#FF0000</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00FF00">&#xA0;</td>
+    <td>#00FF00</td>
+  </tr>
+  <tr>
+    <td style="background-color:#0000FF">&#xA0;</td>
+    <td>#0000FF</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FFa500">&#xA0;</td>
+    <td>#FFA500</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffff00">&#xA0;</td>
+    <td>#FFFF00</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00ffff">&#xA0;</td>
+    <td>#00FFFF</td>
+  </tr>
+</table>
+</div>  
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_colors_hex" class="w3-btn w3-margin-bottom"></a>
+</div>
+
+<p>Shades of grey are often defined using equal values for all the 3 light sources:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>HEX</th>
+  </tr>
+  <tr>
+    <td style="background-color:#000000">&#xA0;</td>
+    <td>#000000</td>
+  </tr>
+  <tr>
+    <td style="background-color:#808080">&#xA0;</td>
+    <td>#808080</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FFFFFF">&#xA0;</td>
+    <td>#FFFFFF</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_hex_gray" target="_blank"></a>
+</div>
+<!--
+<h2>HSL (Hue, Saturation, Lightness)</h2>
+<p>HSL stands for hue, saturation, and lightness - which represents a 
+cylindrical-coordinate representation of colors, and is specified with: hsl(hue, saturation, lightness).</p>
+<p>Hue is a degree on the color wheel (from 0 to 360) - 0 (or 360) is red, 120 
+is green, 240 is blue. Saturation is a percentage value; 0% means a shade of 
+gray and 100% is the full color. Lightness is also a percentage value; 0% is black, 
+100% is white.</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>HSL</th>
+  </tr>
+  <tr>
+    <td style="background-color:#FF0000">&nbsp;</td>
+    <td>hsl(0, 100%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00FF00">&nbsp;</td>
+    <td>hsl(120, 100%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#0000FF">&nbsp;</td>
+    <td>hsl(240, 100%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FFa500">&nbsp;</td>
+    <td>hsl(39, 100%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#ffff00">&nbsp;</td>
+    <td>hsl(60, 100%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#00ffff">&nbsp;</td>
+    <td>hsl(180, 100%, 50%)</td>
+  </tr>
+</table>
+</div>  
+</div>
+<a target="_blank" href="tryit.asp?filename=trycss_colors_hsl" class="w3-btn w3-margin-bottom">Try it Yourself &raquo;</a>
+</div>
+
+<p>Shades of grey using HSL:</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>HSL</th>
+  </tr>
+  <tr>
+    <td style="background-color:#000000">&nbsp;</td>
+    <td>hsl(0, 0%, 0%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#808080">&nbsp;</td>
+    <td>hsl(0, 0%, 50%)</td>
+  </tr>
+  <tr>
+    <td style="background-color:#FFFFFF">&nbsp;</td>
+    <td>hsl(0, 0%, 100%)</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_hsl_gray" target="_blank">Try it Yourself &raquo;</a>
+</div>
+
+<p><strong>Note:</strong> HSL color values are supported in all browsers, except IE8 and earlier.</p>
+<hr>
+
+<h2>HSLA Colors</h2>
+<p>HSLA color values are an extension of HSL color values with an alpha channel - which specifies the 
+<strong>opacity </strong>of the color.</p>
+<p>An HSLA color value is specified with: hsla(hue, saturation, lightness, alpha), where the 
+alpha parameter defines the opacity. The alpha parameter is a number between 0.0 (fully transparent) and 1.0 (fully opaque).</p>
+
+<div class="w3-example">
+<h3>Example</h3>
+<div class="notranslate">
+<div class="w3-responsive">
+<table class="w3-table-all notranslate">
+  <tr>
+    <th style="width:50%">Color</th>
+    <th>HSLA</th>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.2)">Red with 20% opacity</td>
+    <td>hsla(0, 100%, 50%, 0.2)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.4)">Red with 40% opacity</td>
+    <td>hsla(0, 100%, 50%, 0.4)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgba(255, 0, 0, 0.7)">Red with 70% opacity</td>
+    <td>hsla(0, 100%, 50%, 0.7)</td>
+  </tr>
+  <tr>
+    <td style="background-color:rgb(255, 0, 0)">Red</td>
+    <td>hsl(0, 100%, 50%)</td>
+  </tr>
+</table>
+</div>  
+</div>
+ <a class="w3-btn w3-margin-bottom" href="tryit.asp?filename=trycss_colors_hsla" target="_blank">Try it Yourself &raquo;</a>
+</div>
+<p><strong>Note:</strong> HSLA color values are supported in all browsers, except IE8 and earlier. However, you can declare a fallback color for IE8 and earlier, using hsl instead:</p>
+<div class="w3-example">
+<h3>Example</h3>
+<div class="w3-code notranslate cssHigh">
+div {<br>&nbsp;&nbsp;&nbsp; background-color: hsl(0, 100%, 50%,); /* Fallback 
+color (no opacity) */<br>&nbsp;&nbsp;&nbsp; background-color: hsla(0, 100%, 
+50%, 0.4);<br>}</div>
+</div>
+-->
+<!--
+<hr>
+<h2>The transparent Value</h2>
+<p>The <code class="w3-codespan">transparent</code> value specifies that the background color should be transparent. Technically, it is the same as <code class="w3-codespan">rgba(0, 0, 0, 0)</code> - black with 0% opacity.</p>
+-->
+<script>
+changeAll();
+function changeRed(value) {
+    document.getElementById('valRed').innerHTML = value;
+    changeAll();
+}
+function changeGreen(value) {
+    document.getElementById('valGreen').innerHTML = value;
+    changeAll();
+}
+function changeBlue(value) {
+    document.getElementById('valBlue').innerHTML = value;
+    changeAll();
+}
+function changeAll() {
+    var r = document.getElementById('valRed').innerHTML;
+    var g = document.getElementById('valGreen').innerHTML;
+    var b = document.getElementById('valBlue').innerHTML;
+    document.getElementById('change').style.backgroundColor = "rgb(" + r + "," + g + "," + b + ")";
+    document.getElementById('changetxt').innerHTML = "rgb(" + r + ", " + g + ", " + b + ")";
+}
+</script>
+
+<div class="w3-panel w3-note">
+<p><b>Advanced colors:</b> In our <a href="css3_colors.asp">CSS3 Colors Tutorial</a>, you will learn about HSL and RGBa colors.</p>
+</div>
+
+<br>
+<div class="w3-clear nextprev">
+<a class="w3-left w3-btn" href="css_howto.asp">&#x276E; Previous</a>
+<a class="w3-right w3-btn" href="css_background.asp">Next &#x276F;</a>
+</div>
