@@ -5,7 +5,7 @@
 }
 
 body{
-	font-size: 14px;
+	font-size: 20px;
 	width: 100%;
 	min-width: 100vw;
 }
@@ -59,11 +59,14 @@ footer{
 /* ---------------------------------------------------------- NAV BAR ----- */
 
 
-header #header_logo{
-	height: 50px;
-	margin-top: 20px;
-	margin-left: 20px;
+header #header_logo {
+  text-align: center;
+	height: 8vh;
 
+}
+
+header #header_logo img {
+	margin-top: 3vh;
 }
 
 header .navBar{
@@ -71,10 +74,17 @@ header .navBar{
 	font-family: "Lato";
 }
 
-.input-group{
-	width: 15%;
-	float:right;
-	margin: 5px 10px;
+.input-group {    
+	width: 60vw;
+  /* float: right; */
+  margin: 0 auto;
+  height: 3rem;
+}
+.input-group .form-control {
+	display: block;
+  margin: 0 auto; 
+	width: 60vw;
+  height: 3rem;
 }
 
 form-control{
@@ -94,7 +104,12 @@ form-control{
 .menu-icon {
 	width: 64px;
 	height: 64px;
-	margin-bottom: 2vh;
+	margin-left: 2vh; 
+	margin-bottom: 2vh; 
+}
+.menu-title {
+	position: relative;
+	top: -16px;
 }
 /* ---------------------------------------------------------- BARRA LATERAL ----- */
 
@@ -121,51 +136,18 @@ form-control{
 section .barraLateral {
 	
 	background-color: #F4F4F4;
-	min-width: 20vw; 
-	width: 22vw; 
+	min-width: 25vw; 
+	width: 30vw; 
 	border-radius: 12px;
 	border-color: gray;
 	margin-top: 0px;
-	margin-left: -25vw;
+	margin-left: -35vw;
 	float: left;
 	display: inline-block;
+	font-size: 1.6rem;
 
 }
 
-@media screen and ( max-width: 700px ) and (orientation: portrait) {
-	body section .areaCurso {
-		min-width: 60vw; 
-		width: 65vw; 
-		display: inline-block;
-		position: relative;
-	}
-
-	body section .barraLateral {
-		min-width: 28vw; 
-		width: 30vw; 
-		display: inline-block;
-		position: relative;
-	}
-
-}
-
-@media screen and ( max-width: 400px ) and (orientation: portrait) {
-	section .areaCurso {
-		min-width: 80vw; 
-		width: 100vw; 
-		display: block;
-		position: relative;
-		margin: 0 auto;
-	}
-	section .barraLateral {
-		/*min-width: 38vw; 
-		width: 30vw; 
-		display: inline-block;
-		position: relative;*/
-		display: none;
-	}
-
-}
 
 section .barraLateral .barraLateral_modulos{
 	width: 180px;
@@ -194,15 +176,20 @@ section .barraLateral .barraLateral_modulos ul{
 
 .tituloModulo {
 	font-weight: bold;
-	font-size: 1.2em;
+	font-size: 2rem;
 	word-break: normal;
 }
 
+
 .tituloCurso > a {
 	font-weight: bold;
-	font-size: 1em;
+	font-size: 1.6rem;
 }
 
+.conteudo-link {
+	margin: 0.5vh 0;
+  display: inline-block;
+}
 
 /* ---------------------------------------------------------- CONTEÚDO DO CURSO ----- */
 
@@ -214,6 +201,7 @@ section .areaCurso{
 	margin-left: 1vw;
 	margin: 0 auto;
 	display: block;
+	font-size: 1.2rem;
 }
 
 .curso{
