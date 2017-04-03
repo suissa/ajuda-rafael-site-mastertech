@@ -19,7 +19,7 @@ h1  {
 
 header{
 	width: 100%;
-	height: 38vh;
+	height: 24vh;
 	background-color: #fff;
 	position: fixed;
 	z-index: 1;
@@ -32,7 +32,7 @@ section{
 	width: 100%;
 	display: inline-block;
 	position: relative;
-	margin-top: 40vh;
+	margin-top: 25vh;
 }
 
 footer{
@@ -90,8 +90,9 @@ form-control{
 
 section .barraLateral{
 	background-color: #F4F4F4;
-	width: 16$; 
-	height: 990px;
+	min-width: 18vw; 
+	width: 20vw; 
+	height: 70vh;
 	border-radius: 12px;
 	border-color: gray;
 	margin-top: 0px;
@@ -142,10 +143,11 @@ section .barraLateral .barraLateral_modulos ul{
 /* ---------------------------------------------------------- CONTEÚDO DO CURSO ----- */
 
 section .areaCurso{
-	width: 80%; 
-	height: 990px;
+	width: 75vw; 
+	min-width: 70vw; 
+	height: 100vh;
 	margin-top: 1px;
-	margin-left: 20%;
+	margin-left: 23vw;
 	
 	display: inline-block;
 }
